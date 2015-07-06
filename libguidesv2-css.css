@@ -101,7 +101,7 @@
  *
  */
  
- /* originally from it.jwu.edu */
+ /* START: originally from it.jwu.edu (pulled 7-2-2015) */
  @font-face {
     font-family:TitilliumWeb-Regular;
     font-style:normal;
@@ -150,7 +150,7 @@ h3 {
 p {
     font-size:.875rem;
 }
- 
+/* END: originally from it.jwu.edu (pulled 7-2-2015) */
  
  
 /*------------------------------------*\
