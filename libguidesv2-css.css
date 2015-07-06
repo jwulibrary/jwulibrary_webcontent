@@ -1,0 +1,246 @@
+/*------------------------------------*\
+    JWU LibGuides Master CSS File
+\*------------------------------------*/
+
+/**
+ * Created: 7-2-2015
+ * Edited:  7-2-2015
+ * Author: David M. (JWU-Prov Library)
+ * [structure of document based on http://cssguidelin.es/ by Harry Roberts]
+ */
+
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ *
+ * JWU-STYLES
+ * Unfiled................. Not-yet-placed (in this CSS file) CSS from JWU sites
+ */
+
+
+
+
+
+
+
+/*------------------------------------*\
+  # SETTINGS (Global)
+\*------------------------------------*/
+
+/**
+ * Globally-available variables and config.
+ * Edited:  7-2-2015
+ *
+ */
+ 
+ body,h2,h3,h4 {
+    color:#333;
+}
+ 
+ 
+ 
+/*------------------------------------*\
+  # Tools (Mixins)
+\*------------------------------------*/
+
+/**
+ * Useful mixins.
+ * Edited:  7-2-2015
+ *
+ */
+
+ 
+ 
+ 
+  
+/*------------------------------------*\
+  #  GENERIC (Normalize.css and Box-sizing )
+\*------------------------------------*/
+
+/**
+ * A level playing field.
+ * Edited:  7-2-2015
+ *
+ */
+ 
+ 
+ 
+ 
+ 
+/*------------------------------------*\
+  #   BASE (Headings)
+\*------------------------------------*/
+
+/**
+ * H1–H6 styles.
+ * Edited:  7-6-2015
+ *
+ */
+ 
+ /* START: originally from it.jwu.edu (pulled 7-2-2015) */
+ @font-face {
+    font-family:TitilliumWeb-Regular;
+    font-style:normal;
+    font-weight:500;
+    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Regular.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Regular.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Regular.ttf)format(truetype);
+}
+
+@font-face {
+    font-family:TitilliumWeb-Bold;
+    font-style:normal;
+    font-weight:700;
+    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Bold.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Bold.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Bold.ttf)format(truetype);
+}
+
+@font-face {
+    font-family:TitilliumWeb-Italic;
+    font-style:italic;
+    font-weight:500;
+    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Italic.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Italic.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Italic.ttf)format(truetype);
+}
+
+@font-face {
+    font-family:TitilliumWeb-BoldItalic;
+    font-style:italic;
+    font-weight:700;
+    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-BoldItalic.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-BoldItalic.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-BoldItalic.ttf)format(truetype);
+}
+
+body,h1,h2,h3,h4,h5,h6,html {
+    font-family:TitilliumWeb-Regular,sans-serif;
+}
+
+h1 {
+    font-size:1.875rem;
+    color:#666;
+}
+
+h2 {
+    font-size:1.5rem;
+}
+
+h3 {
+    font-size:1.25rem;
+}
+
+p {
+    font-size:.875rem;
+}
+/* END: originally from it.jwu.edu (pulled 7-2-2015) */
+ 
+ 
+/*------------------------------------*\
+  #   OBJECTS (Wrappers)
+\*------------------------------------*/
+
+/**
+ * Wrapping and constraining elements.
+ * Edited:  7-2-2015
+ *
+ */
+ 
+ 
+ 
+ 
+ 
+/*------------------------------------*\
+  #   COMPONENTS (Page-head, Page-foot, Buttons)
+\*------------------------------------*/
+
+/**
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ * Edited:  7-2-2015
+ *
+ */
+
+ 
+ /*-----------------------------*\
+/*-- ## Page-head (COMPONENTS) --*\
+
+
+
+/* For Page-head components to work in LibGuides,
+ * enclose them with <style> in the "Custom JS/CSS Code" Section,
+ * located at:
+ * https://jwu-ri.libapps.com/libguides/lookfeel.php?action=1 
+ */
+
+#jwulib-header {
+    padding-bottom:20px;
+}
+
+.jwu-lib-logo {
+    padding-top:20px;
+}
+
+
+ /*-----------------------------*\
+/*-- ## Page-foot (COMPONENTS) --*\
+
+
+
+ /*----------------------------*\
+/*-- ## Buttons (COMPONENTS)  --*\
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+  #   TRUMPS (Text)
+\*------------------------------------*/
+
+/**
+ * Text helpers.
+ * Edited:  7-2-2015
+ *
+ */
+ 
+ 
+ 
+ 
+ 
+
+/*------------------------------------*\
+  #   JWU-Styles (Unfiled)
+\*------------------------------------*/
+
+/**
+ * CSS 
+ * Edited:  7-2-2015
+ * Not-yet-placed (in this CSS file) CSS from JWU sites
+ * See "jwuEdu-css-snippets.css" for source material
+ */
+
+ 
+
+
