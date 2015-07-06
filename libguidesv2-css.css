@@ -106,49 +106,49 @@
     font-family:TitilliumWeb-Regular;
     font-style:normal;
     font-weight:500;
-    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Regular.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Regular.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Regular.ttf)format(truetype)
+    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Regular.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Regular.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Regular.ttf)format(truetype);
 }
 
 @font-face {
     font-family:TitilliumWeb-Bold;
     font-style:normal;
     font-weight:700;
-    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Bold.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Bold.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Bold.ttf)format(truetype)
+    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Bold.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Bold.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Bold.ttf)format(truetype);
 }
 
 @font-face {
     font-family:TitilliumWeb-Italic;
     font-style:italic;
     font-weight:500;
-    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Italic.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Italic.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Italic.ttf)format(truetype)
+    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Italic.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Italic.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-Italic.ttf)format(truetype);
 }
 
 @font-face {
     font-family:TitilliumWeb-BoldItalic;
     font-style:italic;
     font-weight:700;
-    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-BoldItalic.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-BoldItalic.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-BoldItalic.ttf)format(truetype)
+    src:url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-BoldItalic.woff2)format(woff2),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-BoldItalic.woff)format(woff),url(https://s3-us-west-2.amazonaws.com/jwu-bucket01/common/fonts/Titillium-Web/TitilliumWeb-BoldItalic.ttf)format(truetype);
 }
 
 body,h1,h2,h3,h4,h5,h6,html {
-    font-family:TitilliumWeb-Regular,sans-serif
+    font-family:TitilliumWeb-Regular,sans-serif;
 }
 
 h1 {
     font-size:1.875rem;
-    color:#666
+    color:#666;
 }
 
 h2 {
-    font-size:1.5rem
+    font-size:1.5rem;
 }
 
 h3 {
-    font-size:1.25rem
+    font-size:1.25rem;
 }
 
 p {
-    font-size:.875rem
+    font-size:.875rem;
 }
  
  
