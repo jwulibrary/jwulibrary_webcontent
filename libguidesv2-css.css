@@ -4,7 +4,7 @@
 
 /**
  * Created: 7-2-2015
- * Edited:  7-2-2015
+ * Edited:  7-7-2015
  * Author: David M. (JWU-Prov Library)
  * [structure of document based on http://cssguidelin.es/ by Harry Roberts]
  */
@@ -186,10 +186,12 @@ p {
 
 
 /* For Page-head components to work in LibGuides,
- * enclose them with <style> in the "Custom JS/CSS Code" Section,
+ * make sure that they are in the master CSS file that is referenced 
+ *(for now, this one)
+ * They can also be enclosed inline with <style> in the "Custom JS/CSS Code" Section,
  * located at:
  * https://jwu-ri.libapps.com/libguides/lookfeel.php?action=1 
- */
+*/
 
 #jwulib-header {
     padding-bottom:20px;
@@ -201,7 +203,42 @@ p {
 
 
  /*-----------------------------*\
-/*-- ## Page-foot (COMPONENTS) --*\
+/*-- ## Page-footer (COMPONENTS) --*\
+
+/* For Page-Foot/footer components to work in LibGuides,
+ * make sure that they are in the master CSS file that is referenced 
+ *(for now, this one)
+ */
+ 
+ 
+
+#jwulib-footer {
+    border-top:5px solid #F90;
+    margin-top:1em;
+    margin-bottom:1em
+}
+
+.jwulib-footercol h4 {
+    text-transform:uppercase;
+    font-size:.9em;
+    font-weight:700;
+    color:#333
+}
+
+.jwulib-footercol ul {
+    padding:0;
+    margin:10px 0
+}
+
+.jwulib-footercol ul li {
+    list-style-type:none
+}
+
+.jwulib-footercol ul li a {
+    text-decoration:none;
+    color:#333;
+    font-weight:400
+}
 
 
 
