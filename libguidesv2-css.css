@@ -159,12 +159,28 @@ p {
 
 /**
  * Wrapping and constraining elements.
- * Edited:  7-2-2015
+ * Edited:  7-8-2015
  *
  */
  
  
- 
+ /**
+/* wrappers for homepage elements*/
+
+.ask-us-wrap{}
+.ask-pic img{
+}
+
+
+/*searchbox stuff */
+.tab_content{}
+.box_sub_section{}
+
+/*end searchbox stuff */
+
+/**
+/* end wrappers for homepage elements */
+
  
  
 /*------------------------------------*\
@@ -247,9 +263,6 @@ p {
  * homepage icons under "Ask Us"...this is where the styles are
 */
 
-.ask-pic img{
-
-	}
 
 
 
