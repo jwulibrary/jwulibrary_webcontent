@@ -292,11 +292,12 @@ margin-left:2em;
  */
 
 h2.s-lib-box-title{
- font-size:1.7rem;
+ font-size:1.5rem !important;
  }
  
 .expl-text{
  font-size:1.4rem;
+ font-style: italic;
  }
  
  
