@@ -170,13 +170,23 @@ p {
 .ask-us-wrap{}
 .ask-pic img{
 }
+
 .ask-pic p{
-font-size:1.2em;
+font-size:1.4em;
+margin-left:2em;
 }
 
 /*searchbox stuff */
-.tab_content{}
-.box_sub_section{}
+
+
+.tab_content{
+}
+
+
+.box_sub_section{
+
+}
+
 
 /*end searchbox stuff */
 
@@ -277,12 +287,14 @@ font-size:1.2em;
 
 /**
  * Text helpers.
- * Edited:  7-2-2015
+ * Edited:  7-8-2015
  *
  */
  
  
- 
+ .expl-text{
+ font-size:1.2em;
+ }
  
  
 
