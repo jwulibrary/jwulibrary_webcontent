@@ -202,16 +202,27 @@ border-bottom:1px dotted #B0B0B0;
 
 table.hours-today {
 border:none;
+padding:.5em;
 
 }
 
-table.hours-today { padding: .5em; }
-.hours-col-loc { padding-right: 1em; }
-.hours-col-time { padding-left: .9em; }
+tr. hours-today-row {
+padding-top:1em;
+}
+.hours-col-loc {
+ padding-right: 1em; 
+ }
+.hours-col-time { 
+padding-left: .9em; 
+}
 
-.hours-col-time { border-left: 1px dashed #BBB; }
+.hours-col-time {
+ border-left: 1px dashed #BBB; 
+ }
 
-tr.hours-depart td.hours-col-loc { padding-left: 1em; }
+tr.hours-depart td.hours-col-loc { 
+padding-left: 1em; 
+}
 
 
 
