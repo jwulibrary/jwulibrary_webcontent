@@ -132,7 +132,7 @@ p {
 
 /**
  * Wrapping and constraining elements.
- * Edited:  7-8-2015
+ * Edited:  7-20-2015
  *
  */
  
@@ -187,6 +187,30 @@ margin:0;
 #quicklinks-box ul li a, ul li a:focus, ul li a:visited{
 border-bottom:1px dotted #B0B0B0;
 }
+/* end quicklinks */
+
+
+
+
+
+/* Homepage hours stuff (from libcal...modified springshare styles)*/
+
+table.hours-today {
+border: 1px solid #000;
+border-collapse: separate;
+}
+
+table.hours-today { padding: 15px; }
+.hours-col-loc { padding-right: 25px; }
+.hours-col-time { padding-left: 15px; }
+
+.hours-col-time { border-left: 1px dashed #BBB; }
+
+tr.hours-depart td.hours-col-loc { padding-left: 20px; }
+
+
+
+
 /**
 /* end wrappers for homepage elements */
 
