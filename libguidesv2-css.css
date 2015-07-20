@@ -151,6 +151,10 @@ margin-left:2em;
 
 /*searchbox stuff */
 
+.s-lib-box-content .ui-tabs-nav li>a{
+padding: 1em 2em; 
+}
+
 
 .tab_content{
 }
