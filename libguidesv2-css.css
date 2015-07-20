@@ -299,8 +299,7 @@ h2.s-lib-box-title{
   padding: 3px 5px 5px 12px;
   text-transform: uppercase;
   margin-bottom: .5em !important;
-  font-weight:normal;
-
+  font-weight:normal !important;
  }
  
   
