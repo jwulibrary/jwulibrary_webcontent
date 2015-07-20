@@ -184,6 +184,7 @@ margin:0;
 }
 
 #quicklinks-box ul li a{
+font-size:1.4em;
 }
 
 
@@ -200,17 +201,17 @@ border-bottom:1px dotted #B0B0B0;
 /* Homepage hours stuff (from libcal...modified springshare styles)*/
 
 table.hours-today {
-border: 1px solid #000;
-border-collapse: separate;
+
+
 }
 
-table.hours-today { padding: 15px; }
-.hours-col-loc { padding-right: 25px; }
-.hours-col-time { padding-left: 15px; }
+table.hours-today { padding: .5em; }
+.hours-col-loc { padding-right: 1em; }
+.hours-col-time { padding-left: .9em; }
 
 .hours-col-time { border-left: 1px dashed #BBB; }
 
-tr.hours-depart td.hours-col-loc { padding-left: 20px; }
+tr.hours-depart td.hours-col-loc { padding-left: 1em; }
 
 
 
