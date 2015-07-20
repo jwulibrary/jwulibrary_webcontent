@@ -4,7 +4,7 @@
 
 /**
  * Created: 7-2-2015
- * Edited:  7-8-2015
+ * Edited:  7-20-2015
  * Author: David M. (JWU-Prov Library)
  * [structure of document based on http://cssguidelin.es/ by Harry Roberts]
  */
@@ -168,7 +168,7 @@ margin-left:2em;
 }
 
 /* This removes the bullets from the quicklinks list*/
-.quicklinks-box ul{
+#quicklinks-box ul{
 list-style-type: none !important;
 padding:0 0 10px 10px; 
 margin:0;
@@ -176,10 +176,10 @@ margin:0;
 
 
 
-.quicklinks-box ul li{
+#quicklinks-box ul li{
 }
 
-.quicklinks-box ul li a{
+#quicklinks-box ul li a{
 }
 
 
@@ -284,7 +284,7 @@ border-bottom:1px dotted #B0B0B0;
 
 /**
  * Text helpers.
- * Edited:  7-8-2015
+ * Edited:  7-20-2015
  *
  */
 
@@ -293,12 +293,13 @@ h1.s-lg-guide-name{
  }
  
 h2.s-lib-box-title{
- font-size:1.5rem !important;
+ font-size:1.4rem !important;
  font-family: 'Gill Sans MT','Gill Sans',Verdana,sans-serif;
  letter-spacing: 3px;
   padding: 3px 5px 5px 12px;
   text-transform: uppercase;
   margin-bottom: .5em !important;
+  font-weight:normal;
 
  }
  
