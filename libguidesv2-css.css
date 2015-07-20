@@ -201,7 +201,7 @@ border-bottom:1px dotted #B0B0B0;
 /* Homepage hours stuff (from libcal...modified springshare styles)*/
 
 table.hours-today {
-
+border:none;
 
 }
 
