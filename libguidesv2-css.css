@@ -153,6 +153,7 @@ margin-left:2em;
 
 .s-lib-box-content .ui-tabs-nav li>a{
 padding: 1em 2em; 
+font-size: 1.1em;
 }
 
 
@@ -184,7 +185,7 @@ margin:0;
 }
 
 #quicklinks-box ul li a{
-font-size:1.4em;
+font-size:1.2em;
 }
 
 
