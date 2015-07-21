@@ -168,7 +168,7 @@ font-size: 1.1em;
 
 /*JWU Prov Homepage specific searchbox tweaks...using the unique ID: s-lg-box-6621175 */
 
-.s-lg-box-6621175{
+#s-lg-box-6621175{
 margin:0 1em;
 width:90%;
 }
