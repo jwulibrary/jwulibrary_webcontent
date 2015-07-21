@@ -140,7 +140,9 @@ p {
  /**
 /* wrappers for homepage elements*/
 
-.ask-us-wrap{}
+.ask-us-wrap{
+padding: 1em 0;
+}
 .ask-pic img{
 }
 
