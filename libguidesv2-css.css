@@ -270,19 +270,14 @@ padding-left: 1em;
 }
 
 /* Room booking stuff */
-#room11378 {
-  background: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  border-radius: 4px;
-  color: #333333;
-  font: 14px Arial, Helvetica, Verdana;
-  padding: 8px 20px;
-  cursor: pointer;
-}
-#room11378:hover {
-  opacity: 0.9;
+
+
+#room-book-widget{
 }
 
+#room-book-widget button{
+margin-bottom:5px;
+}
 
 /**
 /* end wrappers for homepage elements */

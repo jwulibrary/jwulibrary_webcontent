@@ -270,6 +270,7 @@
 
 
 <!-- B.2.5: Homepage Room Bookings -->
+<div id="room-book-widget"
 <div class="container">
 <div class="row">
 <script src="//api3.libcal.com/js/roombooking.js?002"></script>
@@ -281,14 +282,27 @@ jQuery(function(){
 <!-- Place the following link anywhere in your page. Make sure the id "room11378" matches with the above code: jQuery("#room11378")  //-->
 <button id="room11378" href="#">Book a Study Room</button>
 <!-- Below is optional button styling  //-->
-
+<style>
+#room11378 {
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  color: #333333;
+  font: 14px Arial, Helvetica, Verdana;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+#room11378:hover {
+  opacity: 0.9;
+}
+</style>
 </div>
 
-<div class="row">
-<h5>View all room openings:</h5>
-<a href="http://jwu-ri.beta.libcal.com/booking/downcity_studyrooms">Downcity</a>
+<div class="row">View all room openings: </br>
+<a href="http://jwu-ri.beta.libcal.com/booking/downcity_studyrooms">Downcity</a> | <a href="http://jwu-ri.beta.libcal.com/booking/harborside_studyrooms">Harborside</a>
 </div>
 
+</div>
 </div>
 <!--END B.2.5 -->
 
