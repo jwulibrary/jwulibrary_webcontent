@@ -259,7 +259,19 @@ tr.hours-depart td.hours-col-loc {
 padding-left: 1em; 
 }
 
-
+/* Room booking stuff */
+#room11378 {
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  color: #333333;
+  font: 14px Arial, Helvetica, Verdana;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+#room11378:hover {
+  opacity: 0.9;
+}
 
 
 /**

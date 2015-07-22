@@ -269,8 +269,28 @@
 <!--END B.2 -->
 
 
+<!-- B.2.5: Homepage Room Bookings -->
+<div class="container">
+<div class="row">
+<script src="//api3.libcal.com/js/roombooking.js?002"></script>
+<script>
+jQuery(function(){
+   jQuery("#room11378").LibCalRoomBooking({ "iid": 1433, "gid": 11378,  "width": 500, "height": 450 });
+});
+</script>
+<!-- Place the following link anywhere in your page. Make sure the id "room11378" matches with the above code: jQuery("#room11378")  //-->
+<button id="room11378" href="#">Book a Study Room</button>
+<!-- Below is optional button styling  //-->
 
+</div>
 
+<div class="row">
+<h5>View all room bookings</h5>
+<a href="http://jwu-ri.beta.libcal.com/booking/downcity_studyrooms">Downcity</a>
+</div>
+
+</div>
+<!--END B.2.5 -->
 
 
 <!-- B3. Ask Us -->
