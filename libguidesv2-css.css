@@ -132,24 +132,38 @@ p {
 
 /**
  * Wrapping and constraining elements.
- * Edited:  7-20-2015
+
  *
  */
  
+
+
+/* Global to LibGuides box types */
+/* ---------------------- */
+
+.s-lib-box{}
+
+.s-lg-box-special{
+}
+
+/* ---------------------- */
+/* End global wrapper modifiers */
+/* ---------------------- */
+
+
+
+
+
+
+
+
  
  /**
 /* wrappers for homepage elements*/
 
-#ask-us-wrap{
-padding: 0 0 1em 0;
-}
-.ask-pic img{
-}
 
-.ask-pic p{
-font-size:1.4rem;
-margin-left:2em;
-}
+
+
 
 /*searchbox stuff */
 
@@ -171,11 +185,24 @@ font-size: 1.1em;
 /*JWU Prov Homepage specific searchbox tweaks...using the unique ID: s-lg-box-6621175 */
 
 #s-lg-box-6621175{
-
+border: none !important;
 }
 
 
 /*end searchbox stuff */
+
+
+#ask-us-wrap{
+padding: 0 0 1em 0;
+}
+.ask-pic img{
+}
+
+.ask-pic p{
+font-size:1.4rem;
+margin-left:2em;
+}
+
 
 /* Quicklinks stuff */
 .quicklinks-box{
@@ -250,7 +277,6 @@ padding-left: 1em;
  * Page-head............The main page header.
  * Page-foot............The main page footer.
  * Buttons..............Button elements.
- * Edited:  7-7-2015
  *
  */
 
@@ -334,7 +360,6 @@ padding-left: 1em;
 
 /**
  * Text helpers.
- * Edited:  7-20-2015
  *
  */
 
@@ -369,7 +394,6 @@ h2.s-lib-box-title{
 
 /**
  * CSS 
- * Edited:  7-2-2015
  * Not-yet-placed (in this CSS file) CSS from JWU sites
  * See "jwuEdu-css-snippets.css" for source material
  */
