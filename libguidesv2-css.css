@@ -141,7 +141,7 @@ p {
 /* wrappers for homepage elements*/
 
 #ask-us-wrap{
-padding: 1em 0;
+padding: 0 0 1em 0;
 }
 .ask-pic img{
 }
@@ -194,7 +194,7 @@ margin:0;
 }
 
 #quicklinks-box ul li a{
-font-size:1.2em;
+font-size:1.1em;
 }
 
 
