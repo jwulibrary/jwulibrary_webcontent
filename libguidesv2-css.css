@@ -61,8 +61,18 @@
     color:#333;
 }
  
+h2{}
  
- 
+h3{}
+
+h4{} 
+
+h5{font-family: Verdana, Geneva, sans-serif;
+font-size: 10px;
+font-style: normal;
+font-variant: normal;
+font-weight: bold;
+}
 /*------------------------------------*\
   # Tools (Mixins)
 \*------------------------------------*/
