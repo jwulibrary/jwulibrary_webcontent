@@ -199,7 +199,7 @@ border: none !important;
 }
 
 /* Selected tab content in homepage searchbox modifiers*/
- #onesearch-wrap{
+ #onesearch-wrap .row target{
  width: 30%;
   min-width: 200px;
   }
