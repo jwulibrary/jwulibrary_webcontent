@@ -198,6 +198,13 @@ margin:0em 0em 1em 0em;
 border: none !important;
 }
 
+/* Selected tab content in homepage searchbox modifiers*/
+ #onesearch-wrap{
+ width: 30%;
+  min-width: 200px;
+  }
+
+
 
 /*end searchbox stuff */
 
@@ -206,12 +213,13 @@ border: none !important;
 /* Featured Box stuff (mostly for homepage 'image carousel')*/
 .carousel-caption{}
 .carousel-caption h4{
-font-size:4em; color:#FFF;
-text-shadow: 0.2em 0.2em 0.09em #333;
+font-size:2em; 
+color:#FFF;
+text-shadow: 0.1em 0.05em 0.04em #333;
 }
 .carousel-caption p{
 font-size:1.8em;
-text-shadow: 0.1em 0.05em 0.05em #333;
+text-shadow: 0.1em 0.01em 0.01em #333;
 }
 
 
