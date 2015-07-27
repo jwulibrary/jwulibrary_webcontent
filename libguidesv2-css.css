@@ -199,10 +199,7 @@ border: none !important;
 }
 
 /* Selected tab content in homepage searchbox modifiers*/
- .onesearch-input{
- width: 30%;
-  min-width: 200px;
-  }
+#onesearch-wrap{}
 
 
 
