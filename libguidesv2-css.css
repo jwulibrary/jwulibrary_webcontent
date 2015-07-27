@@ -229,6 +229,8 @@ text-shadow: 0.1em 0.01em 0.01em #333;
 #ask-us-wrap-desktop{
 
 }
+#ask-pics-desktop{}
+
 .ask-pic img{
 }
 
@@ -240,7 +242,7 @@ margin-left:2em;
 #ask-us-wrap-mobile{
 
 }
-
+#ask-pics-mobile{}
 
 /* Quicklinks stuff */
 .quicklinks-box{
