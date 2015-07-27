@@ -4,7 +4,7 @@
 
 /**
  * Created: 7-2-2015
- * Edited:  7-20-2015
+ * Edited:  7-27-2015
  * Author: David M. (JWU-Prov Library)
  * [structure of document based on http://cssguidelin.es/ by Harry Roberts]
  */
@@ -226,7 +226,7 @@ text-shadow: 0.1em 0.01em 0.01em #333;
 
 
 
-#ask-us-wrap{
+#ask-us-wrap-desktop{
 
 }
 .ask-pic img{
@@ -235,6 +235,10 @@ text-shadow: 0.1em 0.01em 0.01em #333;
 .ask-pic p{
 font-size:1.4rem;
 margin-left:2em;
+}
+
+#ask-us-wrap-mobile{
+
 }
 
 
