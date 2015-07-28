@@ -233,13 +233,17 @@ text-shadow: 0.1em 0.01em 0.01em #333;
 
 .ask-pic p{
 font-size:1.4rem;
-margin-left:2em;
+
 }
 
 #ask-us-wrap-mobile{
 
 }
 #ask-pics-mobile{}
+
+.ask-pic-mobile p{
+font-size:1.1rem;
+}
 
 /* Quicklinks stuff */
 .quicklinks-box{
