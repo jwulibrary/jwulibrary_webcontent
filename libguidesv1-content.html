@@ -81,6 +81,9 @@
 
 <!-- END B.3-->
 <!-- ============== -->
+
+
+
 <!-- B4. Top Search -->
 <!-- 4-tab searchbox CONTENT [tabbed] -->
 <!-- B.4.i.: TAB 1: Onesearch CONTENT -->
@@ -89,9 +92,57 @@
 
 
 
+<!-- END B4 (Top Search)>
 <!-- ============== -->
-<!-- END B4 (Top Search)
-<!-- ============== -->
+
+
+
+
+
+<!--B5: LibCal Room Booker -->
+
+<!-- B.2.5: Homepage Room Bookings -->
+<div id="room-book-widget">
+<div class="container">
+<div class="row">
+<script src="//api3.libcal.com/js/roombooking.js?002"></script>
+<script>
+jQuery(function(){
+   jQuery("#room11378").LibCalRoomBooking({ "iid": 1433, "gid": 11378,  "width": 500, "height": 450 });
+});
+</script>
+<!-- Place the following link anywhere in your page. Make sure the id "room11378" matches with the above code: jQuery("#room11378")  //-->
+<button id="room11378" href="#">Book a Study Room</button>
+<!-- Below is optional button styling  //-->
+<style>
+#room11378 {
+  background: #FDB02D;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  color: #333333;
+  font: 14px Arial, Helvetica, Verdana;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+#room11378:hover {
+  opacity: 0.9;
+}
+</style>
+</div>
+
+<div class="row">View all room openings: </br>
+<a href="http://jwu-ri.beta.libcal.com/booking/downcity">Downcity</a> | <a href="http://jwu-ri.beta.libcal.com/booking/harborside">Harborside</a>
+</div>
+
+</div>
+</div>
+<!--END B.2.5 -->
+
+
+
+
+<!-- END B5 --------------->
+<!-- ========================-->
 
 
 
