@@ -266,17 +266,33 @@ font-size:1.1em;
 #quicklinks-box ul li a, ul li a:focus, ul li a:visited{
 border-bottom:1px dotted #B0B0B0;
 }
+
+
+/* Local overrides for box-specific content: QUICK LINKS */
+#s-lg-box-6588302 > .s-lib-box-title{
+	background-color: #002856;
+	color:#FFF;
+	}
+
 /* end quicklinks */
+/* ============== */
 
 
 
 
+
+
+
+
+/* HOURS */
 
 /* Homepage hours stuff (from libcal...modified springshare styles)*/
 /* Local overrides for box-specific content */
 #s-lg-box-7084005 > .s-lib-box-title{
 	background-color: #002856;
 	}
+	
+
 
 
 
