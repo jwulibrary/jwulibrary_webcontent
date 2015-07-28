@@ -248,7 +248,7 @@ margin-left:2em;
 /* This removes the bullets from the quicklinks list*/
 #quicklinks-box ul{
 list-style-type: none !important;
-padding:0 0 10px 10px; 
+padding:0 0 10px 0px; 
 margin:0;
 }
 
@@ -273,6 +273,13 @@ border-bottom:1px dotted #B0B0B0;
 
 
 /* Homepage hours stuff (from libcal...modified springshare styles)*/
+/* Local overrides for box-specific content */
+#s-lg-box-7084005 > .s-lib-box-title{
+	background-color: #002856;
+	}
+
+
+
 
 table.hours-today {
 border:none;
