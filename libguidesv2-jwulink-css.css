@@ -1,0 +1,257 @@
+/*------------------------------------*\
+    JWU LibGuides Master CSS File
+\*------------------------------------*/
+
+/**
+ * Created: 7-2-2015
+ * Edited:  8-18-2015
+ * Author: David M. (JWU-Prov Library)
+ * [structure of document based on http://cssguidelin.es/ by Harry Roberts]
+ */
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+  # Tools (Mixins)
+\*------------------------------------*/
+
+/**
+ * Useful mixins.
+ * Edited:  7-2-2015
+ *
+ */
+
+ 
+ 
+ 
+  
+/*------------------------------------*\
+  #  GENERIC (Normalize.css and Box-sizing )
+\*------------------------------------*/
+
+/**
+ * A level playing field.
+ * Edited:  7-2-2015
+ *
+ */
+ 
+ 
+ 
+ 
+ 
+
+/*------------------------------------*\
+  #   OBJECTS (Wrappers)
+\*------------------------------------*/
+
+/**
+ * Wrapping and constraining elements.
+
+ *
+ */
+ 
+
+
+/* Global to LibGuides box types */
+/* ---------------------- */
+
+.s-lib-box{}
+
+.s-lg-box-special{
+}
+
+/* ---------------------- */
+/* End global wrapper modifiers */
+/* ---------------------- */
+
+
+
+
+
+
+
+
+ 
+ /**
+/* wrappers for homepage elements*/
+
+
+
+
+
+/*searchbox stuff */
+
+
+/* Selected tab content in homepage searchbox modifiers*/
+#onesearch-wrap{}
+
+
+
+/*end searchbox stuff */
+
+
+
+/* Featured Box stuff (mostly for homepage 'image carousel')*/
+.carousel-caption{}
+.carousel-caption h4{
+font-size:2em; 
+color:#FFF;
+text-shadow: 0.1em 0.05em 0.04em #333;
+}
+.carousel-caption p{
+font-size:1.8em;
+text-shadow: 0.1em 0.01em 0.01em #333;
+}
+
+
+
+
+
+
+/* Ask Us Box Modifications*/
+
+#ask-us-wrap-desktop{
+
+}
+
+#ask-pics-desktop{}
+
+.ask-pic img{
+}
+
+.ask-pic p{
+font-size:1.4rem;
+
+}
+
+#ask-us-wrap-mobile{
+
+}
+#ask-pics-mobile{}
+
+.ask-pic-mobile p{
+font-size:1.1rem;
+}
+
+/* Quicklinks stuff */
+.quicklinks-box{
+}
+
+/* This removes the bullets from the quicklinks list*/
+#quicklinks-box ul{
+list-style-type: none !important;
+padding:0 0 10px 0px; 
+margin:0;
+}
+
+
+
+#quicklinks-box ul li{
+}
+
+#quicklinks-box ul li a{
+font-size:1.1em;
+}
+
+
+
+#quicklinks-box ul li a, ul li a:focus, ul li a:visited{
+border-bottom:1px dotted #B0B0B0;
+}
+
+
+/* Local overrides for box-specific content: QUICK LINKS */
+#s-lg-box-6588302 > .s-lib-box-title{
+	background-color: #002856;
+	color:#FFF;
+	}
+
+/* end quicklinks */
+/* ============== */
+
+
+
+
+
+
+
+
+/* HOURS */
+
+/* Homepage hours stuff (from libcal...modified springshare styles)*/
+/* Local overrides for box-specific content */
+
+
+table.hours-today {
+border:none;
+padding:.5em;
+
+}
+
+tr. hours-today-row {
+padding-top:1em;
+}
+.hours-col-loc {
+ padding-right: 1em; 
+ }
+.hours-col-time { 
+padding-left: .9em; 
+}
+
+.hours-col-time {
+ border-left: 1px dashed #BBB; 
+ }
+
+tr.hours-depart td.hours-col-loc { 
+padding-left: 1em; 
+}
+
+/* Room booking stuff */
+
+
+#room-book-widget{
+}
+
+#room-book-widget button{
+margin-bottom:1em;
+}
+
+/**
+/* end wrappers for homepage elements */
+
+/**
+ * Text helpers.
+ *
+ */
+
+h1.s-lg-guide-name{
+ font-size:1.5rem !important;
+ }
+ 
+h2.s-lib-box-title{
+ font-size:1.4rem !important;
+ font-family: 'Gill Sans MT','Gill Sans',Verdana,sans-serif;
+ letter-spacing: 3px;
+  padding: 3px 5px 5px 12px;
+  text-transform: uppercase;
+  margin-bottom: .5em !important;
+  font-weight:normal !important;
+ }
+ 
+  
+
+ 
+ 
+.expl-text{
+ font-size:1.4rem;
+ font-style: italic;
+ }
+ 
+
+
+
