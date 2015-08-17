@@ -2,6 +2,7 @@
     JWU LibGuides Master CSS File
 \*------------------------------------*/
 
+
 /**
  * Created August 2015
  * Edited:  8-18-2015
@@ -9,166 +10,332 @@
  */
 
 
- /* */
+/* 0.0 Semi-global stuff*/
 
-
- /* 1.0 Content box specific CSS code*/
-/* ================================ */
-/* Semi-global*/
-
-.librarybox{
-
+.librarybox {}
+.librarybox>h2 {
+  font-size: 1.4rem !important;
+  font-family: 'Gill Sans MT', 'Gill Sans', Verdana, sans-serif;
+  letter-spacing: 3px;
+  padding: 3px 5px 5px 12px;
+  text-transform: uppercase;
+  margin-bottom: .5em !important;
+  font-weight: normal !important;
+}
+.librarybox>h3 {}
+.librarybox>p {}
+.expl-text {
+  font-size: 1.4rem;
+  font-style: italic;
 }
 
+/* End 0.0 "semi-global stuff" */
 
 
- /* 1.1 Quicklinks CSS */
- .quicklinks-box{
- }
-
- #quicklinks-box ul{
- list-style-type: none !important;
- padding:0 0 10px 0px;
- margin:0;
- }
-
- #quicklinks-box ul li{
- }
- #quicklinks-box ul li a{
- font-size:1.1em;
- }
- #quicklinks-box ul li a, ul li a:focus, ul li a:visited{
- border-bottom:1px dotted #B0B0B0;
- }
+/* 1.0 Content box specific CSS code*/
 
 
- /* end 1.1 quicklinks CSS*/
- /* ============== */
+/* 1.1 Quicklinks CSS */
+
+.quicklinks-box {}
+#quicklinks-box ul {
+  list-style-type: none !important;
+  padding: 0 0 10px 0px;
+  margin: 0;
+}
+#quicklinks-box ul li {}
+#quicklinks-box ul li a {
+  font-size: 1.1em;
+}
+#quicklinks-box ul li a, ul li a:focus, ul li a:visited {
+  border-bottom: 1px dotted #B0B0B0;
+}
+
+/* end 1.1 quicklinks CSS*/
 
 
-
-
-
+/* ============== */
 
 
 /* 1.2 CHAT */
 
+.librarybox {}
 
-/*====================*/
-/*end searchbox stuff */
-
-
+/* end 1.2 CHAT CSS*/
 
 
+/* ============== */
 
 
 /* 1.3 Calendar / Hours HOURS */
 
+
 /* Homepage hours stuff (from libcal...modified springshare styles)*/
+
+
 /* Local overrides for box-specific content */
 
-
 table.hours-today {
-border:none;
-padding:.5em;
-
+  border: none;
+  padding: .5em;
 }
-
 tr. hours-today-row {
-padding-top:1em;
+  padding-top: 1em;
 }
 .hours-col-loc {
- padding-right: 1em;
- }
-.hours-col-time {
-padding-left: .9em;
+  padding-right: 1em;
 }
-
 .hours-col-time {
- border-left: 1px dashed #BBB;
- }
-
+  padding-left: .9em;
+}
+.hours-col-time {
+  border-left: 1px dashed #BBB;
+}
 tr.hours-depart td.hours-col-loc {
-padding-left: 1em;
+  padding-left: 1em;
 }
-
-
-
-
 
 /* 1.4 Room booking widget stuff */
 
-
-#room-book-widget{
+#room-book-widget {}
+#room-book-widget button {
+  margin-bottom: 1em;
 }
 
-#room-book-widget button{
-margin-bottom:1em;
+/* 1.5 Ask Us Box Modifications*/
+
+#ask-us-wrap-desktop {}
+#ask-pics-desktop {}
+.ask-pic img {}
+.ask-pic p {
+  font-size: 1.2em;
+}
+#ask-us-wrap-mobile {}
+#ask-pics-mobile {}
+.ask-pic-mobile p {
+  font-size: 1em;
 }
 
+/* END 1.5 (Ask Us Box Modifications)*/
 
 
 
 
-/* Ask Us Box Modifications*/
-#ask-us-wrap-desktop{
+/* 1.6 Searchbox Content CSS */
 
+/* END 1.6 Searchbox Content CSS */
+
+
+
+/* 1.7 Searchbox CONTAINER CSS */
+html{
+	background: rgb(101, 92, 137);
+		font-family: "Lato", sans-serif;
+}
+a:active,a:focus {
+	outline: expression(hideFocus='true');
 }
 
-#ask-pics-desktop{}
-
-.ask-pic img{
+p {
+	margin-bottom: 20px;
 }
 
-.ask-pic p{
-font-size:1.2em;
-
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+#tabs,#tabs2,#tabs3,#tabs4,#tabs5 {
+	width: 500px;
+	margin: 0 auto;
+	margin-bottom: 40px;
 }
 
-#ask-us-wrap-mobile{
-
-}
-#ask-pics-mobile{}
-
-.ask-pic-mobile p{
-font-size:1em;
+#tabs li,#tabs2 li,#tabs3 li,#tabs4 li,#tabs5 li {
+	float: left;
+	margin-right: 2px;
 }
 
+#tabs li a,#tabs2 li a,#tabs3 li a,#tabs4 li a,#tabs5 li a {
+	display: block;
+	padding: 17px 30px;
+	background: #544f6b;
+	text-decoration: none;
+	color: #8478B3;
+}
 
+#tabs li a:hover,#tabs2 li a:hover,#tabs3 li a:hover,#tabs4 li a:hover,#tabs5 li a:hover {
+	background: rgb(78, 74, 99);
+}
 
+#tabs_container {
+	padding: 40px;
+	overflow: hidden;
+	position: relative;
+	background: white;
+}
 
+#tabs_container div {
+	margin-right: 40px;
+}
 
+.transition {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
 
-/**
-/* end wrappers for homepage elements */
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
 
+.make_transist {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
 
+.hidescale {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
 
+.showscale {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
 
-/**
- * Text helpers.
- *
- */
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
 
-h1.s-lg-guide-name{
- font-size:1.5rem !important;
- }
+.hideleft {
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
 
-h2.s-lib-box-title{
- font-size:1.4rem !important;
- font-family: 'Gill Sans MT','Gill Sans',Verdana,sans-serif;
- letter-spacing: 3px;
-  padding: 3px 5px 5px 12px;
-  text-transform: uppercase;
-  margin-bottom: .5em !important;
-  font-weight:normal !important;
- }
+.showleft {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	transform: translateX(0px);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
 
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
 
+.hidescaleup {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
 
+.showscaleup {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
 
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+}
 
-.expl-text{
- font-size:1.4rem;
- font-style: italic;
- }
+.hideflip {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+
+	-webkit-transform: rotatey(-90deg) scale(1.1);
+	-moz-transform: rotatey(-90deg) scale(1.1);
+	-o-transform: rotatey(-90deg) scale(1.1);
+	-ms-transform: rotatey(-90deg) scale(1.1);
+	transform: rotatey(-90deg) scale(1.1);
+
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.showflip {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+
+	-webkit-transition-delay: .3s;
+	-moz-transition-delay: .3s;
+	-o-transition-delay: .3s;
+	-ms-transition-delay: .3s;
+	transition-delay: .3s;
+
+	-webkit-transform: rotatey(0deg) scale(1);
+	-moz-transform: rotatey(0deg) scale(1);
+	-o-transform: rotatey(0deg) scale(1);
+	-ms-transform: rotatey(0deg) scale(1);
+	transform: rotatey(0deg) scale(1);
+
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.tabulous_active {
+	background: white !important;
+	color: #655c89 !important;
+}
+
+.tabulousclear {
+	display: block;
+	clear: both;
+}
+
+/* END 1.7 Searchbox CONTAINER CSS */
