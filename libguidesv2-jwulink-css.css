@@ -8,6 +8,20 @@
  * Author: David M. (JWU-Prov Library)
  */
 
+
+ /* */
+
+
+ /* 1.0 Content box specific CSS code*/
+/* ================================ */
+/* Semi-global*/
+
+.librarybox{
+
+}
+
+
+
  /* 1.1 Quicklinks CSS */
  .quicklinks-box{
  }
@@ -38,7 +52,7 @@
 
 
 /* 1.2 CHAT */
-#onesearch-wrap{}
+
 
 /*====================*/
 /*end searchbox stuff */
@@ -47,40 +61,8 @@
 
 
 
-/* Ask Us Box Modifications*/
 
-#ask-us-wrap-desktop{
-
-}
-
-#ask-pics-desktop{}
-
-.ask-pic img{
-}
-
-.ask-pic p{
-font-size:1.2rem;
-
-}
-
-#ask-us-wrap-mobile{
-
-}
-#ask-pics-mobile{}
-
-.ask-pic-mobile p{
-font-size:1em;
-}
-
-
-
-
-
-
-
-
-
-/* HOURS */
+/* 1.3 Calendar / Hours HOURS */
 
 /* Homepage hours stuff (from libcal...modified springshare styles)*/
 /* Local overrides for box-specific content */
@@ -110,7 +92,11 @@ tr.hours-depart td.hours-col-loc {
 padding-left: 1em;
 }
 
-/* Room booking stuff */
+
+
+
+
+/* 1.4 Room booking widget stuff */
 
 
 #room-book-widget{
@@ -120,8 +106,44 @@ padding-left: 1em;
 margin-bottom:1em;
 }
 
+
+
+
+
+/* Ask Us Box Modifications*/
+#ask-us-wrap-desktop{
+
+}
+
+#ask-pics-desktop{}
+
+.ask-pic img{
+}
+
+.ask-pic p{
+font-size:1.2em;
+
+}
+
+#ask-us-wrap-mobile{
+
+}
+#ask-pics-mobile{}
+
+.ask-pic-mobile p{
+font-size:1em;
+}
+
+
+
+
+
+
 /**
 /* end wrappers for homepage elements */
+
+
+
 
 /**
  * Text helpers.
