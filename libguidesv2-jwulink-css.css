@@ -3,12 +3,33 @@
 \*------------------------------------*/
 
 /**
- * Created: 7-2-2015
+ * Created August 2015
  * Edited:  8-18-2015
  * Author: David M. (JWU-Prov Library)
- * [structure of document based on http://cssguidelin.es/ by Harry Roberts]
  */
 
+ /* 1.1 Quicklinks CSS */
+ .quicklinks-box{
+ }
+
+ #quicklinks-box ul{
+ list-style-type: none !important;
+ padding:0 0 10px 0px;
+ margin:0;
+ }
+
+ #quicklinks-box ul li{
+ }
+ #quicklinks-box ul li a{
+ font-size:1.1em;
+ }
+ #quicklinks-box ul li a, ul li a:focus, ul li a:visited{
+ border-bottom:1px dotted #B0B0B0;
+ }
+
+
+ /* end 1.1 quicklinks CSS*/
+ /* ============== */
 
 
 
@@ -16,98 +37,11 @@
 
 
 
-/*------------------------------------*\
-  # Tools (Mixins)
-\*------------------------------------*/
-
-/**
- * Useful mixins.
- * Edited:  7-2-2015
- *
- */
-
- 
- 
- 
-  
-/*------------------------------------*\
-  #  GENERIC (Normalize.css and Box-sizing )
-\*------------------------------------*/
-
-/**
- * A level playing field.
- * Edited:  7-2-2015
- *
- */
- 
- 
- 
- 
- 
-
-/*------------------------------------*\
-  #   OBJECTS (Wrappers)
-\*------------------------------------*/
-
-/**
- * Wrapping and constraining elements.
-
- *
- */
- 
-
-
-/* Global to LibGuides box types */
-/* ---------------------- */
-
-.s-lib-box{}
-
-.s-lg-box-special{
-}
-
-/* ---------------------- */
-/* End global wrapper modifiers */
-/* ---------------------- */
-
-
-
-
-
-
-
-
- 
- /**
-/* wrappers for homepage elements*/
-
-
-
-
-
-/*searchbox stuff */
-
-
-/* Selected tab content in homepage searchbox modifiers*/
+/* 1.2 CHAT */
 #onesearch-wrap{}
 
-
-
+/*====================*/
 /*end searchbox stuff */
-
-
-
-/* Featured Box stuff (mostly for homepage 'image carousel')*/
-.carousel-caption{}
-.carousel-caption h4{
-font-size:2em; 
-color:#FFF;
-text-shadow: 0.1em 0.05em 0.04em #333;
-}
-.carousel-caption p{
-font-size:1.8em;
-text-shadow: 0.1em 0.01em 0.01em #333;
-}
-
 
 
 
@@ -125,7 +59,7 @@ text-shadow: 0.1em 0.01em 0.01em #333;
 }
 
 .ask-pic p{
-font-size:1.4rem;
+font-size:1.2rem;
 
 }
 
@@ -135,44 +69,9 @@ font-size:1.4rem;
 #ask-pics-mobile{}
 
 .ask-pic-mobile p{
-font-size:1.1rem;
+font-size:1em;
 }
 
-/* Quicklinks stuff */
-.quicklinks-box{
-}
-
-/* This removes the bullets from the quicklinks list*/
-#quicklinks-box ul{
-list-style-type: none !important;
-padding:0 0 10px 0px; 
-margin:0;
-}
-
-
-
-#quicklinks-box ul li{
-}
-
-#quicklinks-box ul li a{
-font-size:1.1em;
-}
-
-
-
-#quicklinks-box ul li a, ul li a:focus, ul li a:visited{
-border-bottom:1px dotted #B0B0B0;
-}
-
-
-/* Local overrides for box-specific content: QUICK LINKS */
-#s-lg-box-6588302 > .s-lib-box-title{
-	background-color: #002856;
-	color:#FFF;
-	}
-
-/* end quicklinks */
-/* ============== */
 
 
 
@@ -197,18 +96,18 @@ tr. hours-today-row {
 padding-top:1em;
 }
 .hours-col-loc {
- padding-right: 1em; 
+ padding-right: 1em;
  }
-.hours-col-time { 
-padding-left: .9em; 
+.hours-col-time {
+padding-left: .9em;
 }
 
 .hours-col-time {
- border-left: 1px dashed #BBB; 
+ border-left: 1px dashed #BBB;
  }
 
-tr.hours-depart td.hours-col-loc { 
-padding-left: 1em; 
+tr.hours-depart td.hours-col-loc {
+padding-left: 1em;
 }
 
 /* Room booking stuff */
@@ -232,7 +131,7 @@ margin-bottom:1em;
 h1.s-lg-guide-name{
  font-size:1.5rem !important;
  }
- 
+
 h2.s-lib-box-title{
  font-size:1.4rem !important;
  font-family: 'Gill Sans MT','Gill Sans',Verdana,sans-serif;
@@ -242,16 +141,12 @@ h2.s-lib-box-title{
   margin-bottom: .5em !important;
   font-weight:normal !important;
  }
- 
-  
 
- 
- 
+
+
+
+
 .expl-text{
  font-size:1.4rem;
  font-style: italic;
  }
- 
-
-
-
