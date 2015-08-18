@@ -122,6 +122,16 @@ tr.hours-depart td.hours-col-loc {
 
 
 /* 1.6 Searchbox Content CSS */
+/* Regular CSS (that is, not the jquery UI stuff included below)*/
+
+.tabbed-search-input{
+  width:70%;
+  max-width:400px;
+  min-width:200px;
+}
+
+
+
 /* 1.61 jqueryUI stuff
 /* Modified jqueryUI stuff (so as not to intefere with other implementations of jqueryUI)*/
 
@@ -298,36 +308,36 @@ tr.hours-depart td.hours-col-loc {
 
 /* Component containers
 ----------------------------------*/
-.ui-widget {
+#library-searchbox > .ui-widget {
 	font-family: Trebuchet MS,Helvetica,Arial,sans-serif;
 	font-size: 1.1em;
 }
-.ui-widget .ui-widget {
+#library-searchbox > .ui-widget .ui-widget {
 	font-size: 1em;
 }
-.ui-widget input,
-.ui-widget select,
-.ui-widget textarea,
-.ui-widget button {
+#library-searchbox > .ui-widget input,
+#library-searchbox > .ui-widget select,
+#library-searchbox > .ui-widget textarea,
+#library-searchbox > .ui-widget button {
 	font-family: Trebuchet MS,Helvetica,Arial,sans-serif;
 	font-size: 1em;
 }
-.ui-widget-content {
+#library-searchbox > .ui-widget-content {
 	border: 1px solid #aaaaaa;
 	background: #c9c9c9;
 	color: #333333;
 }
-.ui-widget-content a {
-	color: #333333;
+#library-searchbox > .ui-widget-content a {
+	color: #FFF;
 }
-.ui-widget-header {
+#library-searchbox > .ui-widget-header {
 	border: 1px solid #bbbbbb;
 	background: #dddddd;
-	color: #444444;
+	color: #FFFFFF;
 	font-weight: bold;
 }
-.ui-widget-header a {
-	color: #444444;
+#library-searchbox > .ui-widget-header a {
+	color: #FFFFFF;
 }
 
 
