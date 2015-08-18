@@ -35,19 +35,19 @@
 <div id="quicklinks-box" class="container librarybox">
 	<ul>
 		<li>
-			<a  href="/reserves">Course Reserves</a>
+			<a href="/reserves">Course Reserves</a>
 		</li>
 		<li>
-			<a  href="/az.php">Databases</a>
+			<a href="/az.php">Databases</a>
 		</li>
 		<li>
-			<a  href="http://jwu-ri.libanswers.com/">Frequently Asked Questions</a>
+			<a href="http://jwu-ri.libanswers.com/">Frequently Asked Questions</a>
 		</li>
 		<li>
-			<a  href="http://atoz.ebsco.com/home.asp?Id=K11681">Journals</a>
+			<a href="http://atoz.ebsco.com/home.asp?Id=K11681">Journals</a>
 		</li>
 		<li>
-			<a  href="http://library.uri.edu/patroninfo">My Library Account</a>
+			<a href="http://library.uri.edu/patroninfo">My Library Account</a>
 		</li>
 
 		<li>
@@ -57,10 +57,10 @@
 			<a href="/tutorials">Research Tutorials</a>
 		</li>
 		<li>
-			<a  href="http://scholarsarchive.jwu.edu/">ScholarsArchive@JWU</a>
+			<a href="http://scholarsarchive.jwu.edu/">ScholarsArchive@JWU</a>
 		</li>
 		<li>
-			<a  href="http://jwu-ri.libanswers.com/a.php?qid=17269">Staff Directory</a>
+			<a href="http://jwu-ri.libanswers.com/a.php?qid=17269">Staff Directory</a>
 		</li>
 	</ul>
 </div>
@@ -104,7 +104,7 @@
 
 <!-- 1.3 Calendar / Hours -->
 <!-- preferred version, using libcal and javascript-->
-<div id="hours-wrap" class="container librarybox">
+<div id="hours-wrap" <div class="container librarybox">
 	<div class="row">
 		<div class="homepage-box" id="homepage-hours">
 			<div id="api_hours_today_iid1433_lid0"></div>
@@ -113,8 +113,9 @@
 		</div>
 	</div>
 	<div class="row">
-		<a href="/hours">View all hours</a>
+		<a class="col-md-offset-2" href="/hours">View all hours</a>
 	</div>
+</div>
 </div>
 <!--END 1.3 -->
 
@@ -126,38 +127,43 @@
 <!-- 1.4 Room Bookings -->
 <div id="room-book-widget" class="container librarybox">
 	<div class="row">
-		<script src="https://api3.libcal.com/js/roombooking.js?002"></script>
-		<script>
-			jQuery(function() {
-				jQuery("#room11378").LibCalRoomBooking({
-					"iid": 1433,
-					"gid": 11378,
-					"width": 500,
-					"height": 450
+		<div class="col-xs-12">
+			<script src="https://api3.libcal.com/js/roombooking.js?002"></script>
+			<script>
+				jQuery(function() {
+					jQuery("#room11378").LibCalRoomBooking({
+						"iid": 1433,
+						"gid": 11378,
+						"width": 500,
+						"height": 450
+					});
 				});
-			});
-		</script>
-		<!-- Place the following link anywhere in your page. Make sure the id "room11378" matches with the above code: jQuery("#room11378")  //-->
-		<button id="room11378" href="#">Book a Study Room</button>
-		<!-- Below is optional button styling  //-->
-		<style>
-			#room11378 {
-				background: #FFFFFF;
-				border: 1px solid #CCCCCC;
-				border-radius: 4px;
-				color: #333333;
-				font: 14px Arial, Helvetica, Verdana;
-				padding: 8px 20px;
-				cursor: pointer;
-			}
+			</script>
+			<!-- Place the following link anywhere in your page. Make sure the id "room11378" matches with the above code: jQuery("#room11378")  //-->
+			<button id="room11378" href="#">Book a Study Room</button>
+			<!-- Below is optional button styling  //-->
+			<style>
+				#room11378 {
+					background: #FFFFFF;
+					border: 1px solid #CCCCCC;
+					border-radius: 4px;
+					color: #333333;
+					font: 14px Arial, Helvetica, Verdana;
+					padding: 8px 20px;
+					cursor: pointer;
+				}
 
-			#room11378:hover {
-				opacity: 0.9;
-			}
-		</style>
+				#room11378:hover {
+					opacity: 0.9;
+				}
+			</style>
+		</div>
 	</div>
-	<div class="row">View all room openings: </br>
+	<div class="row">
+		<h5>View all room openings:</h5>
+
 		<a href="http://jwu-ri.beta.libcal.com/booking/downcity">Downcity</a> | <a href="http://jwu-ri.beta.libcal.com/booking/harborside">Harborside</a>
+
 	</div>
 </div>
 <!--END 1.4 -->

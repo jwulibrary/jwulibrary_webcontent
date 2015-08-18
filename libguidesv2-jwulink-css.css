@@ -75,21 +75,31 @@
 
 /* Local overrides for box-specific content */
 
+#hours-wrap{
+
+}
+
 table.hours-today {
   border: none;
   padding: .5em;
+  background-color:#E5ECF9;
+  line-height: 1.4em;
 }
 tr. hours-today-row {
   padding-top: 1em;
+
 }
 .hours-col-loc {
   padding-right: 1em;
+  padding-top:.5em;
+  padding-bottom:.5em;
 }
 .hours-col-time {
   padding-left: .9em;
 }
 .hours-col-time {
-  border-left: 1px dashed #BBB;
+  border-left: 2px dashed #BBB;
+    background-color:#FFF;
 }
 tr.hours-depart td.hours-col-loc {
   padding-left: 1em;
@@ -277,9 +287,9 @@ max-width: 700px;
 #library-searchbox > .ui-widget-content .ui-state-focus,
 #library-searchbox > .ui-widget-header .ui-state-focus {
 	border: 1px solid #bbbbbb;
-	background: #f8f8f8;
+	background: #d7bc69;
 	font-weight: bold;
-	color: #ffffff;
+
 }
 #library-searchbox > .ui-state-hover a,
 #library-searchbox > .ui-state-hover a:hover,
