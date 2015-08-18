@@ -12,7 +12,12 @@
 
 /* 0.0 Semi-global stuff*/
 
-.librarybox {}
+/*TEMPORARY FOR DISPLAY IN CONTAINER FILE HTML OUTPUT*/
+.librarybox {margin-top:5em; margin-bottom:5em;}
+/* DELETE THE PADDING/MARGINS ABOVE WHEN IN PRODUCTION*/
+
+
+
 .librarybox>h2 {
   font-size: 1.4rem !important;
   font-family: 'Gill Sans MT', 'Gill Sans', Verdana, sans-serif;
