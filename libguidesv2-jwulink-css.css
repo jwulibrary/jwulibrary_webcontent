@@ -123,6 +123,11 @@ tr.hours-depart td.hours-col-loc {
 
 /* 1.6 Searchbox Content CSS */
 /* Regular CSS (that is, not the jquery UI stuff included below)*/
+#library-searchbox{
+min-width: 350px;
+max-width: 700px;
+}
+
 
 .tabbed-search-input{
   width:70%;
@@ -398,6 +403,24 @@ tr.hours-depart td.hours-col-loc {
 }
 
 /* END 1.6.1 JQUERYUI related Searchbox Content CSS */
+
+
+/* 1.6.2 EBSCOHost Widget CSS */
+
+.summary { background-color:#1D5DA7;color:#FFFFFF;border:solid 1px #1D5DA7; }
+.one { background-color: #FFFFFF;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
+.two { background-color: #F5F5F5;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
+.selected { background-color: #E0EFF7;border:solid 1px #E7E7E7;border-top:solid 1px #FFFFFF; }
+#ebscohostCustomSearchBox #disciplineBlock { width:auto; }
+
+
+
+.ebscohost-title.edspub {
+  color: #1c7020;
+  font-weight: bold;
+}
+/* END 1.6.2 EBSCOHost Widget CSS */
+
 
 /* END 1.6 Searchbox Content CSS */
 
