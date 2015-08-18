@@ -227,6 +227,7 @@ tr.hours-depart td.hours-col-loc {
 	float: left;
 	padding: .5em 1em;
 	text-decoration: none;
+  color: #FFF;
 }
 .ui-tabs .ui-tabs-nav li.ui-tabs-active {
 	margin-bottom: -1px;
@@ -254,14 +255,14 @@ tr.hours-depart td.hours-col-loc {
 	border: 1px solid #cccccc;
 	background: #2954d1;
 	font-weight: normal;
-	color: #ffffff;
+
 }
 
 
 #library-searchbox > .ui-state-default a,
 #library-searchbox > .ui-state-default a:link,
 #library-searchbox > .ui-state-default a:visited {
-		color: #ffffff;
+	color: #ffffff;
 	text-decoration: none;
 }
 #library-searchbox > .ui-state-hover,
@@ -309,7 +310,7 @@ tr.hours-depart td.hours-col-loc {
 /* Component containers
 ----------------------------------*/
 #library-searchbox > .ui-widget {
-	font-family: Trebuchet MS,Helvetica,Arial,sans-serif;
+	font-family: font-family: "Gill Sans MT","Gill Sans",Verdana,sans-serif;
 	font-size: 1.1em;
 }
 #library-searchbox > .ui-widget .ui-widget {
@@ -324,11 +325,11 @@ tr.hours-depart td.hours-col-loc {
 }
 #library-searchbox > .ui-widget-content {
 	border: 1px solid #aaaaaa;
-	background: #c9c9c9;
+
 	color: #333333;
 }
 #library-searchbox > .ui-widget-content a {
-	color: #FFF;
+
 }
 #library-searchbox > .ui-widget-header {
 	border: 1px solid #bbbbbb;
