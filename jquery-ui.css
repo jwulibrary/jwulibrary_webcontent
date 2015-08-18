@@ -1,3 +1,8 @@
+/* Compiled/edited by DM from base jquery UI styles
+first compiled 8-17-15
+edited 8-18-15
+*/
+
 /*! jQuery UI - v1.11.4 - 2015-08-17
 * http://jqueryui.com
 * Includes: core.css, tabs.css
@@ -161,7 +166,7 @@
 }
 .ui-widget-content {
 	border: 1px solid #aaaaaa;
-	background: #c9c9c9 url("images/ui-bg_inset-soft_50_c9c9c9_1x100.png") 50% bottom repeat-x;
+	background: #c9c9c9;
 	color: #333333;
 }
 .ui-widget-content a {
@@ -169,7 +174,7 @@
 }
 .ui-widget-header {
 	border: 1px solid #bbbbbb;
-	background: #dddddd url("images/ui-bg_glass_35_dddddd_1x400.png") 50% 50% repeat-x;
+	background: #dddddd;
 	color: #444444;
 	font-weight: bold;
 }
@@ -183,7 +188,7 @@
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
 	border: 1px solid #cccccc;
-	background: #eeeeee url("images/ui-bg_glass_60_eeeeee_1x400.png") 50% 50% repeat-x;
+	background: #eeeeee;
 	font-weight: bold;
 	color: #3383bb;
 }
@@ -200,7 +205,7 @@
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
 	border: 1px solid #bbbbbb;
-	background: #f8f8f8 url("images/ui-bg_glass_100_f8f8f8_1x400.png") 50% 50% repeat-x;
+	background: #f8f8f8;
 	font-weight: bold;
 	color: #599fcf;
 }
@@ -219,7 +224,7 @@
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
 	border: 1px solid #999999;
-	background: #999999 url("images/ui-bg_inset-hard_75_999999_1x100.png") 50% 50% repeat-x;
+	background: #999999;
 	font-weight: bold;
 	color: #ffffff;
 }
@@ -236,7 +241,7 @@
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
 	border: 1px solid #ffffff;
-	background: #eeeeee url("images/ui-bg_flat_55_eeeeee_40x100.png") 50% 50% repeat-x;
+	background: #eeeeee;
 	color: #444444;
 }
 .ui-state-highlight a,
@@ -248,7 +253,7 @@
 .ui-widget-content .ui-state-error,
 .ui-widget-header .ui-state-error {
 	border: 1px solid #c0402a;
-	background: #c0402a url("images/ui-bg_flat_55_c0402a_40x100.png") 50% 50% repeat-x;
+	background: #c0402a;
 	color: #ffffff;
 }
 .ui-state-error a,
