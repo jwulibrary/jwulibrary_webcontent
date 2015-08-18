@@ -1,4 +1,3 @@
-
 <head>
 	<!--0. Dependencies -->
 	<link rel="stylesheet" type="text/css" href="libguidesv2-jwulink-css.css">
@@ -9,8 +8,9 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="tabulous.js"></script>
-	<script type="text/javascript" src="libguidesv2-js.js"></script>
+
+	<link rel="stylesheet" href="jquery-ui.css">
+	<script type="text/javascript" src="jquery-ui.js"></script>
 
 
 
@@ -19,121 +19,154 @@
 <!-- 1.8 TABBED SEARCHBOX (COMBINED Container and Content) -->
 
 
+<!-- 1.7 TABBED SEARCHBOX (COMBINED -->
 
-  <div id="tabs">
-    <ul>
-      <li><a href="#tabs-1" title="">Tab 1</a></li>
-      <li><a href="#tabs-2" title="">Tab 2</a></li>
-      <li><a href="#tabs-3" title="">Tab 3</a></li>
-      <li><a href="#tabs-4" title="">Tab 4</a></li>
-    </ul>
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">First</a></li>
+		<li><a href="#tabs-2">Second</a></li>
+		<li><a href="#tabs-3">Third</a></li>
+		<li><a href="#tabs-4">Fourth</a></li>
+	</ul>
+	<div id="tabs-1">
+		<div id="onesearch-wrap" class="tab_content">
+			<div class="container">
+				<div class="row">Search almost everything with
+					<strong>OneSearch</strong>
+					<span class="expl_note">
+						<a href="http://jwu-ri.libanswers.com/a.php?qid=936251" target="_blank" title="JWU LibraryFAQ explaining OneSearch">(What is OneSearch?)</a>
+					</span>
+				</div>
+				<form method="get" action="http://encore.uri.edu/iii/encore/plus/Home,$Search.onesearch-form.sdirect" name="form" id="form">
+					<input name="formids" value="target" type="hidden">
+					<input name="lang" value="eng" type="hidden">
+					<input name="suite" value="def" type="hidden">
+					<input name="reservedids" value="lang,suite" type="hidden">
+					<input name="submitmode" value="" type="hidden">
+					<input name="submitname" value="" type="hidden">
+					<div class="row">
+						<input name="target" id="target" class="onesearch-input" type="text">
+						<input class="forms" value=" Search " type="submit">
+					</div>
+				</form>
+			</div>
+		</div>
+</div>
+		<div id="tabs-2">
+			<div class="tab_content">
+				<div class="container">
+					<div class="row">
+						<span class="box_section_heading">Search
+							<strong>EBSCO</strong>
+							Article Databases</span>
+						<span class="expl_note"><a href="http://jwu-ri.libanswers.com/a.php?qid=116578" target="_blank">(What am I searching?)</a></span>
+					</div>
+					<div class="row">
+						<!--EBSCO Search Box-->
+						<form method="post" onsubmit="return ebscoHostSearchGo(this);">
+							<span class="search-container">
+								<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1">
+								<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&amp;site=ehost-live&scope=site&type=1&db=&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=ufh&authtype=ip,uid">
+								<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url">
+								<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+">
+								<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden">
+								<input id="ebscohostsearchtext" name="ebscohostsearchtext" onblur="this.value = this.value || this.defaultValue;" onfocus="this.value = '';" placeholder="Enter keywords here to search only EBSCO databases for articles" type="text">
+								<input type="submit" value="Search">
+							</span>
+						</form>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="lib-advanced-search">
+							<a href="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=ufh&authtype=ip,uid"
+							target="_blank" title="EBSCO advanced search across all JWU EBSCO Databases">Advanced
+						Search &raquo;</a>
+						</div>
+					</div>
+					<div class="row">
+						<h5>More Article and Database Links</h5><a class="small_link" href="/az.php" target="_blank">Databases</a> | <a class="small_link" href="http://atoz.ebsco.com/home.asp?Id=K11681" target="_blank">Journal Titles</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tabs-3">
+			<div class="tab_content">
+				<div class="container">
+					<div class="row">
+						<span class="box_section_heading">Search the
+							<strong>HELIN Catalog
+							</strong> for books, DVDs, textbooks, and more</span>
+						<!--<span class="expl_note">
+						<a href="http://jwu-ri.libanswers.com/a.php?qid=116578" target="_blank">(What am I searching?)</a>
+					</span>-->
+					</div>
+					<div class="row">
+						<form action="http://encore.uri.edu/iii/encore/Home,$Search.form.sdirect" id="form" method="get" name="form" target="_blank">
+							<input name="formids" type="hidden" value="target">
+							<input name="lang" type="hidden" value="eng">
+							<input name="suite" type="hidden" value="def">
+							<input name="reservedids" type="hidden" value="lang,suite">
+							<input name="submitmode" type="hidden">
+							<input name="submitname" type="hidden">
+							<input id="target" name="target" onblur="this.value = this.value || this.defaultValue;" onfocus="this.value = '';" placeholder="Search for books, journals, videos &amp; more" type="text">
+							<input type="submit" value="Search">
+						</form>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="lib-advanced-search">
+							<a href="http://encore.uri.edu/iii/encore/home?lang=eng&amp;advancedSearch=true" target="_blank">Advanced Search &raquo;</a>
+						</div>
+					</div>
+					<div class="row">
+						<h5>Course Reserves:</h5><a class="small_link" href="http://library.uri.edu/search/p" target="_blank">By
+					Instructor</a> | <a class="small_link" href="http://library.uri.edu/search/r" target="_blank">by Course</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tabs-4">
+			<div class="tab_content">
+				<div class="container">
+					<div class="row">
+						<span class="box_section_heading">Research Guides
+							<strong>Tutorials and guides created by librarians</strong> for classes and subjects</span>
+						<!--<span class="expl_note">
+						<a href="http://jwu-ri.libanswers.com/a.php?qid=20723" target="_blank">(What are LibGuides?)</a>
+						</span>
+					-->
+					</div>
+					<div class="row">
+						<form action="http://jwu-ri.libguides.com/search.php?" id="lg_search_form" method="get" name="lg_search_form" target="_blank">
+							<input name="gid" type="hidden" value="0">
+							<input id="lg_search_box" name="search" placeholder="Find research guides for courses and subjects" type="text">
+							<input id="lg_search_btn" type="submit" value="Search">
+						</form>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<a class="small_link" href="http://jwu-ri.libguides.com/browse.php?o=l" target="_blank">View all Guides</a> | <a class="small_link" href="http://jwu-ri.libguides.com/browse.php?o=s" target="_blank">Guides by Subject</a>
+					</div>
+					<div class="row">
+						<a class="small_link" href="http://jwu-ri.libguides.com/mla_manual" target="_blank">MLA
+					Manual Guide</a> | <a class="small_link" href="http://jwu-ri.libguides.com/apa_manual" target="_blank">APA
+					Manual Guide</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div id="tabs_container">
-      <div id="tabs-1">
-        <div id="onesearch-wrap" class="tab_content">
-          <div class="container">
-            <div class="row">Search almost everything with
-              <strong>OneSearch</strong>
-              <span class="expl_note">
-                <a href="http://jwu-ri.libanswers.com/a.php?qid=936251" target="_blank" title="JWU LibraryFAQ explaining OneSearch">(What is OneSearch?)</a>
-              </span>
-            </div>
-            <form method="get" action="http://encore.uri.edu/iii/encore/plus/Home,$Search.onesearch-form.sdirect" name="form" id="form">
-              <input name="formids" value="target" type="hidden">
-              <input name="lang" value="eng" type="hidden">
-              <input name="suite" value="def" type="hidden">
-              <input name="reservedids" value="lang,suite" type="hidden">
-              <input name="submitmode" value="" type="hidden">
-              <input name="submitname" value="" type="hidden">
-              <div class="row">
-                <input name="target" id="target" class="onesearch-input" type="text">
-                <input class="forms" value=" Search " type="submit">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
 
-      <div id="tabs-2">
-        <!--TAB 2: Articles & Databases CONTENT -->
+	<script>
+		$("#tabs").tabs();
+	</script>
 
-          <div class="container">
-            <div class="row">
-              <span class="box_section_heading">Search
-                <strong>EBSCO</strong>
-                Article Databases</span>
-              <span class="expl_note"><a href="http://jwu-ri.libanswers.com/a.php?qid=116578" target="_blank">(What am I searching?)</a></span>
-            </div>
-            <div class="row">
-              <!--EBSCO Search Box-->
-              <form method="post" onsubmit="return ebscoHostSearchGo(this);">
-                <span class="search-container">
-                  <input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1">
-                  <input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&amp;site=ehost-live&scope=site&type=1&db=&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=ufh&authtype=ip,uid">
-                  <input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url">
-                  <input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+">
-                  <input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden">
-                  <input id="ebscohostsearchtext" name="ebscohostsearchtext" onblur="this.value = this.value || this.defaultValue;" onfocus="this.value = '';" placeholder="Enter keywords here to search only EBSCO databases for articles" type="text">
-                  <input type="submit" value="Search">
-                </span>
-              </form>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="lib-advanced-search">
-                <a href="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=ufh&authtype=ip,uid"
-                target="_blank" title="EBSCO advanced search across all JWU EBSCO Databases">Advanced
-        				Search &raquo;</a>
-              </div>
-            </div>
-            <div class="row">
-              <h5>More Article and Database Links</h5><a class="small_link" href="/az.php" target="_blank">Databases</a> | <a class="small_link" href="http://atoz.ebsco.com/home.asp?Id=K11681" target="_blank">Journal Titles</a>
-            </div>
-          </div>
-
-        <!-- -->
-      </div>
+	<!--End 1.7 SEARCHBOX Container-->
 
 
-      <div id="tabs-4">
-        <!--TAB 4: Research Guides CONTENT -->
 
-          <div class="container">
-            <div class="row">
-              <span class="box_section_heading">Research Guides
-                <strong>Tutorials and guides created by librarians</strong> for classes and subjects</span>
-              <!--<span class="expl_note">
-        				<a href="http://jwu-ri.libanswers.com/a.php?qid=20723" target="_blank">(What are LibGuides?)</a>
-        				</span>
-        			-->
-            </div>
-            <div class="row">
-              <form action="http://jwu-ri.libguides.com/search.php?" id="lg_search_form" method="get" name="lg_search_form" target="_blank">
-                <input name="gid" type="hidden" value="0">
-                <input id="lg_search_box" name="search" placeholder="Find research guides for courses and subjects" type="text">
-                <input id="lg_search_btn" type="submit" value="Search">
-              </form>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <a class="small_link" href="http://jwu-ri.libguides.com/browse.php?o=l" target="_blank">View all Guides</a> | <a class="small_link" href="http://jwu-ri.libguides.com/browse.php?o=s" target="_blank">Guides by Subject</a>
-            </div>
-            <div class="row">
-              <a class="small_link" href="http://jwu-ri.libguides.com/mla_manual" target="_blank">MLA
-        			Manual Guide</a> | <a class="small_link" href="http://jwu-ri.libguides.com/apa_manual" target="_blank">APA
-        			Manual Guide</a>
-            </div>
-          </div>
-
-      </div>
-
-    </div>
-    <!--End tabs container-->
-
-  </div>
-  <!--End tabs-->
-
-
-  <!--End 1.8 TABBED Container AND CONTENT-->
+	<!--End 1.8 TABBED Container AND CONTENT-->
