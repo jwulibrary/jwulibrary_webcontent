@@ -12,10 +12,6 @@
 
 /* 0.0 Semi-global stuff*/
 
-/*TEMPORARY FOR DISPLAY IN CONTAINER FILE HTML OUTPUT*/
-.librarybox {margin-top:5em; margin-bottom:5em;}
-/* DELETE THE PADDING/MARGINS ABOVE WHEN IN PRODUCTION*/
-
 
 
 .librarybox>h2 {
@@ -40,98 +36,10 @@
 /* 1.0 Content box specific CSS code*/
 
 
-/* 1.1 Quicklinks CSS */
-
-.quicklinks-box {}
-#quicklinks-box ul {
-  list-style-type: none !important;
-  padding: 0 0 10px 0px;
-  margin: 0;
-}
-#quicklinks-box ul li {}
-#quicklinks-box ul li a {
-  font-size: 1.1em;
-}
-#quicklinks-box ul li a, ul li a:focus, ul li a:visited {
-  border-bottom: 1px dotted #B0B0B0;
-}
-
 /* end 1.1 quicklinks CSS*/
 
 
 /* ============== */
-
-
-/* 1.2 CHAT */
-
-.librarybox {}
-
-/* end 1.2 CHAT CSS*/
-
-
-/* ============== */
-
-
-/* 1.3 Calendar / Hours HOURS */
-
-
-/* Homepage hours stuff (from libcal...modified springshare styles)*/
-
-
-/* Local overrides for box-specific content */
-
-#hours-wrap{
-
-}
-
-table.hours-today {
-  border: none;
-  padding: .5em;
-  background-color:#E5ECF9;
-  line-height: 1.4em;
-}
-tr.hours-today-row {
-  padding-top: 1em;
-
-}
-.hours-col-loc {
-  padding-right: 1em;
-  padding-top:.5em;
-  padding-bottom:.5em;
-}
-.hours-col-time {
-  padding-left: .9em;
-}
-.hours-col-time {
-  border-left: 2px dashed #BBB;
-    background-color:#FFF;
-}
-tr.hours-depart td.hours-col-loc {
-  padding-left: 1em;
-}
-
-/* 1.4 Room booking widget stuff */
-
-#room-book-widget {}
-#room-book-widget button {
-  margin-bottom: 1em;
-}
-
-/* 1.5 Ask Us Box Modifications*/
-
-#ask-us-wrap-desktop {}
-#ask-pics-desktop {}
-.ask-pic img {}
-.ask-pic p {
-  font-size: 1.2em;
-}
-#ask-us-wrap-mobile {}
-#ask-pics-mobile {}
-.ask-pic-mobile p {
-  font-size: 1em;
-}
-
-/* END 1.5 (Ask Us Box Modifications)*/
 
 
 
@@ -139,8 +47,8 @@ tr.hours-depart td.hours-col-loc {
 /* 1.6 Searchbox Content CSS */
 /* Regular CSS (that is, not the jquery UI stuff included below)*/
 #library-searchbox{
-min-width: 350px;
-max-width: 700px;
+min-width: 300px;
+max-width: 550px;
 }
 
 
@@ -218,22 +126,22 @@ max-width: 700px;
 
 
 /* Overlays */
-.ui-widget-overlay {
+#library-searchbox > .ui-widget-overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
-.ui-tabs {
+#library-searchbox > .ui-tabs {
 	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
 	padding: .2em;
 }
-.ui-tabs .ui-tabs-nav {
+#library-searchbox > .ui-tabs .ui-tabs-nav {
 	margin: 0;
 	padding: .2em .2em 0;
 }
-.ui-tabs .ui-tabs-nav li {
+#library-searchbox > .ui-tabs .ui-tabs-nav li {
 	list-style: none;
 	float: left;
 	position: relative;
@@ -243,25 +151,25 @@ max-width: 700px;
 	padding: 0;
 	white-space: nowrap;
 }
-.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+#library-searchbox > .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
 	float: left;
 	padding: .5em 1em;
 	text-decoration: none;
   color: #FFF;
 }
-.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+#library-searchbox > .ui-tabs .ui-tabs-nav li.ui-tabs-active {
 	margin-bottom: -1px;
 	padding-bottom: 1px;
 }
-.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+#library-searchbox > .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
 .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
 .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
 	cursor: text;
 }
-.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+#library-searchbox > .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
 	cursor: pointer;
 }
-.ui-tabs .ui-tabs-panel {
+#library-searchbox > .ui-tabs .ui-tabs-panel {
 	display: block;
 	border-width: 0;
 	padding: 1em 1.4em;
