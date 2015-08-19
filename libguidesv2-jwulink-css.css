@@ -5,7 +5,7 @@
 
 /**
  * Created August 2015
- * Edited:  8-18-2015
+ * Edited:  8-19-2015
  * Author: David M. (JWU-Prov Library)
  */
 
@@ -13,7 +13,7 @@
 /* 0.0 Semi-global stuff*/
 
 /*TEMPORARY FOR DISPLAY IN CONTAINER FILE HTML OUTPUT*/
-.librarybox {margin-top:5em; margin-bottom:5em;}
+/*.librarybox {margin-top:5em; margin-bottom:5em;}/*
 /* DELETE THE PADDING/MARGINS ABOVE WHEN IN PRODUCTION*/
 
 
@@ -136,11 +136,14 @@ tr.hours-depart td.hours-col-loc {
 
 
 
+
+/* 1.6 Searchbox Content CSS */
+/* Regular CSS (that is, not the jquery UI stuff included below)*/
 /* 1.6 Searchbox Content CSS */
 /* Regular CSS (that is, not the jquery UI stuff included below)*/
 #library-searchbox{
-min-width: 350px;
-max-width: 700px;
+min-width: 300px;
+max-width: 680px;
 }
 
 
@@ -218,22 +221,22 @@ max-width: 700px;
 
 
 /* Overlays */
-.ui-widget-overlay {
+#library-searchbox > .ui-widget-overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
-.ui-tabs {
+#library-searchbox > .ui-tabs {
 	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
 	padding: .2em;
 }
-.ui-tabs .ui-tabs-nav {
+#library-searchbox > .ui-tabs .ui-tabs-nav {
 	margin: 0;
 	padding: .2em .2em 0;
 }
-.ui-tabs .ui-tabs-nav li {
+#library-searchbox > .ui-tabs .ui-tabs-nav li {
 	list-style: none;
 	float: left;
 	position: relative;
@@ -243,25 +246,25 @@ max-width: 700px;
 	padding: 0;
 	white-space: nowrap;
 }
-.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+#library-searchbox > .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
 	float: left;
 	padding: .5em 1em;
 	text-decoration: none;
   color: #FFF;
 }
-.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+#library-searchbox > .ui-tabs .ui-tabs-nav li.ui-tabs-active {
 	margin-bottom: -1px;
 	padding-bottom: 1px;
 }
-.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+#library-searchbox > .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
 .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
 .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
 	cursor: text;
 }
-.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+#library-searchbox > .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
 	cursor: pointer;
 }
-.ui-tabs .ui-tabs-panel {
+#library-searchbox > .ui-tabs .ui-tabs-panel {
 	display: block;
 	border-width: 0;
 	padding: 1em 1.4em;
@@ -416,6 +419,8 @@ max-width: 700px;
 .ui-state-disabled .ui-icon {
 	filter:Alpha(Opacity=35); /* support: IE8 - See #6059 */
 }
+
+/* END 1.6.1 JQUERYUI related Searchbox Content CSS */
 
 /* END 1.6.1 JQUERYUI related Searchbox Content CSS */
 
