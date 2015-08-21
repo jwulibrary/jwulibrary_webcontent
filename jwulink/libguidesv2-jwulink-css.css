@@ -1,0 +1,411 @@
+/*------------------------------------*\
+    JWU LibGuides Master CSS File
+\*------------------------------------*/
+
+
+/**
+ * Created August 2015
+ * Edited:  8-19-2015
+ * Author: David M. (JWU-Prov Library)
+ */
+
+
+/* 0.0 Semi-global stuff*/
+
+
+/*TEMPORARY FOR DISPLAY IN CONTAINER FILE HTML OUTPUT*/
+
+
+/*.librarybox {margin-top:5em; margin-bottom:5em;}/*
+/* DELETE THE PADDING/MARGINS ABOVE WHEN IN PRODUCTION*/
+
+.librarybox>h2 {
+  font-size: 1.4rem !important;
+  font-family: 'Gill Sans MT', 'Gill Sans', Verdana, sans-serif;
+  letter-spacing: 3px;
+  padding: 3px 5px 5px 12px;
+  text-transform: uppercase;
+  margin-bottom: .5em !important;
+  font-weight: normal !important;
+}
+.librarybox>h3 {}
+.librarybox>p {}
+.expl-text {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+/* End 0.0 "semi-global stuff" */
+
+
+/* 1.0 Content box specific CSS code*/
+
+
+/* 1.1 Quicklinks CSS */
+
+.quicklinks-box {}
+#quicklinks-box ul {
+  list-style-type: none !important;
+  padding: 0 0 10px 0px;
+  margin: 0;
+}
+#quicklinks-box ul li {}
+#quicklinks-box ul li a {
+  font-size: 1.1em;
+}
+#quicklinks-box ul li a, ul li a:focus, ul li a:visited {
+  border-bottom: 1px dotted #B0B0B0;
+}
+
+/* end 1.1 quicklinks CSS*/
+
+
+/* ============== */
+
+
+/* 1.2 CHAT */
+
+.librarybox {}
+
+/* end 1.2 CHAT CSS*/
+
+
+/* ============== */
+
+
+/* 1.3 Calendar / Hours HOURS */
+
+
+/* Homepage hours stuff (from libcal...modified springshare styles)*/
+
+
+/* Local overrides for box-specific content */
+
+#hours-wrap {}
+table.hours-today {
+  border: none;
+  padding: .5em;
+  background-color: #E5ECF9;
+  line-height: 1.4em;
+}
+tr.hours-today-row {
+  padding-top: 1em;
+}
+.hours-col-loc {
+  padding-right: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+.hours-col-time {
+  padding-left: .9em;
+}
+.hours-col-time {
+  border-left: 2px dashed #BBB;
+  background-color: #FFF;
+}
+tr.hours-depart td.hours-col-loc {
+  padding-left: 1em;
+}
+
+/* 1.4 Room booking widget stuff */
+
+#room-book-widget {}
+#room-book-widget button {
+  margin-bottom: 1em;
+}
+
+/* 1.5 "Get Library Help*/
+
+#ask-us-wrap-desktop {}
+#ask-pics-desktop {}
+.ask-pic img {}
+.ask-pic p {
+  font-size: 1.2em;
+}
+#ask-us-wrap-mobile {}
+#ask-pics-mobile {}
+.ask-pic-mobile p {
+  font-size: 1em;
+}
+
+/* END 1.5 (Ask Us Box Modifications)*/
+
+
+/* 1.6 Searchbox Content CSS */
+
+
+/* Regular CSS (that is, not the jquery UI stuff included below)*/
+
+#library-searchbox {
+  min-width: 300px;
+  max-width: 600px;
+}
+.tabbed-search-input {
+  width: 70%;
+  max-width: 350px;
+  min-width: 200px;
+}
+
+/* 1.61 jqueryUI stuff
+/* Modified jqueryUI stuff (so as not to intefere with other implementations of jqueryUI)*/
+
+
+/* Misc visuals
+----------------------------------*/
+
+
+/* Layout helpers
+----------------------------------*/
+
+.ui-helper-hidden {
+  display: none;
+}
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+.ui-helper-clearfix:before, .ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+  clear: both;
+}
+.ui-helper-clearfix {
+  min-height: 0;
+  /* support: IE7 */
+}
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(Opacity=0);
+  /* support: IE8 */
+}
+.ui-front {
+  z-index: 100;
+}
+
+/* Interaction Cues
+----------------------------------*/
+
+.ui-state-disabled {
+  cursor: default !important;
+}
+
+/* Overlays */
+
+#library-searchbox > .ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#library-searchbox > .ui-tabs {
+  position: relative;
+  /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+  padding: .2em;
+}
+#library-searchbox > .ui-tabs .ui-tabs-nav {
+  margin: 0;
+  padding: .2em .2em 0;
+}
+#library-searchbox > .ui-tabs .ui-tabs-nav li {
+  list-style: none;
+  float: left;
+  position: relative;
+  top: 0;
+  margin: 1px .2em 0 0;
+  border-bottom-width: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+#library-searchbox > .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  float: left;
+  padding: .5em 1em;
+  text-decoration: none;
+  color: #FFF;
+}
+#library-searchbox > .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: -1px;
+  padding-bottom: 1px;
+}
+#library-searchbox > .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+  cursor: text;
+}
+#library-searchbox > .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+  cursor: pointer;
+}
+#library-searchbox > .ui-tabs .ui-tabs-panel {
+  display: block;
+  border-width: 0;
+  padding: 1em 1.4em;
+  background: none;
+}
+#library-searchbox > .ui-state-default, #library-searchbox > .ui-widget-content .ui-state-default, #library-searchbox > .ui-widget-header .ui-state-default {
+  border: 1px solid #cccccc;
+  background: #2954d1;
+  font-weight: normal;
+}
+#library-searchbox > .ui-state-default a, #library-searchbox > .ui-state-default a:link, #library-searchbox > .ui-state-default a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+#library-searchbox > .ui-state-hover, #library-searchbox > .ui-widget-content .ui-state-hover, #library-searchbox > .ui-widget-header .ui-state-hover, #library-searchbox > .ui-state-focus, #library-searchbox > .ui-widget-content .ui-state-focus, #library-searchbox > .ui-widget-header .ui-state-focus {
+  border: 1px solid #bbbbbb;
+  background: #d7bc69;
+  font-weight: bold;
+}
+#library-searchbox > .ui-state-hover a, #library-searchbox > .ui-state-hover a:hover, #library-searchbox > .ui-state-hover a:link, #library-searchbox > .ui-state-hover a:visited, #library-searchbox > .ui-state-focus a, #library-searchbox > .ui-state-focus a:hover, #library-searchbox > .ui-state-focus a:link, #library-searchbox > .ui-state-focus a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+#library-searchbox > .ui-state-active, #library-searchbox > .ui-widget-content .ui-state-active, #library-searchbox > .ui-widget-header .ui-state-active {
+  border: 1px solid #999999;
+  background: rgb(239, 180, 18);
+  font-weight: bold;
+  color: #ffffff;
+}
+#library-searchbox > .ui-state-active a, #library-searchbox > .ui-state-active a:link, #library-searchbox > .ui-state-active a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Component containers
+----------------------------------*/
+
+#library-searchbox > .ui-widget {
+  font-family: font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
+  font-size: 1em;
+}
+#library-searchbox > .ui-widget .ui-widget {
+  font-size: 1em;
+}
+#library-searchbox > .ui-widget input, #library-searchbox > .ui-widget select, #library-searchbox > .ui-widget textarea, #library-searchbox > .ui-widget button {
+  font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+#library-searchbox > .ui-widget-content {
+  border: 1px solid #aaaaaa;
+  color: #333333;
+}
+#library-searchbox > .ui-widget-content a {}
+#library-searchbox > .ui-widget-header {
+  border: 1px solid #bbbbbb;
+  background: #dddddd;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+#library-searchbox > .ui-widget-header a {
+  color: #FFFFFF;
+}
+
+/* Interaction Cues
+----------------------------------*/
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #ffffff;
+  background: #eeeeee;
+  color: #444444;
+}
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a {
+  color: #444444;
+}
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error {
+  border: 1px solid #c0402a;
+  background: #c0402a;
+  color: #ffffff;
+}
+.ui-state-error a, .ui-widget-content .ui-state-error a, .ui-widget-header .ui-state-error a {
+  color: #ffffff;
+}
+.ui-state-error-text, .ui-widget-content .ui-state-error-text, .ui-widget-header .ui-state-error-text {
+  color: #ffffff;
+}
+.ui-priority-primary, .ui-widget-content .ui-priority-primary, .ui-widget-header .ui-priority-primary {
+  font-weight: bold;
+}
+.ui-priority-secondary, .ui-widget-content .ui-priority-secondary, .ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  /* support: IE8 */
+  font-weight: normal;
+}
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  filter: Alpha(Opacity=35);
+  /* support: IE8 */
+  background-image: none;
+}
+.ui-state-disabled .ui-icon {
+  filter: Alpha(Opacity=35);
+  /* support: IE8 - See #6059 */
+}
+
+/* END 1.6.1 JQUERYUI related Searchbox Content CSS */
+
+
+/* END 1.6.1 JQUERYUI related Searchbox Content CSS */
+
+
+/* 1.6.2 EBSCOHost Widget CSS */
+
+.summary {
+  background-color: #1D5DA7;
+  color: #FFFFFF;
+  border: solid 1px #1D5DA7;
+}
+.one {
+  background-color: #FFFFFF;
+  border: solid 1px #E7E7E7;
+  border-top: solid 1px #FFFFFF;
+}
+.two {
+  background-color: #F5F5F5;
+  border: solid 1px #E7E7E7;
+  border-top: solid 1px #FFFFFF;
+}
+.selected {
+  background-color: #E0EFF7;
+  border: solid 1px #E7E7E7;
+  border-top: solid 1px #FFFFFF;
+}
+#ebscohostCustomSearchBox #disciplineBlock {
+  width: auto;
+}
+.ebscohost-title.edspub {
+  color: #1c7020;
+  font-weight: bold;
+}
+
+/* END 1.6.2 EBSCOHost Widget CSS */
+
+
+/* END 1.6 Searchbox Content CSS */
+
+
+/* 1.7 Searchbox CONTAINER CSS */
+
+
+/* END 1.7 Searchbox CONTAINER CSS */
