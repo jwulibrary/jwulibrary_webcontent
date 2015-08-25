@@ -4,41 +4,9 @@
 
 /**
  * Created: 7-2-2015
- * Edited:  7-27-2015
+ * Edited:  8-25-2015
  * Author: David M. (JWU-Prov Library)
- * [structure of document based on http://cssguidelin.es/ by Harry Roberts]
- */
 
-
-/**
- * CONTENTS
- *
- * SETTINGS
- * Global...............Globally-available variables and config.
- *
- * TOOLS
- * Mixins...............Useful mixins.
- *
- * GENERIC
- * Normalize.css........A level playing field.
- * Box-sizing...........Better default `box-sizing`.
- *
- * BASE
- * Headings.............H1–H6 styles.
- *
- * OBJECTS
- * Wrappers.............Wrapping and constraining elements.
- *
- * COMPONENTS
- * Page-head............The main page header.
- * Page-foot............The main page footer.
- * Buttons..............Button elements.
- *
- * TRUMPS
- * Text.................Text helpers.
- *
- * JWU-STYLES
- * Unfiled................. Not-yet-placed (in this CSS file) CSS from JWU sites
  */
 
 
@@ -56,16 +24,16 @@
  * Edited:  7-2-2015
  *
  */
- 
+
  body,h2,h3,h4 {
     color:#333;
 }
- 
+
 h2{}
- 
+
 h3{}
 
-h4{} 
+h4{}
 
 h5{font-family: Verdana, Geneva, sans-serif;
 font-size: 10px;
@@ -73,20 +41,34 @@ font-style: normal;
 font-variant: normal;
 font-weight: bold;
 }
-/*------------------------------------*\
-  # Tools (Mixins)
-\*------------------------------------*/
 
-/**
- * Useful mixins.
- * Edited:  7-2-2015
- *
- */
 
- 
- 
- 
-  
+/* 0.0 Semi-global stuff*/
+
+
+
+.librarybox>h2 {
+  font-size: 1.4rem !important;
+  font-family: 'Gill Sans MT', 'Gill Sans', Verdana, sans-serif;
+  letter-spacing: 3px;
+  padding: 3px 5px 5px 12px;
+  text-transform: uppercase;
+  margin-bottom: .5em !important;
+  font-weight: normal !important;
+}
+.librarybox>h3 {}
+.librarybox>p {}
+.expl-text {
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+/* End 0.0 "semi-global stuff" */
+
+
+
+
+
 /*------------------------------------*\
   #  GENERIC (Normalize.css and Box-sizing )
 \*------------------------------------*/
@@ -96,11 +78,11 @@ font-weight: bold;
  * Edited:  7-2-2015
  *
  */
- 
- 
- 
- 
- 
+
+
+
+
+
 /*------------------------------------*\
   #   BASE (Headings)
 \*------------------------------------*/
@@ -110,7 +92,7 @@ font-weight: bold;
  * Edited:  7-6-2015
  *
  */
- 
+
 
 
 
@@ -134,8 +116,8 @@ p {
     font-size:.875rem;
 }
 /* END: originally from it.jwu.edu (pulled 7-2-2015) */
- 
- 
+
+
 /*------------------------------------*\
   #   OBJECTS (Wrappers)
 \*------------------------------------*/
@@ -145,7 +127,7 @@ p {
 
  *
  */
- 
+
 
 
 /* Global to LibGuides box types */
@@ -167,7 +149,7 @@ p {
 
 
 
- 
+
  /**
 /* wrappers for homepage elements*/
 
@@ -178,7 +160,7 @@ p {
 /*searchbox stuff */
 
 .s-lib-box-content .ui-tabs-nav li>a{
-padding: 1em 2em; 
+padding: 1em 2em;
 font-size: 1.1em;
 }
 
@@ -210,7 +192,7 @@ border: none !important;
 /* Featured Box stuff (mostly for homepage 'image carousel')*/
 .carousel-caption{}
 .carousel-caption h4{
-font-size:2em; 
+font-size:2em;
 color:#FFF;
 text-shadow: 0.1em 0.05em 0.04em #333;
 }
@@ -252,7 +234,7 @@ font-size:1.1rem;
 /* This removes the bullets from the quicklinks list*/
 #quicklinks-box ul{
 list-style-type: none !important;
-padding:0 0 10px 0px; 
+padding:0 0 10px 0px;
 margin:0;
 }
 
@@ -295,7 +277,7 @@ border-bottom:1px dotted #B0B0B0;
 #s-lg-box-7084005 > .s-lib-box-title{
 
 	}
-	
+
 
 
 
@@ -311,18 +293,18 @@ tr. hours-today-row {
 padding-top:1em;
 }
 .hours-col-loc {
- padding-right: 1em; 
+ padding-right: 1em;
  }
-.hours-col-time { 
-padding-left: .9em; 
+.hours-col-time {
+padding-left: .9em;
 }
 
 .hours-col-time {
- border-left: 1px dashed #BBB; 
+ border-left: 1px dashed #BBB;
  }
 
-tr.hours-depart td.hours-col-loc { 
-padding-left: 1em; 
+tr.hours-depart td.hours-col-loc {
+padding-left: 1em;
 }
 
 /* Room booking stuff */
@@ -338,8 +320,8 @@ margin-bottom:1em;
 /**
 /* end wrappers for homepage elements */
 
- 
- 
+
+
 /*------------------------------------*\
   #   COMPONENTS (Page-head, Page-foot, Buttons)
 \*------------------------------------*/
@@ -351,18 +333,18 @@ margin-bottom:1em;
  *
  */
 
- 
+
  /*-----------------------------*\
 /*-- ## Page-head (COMPONENTS) --*\
 
 
 
 /* For Page-head components to work in LibGuides,
- * make sure that they are in the master CSS file that is referenced 
+ * make sure that they are in the master CSS file that is referenced
  *(for now, this one)
  * They can also be enclosed inline with <style> in the "Custom JS/CSS Code" Section,
  * located at:
- * https://jwu-ri.libapps.com/libguides/lookfeel.php?action=1 
+ * https://jwu-ri.libapps.com/libguides/lookfeel.php?action=1
 */
 
 #jwulib-header {
@@ -378,11 +360,11 @@ margin-bottom:1em;
 /*-- ## Page-footer (COMPONENTS) --*\
 
 /* For Page-Foot/footer components to work in LibGuides,
- * make sure that they are in the master CSS file that is referenced 
+ * make sure that they are in the master CSS file that is referenced
  *(for now, this one)
  */
- 
- 
+
+
 
 #jwulib-footer {
     border-top:5px solid #F90;
@@ -437,7 +419,7 @@ margin-bottom:1em;
 h1.s-lg-guide-name{
  font-size:1.5rem !important;
  }
- 
+
 h2.s-lib-box-title{
  font-size:1.4rem !important;
  font-family: 'Gill Sans MT','Gill Sans',Verdana,sans-serif;
@@ -447,28 +429,24 @@ h2.s-lib-box-title{
   margin-bottom: .5em !important;
   font-weight:normal !important;
  }
- 
-  
 
- 
- 
+
+
+
+
 .expl-text{
  font-size:1.4rem;
  font-style: italic;
  }
- 
- 
+
+
 
 /*------------------------------------*\
   #   JWU-Styles (Unfiled)
 \*------------------------------------*/
 
 /**
- * CSS 
+ * CSS
  * Not-yet-placed (in this CSS file) CSS from JWU sites
  * See "jwuEdu-css-snippets.css" for source material
  */
-
- 
-
-
