@@ -118,6 +118,24 @@ p {
 /* END: originally from it.jwu.edu (pulled 7-2-2015) */
 
 
+
+/* ---------------------- */
+/* End global wrapper modifiers */
+/* ---------------------- */
+
+
+
+
+
+
+
+
+
+ /**
+/* wrappers for homepage elements*/
+
+
+
 /*------------------------------------*\
   #   OBJECTS (Wrappers)
 \*------------------------------------*/
@@ -137,70 +155,6 @@ p {
 
 .s-lg-box-special{
 }
-
-/* ---------------------- */
-/* End global wrapper modifiers */
-/* ---------------------- */
-
-
-
-
-
-
-
-
-
- /**
-/* wrappers for homepage elements*/
-
-
-
-
-
-/*searchbox stuff */
-
-.s-lib-box-content .ui-tabs-nav li>a{
-padding: 1em 2em;
-font-size: 1.1em;
-}
-
-
-.tab_content{
-
-}
-
-
-
-
-/*JWU Prov Homepage specific searchbox tweaks...using the unique ID: s-lg-box-6621175 */
-#s-lg-box-6621175-container{
-margin:0em 0em 1em 0em;
-}
-#s-lg-box-6621175{
-border: none !important;
-}
-
-/* Selected tab content in homepage searchbox modifiers*/
-#onesearch-wrap{}
-
-
-
-/*end searchbox stuff */
-
-
-
-/* Featured Box stuff (mostly for homepage 'image carousel')*/
-.carousel-caption{}
-.carousel-caption h4{
-font-size:2em;
-color:#FFF;
-text-shadow: 0.1em 0.05em 0.04em #333;
-}
-.carousel-caption p{
-font-size:1.8em;
-text-shadow: 0.1em 0.01em 0.01em #333;
-}
-
 
 
 
