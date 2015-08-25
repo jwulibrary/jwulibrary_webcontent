@@ -13,11 +13,6 @@
 /* 0.0 Semi-global stuff*/
 
 
-/*TEMPORARY FOR DISPLAY IN CONTAINER FILE HTML OUTPUT*/
-
-
-/*.librarybox {margin-top:5em; margin-bottom:5em;}/*
-/* DELETE THE PADDING/MARGINS ABOVE WHEN IN PRODUCTION*/
 
 .librarybox>h2 {
   font-size: 1.4rem !important;
