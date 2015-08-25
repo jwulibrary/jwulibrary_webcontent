@@ -24,6 +24,10 @@
  * Edited:  7-2-2015
  *
  */
+ body:{
+ color: #333;
+font-family: Verdana, Arial, sans-serif;
+}
 
  body,h2,h3,h4 {
     color:#333;
