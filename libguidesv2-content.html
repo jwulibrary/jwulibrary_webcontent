@@ -13,7 +13,6 @@
 
 
 
-
 <!-- ======================================= -->
 <!-- START (homepage boxes)-->
 <!-- ======================================= -->
@@ -26,9 +25,12 @@
 <!-- Place this script as near to the end of your BODY as possible. -->
 <script type="text/javascript">
 	(function() {
-		var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
+		var x = document.createElement("script");
+		x.type = "text/javascript";
+		x.async = true;
 		x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "us.libraryh3lp.com/js/libraryh3lp.js?8970";
-		var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
+		var y = document.getElementsByTagName("script")[0];
+		y.parentNode.insertBefore(x, y);
 	})();
 </script>
 
@@ -84,10 +86,12 @@
 
 <!-- B2. Calendar / Hours -->
 <!-- preferred version, using libcal and javascript-->
-<div id="hours-wrap" class="container-fluid">
+<div id="hours-wrap" class="container-fluid librarybox">
 	<div class="row">
 		<div class="homepage-box" id="homepage-hours">
-			<div id="api_hours_today_iid1433_lid0"></div><script src="https://api3.libcal.com/api_hours_today.php?iid=1433&lid=0&format=js&context=object"> </script>
+			<div id="api_hours_today_iid1433_lid0"></div>
+			<script src="https://api3.libcal.com/api_hours_today.php?iid=1433&lid=0&format=js&context=object">
+			</script>
 		</div>
 	</div>
 	<div class="row">
@@ -106,13 +110,18 @@
 
 
 <!-- B.2.5: Homepage Room Bookings -->
-<div id="room-book-widget">
+<div id="room-book-widget" class="librarybox">
 	<div class="container-fluid">
 		<div class="row">
 			<script src="//api3.libcal.com/js/roombooking.js?002"></script>
 			<script>
-				jQuery(function(){
-					jQuery("#room11378").LibCalRoomBooking({ "iid": 1433, "gid": 11378,  "width": 500, "height": 450 });
+				jQuery(function() {
+					jQuery("#room11378").LibCalRoomBooking({
+						"iid": 1433,
+						"gid": 11378,
+						"width": 500,
+						"height": 450
+					});
 				});
 			</script>
 			<!-- Place the following link anywhere in your page. Make sure the id "room11378" matches with the above code: jQuery("#room11378")  //-->
@@ -120,16 +129,17 @@
 			<!-- Below is optional button styling  //-->
 			<style>
 				#room11378 {
-				background: #FFFFFF;
-				border: 1px solid #CCCCCC;
-				border-radius: 4px;
-				color: #333333;
-				font: 14px Arial, Helvetica, Verdana;
-				padding: 8px 20px;
-				cursor: pointer;
+					background: #FFFFFF;
+					border: 1px solid #CCCCCC;
+					border-radius: 4px;
+					color: #333333;
+					font: 14px Arial, Helvetica, Verdana;
+					padding: 8px 20px;
+					cursor: pointer;
 				}
+
 				#room11378:hover {
-				opacity: 0.9;
+					opacity: 0.9;
 				}
 			</style>
 		</div>
@@ -151,39 +161,34 @@
 <!-- B3. Ask Us -->
 <!--Libguides houses this in a wrapper: col-md-6 -->
 <!--This is the large version, which points to the FAQS -->
-<div id="ask-us-wrap-desktop" class="hidden-xs">
-
+<div id="ask-us-wrap-desktop" class="hidden-xs librarybox">
 	<div id="ask-pics-desktop container-fluid">
-
-
-		<div class="ask-pic col-xs-12 col-sm-3 col-md-3">
+		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
 			<div class="row">
-                <a href="http://jwu-ri.libanswers.com/a.php?qid=2887" target=
-                "_blank" title="Send a Text Message to the Library"><img class="img-responsive center-block" src=
-				"http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917416/text.png"></a>
+				<a href="http://jwu-ri.libanswers.com/a.php?qid=2887" target="_blank" title="Send a Text Message to the Library">
+					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917416/text.png">
+				</a>
 			</div>
 			<div class="row">
 				<p class="text-center">Text</p>
 			</div>
-
 		</div>
-
-		<div class="ask-pic col-xs-12 col-sm-3 col-md-3">
+		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
 			<div class="row">
-                <a href="http://www.jwu-ri.libanswers.com/q.php" target=
-                "_blank" title="E-Mail the Library"><img class="img-responsive center-block" src=
-				"http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917412/email.png"></a>
+				<a href="http://www.jwu-ri.libanswers.com/q.php" target="_blank" title="E-Mail the Library">
+					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917412/email.png">
+				</a>
 			</div>
 			<div class="row">
-				<p class="text-center">	E-mail</p>
+				<p class="text-center"> E-mail</p>
 			</div>
 		</div>
 
-		<div class="ask-pic col-xs-12 col-sm-3 col-md-3">
+		<div class="ask-pic col-sm-6 col-md-3">
 			<div class="row">
-                <a href="http://jwu-ri.libanswers.com/a.php?qid=8122" target=
-                "_blank" title="Call the Library"><img class="img-responsive center-block" src=
-				"http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917415/phone.png"></a>
+				<a href="http://jwu-ri.libanswers.com/a.php?qid=8122" target="_blank" title="Call the Library">
+					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917415/phone.png">
+				</a>
 			</div>
 			<div class="row">
 				<p class="text-center">Call</p>
@@ -193,55 +198,61 @@
 </div>
 
 
-<div id="ask-us-wrap-mobile" class="visible-xs">
-
+<div id="ask-us-wrap-mobile" class="visible-xs librarybox">
 	<div id="ask-pics-mobile">
-
-
-		<div class="container ask-pic-mobile">
+		<div class="col-xs-12 ask-pic-mobile">
 			<div class="row">
-                <a href="sms://4014840275"><img class="img-responsive center-block" src=
-				"http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917416/text.png"></a>
+				<a href="sms://4014840275">
+					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917416/text.png">
+				</a>
 			</div>
 			<div class="row">
-				<p class="text-center"><a href="sms://4014840275"><em>Text:</em> (401) 484-0275) </a></p>
+				<p class="text-center">
+					<a href="sms://4014840275">
+						<em>Text:</em> (401) 484-0275) </a>
+				</p>
 			</div>
 		</div>
-
-
-
-		<div class="container ask-pic-mobile">
+		<div class="col-xs-12 ask-pic-mobile">
 			<div class="row">
-                <a href="tel:14015981121" target=
-                "_blank" title="Call the Library"><img class="img-responsive center-block" src=
-				"http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917415/phone.png"></a>
+				<a href="tel:14015981121" target="_blank" title="Call the Library">
+					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917415/phone.png">
+				</a>
 			</div>
 			<div class="row">
-				<p class="text-center">	<a href="tel:14015981121"><em>Call</em> (Downcity): 401-598-1121</a> </p>
-			</div>
-
-		</div>
-		<div class="container ask-pic-mobile ">
-			<div class="row">
-                <a href="tel:14015981466" target=
-                "_blank" title="Call the Library"><img class="img-responsive center-block" src=
-				"http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917415/phone.png"></a>
-			</div>
-			<div class="row">
-				<p class="text-center"><a href="tel:14015981466"> <em>Call</em> (Harborside): 401-598-1466 </a></p>
+				<p class="text-center">
+					<a href="tel:14015981121">
+						<em>Call</em> (Downcity): 401-598-1121</a>
+				</p>
 			</div>
 
 		</div>
-		<div class="container ask-pic-mobile">
+		<div class="col-xs-12 ask-pic-mobile">
+			<div class="row">
+				<a href="tel:14015981466" target="_blank" title="Call the Library">
+					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917415/phone.png">
+				</a>
+			</div>
+			<div class="row">
+				<p class="text-center">
+					<a href="tel:14015981466">
+						<em>Call</em> (Harborside): 401-598-1466 </a>
+				</p>
+			</div>
+
+		</div>
+		<div class="col-xs-12 ask-pic-mobile">
 			<div class="row">
 
-                <a href="http://www.jwu-ri.libanswers.com/q.php" target=
-                "_blank" title="E-Mail the Library"><img class="img-responsive center-block" src=
-				"http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917412/email.png"></a>
+				<a href="http://www.jwu-ri.libanswers.com/q.php" target="_blank" title="E-Mail the Library">
+					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917412/email.png">
+				</a>
 
 			</div>
 			<div class="row">
-				<p class="text-center"><em>Email</em></p>
+				<p class="text-center">
+					<em>Email</em>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -288,7 +299,12 @@
 							<input class="forms" value=" Search " type="submit">
 						</div>
 					</form>
-					<a href="http://encore.uri.edu/iii/encore/home?lang=eng&amp;advancedSearch=true" target="_blank">Advanced Search</a> </div>
+					<div class="row">
+						<a href="http://encore.uri.edu/iii/encore/home?lang=eng&amp;advancedSearch=true" target="_blank">Advanced Search &raquo;</a>
+						</br>
+						<a href="https://library.uri.edu/patroninfo" target="_blank">My Library Account</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="tabs-2">
@@ -375,7 +391,7 @@
 			<div class="tab_content">
 				<div class="container-fluid">
 					<div class="row">
-						<p>Tutorials and guides created by librarians for topics, classes and subjects</p>
+						<span class="box_section_heading">Tutorials and guides created by librarians for topics, classes and subjects</span>
 						<!--<span class="expl_note">
 							<a href="http://jwu-ri.libanswers.com/a.php?qid=20723" target="_blank">(What are LibGuides?)</a>
 							</span>
@@ -428,10 +444,6 @@
 
 
 
-
-
-
-
 <!-- ======================================= -->
 <!-- ======================================= -->
 <!-- START PART C: (GLOBAL GUIDE-SPECIFIC CONTENT)-->
@@ -450,18 +462,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Look and Feel Stuff -->
 <!-- https://jwu-ri.libapps.com/libguides/lookfeel.php -->
 
@@ -469,16 +469,16 @@
 <div class="container" id="jwulib-header">
 
 	<div class="row">
-		<div class="col-xs-6 col-md-4 col-md-4">
-			<a href="http://www.jwu.edu" target="_blank"><img alt=
-                "JWU Official Seal" src="http://www.jwu.edu/images/logo1.png"
-			title="JWU Logo" class="img-responsive"></a>
+		<div class="col-xs-6 col-md-4">
+			<a href="http://www.jwu.edu" target="_blank">
+				<img alt="JWU Official Seal" src="http://www.jwu.edu/images/logo1.png" title="JWU Logo" class="img-responsive">
+			</a>
 		</div>
 
 		<div class="col-xs-6 col-md-4 col-md-offset-3">
-			<a href="/homepage"><img class=
-                "jwu-lib-logo img-responsive" src=
-			"https://s3.amazonaws.com/libapps/accounts/1358/images/jwulib-2014-thin-headerIMG-232x73.png"></a>
+			<a href="/homepage">
+				<img class="jwu-lib-logo img-responsive" src="https://s3.amazonaws.com/libapps/accounts/1358/images/jwulib-2014-thin-headerIMG-232x73.png">
+			</a>
 		</div>
 	</div>
 </div>

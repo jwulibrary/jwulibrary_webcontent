@@ -42,6 +42,10 @@ font-variant: normal;
 font-weight: bold;
 }
 
+p{
+  font-family: Verdana, Arial, sans-serif;
+
+}
 
 /* 0.0 Semi-global stuff*/
 
