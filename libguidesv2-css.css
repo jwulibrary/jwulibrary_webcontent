@@ -27,9 +27,18 @@ body: {
   font-family: Verdana, Arial, sans-serif !important;
   font-size: 14px !important;
 }
-h2 {}
-h3 {}
-h4 {}
+
+h1 {
+  font-size: 1.875rem;
+  color: #666;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+
 h5 {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 10px;
@@ -64,42 +73,21 @@ p {
 .s-lg-link-desc{
   font-size:1.2em;
 }
+
+.s-lg-link-list a{
+  font-size:1.2em;
+}
+/* Global to LibGuides box types */
+
+
+/* ---------------------- */
+
+.s-lib-box {}
+.s-lg-box-special {}
+
 /* End 0.0 "semi-global stuff" */
 
 
-/*------------------------------------*\
-  #  GENERIC (Normalize.css and Box-sizing )
-\*------------------------------------*/
-
-
-/**
- * A level playing field.
- * Edited:  7-2-2015
- *
- */
-
-
-/*------------------------------------*\
-  #   BASE (Headings)
-\*------------------------------------*/
-
-
-/**
- * H1–H6 styles.
- * Edited:  7-6-2015
- *
- */
-
-h1 {
-  font-size: 1.875rem;
-  color: #666;
-}
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
 
 /* END: originally from it.jwu.edu (pulled 7-2-2015) */
 
@@ -128,14 +116,7 @@ h3 {
  *
  */
 
-
-/* Global to LibGuides box types */
-
-
-/* ---------------------- */
-
-.s-lib-box {}
-.s-lg-box-special {}
+/* ASK PICS STUFF*/
 #ask-us-wrap-desktop {}
 #ask-pics-desktop {}
 .ask-pic img {
