@@ -173,6 +173,7 @@ p {
 #ask-pics-desktop{}
 
 .ask-pic img{
+  width:100px;
 }
 
 .ask-pic p{
