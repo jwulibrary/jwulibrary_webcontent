@@ -62,7 +62,7 @@ p {
 
 
 .s-lg-link-desc{
-  font-size:1.1em;
+  font-size:1.2em;
 }
 /* End 0.0 "semi-global stuff" */
 
@@ -147,7 +147,7 @@ h3 {
 #ask-us-wrap-mobile {}
 #ask-pics-mobile {}
 .ask-pic-mobile p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 /* Quicklinks stuff */
@@ -163,7 +163,7 @@ h3 {
 }
 #quicklinks-box ul li {}
 #quicklinks-box ul li a {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 #quicklinks-box ul li a, ul li a:focus, ul li a:visited {
   border-bottom: 1px dotted #B0B0B0;
