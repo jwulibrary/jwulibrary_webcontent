@@ -5,7 +5,7 @@
 
 /**
  * Created: 7-2-2015
- * Edited:  8-25-2015
+ * Edited:  8-27-2015
  * Author: David M. (JWU-Prov Library)
 
  */
@@ -77,10 +77,15 @@ p {
 .s-lg-link-list a{
   font-size:1.2em;
 }
-/* Global to LibGuides box types */
 
+.s-lg-az-result-title a {
+  font-size: 1.1em !important;
+}
 
-/* ---------------------- */
+.s-lg-az-result-description{
+  font-size:1em !important;
+}
+
 
 .s-lib-box {}
 .s-lg-box-special {}
