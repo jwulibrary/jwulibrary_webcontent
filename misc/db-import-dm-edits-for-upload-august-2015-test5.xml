@@ -1,0 +1,1323 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Created>2006-09-16T00:00:00Z</Created>
+  <LastSaved>2015-08-28T14:07:31Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <RemovePersonalInformation/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10605</WindowHeight>
+  <WindowWidth>13665</WindowWidth>
+  <WindowTopX>10335</WindowTopX>
+  <WindowTopY>105</WindowTopY>
+  <ActiveSheet>5</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s16" ss:Name="Hyperlink">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#0000FF"
+    ss:Underline="Single"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s18">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s21">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s22" ss:Parent="s16">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:Indent="1"
+    ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s23">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s24">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Tahoma" x:Family="Swiss" ss:Size="8" ss:Color="#222222"/>
+  </Style>
+  <Style ss:ID="s25" ss:Parent="s16">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s26">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="14"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s27">
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="14"
+    ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="a">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="374" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="46.5" ss:DefaultRowHeight="15">
+   <Column ss:Width="122.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="307.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="165"/>
+   <Column ss:Width="174.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="206.25"/>
+   <Column ss:Width="131.25"/>
+   <Column ss:Width="178.5"/>
+   <Column ss:Width="181.5"/>
+   <Row>
+    <Cell><Data ss:Type="String">VENDOR NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE URL</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ENABLE PROXY?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">MORE INFORMATION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;NEW&quot; BADGE ON AZ PAGE?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;TRIAL&quot; BADGE ON AZ PAGE?</Data></Cell>
+   </Row>
+   <Row ss:Height="12" ss:StyleID="s18">
+    <Cell><Data ss:Type="String">optional, 45 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 255 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 1000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+   </Row>
+   <Row ss:Height="72">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">ABC-CLIO EBook Collection&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-legacy.abc-clio.com.helin.uri.edu/</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">E-books in wide-ranging areas including the Arts, Business, Crime &amp; Justice, Education, Family Studies/Issues, Food, Health/Medicine, Law, Library &amp; Information Science, Literature, Multicultural Studies, Popular Culture, Psychology, and Science.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="204">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">Acad. of Nutrition &amp; Dietetics: Electronic Nutrition Care Process Terminology (eNCPT) Reference Manual </Data></Cell>
+    <Cell><Data ss:Type="String">https://0-ncpt.webauthor.com.helin.uri.edu/auth.cfm?actionxm=SSO&amp;sso_account_key=0D182635-4531-423B-957D-5937E709CFB3&amp;sso_account_id=95</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">For Food &amp; Nutrition students and professionals. Click on the &quot;LAUNCH PUBLICATION&quot; link at the eNCPT site to access the content. eNCPT features updated terminology used in the nutrition care process: Assessment, Diagnosis, Intervention, Monitoring, &amp; Evaluation. Please use the link in the green bar at the top of the page to &quot;LOG OUT&quot; at the end of your session. Only a limited number of people can access the eNCPT at the same time, so please check back later!</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="75">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">Acad. of Nutrition &amp; Dietetics: Evidence Analysis Library (EAL)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.andevidencelibrary.com.helin.uri.edu/sso.cfm?key=2e4bfdb8-35c8-423b-868a-89c33fbdd285&amp;u=JWU-JWUUSER</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s17"><Data ss:Type="String">Research on nutrition, nutrients, and foods used to promote health throughout the human life cycle (infants to seniors), including evidence-based nutrition guidelines to treat diseases and conditions. Use together with the Nutrition Care Manual (NCM). PLEASE &quot;LOG OUT&quot; at end of your session. Only a limited number of people can access the EAL at the same time. Please check back later!&#10;</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">Acad. of Nutrition &amp; Dietetics: Nutrition Care Manual (NCM)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.nutritioncaremanual.org.helin.uri.edu/sso.cfm?c=johnsonw</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">Evidence-based nutrition care information for diseases &amp; conditions, complete with meal plans, electronic calculators, and client/patient education handouts. See also the &quot;Resources&quot; tab and sidebar for cultural/ethnic food practices. Use together with the Evidence Analysis Library (EAL). PLEASE &quot;LOG OUT&quot; at end of your session. Only a limited number of people can access the NCM at the same time. Please check back later!</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="96">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">Acad. of Nutrition &amp; Dietetics: Pediatric Nutrition Care Manual (PNCM)&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.nutritioncaremanual.org.helin.uri.edu/sso.cfm?c=johnsonw2</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">Children/patient information handouts (with Spanish translations), meal plan handouts, and nutrition care for diseases &amp; conditions including behavioral health. Also includes online calculators. PLEASE &quot;LOG OUT&quot; at end of your session. Only a limited number of people can access the PNCM at the same time. Please check back later!</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">Acad. of Nutrition &amp; Dietetics: Sports Nutrition Care Manual (SNCM)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.nutritioncaremanual.org.helin.uri.edu/sso.cfm?c=johnsonw3</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">Nutrition information is provided by Board Certified Specialists in Sports Dietetics (CSSDs). Includes patient information and meal plan handouts, nutrition care for diseases &amp; conditions, and online calculators to estimate BMI, energy expenditure, sweat rate, lean body mass, and healthy body weight. PLEASE &quot;LOG OUT&quot; at end of your session. Only a limited number of people can access the SNCM at the same time. Please check back later!</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="96">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=a9h"><Data
+      ss:Type="String">Academic Search Complete (EBSCO)&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=a9h</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">Many full-text articles from over 8,600 journal titles covering topics in such areas as Animal &amp; Veterinary Science, Area Studies (country info.), Arts, Biology, Chemistry, Education, Engineering, Ethnic &amp; Multicultural Studies, Food Science &amp; Technology, Humanities, Law, Literature, Psychology, Religion, Science, and more. Includes some full-text back to 1887.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="276">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-accessmedicine.mhmedical.com.helin.uri.edu/"><Data
+      ss:Type="String">AccessMedicine (McGraw-Hill)&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-accessmedicine.mhmedical.com.helin.uri.edu/</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">For the healthcare student or professional, key medical resources at the point-of-care. FIRST-TIME USERS: You must create a &quot;My Access&quot; personal account from either on or off campus in order to access JWU subscriber-only content under Self Assessment and Cases on the AccessMedicine website. From ON campus, click on Johnson &amp; Wales University in the upper right-hand drop-down box. Use the links to complete the entire online form using a valid email address from any internet provider and password of your choice. From OFF campus, first log in with your name &amp; JWU-HELIN Library barcode to be e-verified, then create your account as above. Next time, you can use your My Access login from on &amp; off campus on any device by GOING DIRECTLY to http://accessmedicine.mhmedical.com&#160;or through JWU Library's Databases by Name page with your personal account login. NOTE: Re-activate your &quot;My Access&quot; account every 90 days to maintain your access. See &quot;i&quot; for more information.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="60">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.humanitiesebook.org.helin.uri.edu/"><Data
+      ss:Type="String">ACLS Humanities E-Book (Amer. Council of Learned Societies)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.humanitiesebook.org.helin.uri.edu/</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">E-books covering many fields including Area Studies, Art, Comparative World History, Folklore and Literature, Law, Medicine, Performing Arts, Philosophy, Religion, Science, Sociology, Technology, and Women's Studies.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="60">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-dl.acm.org.helin.uri.edu/"><Data
+      ss:Type="String">ACM Digital Library (Assoc. for Computing Machinery)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-dl.acm.org.helin.uri.edu/</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">E-books covering many fields including Area Studies, Art, Comparative World History, Folklore and Literature, Law, Medicine, Performing Arts, Philosophy, Religion, Science, Sociology, Technology, and Women's Studies.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s16"/>
+    <Cell ss:Index="5" ss:StyleID="s20"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s16"/>
+    <Cell ss:Index="5" ss:StyleID="s20"/>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s16"/>
+    <Cell ss:Index="5" ss:StyleID="s20"/>
+   </Row>
+   <Row ss:Height="168">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.redbooks.com.helin.uri.edu/dotCMS/validateLogin?dispatch=siteLogin"><Data
+      ss:Type="String">Advertising Redbooks.com&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.redbooks.com.helin.uri.edu/dotCMS/validateLogin?dispatch=siteLogin</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">Which ad agencies do companies use, and how much do they spend annually on advertising? This directory lists public and private U.S. and international companies who spend at least $200,000 annually on advertising, plus profiles of ad agencies and brand names. NOTE: If you see a warning message about this &quot;website's security certificate,&quot; you MUST click on the link “Continue to this website (not recommended),&quot; before being passed on to Redbooks. PLEASE &quot;SIGN OFF&quot; at end of your session. Only a limited number of people can access Redbooks at the same time.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="60">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=31h"><Data
+      ss:Type="String">America: History and Life with Full Text (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=31h</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s20"><Data ss:Type="String">Covers the history and culture of the United States and Canada, from prehistory to the present. Indexing of selective journals from 1955 to present with full-text coverage of many journals and books.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-library.artstor.org.helin.uri.edu/library/#1"><Data
+      ss:Type="String">ARTstor Digital Library&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-library.artstor.org.helin.uri.edu/library/#1</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s21"><Data ss:Type="String">ENTER HERE to access 1.8 million images from the world's leading museums, libraries, artists, and photo archives. FIRST-TIME USERS: Set up your own FREE account to use the Tools and other features from both on &amp; off campus. From ON campus, REGISTER with a valid email address from any internet provider and password of your choice. From OFF campus, first log in with your name &amp; JWU-HELIN Library barcode to be e-verified, then create your account as above. Next time, you can use your personal account login to access ARTstor from on &amp; off campus on any device by GOING DIRECTLY to www.artstor.org or through JWU Library's Databases by Name page with your pass-worded login. NOTE: Re-activate your personal account once every 120 days to maintain your access to ARTstor. And, disable your pop-up blockers! See &quot;i&quot; for more information.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Index="23">
+    <Cell ss:Index="6" ss:StyleID="s25"/>
+   </Row>
+   <Row ss:Index="28" ss:AutoFitHeight="0" ss:Height="86.25"/>
+   <Row ss:Index="106" ss:AutoFitHeight="0" ss:Height="157.5"/>
+   <Row ss:Index="113" ss:AutoFitHeight="0" ss:Height="183.75"/>
+   <Row ss:Index="116" ss:AutoFitHeight="0" ss:Height="173.25"/>
+   <Row ss:Index="217" ss:AutoFitHeight="0" ss:Height="126.75"/>
+   <Row ss:Index="281" ss:AutoFitHeight="0" ss:Height="120"/>
+   <Row ss:Index="352" ss:AutoFitHeight="0" ss:Height="129.75"/>
+   <Row ss:Index="374" ss:AutoFitHeight="0" ss:Height="84"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>70</Zoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1:R2</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R374C2:R1048576C2,R1C2</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>255</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R374C3:R1048576C4,R1C3:R1C4</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>1000</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C5,R374C5:R1048576C5</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>500</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C6,R374C6:R1048576C6</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>5000</Value>
+  </DataValidation>
+ </Worksheet>
+ <Worksheet ss:Name="b">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="10" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="149.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="189"/>
+   <Row>
+    <Cell><Data ss:Type="String">VENDOR NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE URL</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ENABLE PROXY?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">MORE INFORMATION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;NEW&quot; BADGE ON AZ PAGE?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;TRIAL&quot; BADGE ON AZ PAGE?</Data></Cell>
+   </Row>
+   <Row ss:Height="12" ss:StyleID="s18">
+    <Cell><Data ss:Type="String">optional, 45 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 255 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 1000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+   </Row>
+   <Row ss:Height="409.5">
+    <Cell ss:Index="2" ss:StyleID="s22"><Data ss:Type="String">Berg Fashion Library (Oxford Univ. Press)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.bergfashionlibrary.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s23"><Data ss:Type="String">International in scope, thousands of images plus key fashion reference sources including Encyclopedia of World Dress and Fashion, A-Z of Fashion, Dictionary of Fashion History, &amp; nearly 60 fashion e-books (from the &quot;Subscribers&quot; column), and selective journal articles. &quot;Explore by Time &amp; Place&quot; and also browse by Dress, People &amp; Organizations, Period, Textiles &amp; Materials, The Fashion Industry, and Themes.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="360">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=BIC1"><Data
+      ss:Type="String">Biography In Context (Gale)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=BIC1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Biographies of people worldwide in many fields throughout history: artists, authors, business leaders, chefs, government leaders &amp; politicians, historical figures, popular entertainers, scientists, sports figures, and people currently in the news.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="409.5">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.proquest.com.helin.uri.edu/biologicalscience?accountid=1363"><Data
+      ss:Type="String">Biological Science Collection (ProQuest)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.proquest.com.helin.uri.edu/biologicalscience?accountid=1363</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Selected full text from over 6,000 journal titles, conference proceedings, technical reports, books and patents. Subject areas include research in Animal Behavior, Bacteriology, Biotechnology, Ecology, Human Genome, Immunology, Micro &amp; Molecular Biology, Safety Science, Toxicology, Veterinary Science &amp; Zoology.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="324">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.proquest.com.helin.uri.edu/bostonglobe/advanced?accountid=1363"><Data
+      ss:Type="String">Boston Globe (ProQuest)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.proquest.com.helin.uri.edu/bostonglobe/advanced?accountid=1363</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">A New England regional newspaper. Selective, full-text daily coverage from 1980 - Present of news articles and opinion editorials written or edited by the Globe's staff. This is text-based only; images are not available.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="409.5">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.alexanderstreet.com.helin.uri.edu/busv"><Data
+      ss:Type="String">Business Education in Video (Alex. St. Press)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.alexanderstreet.com.helin.uri.edu/busv</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Streaming video clips ranging from 2-10 min. feature executive interviews, corporate training, and case studies for both small to large business firms globally. Coverage includes Cross-Cultural Communication, Ethics, Negotiations, Operations &amp; Logistics, Technology, and more. You can also use the Advanced Search link to focus on a specialized area of interest such as Accounting, Consumer Behavior, Corporate Communication, Corporate Governance, Economics, Entrepreneurship, Finance, Human Resource Management, International Business, Marketing Strategy, Strategic Management, and Supply Chain Management.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="372">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=BIG"><Data
+      ss:Type="String">Business Insights: Global (Gale)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=BIG</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Comprehensive business content including case studies, company profiles &amp; industry research reports, country economic reports, market research reports, SWOT analyses, and video interviews with business executives. (formerly, Business &amp; Company Resource Center)</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="409.5">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-go.galegroup.com.helin.uri.edu/ps/i.do?id=0PHU&amp;v=2.1&amp;u=prov43712&amp;it=aboutSeries&amp;p=GVRL&amp;sw=w"><Data
+      ss:Type="String">Business Plans Handbooks (Gale)&#160;&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-go.galegroup.com.helin.uri.edu/ps/i.do?id=0PHU&amp;v=2.1&amp;u=prov43712&amp;it=aboutSeries&amp;p=GVRL&amp;sw=w</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Are you planning to start a small business? This is a collection of actual business plans submitted by entrepreneurs in North America (company names and addresses have been changed). Each volume also includes a business plan template, a listing of organizations, agencies &amp; consultants, and glossary. NOTE: You can keyword search across ALL of JWU's purchased volumes to date to find a plan for a specific type of business, for example, by entering the word &quot;restaurant.&quot; Plans are from businesses in the manufacturing, retail and service industries and include both traditional businesses and new types of start-ups such as a Cloud Computing Business or an iPhone App Developer. Click on the &quot;i&quot; icon for more examples of the types of businesses represented.</Data></Cell>
+    <Cell ss:StyleID="s24"><Data ss:Type="String">A brief sampling of the businesses represented include Accounting Service, Banquet Facility, Bed &amp; Breakfast, Biscotti Bakery, Cloud Computing Business, Counseling Practice, Day Spa, Digital Presentations, E-Commerce Website Producer, Early Childhood Program, Event Planning Company, Financial Services Company, Fitness Center, Food &amp; Beverage Vending Company, Gourmet Foods Company, Grant Writer, Horse Riding School, Import Boutique, Information Technology Personnel Agency, iPhone App Developer, Internet Loyalty Program, Internet Travel Agency, Marketing Communications Firm, Men's Clothing Retailer, Microbrewery, Music Festival Promotion, Nightclub, Novelty Shop, Organic Food Store, Outdoor Adventure Travel Company, Party Supply Store, Resale Clothing Store, Restaurant Franchise, Ski Resort, Specialty Food Manufacturer, Sports Bar and Grille, Sports Tournament Organizer, Stable, Steak House, Student Services Consulting Firm, Vegetarian Fast Food Restaurant, Venture Capital &amp; Financing Companies, Video Production &amp; Distribution Company, Virtual Shopping, and Wine Merchant &amp; Storage Facilty.</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="409.5">
+    <Cell ss:Index="2" ss:StyleID="s22"><Data ss:Type="String">Business Source Complete (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=bsi&amp;defaultdb=bth</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Company profiles, SWOT analyses (Strengths, Weaknesses, Opportunities, Threats) where available, industry profiles, stocks &amp; investment info., management-related articles, Harvard Business Review case studies and streaming videos from the Harvard Business School Faculty Seminar Series.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1:R2</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C6</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>5000</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C5</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>500</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C3:R1C4</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>1000</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C2</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>255</Value>
+  </DataValidation>
+ </Worksheet>
+ <Worksheet ss:Name="d">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="4" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row>
+    <Cell><Data ss:Type="String">VENDOR NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE URL</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ENABLE PROXY?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">MORE INFORMATION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;NEW&quot; BADGE ON AZ PAGE?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;TRIAL&quot; BADGE ON AZ PAGE?</Data></Cell>
+   </Row>
+   <Row ss:Height="12" ss:StyleID="s18">
+    <Cell><Data ss:Type="String">optional, 45 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 255 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 1000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+   </Row>
+   <Row ss:Height="108">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://www.doaj.org/"><Data
+      ss:Type="String">Directory of Open Access Journals (DOAJ)</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.doaj.org/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">All full-text scholarly and scientific journals covering wide-ranging subjects.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="409.5">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.proquest.com.helin.uri.edu/advanced?accountid=1363&amp;selectids=1006882,10000115,1006522"><Data
+      ss:Type="String">Dissertations &amp; Theses Database: Humanities &amp; Social Sciences Coll. (ProQuest)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.proquest.com.helin.uri.edu/advanced?accountid=1363&amp;selectids=1006882,10000115,1006522</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Over 1 million full-text dissertations published internationally since 1997 can be downloaded in PDF format including 24-page previews of dissertations and theses, where available. You can also check off &quot;Full text documents only.&quot; Note: TO LIMIT YOUR SEARCH TO JWU's DISSERTATIONS: In the &quot;School name/code&quot; search box, either enter Johnson &amp; Wales or select it from the &quot;Look up schools&quot; drop-down menu. Dissertations published from 1999 forward by Johnson &amp; Wales University graduates of the doctoral Ed. D. program in Educational Leadership, are available online and can be downloaded by authorized JWU users. NOTE: If you are prompted to “Order a copy” because a JWU dissertation is unavailable electronically, please complete and submit an Inter-Library Loan Dissertation Request Form online at website https://library.uri.edu/illd~S29</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <TopRowVisible>9</TopRowVisible>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C2</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>255</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C3:R1C4</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>1000</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C5</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>500</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C6</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>5000</Value>
+  </DataValidation>
+ </Worksheet>
+ <Worksheet ss:Name="c">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="12" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="309"/>
+   <Row>
+    <Cell><Data ss:Type="String">VENDOR NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE URL</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ENABLE PROXY?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">MORE INFORMATION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;NEW&quot; BADGE ON AZ PAGE?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;TRIAL&quot; BADGE ON AZ PAGE?</Data></Cell>
+   </Row>
+   <Row ss:Height="12" ss:StyleID="s18">
+    <Cell><Data ss:Type="String">optional, 45 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 255 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 1000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+   </Row>
+   <Row ss:Height="393.75">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-chronicle.com.helin.uri.edu/"><Data
+      ss:Type="String">Chronicle of Higher Education&#160;&#160;</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-chronicle.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Updated daily the number #1 source for the latest news, information, and job postings in the field of education. See reports about the academic workplace, admissions, diversity, information technology, online learning, and other topics. Also includes data from the annual Almanac such as state-by-state profiles of education. IMPORTANT: In order to access JWU's subscriber-only content (open the padlocked articles) and use its special features, you MUST LOG IN whether you are ON or OFF campus. FIRST-TIME USERS: Create a FREE account by accessing the Chronicle through JWU Library's Databases by Name page at http://pvd.library.jwu.edu/friendly.php?s=databasesbyname. Click &quot;Log In&quot; and enter your JWU email address; @wildcats.jwu.edu or @jwu.edu and a password of your choice to be &quot;e-verified.&quot; Then, next time you can either GO DIRECTLY to the http://chronicle.com website or through the Library's page to the Chronicle with your pass-worded login.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="281.25">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="https://www.clinicalkey.com/#!/"><Data
+      ss:Type="String">ClinicalKey (Elsevier): ON-Campus Access</Data></Cell>
+    <Cell><Data ss:Type="String">https://www.clinicalkey.com/#!/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">ON-Campus access: For the healthcare student or professional. Access medical and surgical content including First Consult, top journals, best-selling medical and surgical books, drug monographs, patient education, guidelines, plus medical videos &amp; images. NOTE: Full text is available for most content EXCEPT MEDLINE (which is abstract-only). Request articles &amp; e-book chapters cited in MEDLINE through JWU Library's Interlibrary Loan Service (where permitted by publisher); see online forms at http://library.uri.edu/screens/illforms.html. For OFF-campus access use this URL: https://0-www.clinicalkey.com.helin.uri.edu and enter your name and JWU Library barcode when prompted.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="18.75">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="https://0-www.clinicalkey.com.helin.uri.edu/#!/"><Data
+      ss:Type="String">ClinicalKey (Elsevier): OFF-Campus Access</Data></Cell>
+    <Cell><Data ss:Type="String">https://0-www.clinicalkey.com.helin.uri.edu/#!/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s27"><Data ss:Type="String">OFF-Campus access: For the healthcare student or professional. Access medical and surgical content including First Consult, top journals, best-selling medical and surgical books, drug monographs, patient education, guidelines, plus medical videos &amp; images. NOTE: Full text is available for most content EXCEPT MEDLINE (which is abstract-only). Request articles &amp; e-book chapters cited in MEDLINE through JWU Library's Interlibrary Loan Service (where permitted by publisher); see online forms at http://library.uri.edu/screens/illforms.html. For ON-campus access use this URL: https://www.clinicalkey.com&#160;</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="150">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ufh"><Data
+      ss:Type="String">Communication &amp; Mass Media Complete (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ufh</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">In-depth coverage of communication and mass media in the fields of Arts &amp; Entertainment, Business, Communication, Education, General Interest, Health &amp; Medicine, History, Literture &amp; Writing, Politics &amp; Government, Religion &amp; Philosophy, Science, Social Sciences &amp; Humanities, and Technology. See the &quot;I&quot; icon for examples of specific topics.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="225">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.credoreference.com.helin.uri.edu/"><Data
+      ss:Type="String">CREDO Reference</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.credoreference.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Over 500 reference books online including biographies, dictionaries, encyclopedias, and quotations in many subject areas: Art, Business, Food &amp; Beverage, General Reference, Geography, History, Language, Law, Literature, Medicine/Health, Philosophy, Psychology, Religion, Science, Social Sciences, and Technology. See the â€œTools&quot; tab for using their image library, looking up quotations or a country's holidays &amp; festivals. NOTE: To look for a specific ebook title in the collection, use the &quot;Find a Book Tab&quot; and the &quot;Title contains&quot; searchbox.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="93.75">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.proquest.com.helin.uri.edu/criminaljusticeperiodicals/advanced?accountid=1363"><Data
+      ss:Type="String">Criminal Justice (ProQuest)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.proquest.com.helin.uri.edu/criminaljusticeperiodicals/advanced?accountid=1363</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Journal articles cover addiction, corrections administration, criminal justice, criminal law, criminology, drug enforcement, family law, industrial security, law enforcement, and rehabilitation.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="187.5">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.alexanderstreet.com.helin.uri.edu/lawv"><Data
+      ss:Type="String">Criminal Justice &amp; Public Safety in Video (Alex. St. Press)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.alexanderstreet.com.helin.uri.edu/lawv</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Streaming videos feature interviews about actual field experiences, controversies about the justice system, and training videos for how to respond to potentially dangerous situations. You can also use the Advanced Search link to focus on a specialized area of interest such as Administration of Justice, Corrections, Crime Prevention, Criminology, Emergency Preparedness, History &amp; Theory, Law Enforcement, National Security &amp; Terrorism, and Occupational Safety &amp; Health.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="168.75">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=i3h"><Data
+      ss:Type="String">Criminal Justice Abstracts with Full Text (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=i3h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">Selective full text for more than 200 magazines, journals, and e-books covering all areas related to criminology and criminal justice including criminal law &amp; procedure, corrections &amp; prisons, police &amp; policing, criminal investigation, forensic sciences &amp; investigation, history of crime, substance abuse &amp; addiction, probation &amp; parole. Check off the &quot;Linked Full Text&quot; button to retrieve only full-text content.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="75">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.credoreference.com.helin.uri.edu/content/browse/book?category=law&amp;alpha=all&amp;offset=0"><Data
+      ss:Type="String">Criminal Justice Collection (CREDO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.credoreference.com.helin.uri.edu/content/browse/book?category=law&amp;alpha=all&amp;offset=0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s26"><Data ss:Type="String">E-book titles range in coverage from Forensics and Policing, to Juvenile Corrections and Organized Crime. NOTE: These 52 criminal Justice titles are also available in our CREDO Reference database.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="24">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=PPCA"><Data
+      ss:Type="String">Culinary Arts (Gale)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=PPCA</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Many full-text articles from major cooking and nutrition magazines, plus recipes, restaurant reviews, and industry trends &amp; news.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Zoom>70</Zoom>
+   <TopRowVisible>9</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>22</ActiveRow>
+     <ActiveCol>4</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C6</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>5000</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C5</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>500</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C3:R1C4</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>1000</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C2</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>255</Value>
+  </DataValidation>
+ </Worksheet>
+ <Worksheet ss:Name="e-l">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="34" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="51.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="205.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="177"/>
+   <Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="338.25"/>
+   <Row>
+    <Cell><Data ss:Type="String">VENDOR NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE URL</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ENABLE PROXY?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">MORE INFORMATION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;NEW&quot; BADGE ON AZ PAGE?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;TRIAL&quot; BADGE ON AZ PAGE?</Data></Cell>
+   </Row>
+   <Row ss:Height="12" ss:StyleID="s18">
+    <Cell><Data ss:Type="String">optional, 45 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 255 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 1000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+   </Row>
+   <Row ss:Height="60">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=e000xna"><Data
+      ss:Type="String">eBook Academic Collection (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=e000xna</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Ebooks on general reference and subject-specific disciplines including biographies, business &amp; economics, computer science, education, engineering &amp; technology, health &amp; medicine, history, law, literature &amp; criticism, psychology, sciences, social sciences, and more.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-site.ebrary.com.helin.uri.edu/lib/jwu"><Data
+      ss:Type="String">ebrary Academic Complete (ProQuest)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-site.ebrary.com.helin.uri.edu/lib/jwu</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Over 70,000 ebooks including Area Studies (country info.), Business &amp; Economics, Computers &amp; IT, Education, Humanities, Language, Law, Literature, Life Sciences, Nursing &amp; Allied Health, Philosophy, Physical Sciences, Psychology &amp; Sociology, and Religion.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="60">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ehh"><Data
+      ss:Type="String">Education Research Complete (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ehh</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Many full-text articles from 1,400 journal titles and the full text of nearly 550 e-books and conference papers. Coverage includes Administration, Curriculum Instruction, Early Childhood to Higher Education, Funding, Health Education, Multilingual Education, Policy, and Testing.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="24">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-ejournals.ebsco.com.helin.uri.edu/"><Data
+      ss:Type="String">EJS (Electronic Journals Service) (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-ejournals.ebsco.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Scholarly journals in the fields of Criminology, Education, Food Science, Gaming, Hospitality, Nutrition, Technology, Travel &amp; Tourism.&#160;</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="60">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.emeraldinsight.com.helin.uri.edu/"><Data
+      ss:Type="String">Emerald Management 120</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.emeraldinsight.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Management-related articles in various fields including Accounting, Education, Food Science, Hospitality &amp; Tourism, Library Services &amp; Information Management, Marketing, Nutrition, and Professional Development. CHECK-OFF &quot;Only content I have access to&quot; for full-text articles and book chapters.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="96">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.europaworld.com.helin.uri.edu/"><Data
+      ss:Type="String">Europa World Plus (Taylor &amp; Francis)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.europaworld.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Country and regional information world-wide! Economic, political, geographic information, and statistical data with directories of contact information and international organizations. Updates of the world's major events. Compare multinational statistics by area &amp; population, agriculture, education, health &amp; welfare, finance, industry, and external trade. NOTE: ONLY A LIMITED NUMBER OF USERS CAN ACCESS EUROPA AT THE SAME TIME. Please check back later!</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="96">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-digital.films.com.helin.uri.edu/PortalPlaylists.aspx?aid=1818"><Data
+      ss:Type="String">Films on Demand Complete (Infobase)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-digital.films.com.helin.uri.edu/PortalPlaylists.aspx?aid=1818</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Over 15,000 streaming videos 24/7. Many areas of interest including business &amp; economics, careers &amp; job searching, computers &amp; technology, criminal justice, culinary arts &amp; nutrition, digital media, education, engineering, English, fashion/textiles &amp; merchandising, food prep &amp; safety, food science &amp; service, guidance &amp; counseling, health, science &amp; social sciences. Watch Archival Films &amp; Newsreels for important events and interviews with influential people in American culture &amp; history.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="108">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.mergentonline.com.helin.uri.edu/FirstResearch"><Data
+      ss:Type="String">First Research (Mergent)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.mergentonline.com.helin.uri.edu/FirstResearch</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">17 kinds of FINANCIAL RATIOS for more than 380+ in-depth industry profiles and 900 smaller industry segments. Find an overview of business challenges, trends, industry opportunities. See also &quot;State and Province Profiles&quot; with a clickable map for monthly updates of local industry, economic, employment &amp; wage data for each of the 50 states. And, link to &quot;Call Prep Questions&quot; from within an industry to prepare for job interviews! NOTE: YOU MUST CLICK THROUGH 3 PAGES (2 &quot;Continue&quot; and 1 &quot;Submit&quot; page) before reaching the &quot;Search for Industry and Geographic Profiles&quot; main page.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=fsr"><Data
+      ss:Type="String">Food Science Source (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=fsr</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Many full-text articles from magazines and trade journals covering the food industry: Food Safety, Food &amp; Beverage Science, Food Service, Processing, Packaging, Shipping, Culinary Innovation, and Product Development.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="24">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=funk&amp;defaultdb=funk"><Data
+      ss:Type="String">Funk &amp; Wagnall's New World Encyclopedia (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=funk&amp;defaultdb=funk</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Many subjects are covered including country information, brief biographies of both historical and contemporary figures, plus photos, diagrams, and charts.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="24">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=GBFM"><Data
+      ss:Type="String">General Business File ASAP (Gale)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=GBFM</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Selective, full-text business and management-related articles. This is a subset of the larger database Business &amp; Company Resource Center.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.globalroadwarrior.com.helin.uri.edu/directclient_index2.asp?c=jwu"><Data
+      ss:Type="String">Global Road Warrior</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.globalroadwarrior.com.helin.uri.edu/directclient_index2.asp?c=jwu</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Information on 175 countries &amp; their cultures! Country geo stats &amp; facts, money &amp; banking, business culture with advice for businesswomen, travel documents, points of interest, plus photos and maps.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="72">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-online.goinglobal.com.helin.uri.edu/"><Data
+      ss:Type="String">Going Global's Country Career Guides</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-online.goinglobal.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Updated international job/internship postings in 35 countries! Country-specific: Work permit/visa regulations, resume writing guidelines, interviewing advice, cultural &amp; business etiquette, cost of living expenses, industry/employment trends, top companies, &amp; professional trade associations for networking. Find companies in the U.S. who are temporarily hiring foreign workers who qualify for H1-B visa status.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-online.usacareerguides.com.helin.uri.edu/"><Data
+      ss:Type="String">Going Global's USA/Canada City Career Guides</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-online.usacareerguides.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Updated job postings for the 40 largest cities in the U.S. and Canada. City-specific industry/employment trends, top companies, cost of living expenses, job fairs, and more. Find companies in America's largest cities who are temporarily hiring foreign workers who qualify for H1-B visa status.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=8gh"><Data
+      ss:Type="String">GreenFILE (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=8gh</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Full-text articles from these three journals (BMC Ecology; Environmental Health Perspectives; and Environmental Health: A Global Access Science Source). Indexing only to journals in JWU’s other EBSCO databases.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=GRNR"><Data
+      ss:Type="String">GREENR (Global Reference on the Environment, Energy, and Natural Resources) (Gale)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=GRNR</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Many full-text articles plus streaming videos on important aspects of environmental issues: economic, political, legal, and the human impact on the environment.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=HWRC-1"><Data
+      ss:Type="String">Health &amp; Wellness Resource Center (Gale)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=HWRC-1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Complete content from medical encyclopedias, consumer health pamphlets, and other reference sources plus many full-text articles from medical, nursing, and allied health journals.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=HRCA"><Data
+      ss:Type="String">Health Reference Center Academic (Gale)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=HRCA</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Many full-text articles on such topics as addictions, diseases, fitness, nutrition, occupational health &amp; safety, prescription drugs, public health, and more. This is a subset of the larger database Health &amp; Wellness Resource Center.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="24">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=khh"><Data
+      ss:Type="String">History Reference Center (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=khh</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Selective full-text articles plus photos, maps, videos, biographies of historical figures, and U.S. and world history timelines.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=hjh"><Data
+      ss:Type="String">Hospitality &amp; Tourism Complete (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=hjh</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Many full-text articles covering Baking &amp; Culinary Arts, Business Travel, Event Management, Food &amp; Beverage, Gaming &amp; Casinos, Hospitality Law, Hotel Management, Leisure Studies, Market Trends, Meetings, Menu Planning, Restaurants, and more.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=PPTH"><Data
+      ss:Type="String">Hospitality, Tourism and Leisure Collection (Gale)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=PPTH</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Selective full-text articles from over 500 journals covering various aspects of the hospitality industry such as cruise lines, hotels &amp; motels, resorts, restaurants &amp; menu planning, travel &amp; tourism, and leisure activities.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="60">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.ibisworld.com.helin.uri.edu/"><Data
+      ss:Type="String">IBISWorld</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.ibisworld.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Industry research for over 700 U.S. industries plus hard-to-find U.S. &quot;specialized industries,&quot; including 60 industries in Australia, China, and the UK. Go to &quot;Key Statistics&quot; to find financials and 7 kinds of &quot;Key Ratios.&quot; To limit your search to the countries above, use the link &quot;Global Industry Research&quot;, then on the next page link to &quot;Search for international industries.&quot;</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.jstor.org.helin.uri.edu/"><Data
+      ss:Type="String">JSTOR Arts and Sciences IV Collection</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.jstor.org.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Full-text articles from back issues of scholarly journals in the fields of Business, Education, and Law, including several titles in Administration, Psychology, and Public Policy.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.lexisnexis.com.helin.uri.edu/hottopics/lnacademic"><Data
+      ss:Type="String">LexisNexis Academic</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.lexisnexis.com.helin.uri.edu/hottopics/lnacademic</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Full-text access to international newspapers, SEC filings (annual reports), legal information (federal and state laws), company profiles, and brief biographies of people around the world.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=LitRC-16"><Data
+      ss:Type="String">Literature Resource Center (Gale)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=LitRC-16</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">American and international authors from all time periods with authors' biographies, literary criticism, overviews of literary works and plot summaries. Explore the &quot;Literary-Historical Timeline&quot; to learn about historical events which occurred during an author's lifespan and may have influenced their writing.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="4"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="4"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="4"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="4"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="4"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1:R2</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C2</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>255</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C3:R1C4</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>1000</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C5</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>500</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C6</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>5000</Value>
+  </DataValidation>
+ </Worksheet>
+ <Worksheet ss:Name="m">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="32" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="165"/>
+   <Column ss:AutoFitWidth="0" ss:Width="233.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="68.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="353.25"/>
+   <Row>
+    <Cell><Data ss:Type="String">VENDOR NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE NAME</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DATABASE URL</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ENABLE PROXY?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DESCRIPTION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">MORE INFORMATION</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;NEW&quot; BADGE ON AZ PAGE?</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">DISPLAY &quot;TRIAL&quot; BADGE ON AZ PAGE?</Data></Cell>
+   </Row>
+   <Row ss:Height="12" ss:StyleID="s18">
+    <Cell><Data ss:Type="String">optional, 45 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 255 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">required, 1000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">optional, 5000 characters max</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+    <Cell><Data ss:Type="String">boolean, 0=disabled, 1=enabled</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-academic.marketresearch.com.helin.uri.edu/"><Data
+      ss:Type="String">MarketResearch.com Academic</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-academic.marketresearch.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Industry reports include demographics, market trends, forecasts, analysis of major brands, new products, and consumer trends &amp; buyer behavior in such fields as Food &amp; Beverage, Food Service &amp; Hospitality, Retailing, Technology &amp; Media, Travel &amp; Leisure.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="24">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ulh"><Data
+      ss:Type="String">MAS Ultra - School Edition (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ulh</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Biographies, book reviews, articles from general interest magazines, (World Almanac, CIA World Fact Book, encyclopedias) plus photos, maps and flags.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="120">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-jwu.kanopystreaming.com.helin.uri.edu/"><Data
+      ss:Type="String">MEF Digital (Media Education Foundation) (Kanopy)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-jwu.kanopystreaming.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Streaming educational videos from MEF (Media Education Foundation). You can use the BROWSE SUBJECTS button for faster searching from a drop-down list. Examples include The ARTS (Design, Fashion, Literature, Visual Art); BUSINESS/TRAINING (Business &amp; Economics, Careers, Food Technology, Hospitality &amp; Tourism, Technical Education, Training &amp; Development); EDUCATION (Teacher Education Development); HEALTH (Biomedical Science, Medicine, Vision Science); HUMANITIES (Asian &amp; Middle Eastern Studies); MEDIA/COMM (Cultures &amp; Politics in Media, Gender, Race, &amp; Diversity in Media, Marketing, Advertising, &amp; PR); and SCIENCES (Biology, Chemistry, Computer Science &amp; IT, Engineering).</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=mth"><Data
+      ss:Type="String">Military &amp; Government Collection (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=mth</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Current news articles about law enforcement and all branches of the military.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="60">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.mometrix.com.helin.uri.edu/elibrary"><Data
+      ss:Type="String">Mometrix Test Preparation Manuals</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.mometrix.com.helin.uri.edu/elibrary</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Test preparation manuals primarily for students in Counseling Psychology, Finance, and Physician Assistant programs. Comprehensive study guides and practice tests. Most test prep manuals are over 100 pages in length. JWU's subscribed test titles are organized under the headings Business; Finance, Insurance, and Real Estate; Counseling &amp; Social Work; and Medical Professional.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="72">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-library.morningstar.com.helin.uri.edu/"><Data
+      ss:Type="String">Morningstar</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-library.morningstar.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Financial information on thousands of stocks traded on the major exchanges, plus mutual funds and ETFs (exchange-traded funds). Streaming videos feature how-to investment advice (see Articles &amp; Videos tab). Portfolio-planning tools include online calculators to determine how much you need to save for retirement and college costs. NOTE: Only a limited number of people can access Morningstar at the same time. PLEASE CLICK ON THE BUTTON &quot;End Session.&quot;</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="108">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://www.mriplus.com/"><Data
+      ss:Type="String">MRI+ Reporter</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.mriplus.com/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Market research studies contain consumer demographics which describe the &quot;readers, viewers, or listeners&quot; of various media such as magazines, TV, radio, and websites. ACCESS, First-Time Users: Register to set up your free account by using your University email address ending in either @jwu.edu or @wildcats.jwu.edu (you must do this for each address you plan to use) and a password of your choice. Look for a validation email from the vendor &quot;mriplus&quot; then click on the link in the email to activate your account. NOTES: You cannot use other email such as Gmail, Hotmail, or Yahoo. Also, you must turn off all pop-up blockers, and the Google Chrome browser will not work.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="https://0-naturalmedicines.therapeuticresearch.com.helin.uri.edu/"><Data
+      ss:Type="String">Natural Medicines (Therapeutic Res. Ctr.)</Data></Cell>
+    <Cell><Data ss:Type="String">https://0-naturalmedicines.therapeuticresearch.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">For healthcare students, professionals, and nutritionists. Access current medical and alternative therapies including nutrition, diets &amp; dietary supplements, functional foods, and exercises for various medical conditions and sports medicine, complete with charts &amp; tables, calculators, and a symptom checker.&#160;</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=OVIC"><Data
+      ss:Type="String">Opposing Viewpoints In Context (Gale)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=OVIC</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Support your point of view on a controversial issue with facts and statistics from primary and government documents, photos, and magazine &amp; newspaper articles which have already argued your case.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="120">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-jwu.policymap.com.helin.uri.edu/maps"><Data
+      ss:Type="String">PolicyMap (The Reinvestment Fund)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-jwu.policymap.com.helin.uri.edu/maps</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">A large geo-stats database features an interactive, online mapping tool across the U.S.! Helpful for community development, business planning, market research, site selection &amp; impact studies, grant writing, job &amp; home relocation, and other applications where you need creditable statistics. Useful data is available for different geographic locations such as street address, city, county, state, zip code, school districts, state voting districts for the House &amp; Senate, metro areas and more. Numerical counts and percentages are grouped under general categories and sub-categories that include Demographics, Incomes &amp; Consumer Spending, Quality of Life, Health, Housing, Education, Economy, Lending Activity, and Federal Guidelines for tax credits.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="72">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.privco.com.helin.uri.edu/"><Data
+      ss:Type="String">PrivCo</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.privco.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Information on thousands of major private companies within the United States and selective countries such as Canada, United Kingdom, and Italy. Private company data includes financials (several years of revenues, employee size, corporate business model description, growth rates), mergers &amp; acquisitions, market investors profiles, and venture capital funding. Search by geographic location and other criteria.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="60">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.providencejournal.com.helin.uri.edu/"><Data
+      ss:Type="String">Providence Journal eEdition</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.providencejournal.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">The Providence Journal eEdition is an exact digital replica of The Providence Journal newspaper enhanced with digital functionality with real-time updates! It includes every article, photograph and advertisement from The Providence Journal newspaper plus the latest 2 years of archived articles written by Providence Journal staff and other selective articles (archives are text-based only, no images).</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="72">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=pdh"><Data
+      ss:Type="String">PsycARTICLES (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=pdh</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Many full-text articles from nearly 80 journals published by the American Psychological Association (APA) and allied organizations dating back as early as 1894 (over 100 years of coverage). All areas of psychology are covered including Basic/Experimental Psych., Clinical Psych., Developmental Psych., Education &amp; School Psych., Health Psych., Industrial/Organizational Psych., Social Psych., and Social Processes.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="60">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=pzh"><Data
+      ss:Type="String">PsycBOOKS (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=pzh</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Scholarly and professional research ebooks published by the American Psychological Association (APA) and other acclaimed publishers in the field of psychology. Explore the popular multi-volume APA handbook series on specific subject areas. You can also search by age group, population group, classification codes, and methodology.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="96">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.psychiatryonline.org.helin.uri.edu/"><Data
+      ss:Type="String">PsychiatryOnline with DSM Manual 5 (APA/APP)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.psychiatryonline.org.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Diagnostic &amp; Statistical Manual of Mental Disorders-5th Edition is one of several diagnostic tools from the publishers APA (American Psychiatric Assoc.) and APP (American Psychiatric Publishing). Also access full-text reference books &amp; journals including American Journal of Psychiatry and Academic Psychiatry. For short brochures on mental health topics (i.e., addiction, college students, domestic violence) see the &quot;For Patients&quot; tab. NOTE: This will take you out of PsychiatryOnline to Healthy Minds website. Use the back arrow in your browser to return to PsychiatryOnline.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.rkma.com.helin.uri.edu/jwu/library"><Data
+      ss:Type="String">R. K. Miller Marketing Research Handbooks</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.rkma.com.helin.uri.edu/jwu/library</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">E-books in such fields as Casinos &amp; Gaming, Consumer Behavior &amp; Marketing, Entertainment/Media &amp; Advertising, Healthcare Business, Leisure, Restaurant/Food &amp; Beverage, Retailing, Sports Marketing, and Travel &amp; Tourism.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="156">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.referenceusa.com.helin.uri.edu/"><Data
+      ss:Type="String">ReferenceUSA (Infogroup)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.referenceusa.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Useful for market research, entrepreneurs, job seekers, and finding healthcare professionals. IMPORTANT: After selecting one of the &quot;Available Databases&quot; listed on the ReferenceUSA website, accept or click through security certificate warnings if they appear and proceed to ReferenceUSA. Different browsers display different warning messages. At the RefUSA site, use CUSTOM SEARCH tab to limit your search results to geography or other criteria. Data on 24 million U.S. businesses and 50,000 new US. Businesses. 10 years worth of historical business data shows changes in various industries for over the past 10 year. Compare their market share to one another and see where they are trending for the future. Look up the number of similar businesses in a target area to check your competition, credit rating, &amp; consumer lifestyles of potential customers. JOB SEEKERS: Over 2 million job postings and internships in the U.S.! Research companies you may want to work for. See JOB HELP for salaries.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="24">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=bwh"><Data
+      ss:Type="String">Regional Business News (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=bwh</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Selective, full-text articles from business journals, newspapers, and newswires within the U.S.&#160;</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="84">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-online.sagepub.com.helin.uri.edu/search/"><Data
+      ss:Type="String">SAGE Journals Online</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-online.sagepub.com.helin.uri.edu/search/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Full-text journal articles are ONLY AVAILABLE FROM 1999-TO THE CURRENT YEAR in such fields as Administration &amp; Leadership, Business/Management, Clothing &amp; Textiles, Criminal Justice, Cultures, Education, Entrepreneurship, Food Science, Hospitality, Information Science, Literature, Marketing, Sports, Travel &amp; Tourism. FOR FULL-TEXT ARTICLES PUBLISHED FROM 1999 TO THE PRESENT: (1) Checkmark “SAGE Content Available to Me” and (2) Specify a DATE RANGE from 1999 through [current year].</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.sbrnet.com.helin.uri.edu/"><Data
+      ss:Type="String">SBRnet (Sports Business Research Network)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.sbrnet.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Sports marketing research statistics on consumer expenditures, attendance at sporting events, TV viewership and Internet usage. Plus, directories with contact information for professional sports teams &amp; organizations, sporting goods vendors, and more.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://scholarsarchive.jwu.edu/"><Data
+      ss:Type="String">ScholarsArchive@JWU</Data></Cell>
+    <Cell><Data ss:Type="String">http://scholarsarchive.jwu.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Repository for journal articles, working papers, dissertations &amp; theses, and other creative works published by Johnson &amp; Wales University faculty, students, and staff, plus special collections such as restaurant menus.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="48">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=SCIC"><Data
+      ss:Type="String">Science In Context (Gale)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=SCIC</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Journal articles on various scientific topics including computer science. See also “Science-Related Tools” for the “MegaConverter” with links to cooking conversions, currency and language converters, math conversions, wine &amp; spirits measures (beverage, bartending), and more.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="108">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.sciencedirect.com.helin.uri.edu/"><Data
+      ss:Type="String">ScienceDirect Journals (Elsevier)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.sciencedirect.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Full-text access to 8 JWU-subscribed e-journals: Business Horizons, Contemporary Educational Psychology, Food Microbiology, International Journal of Hospitality Management, Journal of Economics &amp; Business, Journal of Retailing, Journal of the Academy of Nutrition and Dietetics, and Veterinary Clinics of North America: Equine Practice. IMPORTANT: (1) To limit your search results to full text articles through JWU, check mark Johnson &amp; Wales University under &quot;Choose Organization.&quot; Then, check off &quot;Remember this organization.&quot; (2) If &quot;Open Access&quot; is displayed with citations, that means you also have access to those specific articles through special arrangements with other publishers.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="24">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=s3h"><Data
+      ss:Type="String">SPORTDiscus with Full Text (EBSCO)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=s3h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Many full-text articles from sports and sports medicine journals plus books and book chapters.&#160;</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="120">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-next.srds.com.helin.uri.edu/"><Data
+      ss:Type="String">Standard Rate &amp; Data Service (SRDS)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-next.srds.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Advertising costs and consumer lifestyles: What would it cost to advertise your business or service in magazines, newspapers, radio, television, outdoor billboards, or websites? Find ad rates, circulation figures, audience demographics, and contact info. for publishers/sales. Do you need to identify consumer spending behavior in potential market areas? What do people spend their money on? Access all 12 report titles: Business Publication Media, Consumer Magazine Media, Direct Marketing, Digital Networks &amp; Tech, Digital Websites, International Media Guides, Local Market Audiences, Newspaper Media, Out-of-Home Media, Print Media Production, Radio Media, TV &amp; Cable Media. NOTE: SRDS works better with the IE BROWSER.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="156">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.statista.com.helin.uri.edu/"><Data
+      ss:Type="String">Statista</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.statista.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Statistics, market studies &amp; reports for over 600 international industries, 37 countries, and 60,000 wide-ranging topics! Enter your own search terms or browse data reports listed under these links: Categories, Key Topics, Popular Statistics, and Recent Statistics. A sampling includes college enrollment with projections up to 2020 in the U.S., college payment (how U.S. families pay for college), college sports, debit cards, demographics (size &amp; characteristics of a population), employment outlook, food &amp; beverage, footwear &amp; apparel, global climate change, hospital costs, hospitality (conventions, conferences, dining &amp; accommodations), immigration, mobile Internet &amp; apps, nutrition, online shopping, personal debt, smartphones, social media, travel &amp; tourism (cruise industry), video gaming, wages &amp; salaries. NOTE: Click through any security certificate warnings &amp; pop-up blockers that may appear in order to proceed to the Statista website and display all content.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="84">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.ventureline.com.helin.uri.edu/"><Data
+      ss:Type="String">VentureLine</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.ventureline.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">30 different types of company &amp; industry financial ratios have been calculated for you. Compare a U.S. company (either publicly traded on the stock exchange or a private company) against another company or against an industry. Includes 5 years of financial statements for 10,000 U.S. public companies and VentureLine's MBA Glossary of accounting terms in downloadable PDF format. NOTE: Click through any security certificate warnings &amp; pop-up blockers that may appear in order to proceed to the VentureLine website and display all content.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="36">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-search.proquest.com.helin.uri.edu/wallstreetjournal/advanced?accountid=1363"><Data
+      ss:Type="String">Wall Street Journal; Eastern Edition (ProQuest)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-search.proquest.com.helin.uri.edu/wallstreetjournal/advanced?accountid=1363</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Selective, full-text newspaper articles from 1984 to the present are available from the world's leading financial newspaper. Content covers companies, stock prices, people, and products. Images are not available.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="156">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-www.wgsn.com.helin.uri.edu/home/WGSN"><Data
+      ss:Type="String">WGSN (World Global Style Network) (formerly, Stylesight)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-www.wgsn.com.helin.uri.edu/home/WGSN</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">The world's leading fashion trend forecasting and analysis service. Top trends in silhouettes, materials &amp; textiles, colors, prints &amp; graphics emerging from industry tradeshows, catwalks, global retail displays &amp; showrooms, fashion week festivals, celebrity events, and trendy street styles. Vast image library of over 10 million hi-res images. IMPORTANT: (1) To use the special features in &quot;Design Tools &amp; Resources&quot; such as &quot;Colour Play&quot; and &quot;Trendlink&quot; you must set up your own free account by going to the EDU portal page at http://www.wgsn.com/edu and using your JWU email address; @wildcats.jwu.edu or @jwu.edu. Then you can go directly to the WSGN/Stylesight site and access it from both on &amp; off campus with your personal username &amp; password. Reactivate your account every 90 days! (2) YOU MUST SAVE YOUR PROJECT FOLDERS ONTO YOUR PERSONAL USB/FLASHDRIVES, otherwise they will be deleted from University computers at night.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row ss:Height="132">
+    <Cell ss:Index="2" ss:StyleID="s16" ss:HRef="http://0-wwd.com.helin.uri.edu/"><Data
+      ss:Type="String">Women's Wear Daily (WWD)</Data></Cell>
+    <Cell><Data ss:Type="String">http://0-wwd.com.helin.uri.edu/</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">CURRENT 12 months of articles and images: Key trends &amp; news worldwide in women's and men's fashion, beauty, footwear, merchandising and the retail industries are updated daily! Photos of runway shows, trade shows, fashion shoots, red carpet events, and new products. Use the &quot;Business&quot; tab for the latest financial, legal, and government/trade news about these industries. See the &quot;Markets&quot; tab for analyses of ready-to-wear, sportswear, designer/luxury, textiles/apparel technology reports, and more. The &quot;Media&quot; tab shows you how the latest beauty, fashion, and retail news is covered by the advertising, film/TV, marketing, and publishing industries. PLEASE NOTE: There is no access to the archives through this website. For earlier articles, please check JWU's other databases such as Business Insights:Global and Business Source Complete.</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>1200</HorizontalResolution>
+    <VerticalResolution>1200</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>31</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>46</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C6</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>5000</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C5</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>500</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C3:R1C4</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>1000</Value>
+  </DataValidation>
+  <DataValidation xmlns="urn:schemas-microsoft-com:office:excel">
+   <Range>R1C2</Range>
+   <Type>TextLength</Type>
+   <Qualifier>LessOrEqual</Qualifier>
+   <Value>255</Value>
+  </DataValidation>
+ </Worksheet>
+</Workbook>
