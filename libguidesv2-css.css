@@ -93,7 +93,8 @@ p {
 
 /*database page (az.php) customizations*/
 .s-lg-db-panel-title{
-  font-size:1.2em;
+  font-size:1.7em;
+  font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
 }
 
 /* End 0.0 "semi-global stuff" */
