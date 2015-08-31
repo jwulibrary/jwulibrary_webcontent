@@ -90,6 +90,12 @@ p {
 .s-lib-box {}
 .s-lg-box-special {}
 
+
+/*database page (az.php) customizations*/
+.s-lg-db-panel-title{
+  font-size:1.2em;
+}
+
 /* End 0.0 "semi-global stuff" */
 
 
