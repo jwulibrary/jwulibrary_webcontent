@@ -95,8 +95,9 @@ p {
 .s-lg-db-panel-title{
   font-size:1.7em;
   font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
-  background-color: #1075BA;
+  background-color: #2489CE;
   color: #FFFFFF;
+  padding: 2px 0 0px 5px;
 }
 
 /* End 0.0 "semi-global stuff" */
