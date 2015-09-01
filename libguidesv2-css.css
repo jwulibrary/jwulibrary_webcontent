@@ -512,11 +512,11 @@ tr.hours-depart td.hours-col-loc {
   border:1px solid #014A91;
   padding:1px;
   background-color: #FFF;
-  margin:1px 3px 70px 2px;
+  margin:1px 3px 20px 2px;
 }
 
 .carousel-caption p {
-  margin: 20px 0 0 0;
+  margin: 0 0 0 0;
   color: #FFF;
   font-size: .9em !important;
   border: 1px solid #CCCCCC;
