@@ -505,7 +505,7 @@ tr.hours-depart td.hours-col-loc {
   padding: 1px 2px 1px 2px;
 }
 .carousel-caption h4 {
-  font-size: 2em;
+  font-size: 2.2em;
   text-shadow: none;
   font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
   color: #039;
@@ -518,7 +518,7 @@ tr.hours-depart td.hours-col-loc {
 .carousel-caption p {
   margin: 20px 0 0 0;
   color: #FFF;
-  font-size: .9em;
+  font-size: .9em !important;
   border: 1px solid #CCCCCC;
   text-shadow: none;
   font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
