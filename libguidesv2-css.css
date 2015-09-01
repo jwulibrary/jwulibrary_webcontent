@@ -237,7 +237,7 @@ tr.hours-depart td.hours-col-loc {
   width: 70%;
   max-width: 400px;
   min-width: 200px;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 /* 1.61 jqueryUI stuff
@@ -464,11 +464,10 @@ tr.hours-depart td.hours-col-loc {
 
 
 /* 1.6.2 EBSCOHost Widget CSS */
-.ebsco-button{
-  width:45px;
+
+.ebsco-button {
+  width: 45px;
 }
-
-
 .summary {
   background-color: #1D5DA7;
   color: #FFFFFF;
@@ -506,7 +505,7 @@ tr.hours-depart td.hours-col-loc {
   padding-bottom: 0px;
   right: 10%;
   left: 10%;
-  font-size:.9em !important;
+  font-size: .9em !important;
   padding: 1px 2px 1px 2px;
 }
 .carousel-caption h4 {
@@ -515,12 +514,11 @@ tr.hours-depart td.hours-col-loc {
   font-weight: bold;
   font-family: Verdana, sans-serif;
   color: #014A91;
-  border:1px solid #014A91;
-  padding:1px;
+  border: 1px solid #014A91;
+  padding: 1px;
   background-color: #FFF;
-  padding:5px 3px 5px 2px;
+  padding: 5px 3px 5px 2px;
 }
-
 .carousel-caption p {
   margin: 0 0 0 0;
   color: #FFF;
@@ -530,15 +528,9 @@ tr.hours-depart td.hours-col-loc {
   font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
   background-color: #014A91;
 }
-.carousel-caption a, .carousel-caption a:focus, .carousel-caption a:visited{
+.carousel-caption a, .carousel-caption a:focus, .carousel-caption a:visited {
   color: #FFF !important;
 }
-
-.carousel-caption h4 a, .carousel-caption h4 a:focus, .carousel-caption h4 a:visited{
-  color: #014A91 !important;
-}
-
-
 .carousel-indicators {
   display: none;
 }
