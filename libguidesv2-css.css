@@ -524,7 +524,7 @@ tr.hours-depart td.hours-col-loc {
   font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
   background-color: #014A91;
 }
-.carousel-caption p a, .carousel-caption p a:focus, .carousel-caption p a:visited{
+.carousel-caption a, .carousel-caption a:focus, .carousel-caption a:visited{
   color: #FFF !important;
 }
 
