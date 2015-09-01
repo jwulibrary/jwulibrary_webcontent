@@ -521,13 +521,7 @@ tr.hours-depart td.hours-col-loc {
   right: 10%;
   left: 10%;
   background: none repeat scroll 0 0 #F2F2F2;
-  opacity: 0.5;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
-
-
-
-
 
 
 .carousel-caption h4{
@@ -538,7 +532,7 @@ color: #039;
 }
 
 .carousel-caption p{
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
   color: black;
   font-size:.9em;
   border: 1px solid #CCCCCC;
