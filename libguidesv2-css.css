@@ -491,13 +491,24 @@ tr.hours-depart td.hours-col-loc {
 /* END 1.6.2 EBSCOHost Widget CSS */
 
 
-/* END 1.6 Searchbox Content CSS */
 
 
-/* 1.7 Searchbox CONTAINER CSS */
+
+/* 1.7 Featured Content (GALLERY) CSS */
+.carousel-caption h4{
+font-size: 2em;
+}
+
+.carousel-caption p{
+  color: #0B2C85;
+background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
 
 
-/* END 1.7 Searchbox CONTAINER CSS */
+
 
 
 /* end wrappers for homepage elements */
