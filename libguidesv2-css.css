@@ -498,6 +498,8 @@ tr.hours-depart td.hours-col-loc {
 .carousel-caption{
   font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
   padding-bottom:0px;
+  right: 10%;
+  left: 10%;
 }
 
 
