@@ -496,10 +496,12 @@ tr.hours-depart td.hours-col-loc {
 
 /* 1.7 Featured Content (GALLERY) CSS */
 .carousel-caption{
-  font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
   padding-bottom:0px;
   right: 10%;
   left: 10%;
+  background: none repeat scroll 0 0 #F2F2F2;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 
@@ -517,10 +519,8 @@ color: #039;
 .carousel-caption p{
   margin: 10px 0 0 0;
   color: #CCC;
-  background: none repeat scroll 0 0 #F2F2F2;
+  font-size:.9em;
   border: 1px solid #CCCCCC;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
   text-shadow: none;
   font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
 }
