@@ -5,7 +5,7 @@
 
 /**
  * Created: 7-2-2015
- * Edited:  8-27-2015
+ * Edited:  9-1-2015
  * Author: David M. (JWU-Prov Library)
 
  */
@@ -18,7 +18,7 @@
 
 /**
  * Globally-available variables and config.
- * Edited:  7-2-2015
+
  *
  */
 
@@ -27,7 +27,6 @@ body: {
   font-family: Verdana, Arial, sans-serif !important;
   font-size: 14px !important;
 }
-
 h1 {
   font-size: 1.875rem;
   color: #666;
@@ -38,7 +37,6 @@ h2 {
 h3 {
   font-size: 1.25rem;
 }
-
 h5 {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 10px;
@@ -48,7 +46,7 @@ h5 {
 }
 p {
   font-family: Verdana, Arial, sans-serif !important;
-    font-size: 14px !important;
+  font-size: 14px !important;
 }
 
 /* 0.0 Semi-global stuff*/
@@ -68,40 +66,31 @@ p {
   font-size: 1.4rem;
   font-style: italic;
 }
-
-
-.s-lg-link-desc{
-  font-size:1.2em;
+.s-lg-link-desc {
+  font-size: 1.2em;
 }
-
-.s-lg-link-list a{
-  font-size:1.2em;
+.s-lg-link-list a {
+  font-size: 1.2em;
 }
-
 .s-lg-az-result-title a {
   font-size: 1.1em !important;
 }
-
-.s-lg-az-result-description{
-  font-size:1em !important;
+.s-lg-az-result-description {
+  font-size: 1em !important;
 }
-
-
 .s-lib-box {}
 .s-lg-box-special {}
-
 
 /* End 0.0 "semi-global stuff" */
 
 
-
-
-
-
 /* PAGE SPECIFIC CONTENT */
+
+
 /*database page (az.php) customizations*/
-.s-lg-db-panel-title{
-  font-size:1.7em;
+
+.s-lg-db-panel-title {
+  font-size: 1.7em;
   font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
   background-color: #2489CE;
   color: #FFFFFF;
@@ -111,19 +100,11 @@ p {
 /*HOURS page customization */
 
 .loc_1898 {
-    background-color: #5786C5;
+  background-color: #5786C5;
 }
-
 .loc_1899 {
-    background-color: #006224;
+  background-color: #006224;
 }
-
-
-
-
-
-
-
 
 /* END: originally from it.jwu.edu (pulled 7-2-2015) */
 
@@ -152,7 +133,9 @@ p {
  *
  */
 
+
 /* ASK PICS STUFF*/
+
 #ask-us-wrap-desktop {}
 #ask-pics-desktop {}
 .ask-pic img {
@@ -512,42 +495,31 @@ tr.hours-depart td.hours-col-loc {
 /* END 1.6.2 EBSCOHost Widget CSS */
 
 
-
-
-
 /* 1.7 Featured Content (GALLERY) CSS */
-.carousel-caption{
-  padding-bottom:0px;
+
+.carousel-caption {
+  padding-bottom: 0px;
   right: 10%;
   left: 10%;
 }
-
-
-.carousel-caption h4{
-font-size: 2em;
-text-shadow: none;
-font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
-color: #039;
+.carousel-caption h4 {
+  font-size: 2em;
+  text-shadow: none;
+  font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
+  color: #039;
 }
-
-.carousel-caption p{
+.carousel-caption p {
   margin: 20px 0 0 0;
   color: #FFF;
-  font-size:.9em;
+  font-size: .9em;
   border: 1px solid #CCCCCC;
   text-shadow: none;
   font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
   background-color: #014A91;
 }
-
-.carousel-indicators{
-  display:none;
-
+.carousel-indicators {
+  display: none;
 }
-
-
-
-
 
 /* end wrappers for homepage elements */
 
