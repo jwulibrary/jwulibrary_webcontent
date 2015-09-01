@@ -495,16 +495,30 @@ tr.hours-depart td.hours-col-loc {
 
 
 /* 1.7 Featured Content (GALLERY) CSS */
+.carousel-caption{
+  font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
+}
+
+
 .carousel-caption h4{
 font-size: 2em;
+text-shadow: none;
+font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
 }
 
 .carousel-caption p{
   color: #0B2C85;
-background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  text-shadow: none;
+  font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
+}
+
+.carousel-indicators{
+  display:none;
+
 }
 
 
