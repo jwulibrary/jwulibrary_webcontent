@@ -520,7 +520,6 @@ tr.hours-depart td.hours-col-loc {
   padding-bottom:0px;
   right: 10%;
   left: 10%;
-  background: none repeat scroll 0 0 #F2F2F2;
 }
 
 
@@ -533,7 +532,7 @@ color: #039;
 
 .carousel-caption p{
   margin: 20px 0 0 0;
-  color: black;
+  color: #FFF;
   font-size:.9em;
   border: 1px solid #CCCCCC;
   text-shadow: none;
