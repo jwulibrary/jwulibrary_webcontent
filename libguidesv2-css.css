@@ -91,6 +91,14 @@ p {
 .s-lg-box-special {}
 
 
+/* End 0.0 "semi-global stuff" */
+
+
+
+
+
+
+/* PAGE SPECIFIC CONTENT */
 /*database page (az.php) customizations*/
 .s-lg-db-panel-title{
   font-size:1.7em;
@@ -100,7 +108,20 @@ p {
   padding: 2px 0 0px 5px;
 }
 
-/* End 0.0 "semi-global stuff" */
+/*HOURS page customization */
+
+.loc_1898 {
+    background-color: #5786C5;
+}
+
+.loc_1899 {
+    background-color: #006224;
+}
+
+
+
+
+
 
 
 
@@ -518,7 +539,7 @@ color: #039;
 
 .carousel-caption p{
   margin: 10px 0 0 0;
-  color: #CCC;
+  color: black;
   font-size:.9em;
   border: 1px solid #CCCCCC;
   text-shadow: none;
@@ -636,12 +657,3 @@ h2.s-lib-box-title {
 }
 
 /*------------------------------------*\
-  #   JWU-Styles (Unfiled)
-\*------------------------------------*/
-
-
-/**
- * CSS
- * Not-yet-placed (in this CSS file) CSS from JWU sites
- * See "jwuEdu-css-snippets.css" for source material
- */
