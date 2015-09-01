@@ -51,7 +51,7 @@
 <div id="quicklinks-box" class="container librarybox">
 	<ul>
 		<li>
-			<a href="http://library.uri.edu/search/r">Course Reserves</a>
+			<a href="http://pvd.library.jwu.edu/reserves">Course Reserves</a>
 		</li>
 		<li>
 			<a href="/az.php">Databases</a>
@@ -328,21 +328,24 @@
 					</div>
 					<div class="row">
 						<!--EBSCO Search Box-->
+						<div class="col-xs-4">
+							<a href="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=ufh&authtype=ip,uid"
+							target="_blank" title="EBSCO advanced search across all JWU EBSCO Databases">
+							<img class="ebsco-button" src="https://s3.amazonaws.com/libapps/customers/527/images/Ebsco_logo.png"></a>
+						</div>
+						<div class="col-xs-8"
 						<form id="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
 							<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
 							<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&amp;site=ehost-live&scope=site&type=1&db=&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=ufh&authtype=ip,uid">
 							<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url" />
 							<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
 							<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
-							<div class="container-fluid">
-								<div class="row">
-								</div>
-								<div class="row">
+
 									<input id="ebscohostsearchtext" class="tabbed-search-input" input name="ebscohostsearchtext" />
 									<input type="submit" value="Search" class="ebscohost-search-button " />
-								</div>
-							</div>
+
 						</form>
+					</div>
 						<!-- EBSCOhost Custom Search Box Ends -->
 					</div>
 				</div>
