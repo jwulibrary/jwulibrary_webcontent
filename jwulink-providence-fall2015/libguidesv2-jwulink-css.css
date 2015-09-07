@@ -4,52 +4,20 @@
 
 
 /**
- * Created: 7-2-2015
- * Edited:  9-1-2015
+ * Created August 2015
+ * Edited:  8-19-2015
  * Author: David M. (JWU-Prov Library)
-
  */
 
-
-/*------------------------------------*\
-  # SETTINGS (Global)
-\*------------------------------------*/
-
-
-/**
- * Globally-available variables and config.
-
- *
- */
-
-body: {
-  color: #333;
-  font-family: Verdana, Arial, sans-serif !important;
-  font-size: 14px !important;
-}
-h1 {
-  font-size: 1.875rem;
-  color: #666;
-}
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h5 {
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 10px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: bold;
-}
-p {
-  font-family: Verdana, Arial, sans-serif !important;
-  font-size: 14px !important;
-}
 
 /* 0.0 Semi-global stuff*/
+
+
+/*TEMPORARY FOR DISPLAY IN CONTAINER FILE HTML OUTPUT*/
+
+
+/*.librarybox {margin-top:5em; margin-bottom:5em;}/*
+/* DELETE THE PADDING/MARGINS ABOVE WHEN IN PRODUCTION*/
 
 .librarybox>h2 {
   font-size: 1.4rem !important;
@@ -66,96 +34,16 @@ p {
   font-size: 1.4rem;
   font-style: italic;
 }
-.s-lg-link-desc {
-  font-size: 1.2em;
-}
-.s-lg-link-list a {
-  font-size: 1.2em;
-}
-.s-lg-az-result-title a {
-  font-size: 1.1em !important;
-}
-.s-lg-az-result-description {
-  font-size: 1em !important;
-}
-.s-lib-box {}
-.s-lg-box-special {}
 
 /* End 0.0 "semi-global stuff" */
 
 
-/* PAGE SPECIFIC CONTENT */
+/* 1.0 Content box specific CSS code*/
 
 
-/*database page (az.php) customizations*/
-
-.s-lg-db-panel-title {
-  font-size: 1.7em;
-  font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
-  background-color: #2489CE;
-  color: #FFFFFF;
-  padding: 2px 0 0px 5px;
-}
-
-/*HOURS page customization */
-
-.loc_1898 {
-  background-color: #5786C5;
-}
-.loc_1899 {
-  background-color: #006224;
-}
-
-/* END: originally from it.jwu.edu (pulled 7-2-2015) */
-
-
-/* ---------------------- */
-
-
-/* End global wrapper modifiers */
-
-
-/* ---------------------- */
-
-
-/**
-/* wrappers for homepage elements*/
-
-
-/*------------------------------------*\
-  #   OBJECTS (Wrappers)
-\*------------------------------------*/
-
-
-/**
- * Wrapping and constraining elements.
-
- *
- */
-
-
-/* ASK PICS STUFF*/
-
-#ask-us-wrap-desktop {}
-#ask-pics-desktop {}
-.ask-pic img {
-  width: 75px;
-}
-.ask-pic p {
-  font-size: 1.4rem;
-}
-#ask-us-wrap-mobile {}
-#ask-pics-mobile {}
-.ask-pic-mobile p {
-  font-size: 1.2rem;
-}
-
-/* Quicklinks stuff */
+/* 1.1 Quicklinks CSS */
 
 .quicklinks-box {}
-
-/* This removes the bullets from the quicklinks list*/
-
 #quicklinks-box ul {
   list-style-type: none !important;
   padding: 0 0 10px 0px;
@@ -163,26 +51,29 @@ p {
 }
 #quicklinks-box ul li {}
 #quicklinks-box ul li a {
-  font-size: 1em;
+  font-size: 1.1em;
 }
 #quicklinks-box ul li a, ul li a:focus, ul li a:visited {
   border-bottom: 1px dotted #B0B0B0;
 }
 
-/* Local overrides for box-specific content: QUICK LINKS */
-
-#s-lg-box-6588302 > .s-lib-box-title {
-  background-color: #002856;
-  color: #FFF;
-}
-
-/* end quicklinks */
+/* end 1.1 quicklinks CSS*/
 
 
 /* ============== */
 
 
-/* HOURS */
+/* 1.2 CHAT */
+
+.librarybox {}
+
+/* end 1.2 CHAT CSS*/
+
+
+/* ============== */
+
+
+/* 1.3 Calendar / Hours HOURS */
 
 
 /* Homepage hours stuff (from libcal...modified springshare styles)*/
@@ -190,38 +81,54 @@ p {
 
 /* Local overrides for box-specific content */
 
-#s-lg-box-7084005 > .s-lib-box-title {}
+#hours-wrap {}
 table.hours-today {
   border: none;
   padding: .5em;
+  background-color: #E5ECF9;
+  line-height: 1.4em;
 }
-tr. hours-today-row {
+tr.hours-today-row {
   padding-top: 1em;
 }
 .hours-col-loc {
   padding-right: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 .hours-col-time {
   padding-left: .9em;
 }
 .hours-col-time {
-  border-left: 1px dashed #BBB;
+  border-left: 2px dashed #BBB;
+  background-color: #FFF;
 }
 tr.hours-depart td.hours-col-loc {
   padding-left: 1em;
 }
 
-/* Room booking stuff */
+/* 1.4 Room booking widget stuff */
 
 #room-book-widget {}
 #room-book-widget button {
   margin-bottom: 1em;
 }
 
-/*searchbox stuff*/
+/* 1.5 "Get Library Help*/
 
+#ask-us-wrap-desktop {}
+#ask-pics-desktop {}
+.ask-pic img {}
+.ask-pic p {
+  font-size: 1.2em;
+}
+#ask-us-wrap-mobile {}
+#ask-pics-mobile {}
+.ask-pic-mobile p {
+  font-size: 1em;
+}
 
-/* Regular CSS (that is, not the jquery UI stuff included below)*/
+/* END 1.5 (Ask Us Box Modifications)*/
 
 
 /* 1.6 Searchbox Content CSS */
@@ -231,14 +138,12 @@ tr.hours-depart td.hours-col-loc {
 
 #library-searchbox {
   min-width: 300px;
-  max-width: 560px;
+  max-width: 600px;
 }
 .tabbed-search-input {
   width: 70%;
-  max-width: 400px;
+  max-width: 350px;
   min-width: 200px;
-  margin-top:10px;
-  margin-bottom:5px;
 }
 
 /* 1.61 jqueryUI stuff
@@ -465,10 +370,6 @@ tr.hours-depart td.hours-col-loc {
 
 
 /* 1.6.2 EBSCOHost Widget CSS */
-.ebsco-button{
-  width:50px;
-}
-
 
 .summary {
   background-color: #1D5DA7;
@@ -501,148 +402,10 @@ tr.hours-depart td.hours-col-loc {
 /* END 1.6.2 EBSCOHost Widget CSS */
 
 
-/* 1.7 Featured Content (GALLERY) CSS */
-
-.carousel-caption {
-  padding-bottom: 0px;
-  right: 10%;
-  left: 10%;
-  font-size:.9em !important;
-  padding: 1px 2px 1px 2px;
-}
-.carousel-caption h4 {
-  font-size: 2em;
-  text-shadow: none;
-  font-weight: bold;
-  font-family: Verdana, sans-serif;
-  color: #014A91;
-  border:1px solid #014A91;
-  padding:1px;
-  background-color: #FFF;
-  padding:5px 3px 5px 2px;
-}
-
-.carousel-caption p {
-  margin: 0 0 0 0;
-  color: #FFF;
-  font-size: .9em !important;
-  border: 1px solid #CCCCCC;
-  text-shadow: none;
-  font-family:  Verdana, sans-serif;
-  background-color: #014A91;
-}
-.carousel-caption a, .carousel-caption a:focus, .carousel-caption a:visited{
-  color: #FFF !important;
-}
-
-.carousel-caption h4 a, .carousel-caption h4 a:focus, .carousel-caption h4 a:visited{
-
-}
+/* END 1.6 Searchbox Content CSS */
 
 
-.carousel-indicators {
-  display: none;
-}
-
-/* end wrappers for homepage elements */
+/* 1.7 Searchbox CONTAINER CSS */
 
 
-/*------------------------------------*\
-  #   COMPONENTS (Page-head, Page-foot, Buttons)
-\*------------------------------------*/
-
-
-/**
- * Page-head............The main page header.
- * Page-foot............The main page footer.
- * Buttons..............Button elements.
- *
- */
-
-
-/*-----------------------------*\
-/*-- ## Page-head (COMPONENTS) --*\
-
-
-
-/* For Page-head components to work in LibGuides,
- * make sure that they are in the master CSS file that is referenced
- *(for now, this one)
- * They can also be enclosed inline with <style> in the "Custom JS/CSS Code" Section,
- * located at:
- * https://jwu-ri.libapps.com/libguides/lookfeel.php?action=1
-*/
-
-#jwulib-header {
-  padding-bottom: 20px;
-}
-.jwu-lib-logo {
-  padding-top: 20px;
-}
-
-/*-----------------------------*\
-/*-- ## Page-footer (COMPONENTS) --*\
-
-/* For Page-Foot/footer components to work in LibGuides,
- * make sure that they are in the master CSS file that is referenced
- *(for now, this one)
- */
-
-#jwulib-footer {
-  border-top: 5px solid #F90;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.jwulib-footercol h4 {
-  text-transform: uppercase;
-  font-size: .9em;
-  font-weight: 700;
-  color: #333;
-}
-.jwulib-footercol ul {
-  padding: 0;
-  margin: 10px 0;
-}
-.jwulib-footercol ul li {
-  list-style-type: none;
-}
-.jwulib-footercol ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 400;
-}
-
-/*----------------------------*\
-/*-- ## Buttons (COMPONENTS)  -- *\
- * homepage icons under "Ask Us"...this is where the styles are
-*/
-
-
-/*------------------------------------*\
-  #   TRUMPS (Text)
-\*------------------------------------*/
-
-
-/**
- * Text helpers.
- *
- */
-
-h1.s-lg-guide-name {
-  font-size: 1.5rem !important;
-}
-h2.s-lib-box-title {
-  font-size: 1.4rem !important;
-  font-family: 'Gill Sans MT', 'Gill Sans', Verdana, sans-serif;
-  letter-spacing: 3px;
-  padding: 3px 5px 5px 12px;
-  text-transform: uppercase;
-  margin-bottom: .5em !important;
-  font-weight: normal !important;
-}
-.expl-text {
-  font-size: 1.4rem;
-  font-style: italic;
-}
-
-/*------------------------------------*\
+/* END 1.7 Searchbox CONTAINER CSS */
