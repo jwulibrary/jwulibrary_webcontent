@@ -1,0 +1,277 @@
+<!--Fall 2015 Updates to jwuLink -->
+<!--just the HTML Content (as opposed to embedded iframes)
+<!-- Compiled 9-16-2015 -->
+<!--------------------------------->
+
+
+<!-- 0. Dependencies-->
+<!--Most of these are already in jwuLink...the only things that we would have to add to jwulink are: libguidesv2-jwulink-css.css, and possibly the Bootstrap dependencies as well.-->
+<head>
+	<link rel="stylesheet" type="text/css" href="libguidesv2-jwulink-css.css">
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+	<script src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
+</head>
+
+
+
+<!--1. Library Quick Links-->
+<!-- This is basically the same...we just added some new links-->
+<div id="quicklinks-box" class="container librarybox">
+	<a target="_blank" href="http://pvd.library.jwu.edu/reserves">Course Reserves</a><br>
+	<a target="_blank" href="http://pvd.library.jwu.edu/az.php">Databases</a><br>
+	<a target="_blank" href="http://jwu-ri.libanswers.com/">Frequently Asked Questions</a><br>
+	<a target="_blank" href="http://jwu-ri.libanswers.com/a.php?qid=7831">Interlibrary Loan</a><br>
+	<a target="_blank" href="http://atoz.ebsco.com/home.asp?Id=K11681">Journals &amp; Magazines</a><br>
+	<a target="_blank" href="http://library.uri.edu/patroninfo">My Library Account</a><br>
+	<a target="_blank" href="https://jwulibpvd.afford.com/">Pay Bills &amp; Fines</a><br>
+	<a target="_blank" href="http://scholarsarchive.jwu.edu/">ScholarsArchive@JWU</a><br>
+	<a target="_blank" href="http://jwu-ri.libanswers.com/a.php?qid=17269">Staff Directory</a><br>
+</div>
+
+
+
+
+<!--2. Ask a Librarian Now (chatbox) -->
+<!-- This code is similar...the only difference is that we changed from an embedded box to a pop-out box -->
+<div id="chat-wrap" class="container librarybox">
+	<div class="needs-js">chat loading...</div>
+	<script type="text/javascript">
+		(function() {
+			var x = document.createElement("script");
+			x.type = "text/javascript";
+			x.async = true;
+			x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "us.libraryh3lp.com/js/libraryh3lp.js?8970";
+			var y = document.getElementsByTagName("script")[0];
+			y.parentNode.insertBefore(x, y);
+		})();
+	</script>
+</div>
+
+
+
+<!--3. Search -->
+<!-- MAJOR UPDATE-->
+<div id="library-searchbox" class="container-fluid librarybox">
+	<div id="tabs">
+		<ul>
+			<li>
+				<a href="#tabs-1">
+					<em>Everything</em>
+				</a>
+			</li>
+			<li><a href="#tabs-2">Articles &amp; Journals</a></li>
+			<li><a href="#tabs-3">Books &amp; Videos </a></li>
+			<li><a href="#tabs-4">Guides &amp; Tutorials</a></li>
+		</ul>
+		<div id="tabs-1">
+			<div id="onesearch-wrap" class="tab_content">
+				<div class="container-fluid">
+					<div class="row">Search almost everything with
+						<strong>OneSearch</strong>
+						<span class="expl_note">
+							<a href="http://jwu-ri.libanswers.com/a.php?qid=936251" target="_blank" title="JWU LibraryFAQ explaining OneSearch">(What is OneSearch?)</a>
+						</span>
+					</div>
+					<form method="get" action="http://encore.uri.edu/iii/encore/plus/Home,$Search.onesearch-form.sdirect" name="form" id="form" target="_blank">
+						<input name="formids" value="target" type="hidden">
+						<input name="lang" value="eng" type="hidden">
+						<input name="suite" value="def" type="hidden">
+						<input name="reservedids" value="lang,suite" type="hidden">
+						<input name="submitmode" value="" type="hidden">
+						<input name="submitname" value="" type="hidden">
+						<div class="row">
+							<input name="target" id="target" class="onesearch-input tabbed-search-input" type="text">
+							<input class="forms" value=" Search " type="submit">
+						</div>
+					</form>
+					<div class="row">
+						<a href="http://encore.uri.edu/iii/encore/home?lang=eng&amp;advancedSearch=true" target="_blank">Advanced Search &raquo;</a>
+						</br>
+						<a href="https://library.uri.edu/patroninfo" target="_blank">My Library Account</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tabs-2">
+			<div class="tab_content">
+				<div class="container-fluid">
+					<div class="row">
+						<span class="box_section_heading">Search
+							<strong>EBSCO</strong>
+							Research Databases</span>
+						<span class="expl_note"><a href="http://jwu-ri.libanswers.com/a.php?qid=116578" target="_blank">(What am I searching?)</a></span>
+					</div>
+					<div class="row">
+						<div class="col-xs-2">
+							<a href="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=ufh&authtype=ip,uid"
+							target="_blank" title="EBSCO advanced search across all JWU EBSCO Databases">
+							<img class="ebsco-button" src="https://s3.amazonaws.com/libapps/customers/527/images/Ebsco_logo.png"></a>
+						</div>
+						<div class="col-xs-10">
+						<form id="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
+							<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
+							<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&amp;site=ehost-live&scope=site&type=1&db=&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=ufh&authtype=ip,uid">
+							<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url" />
+							<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
+							<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+									<input id="ebscohostsearchtext" class="tabbed-search-input" input name="ebscohostsearchtext" />
+									<input type="submit" value="Search" class="ebscohost-search-button " />
+						</form>
+					</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="lib-advanced-search">
+							<a href="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=ufh&authtype=ip,uid"
+							target="_blank" title="EBSCO advanced search across all JWU EBSCO Databases">Advanced
+							Search &raquo;</a>
+						</div>
+					</div>
+					<div class="row">
+						<h5>More Article and Database Links</h5>
+						<a class="small_link" href="/az.php" target="_blank">Databases</a>  | <a class="small_link" href="http://atoz.ebsco.com/home.asp?Id=K11681"
+						target="_blank">Journal Titles</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tabs-3">
+			<div class="tab_content">
+				<div class="container-fluid">
+					<div class="row">
+						<span class="box_section_heading">Search the
+							<strong>HELIN Catalog
+							</strong> for books, DVDs, textbooks, and more</span>
+					</div>
+					<div class="row">
+						<form action="http://encore.uri.edu/iii/encore/Home,$Search.form.sdirect" id="form" method="get" name="form" target="_blank">
+							<input name="formids" type="hidden" value="target">
+							<input name="lang" type="hidden" value="eng">
+							<input name="suite" type="hidden" value="def">
+							<input name="reservedids" type="hidden" value="lang,suite">
+							<input name="submitmode" type="hidden">
+							<input name="submitname" type="hidden">
+							<input id="target" name="target" onblur="this.value = this.value || this.defaultValue;" onfocus="this.value = '';" placeholder="Search for books, journals, videos &amp; more" type="text" class="tabbed-search-input">
+							<input type="submit" value="Search">
+						</form>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="lib-advanced-search">
+							<a href="http://encore.uri.edu/iii/encore/home?lang=eng&amp;advancedSearch=true" target="_blank">Advanced Search &raquo;</a>
+						</div>
+					</div>
+					<div class="row">
+						<h5>Course Reserves:</h5><a class="small_link" href="http://library.uri.edu/search/p" target="_blank">By
+						Instructor</a> | <a class="small_link" href="http://library.uri.edu/search/r" target="_blank">by Course</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tabs-4">
+			<div class="tab_content">
+				<div class="container-fluid">
+					<div class="row">
+						<span class="box_section_heading">Tutorials and guides created by librarians for topics, classes and subjects</span>
+					</div>
+					<div class="row">
+						<script>
+							springshare_widget_config_1440533232271 = {};
+						</script>
+						<div id="s-lg-widget-1440533232271"></div>
+						<script>
+							! function(d, s, id) {
+								var js, fjs = d.getElementsByTagName(s)[0],
+									p = /^http:/.test(d.location) ? 'http' : 'https';
+								if (!d.getElementById(id)) {
+									js = d.createElement(s);
+									js.id = id;
+									js.src = p + "://lgapi.libapps.com/widgets.php?site_id=538&widget_type=7&widget_embed_type=1&output_format=1&search_box_type=1&placeholder_text=Enter+Search+Words&button_text=Search&widget_height=&widget_width=330&config_id=1440533232271";
+									fjs.parentNode.insertBefore(js, fjs);
+								}
+							}(document, "script", "s-lg-widget-script-1440533232271");
+						</script>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<a class="small_link" href="http://pvd.library.jwu.edu/srch.php" target="_blank">View all Guides</a>
+					</div>
+					<div class="row">
+						<a class="small_link" href="/mla_manual" target="_blank">MLA
+						Manual Guide</a> | <a class="small_link" href="/apa_manual" target="_blank">APA
+						Manual Guide</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	$("#tabs").tabs();
+</script>
+
+<!--END Searchbox-->
+
+
+
+<!--4. Get Library Help -->
+<!-- NO CHANGES -->
+
+
+
+<!--5. Library Hours -->
+<!-- NO CHANGES -->
+
+
+
+<!--6. Book a Study Room Online -->
+<!-- This is a BRAND NEW item! -->
+<div id="room-book-widget" class="librarybox">
+	<div class="container-fluid">
+		<div class="row">
+      <div class="center-block col-md-12">
+			<script src="//api3.libcal.com/js/roombooking.js?002"></script>
+			<script>
+				jQuery(function() {
+					jQuery("#room11378").LibCalRoomBooking({
+						"iid": 1433,
+						"gid": 11378,
+						"width": 500,
+						"height": 450
+					});
+				});
+			</script>
+			<!-- Place the following link anywhere in your page. Make sure the id "room11378" matches with the above code: jQuery("#room11378")  //-->
+			<button id="room11378" href="#">Book a Study Room</button>
+			<!-- Below is optional button styling  //-->
+			<style>
+  				#room11378 {
+					background: #5786C5;
+					border: 1px solid #CCCCCC;
+					border-radius: 4px;
+					color: #FFF;
+					font: 14px Verdana;
+					padding: 12px 15px;
+					cursor: pointer;
+          font-weight:bold;
+				}
+				#room11378:hover {
+					opacity: 0.9;
+				}
+			</style>
+    </div>
+	</div>
+		<div class="row">
+			View all room openings:
+		</br>
+			<a href="http://jwu-ri.beta.libcal.com/booking/downcity">Downcity</a> | <a href="http://jwu-ri.beta.libcal.com/booking/harborside">Harborside</a>
+		</div>
+	</div>
+</div>
