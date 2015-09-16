@@ -15,21 +15,13 @@
 1.6 Tabbed Searchbox
 -->
 
-
-
 <head>
 	<!--0. Dependencies -->
 	<link rel="stylesheet" type="text/css" href="libguidesv2-jwulink-css.css">
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-	<!--<script type="text/javascript" src="jquery-ui.js"></script>-->
 	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-
-	<!--<script type="text/javascript" src="http://s3.amazonaws.com/libapps/sites/155/include/jquery-ui.js"></script>-->
-
 	<script src="http://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
 </head>
 
@@ -51,11 +43,9 @@
 		<li>
 			<a href="http://library.uri.edu/patroninfo">My Library Account</a>
 		</li>
-
 		<li>
 			<a href="https://jwulibpvd.afford.com/">Pay Bills &amp; Fines</a>
 		</li>
-
 		<li>
 			<a href="http://scholarsarchive.jwu.edu/">ScholarsArchive@JWU</a>
 		</li>
@@ -123,12 +113,12 @@
 
 
 
-
-<!-- 1.4 Room Bookings -->
-<div id="room-book-widget" class="container librarybox">
-	<div class="row">
-		<div class="col-xs-12">
-			<script src="https://api3.libcal.com/js/roombooking.js?002"></script>
+<!--1.4: Homepage Room Bookings -->
+<div id="room-book-widget" class="librarybox">
+	<div class="container-fluid">
+		<div class="row">
+      <div class="center-block col-md-12">
+			<script src="//api3.libcal.com/js/roombooking.js?002"></script>
 			<script>
 				jQuery(function() {
 					jQuery("#room11378").LibCalRoomBooking({
@@ -143,32 +133,29 @@
 			<button id="room11378" href="#">Book a Study Room</button>
 			<!-- Below is optional button styling  //-->
 			<style>
-				#room11378 {
-					background: #FFFFFF;
+  				#room11378 {
+					background: #5786C5;
 					border: 1px solid #CCCCCC;
 					border-radius: 4px;
-					color: #333333;
-					font: 14px Arial, Helvetica, Verdana;
-					padding: 8px 20px;
+					color: #FFF;
+					font: 14px Verdana;
+					padding: 12px 15px;
 					cursor: pointer;
+          font-weight:bold;
 				}
-
 				#room11378:hover {
 					opacity: 0.9;
 				}
 			</style>
+    </div>
+	</div>
+		<div class="row">
+			View all room openings:
+		</br>
+			<a href="http://jwu-ri.beta.libcal.com/booking/downcity">Downcity</a> | <a href="http://jwu-ri.beta.libcal.com/booking/harborside">Harborside</a>
 		</div>
 	</div>
-	<div class="row">
-		<h5>View all room openings:</h5>
-
-		<a href="http://jwu-ri.beta.libcal.com/booking/downcity">Downcity</a> | <a href="http://jwu-ri.beta.libcal.com/booking/harborside">Harborside</a>
-
-	</div>
 </div>
-<!--END 1.4 -->
-
-
 
 
 
