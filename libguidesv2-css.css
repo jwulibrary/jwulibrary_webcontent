@@ -87,9 +87,9 @@ p {
 .s-lib-box{
   background: none !important;
   border-color: #D7D8DA;
-    border-width: 1px;
-     box-shadow: 0 8px 6px -6px #D7D8DA;
-    border-radius: 0;
+  border-width: 1px;
+  box-shadow: 0 8px 6px -6px #D7D8DA;
+  border-radius: 0;
 }
 
 .s-lg-guide-body{
