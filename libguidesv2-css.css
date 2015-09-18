@@ -86,13 +86,15 @@ p {
 /* CUSTOM Modifications to allow content to better show up in jwulink*/
 .s-lib-box{
   background: none !important;
-  border-color: #FBF7EC;
+  border-color: #D7D8DA;
     border-width: 2px;
-    /* box-shadow: 0 8px 6px -6px #FBF7EC; */
+     box-shadow: 0 8px 6px -6px #D7D8DA; 
     border-radius: 0;
 }
 
-
+.s-lg-guide-body{
+    background: none !important;
+}
 
 /* End 0 "semi-global stuff" */
 
