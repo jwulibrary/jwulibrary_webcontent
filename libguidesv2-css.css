@@ -25,7 +25,7 @@
 body: {
   color: #333;
   font-family: Verdana, Arial, sans-serif !important;
-  font-size: 14px !important;
+  font-size: 12px !important;
 }
 h1 {
   font-size: 1.875rem;
@@ -46,7 +46,7 @@ h5 {
 }
 p {
   font-family: Verdana, Arial, sans-serif !important;
-  font-size: 14px !important;
+  font-size: 12px !important;
 }
 
 /* 0.0 Semi-global stuff*/
@@ -86,10 +86,10 @@ p {
 /* CUSTOM Modifications to allow content to better show up in jwulink*/
 .s-lib-box{
   background: none !important;
-  border-color: #FBF7EC;;
-      border-width: 1px;
-      box-shadow: 0 8px 6px -6px #FBF7EC;
-      border-radius: 0;
+  border-color: #FBF7EC;
+    border-width: 2px;
+    /* box-shadow: 0 8px 6px -6px #FBF7EC; */
+    border-radius: 0;
 }
 
 
@@ -102,10 +102,10 @@ p {
 
 /*database page (az.php) customizations*/
 #s-lg-az-index{
-  font-size:1.2em;
+  font-size:1.4em;
 }
 .s-lg-az-first .bold{
-  font-size:1.4em;
+  font-size:1.8em !important;
 }
 
 .s-lg-db-panel-title {
