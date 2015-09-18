@@ -88,6 +88,12 @@ p {
 
 
 /*database page (az.php) customizations*/
+#s-lg-az-index{
+  font-size:1.2em;
+}
+.s-lg-az-first .bold{
+  font-size:1.4em;
+}
 
 .s-lg-db-panel-title {
   font-size: 1.7em;

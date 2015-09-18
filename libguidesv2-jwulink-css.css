@@ -1,23 +1,14 @@
 /*------------------------------------*\
-    JWU LibGuides Master CSS File
+    JWU Providence Library jwuLink CSS
 \*------------------------------------*/
 
 
 /**
- * Created August 2015
- * Edited:  8-19-2015
- * Author: David M. (JWU-Prov Library)
+ * Compiled 9-16-2015
  */
 
 
 /* 0.0 Semi-global stuff*/
-
-
-/*TEMPORARY FOR DISPLAY IN CONTAINER FILE HTML OUTPUT*/
-
-
-/*.librarybox {margin-top:5em; margin-bottom:5em;}/*
-/* DELETE THE PADDING/MARGINS ABOVE WHEN IN PRODUCTION*/
 
 .librarybox>h2 {
   font-size: 1.4rem !important;
@@ -35,13 +26,8 @@
   font-style: italic;
 }
 
-/* End 0.0 "semi-global stuff" */
+/* 1. Quicklinks CSS */
 
-
-/* 1.0 Content box specific CSS code*/
-
-
-/* 1.1 Quicklinks CSS */
 .quicklinks-box {}
 #quicklinks-box ul {
   list-style-type: none !important;
@@ -56,81 +42,11 @@
   border-bottom: 1px dotted #B0B0B0;
 }
 
-
-
-
-/* 1.2 CHAT */
+/* 2 CHAT */
 
 .librarybox {}
 
-/* end 1.2 CHAT CSS*/
-
-
-/* ============== */
-
-
-/* 1.3 Calendar / Hours HOURS */
-
-
-/* Homepage hours stuff (from libcal...modified springshare styles)*/
-
-
-/* Local overrides for box-specific content */
-
-#hours-wrap {}
-table.hours-today {
-  border: none;
-  padding: .5em;
-  background-color: #E5ECF9;
-  line-height: 1.4em;
-}
-tr.hours-today-row {
-  padding-top: 1em;
-}
-.hours-col-loc {
-  padding-right: 1em;
-  padding-top: .5em;
-  padding-bottom: .5em;
-}
-.hours-col-time {
-  padding-left: .9em;
-}
-.hours-col-time {
-  border-left: 2px dashed #BBB;
-  background-color: #FFF;
-}
-tr.hours-depart td.hours-col-loc {
-  padding-left: 1em;
-}
-
-/* 1.4 Room booking widget stuff */
-
-#room-book-widget {}
-#room-book-widget button {
-  margin-bottom: 1em;
-}
-
-/* 1.5 "Get Library Help*/
-
-#ask-us-wrap-desktop {}
-#ask-pics-desktop {}
-.ask-pic img {}
-.ask-pic p {
-  font-size: 1.2em;
-}
-#ask-us-wrap-mobile {}
-#ask-pics-mobile {}
-.ask-pic-mobile p {
-  font-size: 1em;
-}
-
-/* END 1.5 (Ask Us Box Modifications)*/
-
-
-/* 1.6 Searchbox Content CSS */
-
-
-/* Regular CSS (that is, not the jquery UI stuff included below)*/
+/* 3 Searchbox  */
 
 #library-searchbox {
   min-width: 300px;
@@ -142,12 +58,8 @@ tr.hours-depart td.hours-col-loc {
   min-width: 200px;
 }
 
-/* 1.61 jqueryUI stuff
-/* Modified jqueryUI stuff (so as not to intefere with other implementations of jqueryUI)*/
-
-
-/* Misc visuals
-----------------------------------*/
+/* 3.1 jqueryUI stuff for the Searchbxox
+/* Somewhat modified jqueryUI stuff (so as not to intefere with other implementations of jqueryUI)*/
 
 
 /* Layout helpers
@@ -359,14 +271,14 @@ tr.hours-depart td.hours-col-loc {
   /* support: IE8 - See #6059 */
 }
 
-/* END 1.6.1 JQUERYUI related Searchbox Content CSS */
+/* END JQUERYUI related Searchbox Content CSS */
 
 
-/* END 1.6.1 JQUERYUI related Searchbox Content CSS */
+/* 3.2 EBSCO Tab Widget CSS */
 
-
-/* 1.6.2 EBSCOHost Widget CSS */
-
+.ebsco-button {
+  width: 50px;
+}
 .summary {
   background-color: #1D5DA7;
   color: #FFFFFF;
@@ -395,13 +307,9 @@ tr.hours-depart td.hours-col-loc {
   font-weight: bold;
 }
 
-/* END 1.6.2 EBSCOHost Widget CSS */
+/* 6. Room booking widget CSS */
 
-
-/* END 1.6 Searchbox Content CSS */
-
-
-/* 1.7 Searchbox CONTAINER CSS */
-
-
-/* END 1.7 Searchbox CONTAINER CSS */
+#room-book-widget {}
+#room-book-widget button {
+  margin-bottom: 1em;
+}
