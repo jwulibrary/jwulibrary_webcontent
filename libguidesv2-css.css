@@ -5,7 +5,7 @@
 
 /**
  * Created: 7-2-2015
- * Edited:  9-1-2015
+ * Edited:  9-18-2015
  * Author: David M. (JWU-Prov Library)
 
  */
@@ -51,6 +51,7 @@ p {
 
 /* 0.0 Semi-global stuff*/
 
+
 .librarybox>h2 {
   font-size: 1.4rem !important;
   font-family: 'Gill Sans MT', 'Gill Sans', Verdana, sans-serif;
@@ -81,7 +82,19 @@ p {
 .s-lib-box {}
 .s-lg-box-special {}
 
-/* End 0.0 "semi-global stuff" */
+
+/* CUSTOM Modifications to allow content to better show up in jwulink*/
+.s-lib-box{
+  background: none !important;
+  border-color: #FBF7EC;;
+      border-width: 1px;
+      box-shadow: 0 8px 6px -6px #FBF7EC;
+      border-radius: 0;
+}
+
+
+
+/* End 0 "semi-global stuff" */
 
 
 /* PAGE SPECIFIC CONTENT */
