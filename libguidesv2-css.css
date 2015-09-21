@@ -413,7 +413,6 @@ tr.hours-depart td.hours-col-loc {
 ----------------------------------*/
 
 #library-searchbox > .ui-widget {
-  font-family: font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
   font-size: 1em;
 }
 #library-searchbox > .ui-widget .ui-widget {
