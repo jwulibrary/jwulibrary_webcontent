@@ -218,7 +218,7 @@ table.hours-today {
   padding: .5em;
 }
 tr.hours-today-row {
-  padding-top: 1em;
+
 }
 .hours-col-loc {
   padding-right: 1em;
@@ -413,7 +413,7 @@ tr.hours-depart td.hours-col-loc {
 ----------------------------------*/
 
 #library-searchbox > .ui-widget {
-  font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
+  font-family: font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
   font-size: 1em;
 }
 #library-searchbox > .ui-widget .ui-widget {
