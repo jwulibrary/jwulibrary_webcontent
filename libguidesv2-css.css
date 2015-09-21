@@ -188,6 +188,7 @@ p {
 }
 #quicklinks-box ul li a, ul li a:focus, ul li a:visited {
   border-bottom: 1px dotted #B0B0B0;
+  font-family: Verdana, Arial, sans-serif !important;
 }
 
 /* Local overrides for box-specific content: QUICK LINKS */
@@ -216,7 +217,7 @@ table.hours-today {
   border: none;
   padding: .5em;
 }
-tr. hours-today-row {
+tr.hours-today-row {
   padding-top: 1em;
 }
 .hours-col-loc {
@@ -412,7 +413,7 @@ tr.hours-depart td.hours-col-loc {
 ----------------------------------*/
 
 #library-searchbox > .ui-widget {
-  font-family: font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
+  font-family: "Gill Sans MT", "Gill Sans", Verdana, sans-serif;
   font-size: 1em;
 }
 #library-searchbox > .ui-widget .ui-widget {
