@@ -1,7 +1,7 @@
 <!-- content for libguides v2 homepage -->
 <!-- Created 6/30/2015 -->
-<!-- Last edited 9/29/2015 -->
-<!-- Author (more or less): David M. -->
+<!-- Last edited 11/9/2015 -->
+<!-- Editor (more or less): David M. -->
 <!-- ==  -->
 
 
@@ -68,11 +68,11 @@
 		<li>
 			<a href="http://library.uri.edu/patroninfo">My Library Account</a>
 		</li>
-
+		
 		<li>
 			<a href="https://jwulibpvd.afford.com/">Pay Bills &amp; Fines</a>
 		</li>
-
+		
 		<li>
 			<a href="http://scholarsarchive.jwu.edu/">ScholarsArchive@JWU</a>
 		</li>
@@ -110,47 +110,32 @@
 
 
 
+<style>
 
+.study-room-link{
+	padding:10px;
+	background-color: #5987c5;
+	color:#FFF;
+	margin:5px 0 5px 0;
+	min-width:20px;
+	
+}
+
+</style>
 
 <!-- B.2.5: Homepage Room Bookings -->
-<div id="room-book-widget" class="librarybox">
+<div class="librarybox">
 	<div class="container-fluid">
-		<div class="row">
-			<script src="//api3.libcal.com/js/roombooking.js?002"></script>
-			<script>
-				jQuery(function() {
-					jQuery("#room11378").LibCalRoomBooking({
-						"iid": 1433,
-						"gid": 11378,
-						"width": 500,
-						"height": 450
-					});
-				});
-			</script>
-			<!-- Place the following link anywhere in your page. Make sure the id "room11378" matches with the above code: jQuery("#room11378")  //-->
-			<button id="room11378" href="#">Book a Study Room</button>
-			<!-- Below is optional button styling  //-->
-			<style>
-				#room11378 {
-					background: #FFFFFF;
-					border: 1px solid #CCCCCC;
-					border-radius: 4px;
-					color: #333333;
-					font: 14px Arial, Helvetica, Verdana;
-					padding: 8px 20px;
-					cursor: pointer;
-				}
-
-				#room11378:hover {
-					opacity: 0.9;
-				}
-			</style>
-		</div>
-
-		<div class="row">View all room openings: </br>
-			<a href="http://jwu-ri.beta.libcal.com/booking/downcity">Downcity</a> | <a href="http://jwu-ri.beta.libcal.com/booking/harborside">Harborside</a>
-		</div>
-
+		<h3 class ='text-center' style='font-weight:bold; font-family: verdana; margin-top: 5px !important;
+    margin-bottom: 20px;'> Book a Study Room</h3>
+		
+		
+	<p class ='text-center' style='margin-bottom:20px !important'><a class ='study-room-link'  href="http://jwu-ri.beta.libcal.com/booking/downcity">Downcity</a> </p>
+		
+		
+			<p class ='text-center' style='margin-bottom:5px;'><a class ='study-room-link'  href="http://jwu-ri.beta.libcal.com/booking/harborside">Harborside</a></p>
+	
+		
 	</div>
 </div>
 <!--END B.2.5 -->
@@ -186,7 +171,7 @@
 				<p class="text-center"> E-mail</p>
 			</div>
 		</div>
-
+		
 		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
 			<div class="row">
 				<a href="http://jwu-ri.libanswers.com/a.php?qid=8122" target="_blank" title="Call the Library">
@@ -222,7 +207,7 @@
 			<div class="row">
 				<p class="text-center">
 					<a href="sms://4014840275">
-						<em>Text:</em> (401) 484-0275) </a>
+					<em>Text:</em> (401) 484-0275) </a>
 				</p>
 			</div>
 		</div>
@@ -235,10 +220,10 @@
 			<div class="row">
 				<p class="text-center">
 					<a href="tel:14015981121">
-						<em>Call</em> (Downcity): 401-598-1121</a>
+					<em>Call</em> (Downcity): 401-598-1121</a>
 				</p>
 			</div>
-
+			
 		</div>
 		<div class="col-xs-12 ask-pic-mobile">
 			<div class="row">
@@ -249,18 +234,18 @@
 			<div class="row">
 				<p class="text-center">
 					<a href="tel:14015981466">
-						<em>Call</em> (Harborside): 401-598-1466 </a>
+					<em>Call</em> (Harborside): 401-598-1466 </a>
 				</p>
 			</div>
-
+			
 		</div>
 		<div class="col-xs-12 ask-pic-mobile">
 			<div class="row">
-
+				
 				<a href="http://www.jwu-ri.libanswers.com/q.php" target="_blank" title="E-Mail the Library">
 					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917412/email.png">
 				</a>
-
+				
 			</div>
 			<div class="row">
 				<p class="text-center">
@@ -279,7 +264,7 @@
 
 <!-- 1.6 TABBED SEARCHBOX-->
 <div id="library-searchbox" class="container-fluid librarybox">
-
+	
 	<div id="tabs">
 		<ul>
 			<li>
@@ -326,7 +311,7 @@
 					<div class="row">
 						<span class="box_section_heading">Search
 							<strong>EBSCO</strong>
-							Research Databases</span>
+						Research Databases</span>
 						<span class="expl_note"><a href="http://jwu-ri.libanswers.com/a.php?qid=116578" target="_blank">(What am I searching?)</a></span>
 					</div>
 					<div class="row">
@@ -337,18 +322,18 @@
 							<img class="ebsco-button" src="https://s3.amazonaws.com/libapps/customers/527/images/Ebsco_logo.png"></a>
 						</div>
 						<div class="col-xs-10">
-						<form id="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
-							<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
-							<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&amp;site=ehost-live&scope=site&type=1&db=&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=ufh&authtype=ip,uid">
-							<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url" />
-							<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
-							<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
-
-									<input id="ebscohostsearchtext" class="tabbed-search-input" input name="ebscohostsearchtext" />
-									<input type="submit" value="Search" class="ebscohost-search-button " />
-
-						</form>
-					</div>
+							<form id="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
+								<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
+								<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&amp;site=ehost-live&scope=site&type=1&db=&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=ufh&authtype=ip,uid">
+								<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url" />
+								<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
+								<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+								
+								<input id="ebscohostsearchtext" class="tabbed-search-input" input name="ebscohostsearchtext" />
+								<input type="submit" value="Search" class="ebscohost-search-button " />
+								
+							</form>
+						</div>
 						<!-- EBSCOhost Custom Search Box Ends -->
 					</div>
 				</div>
@@ -375,9 +360,9 @@
 						<span class="box_section_heading">Search the
 							<strong>HELIN Catalog
 							</strong> for books, DVDs, textbooks, and more</span>
-						<!--<span class="expl_note">
-							<a href="http://jwu-ri.libanswers.com/a.php?qid=116578" target="_blank">(What am I searching?)</a>
-						</span>-->
+							<!--<span class="expl_note">
+								<a href="http://jwu-ri.libanswers.com/a.php?qid=116578" target="_blank">(What am I searching?)</a>
+							</span>-->
 					</div>
 					<div class="row">
 						<form action="http://encore.uri.edu/iii/encore/Home,$Search.form.sdirect" id="form" method="get" name="form" target="_blank">
@@ -423,7 +408,7 @@
 						<script>
 							! function(d, s, id) {
 								var js, fjs = d.getElementsByTagName(s)[0],
-									p = /^http:/.test(d.location) ? 'http' : 'https';
+								p = /^http:/.test(d.location) ? 'http' : 'https';
 								if (!d.getElementById(id)) {
 									js = d.createElement(s);
 									js.id = id;
@@ -432,8 +417,8 @@
 								}
 							}(document, "script", "s-lg-widget-script-1440533232271");
 						</script>
-
-
+						
+						
 					</div>
 				</div>
 				<div class="container-fluid">
@@ -442,7 +427,7 @@
 					</div>
 					<div class="row">
 						<a class="small_link" href="http://pvd.library.jwu.edu/mla_manual" target="_blank">MLA
-						Manual Guide</a> | <a class="small_link" href="http://pvd.library.jwu.edu/apa_manual" target="_blank">APA
+							Manual Guide</a> | <a class="small_link" href="http://pvd.library.jwu.edu/apa_manual" target="_blank">APA
 						Manual Guide</a>
 					</div>
 				</div>
@@ -516,14 +501,14 @@
 
 <!-- 1. Header (Look/Feel)  -->
 <div class="container" id="jwulib-header">
-
+	
 	<div class="row">
 		<div class="col-xs-6 col-md-4">
 			<a href="http://www.jwu.edu" target="_blank">
 				<img alt="JWU Official Seal" src="http://www.jwu.edu/images/logo1.png" title="JWU Logo" class="img-responsive">
 			</a>
 		</div>
-
+		
 		<div class="col-xs-6 col-md-4 col-md-offset-3">
 			<a href="/homepage">
 				<img class="jwu-lib-logo img-responsive" src="https://s3.amazonaws.com/libapps/accounts/1358/images/jwulib-2014-thin-headerIMG-232x73.png">
@@ -540,108 +525,108 @@
 	<div class="row">
 		<div class="jwulib-footercol col-xs-12 col-sm-6 col-md-2">
 			<h4>About</h4>
-
+			
 			<ul>
 				<li>
 					<a href="/hours">Hours</a>
 				</li>
-
+				
 				<li>
 					<a href="http://jwu-ri.libanswers.com/a.php?qid=3690">Location & Directions</a>
 				</li>
-
+				
 				<li>
 					<a href="/offcampus">Off-Campus Access</a>
 				</li>
-
+				
 				<li>
 					<a href="http://jwu-ri.libanswers.com/a.php?qid=17269">Staff Directory</a>
 				</li>
-
+				
 			</ul>
 		</div>
-
+		
 		<div class="jwulib-footercol col-xs-12 col-sm-6 col-md-2">
 			<h4>Services</h4>
-
+			
 			<ul>
-
-
+				
+				
 				<li>
 					<a href="/reserves">Course Reserves</a>
 				</li>
-
-
-
+				
+				
+				
 				<li>
 					<a href="http://jwu-ri.libanswers.com/a.php?qid=7831">Interlibrary Loan (ILL)</a>
 				</li>
-
+				
 				<li>
 					<a href="http://jwu-ri.libanswers.com/a.php?qid=11103">Printing</a>
 				</li>
 			</ul>
 		</div>
-
+		
 		<div class="jwulib-footercol col-xs-12 col-sm-6 col-md-2">
 			<h4>Research</h4>
-
+			
 			<ul>
 				<li>
 					<a href="http://pvd.library.jwu.edu/az.phpp">Databases</a>
 				</li>
-
+				
 				<li>
 					<a href="http://encore.uri.edu/iii/encore/home?lang=eng&advancedSearch=true">HELIN Catalog</a>
 				</li>
 				<li>
 					<a href="http://library.uri.edu/search*eng/X">HELIN Catalog (CLASSIC)</a>
 				</li>
-
+				
 				<li>
 					<a href="http://atoz.ebsco.com/home.asp?Id=K11681">Journals</a>
 				</li>
-
-
+				
+				
 			</ul>
 		</div>
-
-
-
+		
+		
+		
 		<div class="jwulib-footercol col-xs-12 col-sm-6 col-md-2">
 			<h4>JWU Libraries:</h4>
-
+			
 			<ul>
 				<li>
 					<a href="http://den.library.jwu.edu/">Denver</a>
 				</li>
-
+				
 				<li>
 					<a href="http://clt.library.jwu.edu/">Charlotte</a>
 				</li>
-
+				
 				<li>
 					<a href="http://nmi.library.jwu.edu/">North Miami</a>
 				</li>
-
+				
 				<li>
 					<a href="http://pvd.library.jwu.edu/">Providence</a>
 				</li>
 			</ul>
 		</div>
-
+		
 		<div class="jwulib-footercol col-xs-12 col-sm-6 col-md-2">
 			<h4>Social Media</h4>
-
+			
 			<ul>
 				<li>
 					<a href="https://www.facebook.com/JWULibrary">Facebook</a>
 				</li>
-
+				
 				<li>
 					<a href="https://twitter.com/jwulibrary">Twitter</a>
 				</li>
-
+				
 				<li>
 					<a href="https://www.youtube.com/jwulibrarypvd">YouTube</a>
 				</li>
@@ -655,9 +640,9 @@
 <!-- 3. Custom JS/CSS Code (Look/Feel)-->
 
 <!--Temporary location of stylesheet, housed on a Github Linked server)
-		<link rel=stylesheet href="https://rawgit.com/jwulibrary/jwulibrary-libguides/lgv2-dev/libguidesv2-css.css" />
-
-
+	<link rel=stylesheet href="https://rawgit.com/jwulibrary/jwulibrary-libguides/lgv2-dev/libguidesv2-css.css" />
+	
+	
 <!-- ======================================= -->
 <!-- END  (LOOK AND FEEL): -->
 <!-- ======================================= -->
@@ -669,61 +654,61 @@
 <script src="//api3.libcal.com/js/hours_grid.js?002"></script>
 <div id="s-lc-whw0"></div>
 <script>
-$(function(){
-var week0 = new $.LibCalWeeklyGrid( $("#s-lc-whw0"), { iid: 1433, lid: 0,  weeks: 4 });
-});
+	$(function(){
+		var week0 = new $.LibCalWeeklyGrid( $("#s-lc-whw0"), { iid: 1433, lid: 0,  weeks: 4 });
+	});
 </script>
 
 <!-- Please note: The following styles are optional, feel free to modify! //-->
 <style>
-.s-lc-whw thead { background-color: #F5F5F5; }
-.s-lc-whw-head-date { color: #999; }
-.s-lc-whw-today-h {  background-color: #ddd; }
-.s-lc-whw-today { background-color: #F5F5F5; }
-.s-lc-whw-bh { text-align: right; white-space: nowrap; }
-.s-lc-whw-locname { font-weight: bold;}
-.s-lc-whw-sublocname{ padding-left: 10px!important; }
-.s-lc-whw-footnote { color: #555; font-size: 80%; }
-.s-lc-whw-footnote td:hover { background-color:#fff!important;}
-/* Below styles can be removed if you are already using Bootstap v3 in host page */
-.s-lc-whw-cont {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px;}
-.s-lc-whw-pr, .s-lc-whw-ne{ padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; color: #333; background-color: #fff; border-color: #ccc; display: inline-block; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; }
-.s-lc-whw-pr:disabled { background-color: #efefef; }
-.s-lc-whw-ne:disabled { background-color: #efefef; }
-.s-lc-whw { width: 100%; margin-bottom: 20px; max-width: 100%; background-color: transparent; border-bottom: none; border-left: none; border-collapse: collapse; border-spacing: 0; }
-.s-lc-whw>tbody>tr>td { padding: 5px; }
-.s-lc-whw>thead>tr>th { vertical-align: bottom; border-bottom: 2px solid #ddd; padding: 5px;}
-.s-lc-whw th { border-top: none; border-bottom: none; border-right: none;}
-@media (max-width: 768px) {
-   .s-lc-whw-cont .table-responsive { width: 100%; margin-bottom: 15px; overflow-y: hidden; overflow-x: scroll; -ms-overflow-style: -ms-autohiding-scrollbar; border: 1px solid #ddd; -webkit-overflow-scrolling: touch; }
-   .s-lc-whw td { white-space: nowrap; }
-}
+	.s-lc-whw thead { background-color: #F5F5F5; }
+	.s-lc-whw-head-date { color: #999; }
+	.s-lc-whw-today-h {  background-color: #ddd; }
+	.s-lc-whw-today { background-color: #F5F5F5; }
+	.s-lc-whw-bh { text-align: right; white-space: nowrap; }
+	.s-lc-whw-locname { font-weight: bold;}
+	.s-lc-whw-sublocname{ padding-left: 10px!important; }
+	.s-lc-whw-footnote { color: #555; font-size: 80%; }
+	.s-lc-whw-footnote td:hover { background-color:#fff!important;}
+	/* Below styles can be removed if you are already using Bootstap v3 in host page */
+	.s-lc-whw-cont {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px;}
+	.s-lc-whw-pr, .s-lc-whw-ne{ padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; color: #333; background-color: #fff; border-color: #ccc; display: inline-block; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; }
+	.s-lc-whw-pr:disabled { background-color: #efefef; }
+	.s-lc-whw-ne:disabled { background-color: #efefef; }
+	.s-lc-whw { width: 100%; margin-bottom: 20px; max-width: 100%; background-color: transparent; border-bottom: none; border-left: none; border-collapse: collapse; border-spacing: 0; }
+	.s-lc-whw>tbody>tr>td { padding: 5px; }
+	.s-lc-whw>thead>tr>th { vertical-align: bottom; border-bottom: 2px solid #ddd; padding: 5px;}
+	.s-lc-whw th { border-top: none; border-bottom: none; border-right: none;}
+	@media (max-width: 768px) {
+	.s-lc-whw-cont .table-responsive { width: 100%; margin-bottom: 15px; overflow-y: hidden; overflow-x: scroll; -ms-overflow-style: -ms-autohiding-scrollbar; border: 1px solid #ddd; -webkit-overflow-scrolling: touch; }
+	.s-lc-whw td { white-space: nowrap; }
+	}
 </style>
 <!-- -->
 <!-- 4.2 Hours Page Widget #2 -->
 <script src="//api3.libcal.com/js/hours_month.js?002"></script>
 <div id="s-lc-mhw1433"></div>
 <script>
-$(function(){
-var slcmhw1433 = new $.LibCalHoursCal( $("#s-lc-mhw1433"), { iid: 1433, lid: 0, months: 3 });
-});
+	$(function(){
+		var slcmhw1433 = new $.LibCalHoursCal( $("#s-lc-mhw1433"), { iid: 1433, lid: 0, months: 3 });
+	});
 </script>
 
 <!-- Please note: The following styles are optional, feel free to modify! //-->
 <style>
-.s-lc-mhw-tb { width: 100%; border: 1px solid #ddd; border-collapse: collapse; border-spacing: 0; }
-.s-lc-mhw-tb th, .s-lc-mhw-tb td { border: 1px solid #ddd; vertical-align: top; }
-.s-lc-mhw-tb thead { background-color: #F5F5F5; }
-.s-lc-mhw-header { text-align: center; }
-.s-lc-mhw-header-date { text-align: center; display: inline-block; margin-top: 5px; font-size: 130%; }
-.s-lc-mhw-days td { text-align: center; font-weight: bold; min-width: 14.28%; max-width: 14.28%; width: 14.28%;}
-.s-lc-mhw-day-l { color: #555; text-align: right; padding: 2px; font-size: 11px; }
-.s-lc-mhw-cells { height: 50px; }
-.s-lc-mhw-fnc { color: #555; }
-.s-lc-mhw-loc { font-size: 11px; padding: 2px; border-radius: 4px; margin-bottom: 1px; color: #fff;  }
-.s-lc-mhw-subloc { margin-left: 5px;}
-.s-lc-mhw-footnote-cal { font-size: 86%;}
-.loc_1898 { background-color: #5786C5; }
-.loc_1899 { background-color: #006224; }
+	.s-lc-mhw-tb { width: 100%; border: 1px solid #ddd; border-collapse: collapse; border-spacing: 0; }
+	.s-lc-mhw-tb th, .s-lc-mhw-tb td { border: 1px solid #ddd; vertical-align: top; }
+	.s-lc-mhw-tb thead { background-color: #F5F5F5; }
+	.s-lc-mhw-header { text-align: center; }
+	.s-lc-mhw-header-date { text-align: center; display: inline-block; margin-top: 5px; font-size: 130%; }
+	.s-lc-mhw-days td { text-align: center; font-weight: bold; min-width: 14.28%; max-width: 14.28%; width: 14.28%;}
+	.s-lc-mhw-day-l { color: #555; text-align: right; padding: 2px; font-size: 11px; }
+	.s-lc-mhw-cells { height: 50px; }
+	.s-lc-mhw-fnc { color: #555; }
+	.s-lc-mhw-loc { font-size: 11px; padding: 2px; border-radius: 4px; margin-bottom: 1px; color: #fff;  }
+	.s-lc-mhw-subloc { margin-left: 5px;}
+	.s-lc-mhw-footnote-cal { font-size: 86%;}
+	.loc_1898 { background-color: #5786C5; }
+	.loc_1899 { background-color: #006224; }
 </style>
 <!--End hours page widget-->
