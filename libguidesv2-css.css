@@ -5,7 +5,7 @@
 
 /**
  * Created: 7-2-2015
- * Edited:  9-29-2015
+ * Edited:  12-7-2015
  * Author: David M. (JWU-Prov Library)
 
  */
@@ -156,8 +156,13 @@ p {
  *
  */
 
+/* Chat with a librarian wrapper */
 
+
+ 
+ 
 /* ASK PICS STUFF*/
+
 
 #ask-us-wrap-desktop {}
 #ask-pics-desktop {}
@@ -252,6 +257,13 @@ tr.hours-depart td.hours-col-loc {
 
 
 /* Regular CSS (that is, not the jquery UI stuff included below)*/
+
+/* Override to remove border from homepage searchbox*/
+#s-lg-box-7707035{
+	border-width:0px !important;
+	box-shadow: none !important;
+	margin-bottom:30px;
+	}
 
 #library-searchbox {
   min-width: 300px;
@@ -379,7 +391,7 @@ tr.hours-depart td.hours-col-loc {
 #library-searchbox > .ui-tabs .ui-tabs-panel {
   display: block;
   border-width: 0;
-  padding: 1em 1.4em;
+  padding: 1.1em 1.4em;
   background: none;
 }
 #library-searchbox > .ui-state-default, #library-searchbox > .ui-widget-content .ui-state-default, #library-searchbox > .ui-widget-header .ui-state-default {
