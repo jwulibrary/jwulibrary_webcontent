@@ -245,7 +245,7 @@ tr.hours-depart td.hours-col-loc {
 #study-room-links{
 	flex-wrap: wrap;
 	justify-content:space-around;
-	flex-direction:column;
+	flex-direction:row;
 	
 }
 
@@ -257,9 +257,10 @@ tr.hours-depart td.hours-col-loc {
 	display:flex; 
 	flex-wrap: wrap; 
 	min-width:100px;
-	max-width:150px;
+	width:90%;
+	max-width:450px;
 	padding:10px 0 10px 0;
-	margin:3px 0 3px 0;
+	margin:3px 20px 3px 20px;
 	justify-content:center;
 	align-items:center;
 	
