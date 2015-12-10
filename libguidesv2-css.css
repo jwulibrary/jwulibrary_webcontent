@@ -63,7 +63,10 @@ p {
 	margin-bottom: .5em !important;
 	font-weight: normal !important;
 }
-.librarybox>h3 {}
+.librarybox>h3 {
+
+	}
+	
 .librarybox>p {}
 .expl-text {
 	font-size: 1.4rem;
@@ -687,7 +690,10 @@ tr.hours-depart td.hours-col-loc {
 	* Text helpers.
 	*
 */
-
+.purple-background{
+	background-color: #694790;
+	}
+	
 .blue-background{
 	background-color: #5987c5;
 	}
