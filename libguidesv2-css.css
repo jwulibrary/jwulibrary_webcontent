@@ -52,7 +52,9 @@ p {
 }
 
 /* 0.0 Semi-global stuff*/
-
+.librarybox{
+	
+}
 
 .librarybox>h2 {
 	font-size: 1.4rem !important;
@@ -64,9 +66,9 @@ p {
 	font-weight: normal !important;
 }
 .librarybox>h3 {
-
-	}
 	
+}
+
 .librarybox>p {}
 .expl-text {
 	font-size: 1.4rem;
@@ -160,7 +162,11 @@ p {
 */
 
 /* Chat with a librarian wrapper */
-
+#chat-wrap{
+	display: flex;
+	justify-content: center;
+	
+}
 
 
 
@@ -252,7 +258,10 @@ tr.hours-depart td.hours-col-loc {
 	
 }
 
-
+#study-room-links h3{
+	font-weight:bold !important;
+	font-size:1.1em;
+}
 
 .study-room-link{
 	
@@ -434,7 +443,7 @@ tr.hours-depart td.hours-col-loc {
 #library-searchbox > .ui-state-hover, #library-searchbox > .ui-widget-content .ui-state-hover, #library-searchbox > .ui-widget-header .ui-state-hover, #library-searchbox > .ui-state-focus, #library-searchbox > .ui-widget-content .ui-state-focus, #library-searchbox > .ui-widget-header .ui-state-focus {
 	border: 1px solid #bbbbbb;
 	background: #d7bc69;
-	font-weight: bold;
+	
 }
 #library-searchbox > .ui-state-hover a, #library-searchbox > .ui-state-hover a:hover, #library-searchbox > .ui-state-hover a:link, #library-searchbox > .ui-state-hover a:visited, #library-searchbox > .ui-state-focus a, #library-searchbox > .ui-state-focus a:hover, #library-searchbox > .ui-state-focus a:link, #library-searchbox > .ui-state-focus a:visited {
 	color: #ffffff;
@@ -692,11 +701,11 @@ tr.hours-depart td.hours-col-loc {
 */
 .purple-background{
 	background-color: #694790;
-	}
-	
+}
+
 .blue-background{
 	background-color: #5987c5;
-	}
+}
 
 .green-background{
 	background-color: #93A445;
@@ -705,7 +714,9 @@ tr.hours-depart td.hours-col-loc {
 .pale-orange-background{
 	background-color:#F58932;
 }
-
+.dark-green-background{
+	background-color: #00450F;
+}
 
 
 h1.s-lg-guide-name {
