@@ -263,6 +263,7 @@ tr.hours-depart td.hours-col-loc {
 #study-room-links h3{
 	font-weight:bold !important;
 	font-size:1.1em;
+	margin:15px 0 5px 0;
 }
 
 .study-room-link{
@@ -273,11 +274,11 @@ tr.hours-depart td.hours-col-loc {
 	min-width:190px;
 	width:80%;
 	max-width:350px;
-	padding:10px 0 10px 0;
+	padding:9px 0 9px 0;
 	margin:3px 20px 3px 20px;
 	justify-content:center;
 	align-items:center;
-	font-size:1.2em;
+	font-size:1.1em;
 	
 }
 
@@ -712,6 +713,10 @@ tr.hours-depart td.hours-col-loc {
 
 .green-background{
 	background-color: #93A445;
+}
+
+.orange-background{
+background-color:#EFB211;
 }
 
 .pale-orange-background{
