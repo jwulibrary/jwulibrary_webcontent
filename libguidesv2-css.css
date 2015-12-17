@@ -4,8 +4,8 @@
 
 
 /**
-	* Created: 7-2-2015
-	* Edited:  12-7-2015
+	
+	* Edited:  12-16-2015
 	* Author: David M. (JWU-Prov Library)
 	
 */
@@ -267,20 +267,22 @@ tr.hours-depart td.hours-col-loc {
 }
 
 .study-room-link{
-	
+	font-family:Verdana;
 	color:#FFF;
 	display:flex; 
 	flex-wrap: wrap; 
 	min-width:190px;
 	width:80%;
 	max-width:350px;
-	padding:9px 0 9px 0;
+	padding:8px 0 8px 0;
 	margin:3px 20px 3px 20px;
 	justify-content:center;
 	align-items:center;
 	font-size:1.1em;
-	
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+
+
 
 
 #room-book-widget {}
@@ -707,24 +709,66 @@ tr.hours-depart td.hours-col-loc {
 	background-color: #694790;
 }
 
+.purple-background:hover{
+	opacity:.8;
+	color: white;
+}
+
+
 .blue-background{
 	background-color: #5987c5;
 }
+
+.blue-background:hover{
+	opacity:.8;
+	color: white;
+}
+
 
 .green-background{
 	background-color: #93A445;
 }
 
+.green-background:hover{
+	opacity:.8;
+	color: white;
+}
+
+
 .orange-background{
-background-color:#EFB211;
+	background-color:#EFB211;
+}
+
+.orange-background:hover{
+	opacity:.8;
+	color: white;
+}
+
+
+
+
+.orange-brown-background{
+	background-color:#CA7228;
 }
 
 .pale-orange-background{
 	background-color:#F58932;
 }
+.pale-orange-background:hover{
+	opacity:.8;
+	color: white;
+}
+
+
 .dark-green-background{
 	background-color: #00450F;
 }
+
+.dark-green-background:hover{
+	opacity:.8;
+	color: white;
+}
+
 
 
 h1.s-lg-guide-name {
