@@ -1,0 +1,78 @@
+<!--LibCal Events page template-->
+<!--edited 12-17-15-->
+<div class="row">
+	<div class="col-md-12">
+		<div class="btn-group pull-right" id="s-lc-event-tool-btns">
+			<a class="btn btn-default" href="#" onclick="window.print(); return false;" title="Print page" id="s-lc-event-b-p"><i class="fa fa-print fa-lg"></i></a>
+			<a class="btn btn-default" href="{{ical}}" title="Add to Calendar using iCal" id="s-lc-event-b-c"><i class="fa fa-calendar fa-lg"></i></a>
+			<a class="btn btn-default" href="{{facebook_url}}" title="Share on Facebook" id="s-lc-event-b-f" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
+			<a class="btn btn-default" href="{{twitter_url}}" title="Share on Twitter" id="s-lc-event-b-t" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
+		</div>
+	</div>
+</div>
+
+{{#description}}
+<div class="row">
+	<div class="col-md-12">{{{description}}}</div>
+</div>
+{{/description}}
+	
+{{#series_datetimes}}
+<div class="row">
+	<div class="col-md-2 s-lc-event-label">Dates  & Times:</div>
+	<div class="col-md-10">{{{series_datetimes}}}</div>
+</div>	
+{{/series_datetimes}}
+
+{{#single_event}}
+<div class="row">
+	<div class="col-md-2 s-lc-event-label">Date:</div>
+	<div class="col-md-10">{{date}}</div>
+</div>
+<div class="row">
+	<div class="col-md-2 s-lc-event-label">Time:</div>
+	<div class="col-md-10">{{start}} {{#end}} - {{end}}{{/end}}</div>
+</div>
+{{/single_event}}
+
+<div class="row">
+	<div class="col-md-2 s-lc-event-label">Location:</div>
+	<div class="col-md-10">{{location}}</div>
+</div>
+{{#campus}}
+<div class="row">
+	<div class="col-md-2 s-lc-event-label">Campus:</div>
+	<div class="col-md-10">{{campus}}</div>
+</div>
+{{/campus}}
+{{#categories}}
+<div class="row">
+	<div class="col-md-2 s-lc-event-label">Categories:</div>
+	<div class="col-md-10">{{categories}}</div>
+</div>
+{{/categories}}
+
+{{#registration_form}}
+{{{registration_form}}}
+{{/registration_form}}
+
+{{#reg_expired}}
+<div class="row margin-top-med">
+	<div class="col-md-2 s-lc-event-label"></div>
+	<div class="col-md-5"><div class="alert alert-warning">{{reg_expired}}</div></div>
+</div>
+{{/reg_expired}}
+
+{{#reg_expired_series}}
+<div class="row margin-top-med">
+	<div class="col-md-2 s-lc-event-label"></div>
+	<div class="col-md-5"><div class="alert alert-warning">{{reg_expired_series}}</div></div>
+</div>
+{{/reg_expired_series}}
+
+{{#reg_early}}
+<div class="row margin-top-med">
+	<div class="col-md-2 s-lc-event-label"></div>
+	<div class="col-md-5"><div class="alert alert-info">{{reg_early}}</div></div>
+</div>
+{{/reg_early}}
