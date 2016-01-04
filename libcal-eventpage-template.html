@@ -3,8 +3,9 @@
         <h3 class="media-heading"><a href="{{url}}">{{title}}</a></h3>
         <div class="s-lc-c-evt-des">{{{shortdesc}}}</div>
         <dl class="dl-horizontal"> <dt>Date:</dt>
-            <dd>{{date}}</dd>
-            </dd><dt></dt>
+            <dd>{{date}}</dd><dt>Time:</dt>
+            <dd>{{start}}{{#end}} - {{end}}{{/end}}</dd> 
+            </dd>
             <dd>{{#seats}}<a href="{{url}}" class="btn btn-success btn-sm margin-top-med">Register! {{#seatsleft}} - {{seatsleft}} seats left{{/seatsleft}}</a>{{/seats}}</dd>
         </dl>
     </div>{{#featured_image}}
