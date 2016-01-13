@@ -1,28 +1,51 @@
 <!-- content for libguides v2 homepage -->
-<!-- Created 6/30/2015 -->
-<!-- Last edited 12/8/2015 -->
+<!-- Last edited 1/13/2015 -->
 <!-- Editor (more or less): David M. -->
-<!-- ==  -->
 
+
+<!--Table of Contents -->
+<!-- 
+0: Development Stuff
+0.0 Dependencies for testing 
+
+
+1. Homepage HTML Content
+1.1: "Chatbox snippet"
+1.2 QUICK LINKS
+1.3. Calendar / Hours
+1.4: Homepage Room Bookings
+1.5. Ask Us
+1.6 TABBED SEARCHBOX
+1.7 FEATURED/GALLERY/SLIDER CONTENT
+1.8 Alert message box
+
+2. GUIDE-SPECIFIC CONTENT
+2.1: Reserves Lists
+
+PART 3: Look and Feel Stuff 
+3.1. Header (Look/Feel) 
+3.2 Footer (Look/Feel)
+3.3 Custom JS/CSS Code (Look/Feel)
+-->
+
+
+
+<!--Part 0 -- Development Stuff (not for inclusion in live libguide)-->
+<!-- 0.0 Dependencies for testing -->
 <link rel="stylesheet" href="libguidesv2-css.css" />
-
-
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 <link rel="stylesheet" href="http://pvd.library.jwu.edu/web/css1.9.3/springshare.public.min.css" />
 <link rel="stylesheet" href="http://pvd.library.jwu.edu/web/css1.9.3/springshare.common.min.css" />
 <link rel="stylesheet" href="http://pvd.library.jwu.edu/web/jquery/css/1.8.24_themes_base_jquery-ui.css" />
-
-
-
 <script type="text/javascript" src="http://pvd.library.jwu.edu/web/jquery/js/1.10.0_jquery.min.js"></script>
 <script type="text/javascript" src="http://pvd.library.jwu.edu/web/jquery/js/1.9.2_jquery-ui.min.js"></script>
 <script type="text/javascript" src="http://pvd.library.jwu.edu/web/js1.9.3/springshare.public.min.js"></script>
 <script type="text/javascript" src="http://pvd.library.jwu.edu/web/js1.9.3/springshare.common.min.js"></script>
-
-
-
 <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
+<!--END dependencies section -->
+
+
 
 
 
@@ -30,11 +53,11 @@
 
 
 <!-- ======================================= -->
-<!-- START (homepage boxes)-->
-<!-- ======================================= -->
-
 <!-- PART 1. Homepage HTML Content -->
-<!-- 1.0: "Chatbox snippet" -->
+<!-- ======================================= -->
+
+
+<!-- 1.1: "Chatbox snippet" -->
 <!---->
 
 <div id = "chat-wrap">
@@ -54,15 +77,15 @@
 	
 </div>
 
-	
+
 <!--End chatbox snippet -->
 
 <!--Chatbox setup snippet (FOR Libraryh3lp Admin) JUST SOURCE-->
 <!-- COMMENTED OUT 
-<img src="https://s3.amazonaws.com/libapps/customers/527/images/jwu-ask-a-librarian-button-quick-200px.png" alt="Chat now">
-
-
-<img src="https://s3.amazonaws.com/libapps/customers/527/images/jwu-ask-a-librarian-button-OFFLINE-quick-200px.png" alt="Come back later" />
+	<img src="https://s3.amazonaws.com/libapps/customers/527/images/jwu-ask-a-librarian-button-quick-200px.png" alt="Chat now">
+	
+	
+	<img src="https://s3.amazonaws.com/libapps/customers/527/images/jwu-ask-a-librarian-button-OFFLINE-quick-200px.png" alt="Come back later" />
 -->
 
 <!--END libraryh3lp chatbox setup snippets -->
@@ -70,7 +93,7 @@
 
 
 
-<!--1.1 QUICK LINKS -->
+<!--1.2 QUICK LINKS -->
 <div id="quicklinks-box" class="container-fluid librarybox">
 	<ul>
 		<li>
@@ -105,12 +128,12 @@
 	</ul>
 </div>
 
-<!--END 1.1 Quicklinks-->
+<!--END 1.2 Quicklinks-->
 
 
 
 
-<!-- B2. Calendar / Hours -->
+<!-- 1.3. Calendar / Hours -->
 <!-- preferred version, using libcal and javascript-->
 
 <!-- COMMENT OUT FOR NOW FOR DEVELOPMENT EASE
@@ -129,14 +152,22 @@
 	</div>
 	
 -->
-<!--END B.2 -->
+
+<!-- 1.3 Alternate Calendar: using old google model -->
+
+<iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=0ueu82jdq5apcsuic55nvhk5uc%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style="border-width:0" width="300" height="300" frameborder="0" scrolling="no"></iframe>
+
+
+<strong><a href="https://www.google.com/calendar/embed?src=0ueu82jdq5apcsuic55nvhk5uc%40group.calendar.google.com&amp;ctz=America/New_York">View all hours</a></strong>
+
+<!--END 1.3 -->
 
 
 
 
 
 
-<!-- B.2.5: Homepage Room Bookings -->
+<!-- 1.4: Homepage Room Bookings -->
 <div class="librarybox">
 	<div class="container-fluid">
 		
@@ -144,30 +175,27 @@
 		<div id="study-room-links">
 			<h3 class ='text-center'> Book a Study Room</h3>
 			
-			<div class ='row'><a class ='study-room-link blue-background'  href="http://jwu-ri.beta.libcal.com/booking/downcity">Downcity</a> 
+			<div class ='row'><a class ='study-room-link blue-background'  href="http://jwu-ri.libcal.com/booking/downcity">Downcity</a> 
 			</div>
 			
-			<div class ='row'><a class ='study-room-link green-background'  href="http://jwu-ri.beta.libcal.com/booking/harborside">Harborside</a>
+			<div class ='row'><a class ='study-room-link green-background'  href="http://jwu-ri.libcal.com/booking/harborside">Harborside</a>
 			</div>
 			
-			<h3 class ='text-center'> Book an Appointment with a Writing Tutor</h3>
+			<h3 class ='text-center'> Book an Appointment with a Writing Coach</h3>
 			
-			<div class ='row'><a class ='study-room-link purple-background'  href="http://jwu-ri.beta.libcal.com/booking/wc_downcity">Downcity </a>
+			<div class ='row'><a class ='study-room-link purple-background'  href="http://jwu-ri.libcal.com/booking/wc_downcity">Downcity </a>
 			</div>
-			<div class ='row'><a class ='study-room-link dark-green-background'  href="http://jwu-ri.beta.libcal.com/booking/wc_harborside">Harborside </a>
+		
+			
+		<h3 class ='text-center'> Book an appointment with a Librarian</h3>
+			
+			<div class ='row'><a class ='study-room-link orange-background'  href="http://jwu-ri.libcal.com/appointments/">Research Appointment </a>
 			</div>
-			
-			<h3 class ='text-center'> Book an appointment with a Librarian</h3>
-			
-			<div class ='row'><a class ='study-room-link orange-background'  href="http://jwu-ri.beta.libcal.com/#appointment">Research Appointment </a>
-			</div>
-			
-			
+					
 			
 		</div>
 	</div>
 </div>
-<!--END B.2.5 -->
 
 
 
@@ -175,7 +203,8 @@
 
 
 
-<!-- B3. Ask Us -->
+
+<!-- 1.5. Ask Us -->
 <!--Libguides houses this in a wrapper: col-md-6 -->
 <!--This is the large version, which points to the FAQS -->
 <div id="ask-us-wrap-desktop" class="hidden-xs librarybox">
@@ -286,8 +315,15 @@
 </div>
 
 
-<!-- END B.3 (Ask Us Content)-->
 <!--- ====================  --->
+
+
+
+
+
+
+
+
 
 
 <!-- 1.6 TABBED SEARCHBOX-->
@@ -461,6 +497,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <!--1.7 FEATURED/GALLERY/SLIDER CONTENT-->
 <!-- 1.7.1 Fall 2015 Gallery Content-->
 
@@ -471,14 +519,12 @@
 <!--END 1.7 FEATURED/GALLERY/SLIDER CONTENT-->
 
 
-<!-- ======================================= -->
-<!-- END PART B: (HOMEPAGE STUFF)-->
-<!-- ======================================= -->
-<!-- ======================================= -->
-<!-- ======================================= -->
-<!-- ======================================= -->
 
 
+<!-- 1.8 Alert message box-->
+<div class="librarybox">
+	<p>The Downcity and Harborside Libraries will be closed for the Winter Break from <strong> Friday, December 18, 2015 at 5:00 PM </strong> until <strong>Sunday, January 3, 2016 at 11:00 AM</strong>.<p> <p>We hope you have a safe and pleasant time, and we look forward to seeing you in 2016 --<em>The JWU Library</em></p>
+	</div>
 
 
 
@@ -489,34 +535,38 @@
 
 <!-- ======================================= -->
 <!-- ======================================= -->
-<!-- START PART C: () GUIDE-SPECIFIC CONTENT)-->
+<!-- START PART 2: GUIDE-SPECIFIC CONTENT)-->
 <!-- ======================================= -->
 
-<!-- Downcity Reserves List 
+<!--2.1: Reserves Lists -->
+<!-- Downcity Reserves List  -->
 	<iframe height="800px" src="https://docs.google.com/spreadsheets/d/18OuQAsSxOaQOVtWaOjRiCNkJ3TjQ5d3JebXzwBPdyoc/pubhtml?widget=true&amp;headers=false" width="100%"></iframe></p>
 	
-	<!-- Harborside Reserves List 
+<!-- Harborside Reserves List -->
 	<iframe height="800px" width="100%" src="https://docs.google.com/spreadsheets/d/1j9tv0361F-7jAtqxiUr2kMFyh0NO4l6igW6_MEcDHEY/pubhtml?gid=88842478&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 	
--->
-
-
-
-
-<!--END PART C-->
 
 
 
 
 
+<!--END PART 2-->
 
 
 
 
-<!-- Look and Feel Stuff -->
-<!-- https://jwu-ri.libapps.com/libguides/lookfeel.php -->
 
-<!-- 1. Header (Look/Feel)  -->
+
+
+
+<!-- ======================================= -->
+<!-- ======================================= -->
+<!-- START PART 3: Look and Feel Stuff -->
+
+
+
+
+<!-- 3.1. Header (Look/Feel)  -->
 <div class="container" id="jwulib-header">
 	
 	<div class="row">
@@ -536,7 +586,7 @@
 
 
 
-<!-- Footer (Look/Feel)-->
+<!-- 3.2 Footer (Look/Feel)-->
 
 <div class="container" id="jwulib-footer">
 	<div class="row">
@@ -545,7 +595,7 @@
 			
 			<ul>
 				<li>
-					<a href="/hours">Hours</a>
+					<a href="https://calendar.google.com/calendar/embed?src=0ueu82jdq5apcsuic55nvhk5uc@group.calendar.google.com&ctz=America/New_York">Hours</a>
 				</li>
 				
 				<li>
@@ -654,78 +704,18 @@
 
 
 
-<!-- 3. Custom JS/CSS Code (Look/Feel)-->
+<!-- 3.3 Custom JS/CSS Code (Look/Feel)-->
 
 <!--Temporary location of stylesheet, housed on a Github Linked server)
-	<link rel=stylesheet href="https://rawgit.com/jwulibrary/jwulibrary-libguides/lgv2-dev/libguidesv2-css.css" />
+<link rel=stylesheet href="https://rawgit.com/jwulibrary/jwulibrary-libguides/lgv2-dev/libguidesv2-css.css" /> -->
 	
+	
+<link rel="stylesheet" type="text/css" href="//s3.amazonaws.com/libapps/sites/538/include/libguidesv2-css.css">
+
+<script src="https://s3.amazonaws.com/libapps/sites/538/include/ebscohostsearch.js" type="text/javascript"></script>
 	
 <!-- ======================================= -->
 <!-- END  (LOOK AND FEEL): -->
 <!-- ======================================= -->
 
 
-
-<!-- 4. OTHER HTML CONTENT-->
-<!-- 4.1 Hours Page Widget #1 ... COMMENTED OUT
-<script src="//api3.libcal.com/js/hours_grid.js?002"></script>
-<div id="s-lc-whw0"></div>
-<script>
-	$(function(){
-		var week0 = new $.LibCalWeeklyGrid( $("#s-lc-whw0"), { iid: 1433, lid: 0,  weeks: 4 });
-	});
-</script>
-
-<style>
-	.s-lc-whw thead { background-color: #F5F5F5; }
-	.s-lc-whw-head-date { color: #999; }
-	.s-lc-whw-today-h {  background-color: #ddd; }
-	.s-lc-whw-today { background-color: #F5F5F5; }
-	.s-lc-whw-bh { text-align: right; white-space: nowrap; }
-	.s-lc-whw-locname { font-weight: bold;}
-	.s-lc-whw-sublocname{ padding-left: 10px!important; }
-	.s-lc-whw-footnote { color: #555; font-size: 80%; }
-	.s-lc-whw-footnote td:hover { background-color:#fff!important;}
-	/* Below styles can be removed if you are already using Bootstap v3 in host page */
-	.s-lc-whw-cont {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-size: 12px;}
-	.s-lc-whw-pr, .s-lc-whw-ne{ padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; color: #333; background-color: #fff; border-color: #ccc; display: inline-block; margin-bottom: 0; font-weight: 400; text-align: center; vertical-align: middle; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; }
-	.s-lc-whw-pr:disabled { background-color: #efefef; }
-	.s-lc-whw-ne:disabled { background-color: #efefef; }
-	.s-lc-whw { width: 100%; margin-bottom: 20px; max-width: 100%; background-color: transparent; border-bottom: none; border-left: none; border-collapse: collapse; border-spacing: 0; }
-	.s-lc-whw>tbody>tr>td { padding: 5px; }
-	.s-lc-whw>thead>tr>th { vertical-align: bottom; border-bottom: 2px solid #ddd; padding: 5px;}
-	.s-lc-whw th { border-top: none; border-bottom: none; border-right: none;}
-	@media (max-width: 768px) {
-	.s-lc-whw-cont .table-responsive { width: 100%; margin-bottom: 15px; overflow-y: hidden; overflow-x: scroll; -ms-overflow-style: -ms-autohiding-scrollbar; border: 1px solid #ddd; -webkit-overflow-scrolling: touch; }
-	.s-lc-whw td { white-space: nowrap; }
-	}
-</style>
-
-
-<script src="//api3.libcal.com/js/hours_month.js?002"></script>
-<div id="s-lc-mhw1433"></div>
-<script>
-	$(function(){
-		var slcmhw1433 = new $.LibCalHoursCal( $("#s-lc-mhw1433"), { iid: 1433, lid: 0, months: 3 });
-	});
-</script>
-
-
-<style>
-	.s-lc-mhw-tb { width: 100%; border: 1px solid #ddd; border-collapse: collapse; border-spacing: 0; }
-	.s-lc-mhw-tb th, .s-lc-mhw-tb td { border: 1px solid #ddd; vertical-align: top; }
-	.s-lc-mhw-tb thead { background-color: #F5F5F5; }
-	.s-lc-mhw-header { text-align: center; }
-	.s-lc-mhw-header-date { text-align: center; display: inline-block; margin-top: 5px; font-size: 130%; }
-	.s-lc-mhw-days td { text-align: center; font-weight: bold; min-width: 14.28%; max-width: 14.28%; width: 14.28%;}
-	.s-lc-mhw-day-l { color: #555; text-align: right; padding: 2px; font-size: 11px; }
-	.s-lc-mhw-cells { height: 50px; }
-	.s-lc-mhw-fnc { color: #555; }
-	.s-lc-mhw-loc { font-size: 11px; padding: 2px; border-radius: 4px; margin-bottom: 1px; color: #fff;  }
-	.s-lc-mhw-subloc { margin-left: 5px;}
-	.s-lc-mhw-footnote-cal { font-size: 86%;}
-	.loc_1898 { background-color: #5786C5; }
-	.loc_1899 { background-color: #006224; }
-</style>
-
-End hours page widget-->
