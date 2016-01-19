@@ -202,9 +202,16 @@ p {
 #quicklinks-box ul li a {
 	font-size: 1em;
 }
+
+/*removes quicklinks bullets from miamis page*/
+#s-lg-link-list-4784551 li, #s-lg-link-list-4815847 li{
+	list-style-type: none !important;
+}
+
 #quicklinks-box ul li a, ul li a:focus, ul li a:visited {
 	border-bottom: 1px dotted #B0B0B0;
 	font-family: Verdana, Arial, sans-serif !important;
+	list-style-type: none !important;
 }
 
 /* Local overrides for box-specific content: QUICK LINKS */
