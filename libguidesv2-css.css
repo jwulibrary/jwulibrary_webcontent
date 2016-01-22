@@ -78,7 +78,7 @@ p {
 	font-size: 1.2em;
 }
 .s-lg-link-list a {
-	font-size: 1.2em;
+	font-size: 1em;
 }
 .s-lg-az-result-title a {
 	font-size: 1.1em !important;
@@ -203,10 +203,17 @@ p {
 	font-size: 1em;
 }
 
-/*removes quicklinks bullets from miamis page*/
+/*removes quicklinks bullets from miami's page*/
 #s-lg-link-list-4784551 li, #s-lg-link-list-4815847 li{
 	list-style-type: none !important;
 }
+
+
+/*removes quicklinks bullets from denver's page*/
+#s-lg-link-list-3236083 li{
+	list-style-type: none !important;
+}
+
 
 #quicklinks-box ul li a, ul li a:focus, ul li a:visited {
 	border-bottom: 1px dotted #B0B0B0;
