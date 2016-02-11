@@ -5,8 +5,8 @@
 
 /**
 	
-	* Edited:  12-16-2015
-	* Author: David M. (JWU-Prov Library)
+	* Edited:  2-11-2016
+
 	
 */
 
@@ -48,7 +48,7 @@ h5 {
 }
 p {
 	font-family: Verdana, Arial, sans-serif !important;
-	font-size: 12px !important;
+	font-size: 1em !important;
 }
 
 /* 0.0 Semi-global stuff*/
@@ -77,11 +77,21 @@ p {
 .s-lg-link-desc {
 	font-size: 1.2em;
 }
+.s-lg-link-list {
+	padding-left:14px;
+}
+
+
 .s-lg-link-list a {
 	font-size: 1em;
 }
 .s-lg-az-result-title a {
-	font-size: 1.1em !important;
+	font-size: 1.2em !important;
+	color: #004a91;
+}
+
+.s-lg-link-list li{
+	padding-top: 2px;
 }
 .s-lg-az-result-description {
 	font-size: 1em !important;
@@ -125,7 +135,7 @@ p {
 	padding: 2px 0 0px 5px;
 }
 
-/*HOURS page customization */
+/*JWU Prov HOURS page customization */
 
 .loc_1898 {
 	background-color: #5786C5;
@@ -198,25 +208,31 @@ p {
 	padding: 0 0 10px 0px;
 	margin: 0;
 }
+
 #quicklinks-box ul li {}
 #quicklinks-box ul li a {
 	font-size: 1em;
+	padding-top:2px;
 }
 
 /*removes quicklinks bullets from miami's page*/
 #s-lg-link-list-4784551 li, #s-lg-link-list-4815847 li{
 	list-style-type: none !important;
+	font-family: Verdana, Arial, sans-serif !important;
+	
 }
 
 
 /*removes quicklinks bullets from denver's page*/
 #s-lg-link-list-3236083 li{
 	list-style-type: none !important;
+	font-family: Verdana, Arial, sans-serif !important;
+	
 }
 
 
 #quicklinks-box ul li a, ul li a:focus, ul li a:visited {
-	border-bottom: 1px dotted #B0B0B0;
+	/*border-bottom: 1px dotted #B0B0B0; */
 	font-family: Verdana, Arial, sans-serif !important;
 	list-style-type: none !important;
 }
@@ -431,7 +447,7 @@ tr.hours-depart td.hours-col-loc {
 }
 #library-searchbox > .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
 	float: left;
-	padding: .5em 1em;
+	padding: .5em .5em;
 	text-decoration: none;
 	color: #FFF;
 }
@@ -708,6 +724,25 @@ tr.hours-depart td.hours-col-loc {
 	/*-- ## Buttons (COMPONENTS)  -- *\
 	* homepage icons under "Ask Us"...this is where the styles are
 */
+
+.btn-jwu1{
+	color:#fff;
+	background-color:#5987c5;
+	border-color:#2e6da4;
+	}
+
+
+.btn-jwu2{
+	color:#fff;
+	background-color:#93A445;
+	border-color:#FFF;
+	}
+	
+.btn-jwu3{
+	color:#fff;
+	background-color:#EFB211;
+	border-color:#FFF;
+	}
 
 
 /*------------------------------------*\
