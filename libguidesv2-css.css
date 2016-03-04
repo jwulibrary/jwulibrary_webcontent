@@ -297,7 +297,7 @@ tr.hours-depart td.hours-col-loc {
 }
 
 .study-room-link{
-	font-family:Verdana;
+	font-family:'open sans', sans-serif;
 	color:#FFF;
 	display:flex; 
 	flex-wrap: wrap; 
@@ -308,8 +308,9 @@ tr.hours-depart td.hours-col-loc {
 	margin:3px 20px 3px 20px;
 	justify-content:center;
 	align-items:center;
-	font-size:1.1em;
+	font-size:1em;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border-radius:4px;
 }
 
 
