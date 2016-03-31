@@ -5,8 +5,8 @@
 
 /**
 	
-	* Edited:  12-16-2015
-	* Author: David M. (JWU-Prov Library)
+	* Edited:  2-11-2016
+
 	
 */
 
@@ -48,7 +48,7 @@ h5 {
 }
 p {
 	font-family: Verdana, Arial, sans-serif !important;
-	font-size: 12px !important;
+	font-size: 1em !important;
 }
 
 /* 0.0 Semi-global stuff*/
@@ -77,11 +77,21 @@ p {
 .s-lg-link-desc {
 	font-size: 1.2em;
 }
+.s-lg-link-list {
+	padding-left:14px;
+}
+
+
 .s-lg-link-list a {
-	font-size: 1.2em;
+	font-size: 1em;
 }
 .s-lg-az-result-title a {
-	font-size: 1.1em !important;
+	font-size: 1.2em !important;
+	color: #004a91;
+}
+
+.s-lg-link-list li{
+	padding-top: 2px;
 }
 .s-lg-az-result-description {
 	font-size: 1em !important;
@@ -125,7 +135,7 @@ p {
 	padding: 2px 0 0px 5px;
 }
 
-/*HOURS page customization */
+/*JWU Prov HOURS page customization */
 
 .loc_1898 {
 	background-color: #5786C5;
@@ -198,13 +208,33 @@ p {
 	padding: 0 0 10px 0px;
 	margin: 0;
 }
+
 #quicklinks-box ul li {}
 #quicklinks-box ul li a {
 	font-size: 1em;
+	padding-top:2px;
 }
-#quicklinks-box ul li a, ul li a:focus, ul li a:visited {
-	border-bottom: 1px dotted #B0B0B0;
+
+/*removes quicklinks bullets from miami's page*/
+#s-lg-link-list-22364709 li, #s-lg-link-list-4815847 li{
+	list-style-type: none !important;
 	font-family: Verdana, Arial, sans-serif !important;
+	
+}
+
+
+/*removes quicklinks bullets from denver's page*/
+#s-lg-link-list-3236083 li{
+	list-style-type: none !important;
+	font-family: Verdana, Arial, sans-serif !important;
+	
+}
+
+
+#quicklinks-box ul li a, ul li a:focus, ul li a:visited {
+	/*border-bottom: 1px dotted #B0B0B0; */
+	font-family: Verdana, Arial, sans-serif !important;
+	list-style-type: none !important;
 }
 
 /* Local overrides for box-specific content: QUICK LINKS */
@@ -267,7 +297,7 @@ tr.hours-depart td.hours-col-loc {
 }
 
 .study-room-link{
-	font-family:Verdana;
+	font-family:'open sans', sans-serif;
 	color:#FFF;
 	display:flex; 
 	flex-wrap: wrap; 
@@ -278,8 +308,9 @@ tr.hours-depart td.hours-col-loc {
 	margin:3px 20px 3px 20px;
 	justify-content:center;
 	align-items:center;
-	font-size:1.1em;
+	font-size:1em;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border-radius:4px;
 }
 
 
@@ -417,7 +448,7 @@ tr.hours-depart td.hours-col-loc {
 }
 #library-searchbox > .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
 	float: left;
-	padding: .5em 1em;
+	padding: .5em .5em;
 	text-decoration: none;
 	color: #FFF;
 }
@@ -597,24 +628,26 @@ tr.hours-depart td.hours-col-loc {
 	border:1px solid #014A91;
 	padding:1px;
 	background-color: #FFF;
-	padding:5px 3px 5px 2px;
+	 padding: 10px;
+
 }
 
 .carousel-caption p {
-	margin: 0 0 0 0;
+	margin: 0 0 -18px 0;
 	color: #FFF;
-	font-size: .9em !important;
+	font-size: 1.1em !important;
 	border: 1px solid #CCCCCC;
 	text-shadow: none;
 	font-family:  Verdana, sans-serif;
 	background-color: #014A91;
+	opacity:.9;
 }
-.carousel-caption a, .carousel-caption a:focus, .carousel-caption a:visited{
+.carousel-caption p a, .carousel-caption a:focus, .carousel-caption a:visited{
 	color: #FFF !important;
 }
 
 .carousel-caption h4 a, .carousel-caption h4 a:focus, .carousel-caption h4 a:visited{
-	
+	color: #014A91 !important;
 }
 
 
@@ -694,6 +727,25 @@ tr.hours-depart td.hours-col-loc {
 	/*-- ## Buttons (COMPONENTS)  -- *\
 	* homepage icons under "Ask Us"...this is where the styles are
 */
+
+.btn-jwu1{
+	color:#fff;
+	background-color:#5987c5;
+	border-color:#2e6da4;
+	}
+
+
+.btn-jwu2{
+	color:#fff;
+	background-color:#93A445;
+	border-color:#FFF;
+	}
+	
+.btn-jwu3{
+	color:#fff;
+	background-color:#EFB211;
+	border-color:#FFF;
+	}
 
 
 /*------------------------------------*\
