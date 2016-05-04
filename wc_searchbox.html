@@ -1,0 +1,83 @@
+<!--
+	Docs:
+	https://www.worldcat.org/wcpa/do/AffiliateLogin;jsessionid=8A579D9F349F11D33199A9DDA9C9BC49
+	
+	Ideas:
+	http://libguides.palni.edu/c.php?g=40962&p=378581
+	http://www.palni.org/worldcat/franklin/search/search.html
+	
+-->
+<link rel="stylesheet" href="libguidesv2-css.css" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+<link rel="stylesheet" href="http://pvd.library.jwu.edu/web/css1.12.18/springshare.public.min.css" />
+<link rel="stylesheet" href="http://pvd.library.jwu.edu/web/css1.12.18/springshare.public.min.css" />
+<link rel="stylesheet" href="http://pvd.library.jwu.edu/web/jquery/css/1.8.24_themes_base_jquery-ui.css" />
+<script type="text/javascript" src="http://pvd.library.jwu.edu/web/jquery/js/1.10.0_jquery.min.js"></script>
+<script type="text/javascript" src="http://pvd.library.jwu.edu/web/jquery/js/1.9.2_jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://pvd.library.jwu.edu/web/js1.12.18/springshare.public.min.js"></script>
+<script type="text/javascript" src="http://pvd.library.jwu.edu/web/js1.12.18/springshare.common.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
+
+
+<style>
+	#search-body{
+	font-family:'open sans';
+	width:450px;
+	}
+	
+	.search-title h3 {
+	font-family:'roboto';
+	}
+	
+	.search-term{
+
+	}
+	
+	.searchbox-wrap{
+	margin-left:5px;
+	
+	}
+	
+	#worldcat-searchbox{
+	height:42px;
+	
+	}
+	input#worldcat-searchbox{
+	display: inline;
+	vertical-align: middle;
+	min-width:375px;
+	 max-width: 80%;
+	
+	}
+	button.search-submit{
+	display: inline;
+	vertical-align: middle;
+	}
+	
+</style>
+
+
+
+<div class="container-fluid">
+	<div id="search-body" >
+	<form action="https://jwupvd.on.worldcat.org/search" class="form-inline" target='_blank' >
+		
+			<div class="search-title">
+				<h3>Find <span id="search-name">Something</span></h3>        
+			</div>
+			<div class="row form_group searchbox-wrap">
+				<label class="sr-only" for="worldcat-searchbox">Search</label><input  id="worldcat-searchbox" class="form-control" name="queryString" placeholder="Find some stuff that the library has">
+				<button type="submit" class="search-submit btn" title="search">
+					<i class="fa fa-search fa-2x" aria-hidden="true"></i>
+				</button>
+			</div>
+			<div class="row">
+				 <div class="pull-right"><a href="https://jwupvd.on.worldcat.org/advancedsearch">Advanced Search</a></div>
+			</div>
+		</div>
+	</form>
+</div>
+
+
