@@ -853,3 +853,80 @@ h2.s-lib-box-title {
 h3.s-lc-app-s1h3 {
 	font-size:2.5rem;
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* NEW SEARCHBOX, 2016 */
+
+#s-lg-guide-search-form{
+		width: 300px;
+		}
+		
+		
+		
+	button.search-submit {
+	opacity:1;
+	}
+	
+	button.search-submit:hover {
+	opacity:.75;
+	box-shadow: inset 0 0 0 5px #3071A9;
+	}
+	
+	button.search-submit:active {
+	opacity:.15;
+	}
+	
+	#jwuul-header{
+	background: #0C4781;
+	
+	}
+	
+	#jwu-logo{
+	background:url(JWULogo-White.svg);
+	display: block;
+	text-indent: -9999px;
+	width: 200px;
+	height: 82px;
+	background-size: 200px 82px;
+	}
+	
+	#jwuul-header h1, #jwuul-header h1 a {
+    text-align: center;
+    color: #FFF;
+	font-family:"open sans",sans-serif;
+	font-weight: 700;
+    line-height: 1.125;
+	}
+	
+	#jwuul-searchbox{
+	margin: 1.5em 0;
+	}
+	
+	.search.input-group{
+	font-family:"open sans",sans-serif;
+	}
+	
+	#library-search-box{
+	font-family:"open sans",sans-serif;
+	font-size:1.1em;
+	
+	}
+	#header-menu{
+	
+	}
+	#search-tabs{
+	background:#FFF;
+	}
+	
+	.search-name{
+	color:#FFF;
+	font-size:1.4em;
+	font-family:"open sans",sans-serif;
+	}
