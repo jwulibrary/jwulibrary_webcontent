@@ -90,45 +90,49 @@
 
 <!--END libraryh3lp chatbox setup snippets -->
 
-
-
-
+<style>
+	#quicklinks-box.list-group{}
+	
+#quicklinks-box ul li a, #quicklinks-box ul li a:focus, #quicklinks-box ul li a:visited{
+font-family:"Roboto";
+}
+</style>
 <!--1.2 QUICK LINKS -->
 <div id="quicklinks-box" class="container-fluid librarybox">
-	<ul>
-		<li>
-			<a href="http://pvd.library.jwu.edu/reserves" data-quicklink="reserves" onClick="ga('send', 'event', 'quicklinks', 'click', 'reserves') ;">Course Reserves (Textbooks)</a>
+	<ul class="list-group">
+		<li class='list-group-item'>
+			<a class='text-xs-center' href="http://pvd.library.jwu.edu/reserves" data-quicklink="reserves" onClick="ga('send', 'event', 'quicklinks', 'click', 'reserves') ;">Course Reserves (Textbooks)</a>
 		</li>
-		<li>
-			<a href="http://pvd.library.jwu.edu/az.php"  data-quicklink="databases" onClick="ga('send', 'event', 'quicklinks', 'click', 'databases') ; ">Databases</a>
+		<li class='list-group-item'>
+			<a class='text-xs-center' href="http://pvd.library.jwu.edu/az.php"  data-quicklink="databases" onClick="ga('send', 'event', 'quicklinks', 'click', 'databases') ; ">Databases</a>
 		</li>
-		<li>
-			<a href="http://jwu-ri.libanswers.com/" data-quicklink="faq" onClick="ga('send', 'event', 'quicklinks', 'click', 'faq)' ;">Frequently Asked Questions</a>
+		<li class='list-group-item'>
+			<a class='text-xs-center' href="http://jwu-ri.libanswers.com/" data-quicklink="faq" onClick="ga('send', 'event', 'quicklinks', 'click', 'faq)' ;">Frequently Asked Questions</a>
 		</li>
-		<li>
-			<a href="http://jwu-ri.libanswers.com/a.php?qid=7831"  data-quicklink="ill" onClick="ga('send', 'event', 'quicklinks', 'click', 'ill') ;">Interlibrary Loan</a>
+		<li class='list-group-item'>
+			<a class='text-xs-center' href="http://jwu-ri.libanswers.com/a.php?qid=7831"  data-quicklink="ill" onClick="ga('send', 'event', 'quicklinks', 'click', 'ill') ;">Interlibrary Loan</a>
 		</li>
-		<li>
-			<a href="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?profile=pfi"  data-quicklink="journals" onClick="ga('send', 'event', 'quicklinks', 'click', 'journals') ;">Journals &amp; Magazines</a>
+		<li class='list-group-item'>
+			<a class='text-xs-center' href="https://jwupvd.on.worldcat.org/atoztitles/#journal"  data-quicklink="journals" onClick="ga('send', 'event', 'quicklinks', 'click', 'journals') ;">Journals &amp; Magazines</a>
 		</li>
-		<li>
-			<a href="http://library.uri.edu/patroninfo"  data-quicklink="account" onClick="ga('send', 'event', 'quicklinks', 'click', 'account') ;">My Library Account</a>
+		<li class='list-group-item'>
+			<a class='text-xs-center' href="http://library.uri.edu/patroninfo"  data-quicklink="account" onClick="ga('send', 'event', 'quicklinks', 'click', 'account') ;">My Library Account</a>
 		</li>
-		<li>
-			<a href="http://library.uri.edu/patroninfo"  data-quicklink="offcampus" onClick="ga('send', 'event', 'quicklinks', 'click', 'offcampus') ;">Off-Campus Access</a>
+		<li class='list-group-item'>
+			<a class='text-xs-center' href="http://jwu-ri.libanswers.com/a.php?qid=12330"  data-quicklink="offcampus" onClick="ga('send', 'event', 'quicklinks', 'click', 'offcampus') ;">Off-Campus Access</a>
 		</li>
-		<li>
-			<a href="https://jwulibpvd.afford.com/"  data-quicklink="bills" onClick="ga('send', 'event', 'quicklinks', 'click', 'bills') ;">Pay Bills &amp; Fines</a>
+		<li class='list-group-item'>
+			<a class='text-xs-center' href="https://jwulibpvd.afford.com/"  data-quicklink="bills" onClick="ga('send', 'event', 'quicklinks', 'click', 'bills') ;">Pay Bills &amp; Fines</a>
 		</li>
 		
-		<li>
-			<a href="http://scholarsarchive.jwu.edu/"  data-quicklink="sa"  onClick="ga('send', 'event', 'quicklinks', 'click', 'sa') ;">ScholarsArchive@JWU</a>
+		<li class='list-group-item'>
+			<a class='text-xs-center' href="http://scholarsarchive.jwu.edu/"  data-quicklink="sa"  onClick="ga('send', 'event', 'quicklinks', 'click', 'sa') ;">ScholarsArchive@JWU</a>
 		</li>
-		<li>
-			<a href="http://jwu-ri.libanswers.com/a.php?qid=17269"  data-quicklink="staff" onClick="ga('send', 'event', 'quicklinks', 'click', 'staff') ;">Staff Directory</a>
+		<li class='list-group-item'>
+			<a class='text-xs-center' href="http://jwu-ri.libanswers.com/a.php?qid=17269"  data-quicklink="staff" onClick="ga('send', 'event', 'quicklinks', 'click', 'staff') ;">Staff Directory</a>
 		</li>
-		<li>
-			<a href="http://pvd.library.jwu.edu/wwc"  data-quicklink="wwc" onClick="ga('send', 'event', 'quicklinks', 'click', 'wwc') ;">Wildcat Writing Center</a>
+		<li class='list-group-item'>
+			<a class='text-xs-center' href="http://pvd.library.jwu.edu/wwc"  data-quicklink="wwc" onClick="ga('send', 'event', 'quicklinks', 'click', 'wwc') ;">Wildcat Writing Center</a>
 		</li>
 	</ul>
 </div>
@@ -355,7 +359,7 @@
 							<a href="http://jwu-ri.libanswers.com/a.php?qid=936251" target="_blank" title="JWU LibraryFAQ explaining OneSearch">(What is OneSearch?)</a>
 						</span>
 					</div>
-					<form method="get" action="http://encore.uri.edu/iii/encore/plus/Home,$Search.onesearch-form.sdirect" name="form" id="form" target="_blank" onsubmit="ga('send', 'event', 'searchbox', 'submit', 'onesearch'); ">
+					<form method="get" action="http://encore.uri.edu/iii/encore/plus/Home,$Search.onesearch-form.sdirect" name="form" id="form" target="_blank" onsubmit="var val = document.getElementById('target').value; ga('send', 'event', 'searchbox', 'onesearch', val); ">
 						<input name="formids" value="target" type="hidden">
 						<input name="lang" value="eng" type="hidden">
 						<input name="suite" value="def" type="hidden">
@@ -522,7 +526,20 @@
 
 <a href="http://scholarsarchive.jwu.edu/lib_newsletter/24/">See what the JWU Library has been up to!</a>
 
+<a href="http://scholarsarchive.jwu.edu/lib_newsletter/26/">Spring Newsletter</a>
+<a href="http://scholarsarchive.jwu.edu/lib_newsletter/26/">See what the JWU Library has been up to!</a>
+https://s3.amazonaws.com/libapps/customers/527/images/newsletter-spring2016_600.png
+http://scholarsarchive.jwu.edu/lib_newsletter/26/
 
+<a href="https://youtu.be/sEWCERaKyhY">Off-Campus Access</a>
+<a href="https://youtu.be/sEWCERaKyhY">Watch this video  to learn more</a>, or <a href="http://jwu-ri.libanswers.com/a.php?qid=12330">read about it in our FAQ</a>
+https://s3.amazonaws.com/libapps/customers/527/images/barcode-homepage-image.png
+https://youtu.be/sEWCERaKyhY
+
+<a href="http://scholarsarchive.jwu.edu/">ScholarsArchive@JWU Turns 10!</a>
+<a href="http://scholarsarchive.jwu.edu/">Help us celebrate 10 years and 1 million downloads!</a>
+https://s3.amazonaws.com/libapps/customers/527/images/scholarsarchivecelelbration.png
+http://scholarsarchive.jwu.ed/u
 
 <!--END 1.7 FEATURED/GALLERY/SLIDER CONTENT-->
 
@@ -803,3 +820,17 @@
 	<script>dbGaTrack()</script>
 	
 	
+	
+	<!--For LibCal scheduler-->
+	
+	$("#s-lc-app-slist > .radio > label:contains('Lisa')").addClass('hb-librarian')
+	$("#s-lc-app-slist > .radio > label:contains('Fred')").addClass('hb-librarian')
+	$("#s-lc-app-slist > .radio > label:contains('Kerry')").addClass('hb-librarian')
+	
+	$("#s-lc-app-slist > .radio > label:contains('Joe')").addClass('dc-librarian')
+	$("#s-lc-app-slist > .radio > label:contains('David')").addClass('dc-librarian')
+	$("#s-lc-app-slist > .radio > label:contains('Sarah')").addClass('dc-librarian')
+	$("#s-lc-app-slist > .radio > label:contains('Kelly')").addClass('dc-librarian')
+	
+	
+	$(".hb-lib-label").append("<span class='hb-lib-label'>Harborside</span>")

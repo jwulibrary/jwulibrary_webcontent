@@ -1,0 +1,56 @@
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//s3.amazonaws.com/libapps/sites/538/include/libguidesv2-css.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
+
+
+<script>
+	$( document ).ready(function() {
+		
+		$("input[name='lname']").attr("placeholder", "Last Initial");
+		$("div.s-lc-name").find("span.s-lc-rm-lab").text("First Name, Last Initial *");
+		
+		
+		<!--Find this thing: <h3 class="s-lc-app-s1h3">1. Select a staff member:</h3> -->
+		<!-- replace with “Select a library and then a Staff Member “-->
+	
+		
+		
+	});
+</script>
+
+<script>
+		function changeLcAppointText() {
+		$("h3.s-lc-app-s1h3:contains('1. Select a staff member:')").text('1. Select a library and a librarian');
+		}
+</script>
+<!-- Call <script>changeLcAppointText()</script>  somewhere, maybe in group title-->
+<style>
+	#s-lc-rm-capacity-cont {display: none;}
+	
+	.panel-title {
+	color:#FFF;
+	text-align: center;	
+	font-family: 'open sans', sans-serif;
+	}
+	
+	#heading180 {
+	background-color: #5987c5;
+	}
+	#heading182 {
+	background-color: #93A445;
+	}
+	
+	.checkbox label, .radio label {
+	font-family: 'open sans', sans-serif;
+	font-size:1.1em;
+	}
+	
+	h3.s-lc-app-s1h3 {
+	font-family: roboto,sans-serif;
+	color: #333;
+	font-size: 1.9em;
+	padding-bottom: 9px;
+	font-weight:bold;
+	}
+	
+</style>
