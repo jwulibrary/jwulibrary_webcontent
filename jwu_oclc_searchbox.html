@@ -1,0 +1,274 @@
+<!-- IMports. Do not include in LibGuide Box  -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
+
+<!-- Inline css to include in master -->
+<style>
+	/* Extra small devices (phones, less than 768px) */
+	/* No media query since this is the default in Bootstrap */
+	/* Small devices (tablets, 768px and up) */
+
+	@media (min-width: @screen-sm-min) {
+		...
+	}
+	/* Medium devices (desktops, 992px and up) */
+
+	@media (min-width: @screen-md-min) {
+		button.search-submit
+	}
+	/* Large devices (large desktops, 1200px and up) */
+
+	@media (min-width: @screen-lg-min) {
+		...
+	}
+
+	#jwuul-searchbox h1#searchbox-title {
+		background-color: #f1f1f1;
+		background-image: none;
+		color: #888;
+		border-bottom: 1px solid #cccccc;
+		border-radius: 0;
+		font-family: 'Gill Sans MT', 'Gill Sans', Verdana, sans-serif;
+		letter-spacing: .5em;
+		font-weight: 300;
+		text-transform: uppercase;
+		padding: .5em;
+		font-size: 1.5em;
+	}
+
+	button.btn.search-submit {
+		opacity: 1;
+		background-color: #004a91;
+		transition: background-color 0.5s ease;
+		color: #FFF;
+	}
+
+	button.search-submit:active {
+		opacity: .15;
+	}
+
+	button.search-submit:hover {
+		background-color: #F0B310;
+	}
+
+	#jwuul-header {
+		background: #2665A1;
+	background: transparent;
+	}
+
+	#jwu-logo {
+		background: url(JWULogo-White.svg);
+		display: block;
+		text-indent: -9999px;
+		width: 200px;
+		height: 82px;
+		background-size: 200px 82px;
+	}
+
+	#jwuul-header h1,
+	#jwuul-header h1 a {
+		text-align: center;
+		color: #FFF;
+		font-family: "open sans", sans-serif;
+		font-weight: 700;
+		line-height: 1.125;
+	}
+
+	#jwuul-searchbox {
+		margin: 1.5em 0;
+	}
+
+	.search.input-group {
+		font-family: "open sans", sans-serif;
+		padding: 1em 2em 0em 1em;
+	}
+
+	#library-search-box {
+		font-family: "open sans", sans-serif;
+		font-size: 1.2em;
+		border: 1px solid #90b5e7;
+	}
+
+	#header-menu {}
+
+	#search-tabs {
+		background: #FFF;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	.nav>li>a {
+		color: #333;
+	}
+
+	.nav>li>a:hover {
+		color: #FFF;
+		background-color: #175893;
+		opacity: .5
+	}
+
+	#search-tabs> li.active a {
+		background-color: #175893;
+		color: #FFF;
+		opacity: 1;
+		transition: opacity ease .5s;
+	}
+
+	#search-tabs>li>a {
+		font-size: 1.7em;
+		font-family: "Roboto", sans-serif;
+		font-weight: 300;
+	}
+
+	#search-tabs>li>a> i {
+		font-size: 1.4em;
+	}
+
+	#search-tabs>li.active>a> i {
+		transition: color 1.51s ease;
+		color: #FFF;
+	}
+
+	#search-tabs>li>a> span {
+		font-size: 1.1em;
+		padding: 0.3em 0.3em 0.3em 0.2em
+	}
+
+	h4.search-name {
+		color: #004a91;
+		font-size: 1.6em;
+		font-family: "open sans", sans-serif;
+		margin: 20px 2px 2px 2px;
+	}
+
+	.tab-content {
+		padding: .3em .3em .3em 2em;
+	}
+
+	.advanced-search a {
+		color: #004a91;
+		font-family: "open sans", sans-serif;
+		padding: 2em;
+	}
+
+	button.input-group-btn {
+		font-size: 2em;
+	}
+
+	#old-searchbox-msg {
+		margin: 0 8em;
+		font-size: 1.2em;
+	}
+</style>
+
+
+<!--header wrapper-->
+<div id="jwuul-header" class="container-fluid">
+	<!-- 	<div id = "header-menu"class="row">
+</div>
+<div class="row" id="jwuul-header-top">
+<h1 class="col-sm-8">
+<a href="/library">University Libraries</a>
+</h1>
+<div id="jwu-logo" class="col-sm-4"></div>
+</div> -->
+	<div id="jwuul-searchbox">
+		<h1 id="searchbox-title">Worldcat Search</h1>
+		<ul id="search-tabs" class="nav nav-tabs nav-justified">
+			<li class="active"><a href="#everything-tab" data-toggle="tab"><i class="fa fa-search"></i> <span>Everything</span></a></li>
+			<li><a href="#articles-tab" data-toggle="tab"><i class="fa fa-newspaper-o"></i> <span>Articles</span></a></li>
+			<li><a href="#books-tab" data-toggle="tab"><!-- <span class=Bookshicon glyphicon-book"></span> --><i class="fa fa-book"></i> <span>Books</span></a></li>
+		</ul>
+
+		<div class="tab-content">
+			<!-- TAB 1 -->
+			<div id="everything-tab" class="tab-pane active">
+				<h4 class="search-name">Find Books, Articles, Media, and more</h4>
+				<div class="row">
+					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage',  'everything-search', val); ">
+						<div class="search input-group ">
+							<label for="library-search-box" class="sr-only">
+								Find Books, Articles, Media, and More
+							</label>
+							<input type="hidden" name="format" value="all">
+							<input type="text" id="library-search-box" class="form-control input input-lg" name="queryString" placeholder="Enter title, author, keyword, ISBN, etc. of the article, journal, book, movie, etc." />
+							<span class="input-group-btn">
+
+<button type="submit" class=" btn btn-lg   search-submit">
+<i class="fa fa-search fa-lg " aria-hidden="true"></i>
+
+Search
+</button>
+</span>
+						</div>
+					</form>
+				</div>
+				<div class="row">
+					<div class="pull-right advanced-search"><a href="https://jwupvd.on.worldcat.org/advancedsearch">Advanced Search</a></div>
+				</div>
+			</div>
+			<!-- TAB 2 -->
+			<div id="articles-tab" class=" tab-pane ">
+				<h4 class="search-name">Find Articles</h4>
+				<div class="row">
+					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'article-search', val); ">
+						<div class="search input-group ">
+							<label for="library-search-box" class="sr-only">
+								Find Articles
+							</label>
+							<input type="hidden" name="format" value="Artchap">
+							<input type="text" id="library-search-box" class="form-control input input-lg" name="queryString" placeholder="Enter the article title, journal name, author, subject terms, or keywords" />
+							<span class="input-group-btn">
+<button type="submit" class="btn    btn-lg search-submit">
+<i class="fa fa-newspaper-o fa-lg"></i>
+Search
+</button>
+</span>
+						</div>
+					</form>
+				</div>
+				<div class="row">
+					<div class="pull-right advanced-search"><a href="https://jwupvd.on.worldcat.org/advancedsearch">Advanced Search</a></div>
+				</div>
+			</div>
+			<div id="books-tab" class=" tab-pane ">
+				<h4 class="search-name">Find Books</h4>
+				<div class="row">
+					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'book-search', val); ">
+						<div class="search input-group">
+							<label for="library-search-box" class="sr-only">
+								Find Book
+							</label>
+							<input type="hidden" name="format" value="Book">
+
+							<input type="text" id="library-search-box" class="form-control input input-lg  " name="queryString" placeholder="Search by title, author, subject, keyword, ISBN, or publisher	" />
+							<span class="input-group-btn">
+
+<button type="submit" class="btn btn-lg    search-submit">
+<i class="fa fa-book fa-lg"></i>
+
+Search
+
+</button>
+</span>
+						</div>
+					</form>
+				</div>
+				<div class="row">
+					<div class="pull-right advanced-search"><a href="https://jwupvd.on.worldcat.org/advancedsearch">Advanced Search</a></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<!-- Interaction animation for button -->
+
+<div id='old-searchbox-msg' class="alert alert-info" role="alert">
+	<p class='text-center'> <i class="fa fa-question-circle"></i>
+		<a href="http://pvd.library.jwu.edu/backup_databases/old_searchbox" target="_blank">Looking for the old searchbox?</a></p>
+</div>

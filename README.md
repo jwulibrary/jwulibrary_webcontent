@@ -1,4 +1,6 @@
 # JWU libguides code
 Included: 
-- Source files (html, css, js) for JWULibrary LibGuides site 
-- iframe codes for jwulink
+- Master LibGuides Stylesheet
+- Master LibGuides Content HTML File (Providence)
+- 2016 OCLC WorldCat Discovery Searchbox
+- Misc. Springshare Customization Files
