@@ -6,8 +6,8 @@
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> 
 <!-- Inline css to include in master -->
 <style>
-.dropdown.visible-xs > .btn-primary.dropdown-toggle 
-{
+	.dropdown.visible-xs > .btn-primary.dropdown-toggle 
+	{
 	background-color:#5786C5;
 	}
 	#jwu-logo
@@ -205,7 +205,7 @@
 	
 	h4.search-name
 	{
-display:none;
+	display:none;
 	}
 	
 	button.btn.search-submit{
@@ -241,7 +241,7 @@ display:none;
 		</ul>
 		
 		
-	
+		
 		
 		
 		
@@ -262,21 +262,7 @@ display:none;
 							<label for="library-search-box" class="sr-only">
 								Find Books, Articles, Media, and More
 							</label>
-							<input type="hidden" name="format" value="all">
-							<input type="text" id="library-search-box" class="form-control input input-lg" name="queryString" placeholder="Enter title, author, keyword, ISBN, etc. of the article, journal, book, movie, etc." />
-							<span class="input-group-btn">
-								
-								<button type="submit" class=" btn btn-lg   search-submit">
-									<i class="fa fa-search fa-lg " aria-hidden="true"></i>
-									Search
-								</button>
-							</span>
-						</div>
-						<div class="search input-group visible-xs">
-							<label for="library-search-box" class="sr-only">
-								Books, Articles, Ebooks, Journals, Videos
-							</label>
-							<input type="hidden" name="format" value="all">
+							<input type="hidden" name="format" value="all"/>
 							<input type="text" id="library-search-box" class="form-control input input-lg" name="queryString" placeholder="Enter title, author, keyword, ISBN, etc. of the article, journal, book, movie, etc." />
 							<span class="input-group-btn">
 								
@@ -287,7 +273,25 @@ display:none;
 							</span>
 						</div>
 					</form>
-				</div>
+					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage',  'everything-search', val); ">
+						
+						<div class="search input-group visible-xs">
+							<label for="library-search-box" class="sr-only">
+								Books, Articles, Ebooks, Journals, Videos
+							</label>
+							<input type="hidden" name="format" value="all" />
+							<input type="text" id="library-search-box" class="form-control input input-lg" name="queryString" placeholder="Enter title, author, keyword, ISBN, etc. of the article, journal, book, movie, etc." />
+							<span class="input-group-btn">
+								
+								<button type="submit" class=" btn btn-lg   search-submit">
+									<i class="fa fa-search fa-lg " aria-hidden="true"></i>
+									Search
+								</button>
+							</span>
+						</div>
+					</div>
+				</form>
+				
 				<div class="row">
 					<div class="pull-right advanced-search"><a href="https://jwupvd.on.worldcat.org/advancedsearch">Advanced Search</a></div>
 				</div>
@@ -297,24 +301,13 @@ display:none;
 				<h4 class="search-name">Find Articles</h4>
 				<div class="row">
 					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'article-search', val); ">
+						
 						<div class="search input-group hidden-xs">
+							
 							<label for="library-search-box" class="sr-only">
 								Find Articles
 							</label>
-							<input type="hidden" name="format" value="Artchap">
-							<input type="text" id="library-search-box" class="form-control input input-lg" name="queryString" placeholder="Enter the article title, journal name, author, subject terms, or keywords" />
-							<span class="input-group-btn">
-								<button type="submit" class="btn    btn-lg search-submit">
-									<i class="fa fa-newspaper-o fa-lg"></i>
-									Search
-								</button>
-							</span>
-						</div>
-						<div class="search input-group visible-xs">
-							<label for="library-search-box" class="sr-only">
-								Find Articles
-							</label>
-							<input type="hidden" name="format" value="Artchap">
+							<input type="hidden" name="format" value="Artchap"/>
 							<input type="text" id="library-search-box" class="form-control input input-lg" name="queryString" placeholder="Enter the article title, journal name, author, subject terms, or keywords" />
 							<span class="input-group-btn">
 								<button type="submit" class="btn    btn-lg search-submit">
@@ -324,6 +317,25 @@ display:none;
 							</span>
 						</div>
 					</form>
+					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'article-search', val); ">
+						
+						<div class="search input-group visible-xs">
+							
+							<label for="library-search-box" class="sr-only">
+								Find Articles
+							</label>
+							<input type="hidden" name="format" value="Artchap"/>
+							<input type="text" id="library-search-box" class="form-control input input-lg" name="queryString" placeholder="Enter the article title, journal name, author, subject terms, or keywords" />
+							<span class="input-group-btn">
+								<button type="submit" class="btn    btn-lg search-submit">
+									<i class="fa fa-newspaper-o fa-lg"></i>
+									Search
+								</button>
+							</span>
+							
+						</div>
+					</form>
+					
 				</div>
 				<div class="row">
 					<div class="pull-right advanced-search"><a href="https://jwupvd.on.worldcat.org/advancedsearch">Advanced Search</a></div>
@@ -348,6 +360,9 @@ display:none;
 								</button>
 							</span>
 						</div>
+						</form>
+											<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'book-search', val); ">
+
 						<div class="search input-group visible-xs">
 							<label for="library-search-box" class="sr-only">
 								Find Book
