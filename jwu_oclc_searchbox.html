@@ -215,8 +215,8 @@
 			<li class="active"><a href="#everything-tab" data-toggle="tab"><i class="fa fa-search"></i> <span>Everything</span></a></li>
 			<li><a href="#articles-tab" data-toggle="tab"><i class="fa fa-newspaper-o"></i> <span>Articles</span></a></li>
 			<li><a href="#books-tab" data-toggle="tab"><!-- <span class=Bookshicon glyphicon-book"></span> --><i class="fa fa-book"></i> <span>Books</span></a></li>
-						<li><a href="#videos-tab" data-toggle="tab"><!-- <span class=Bookshicon glyphicon-book"></span> --><i class="fa fa-film"></i> <span>Videos</span></a></li>
-
+			<li><a href="#videos-tab" data-toggle="tab"><!-- <span class=Bookshicon glyphicon-book"></span> --><i class="fa fa-film"></i> <span>Videos</span></a></li>
+			
 		</ul>
 		
 		<div class="tab-content">
@@ -317,16 +317,25 @@
 								Find Book
 							</label>
 							<input type="hidden" name="format" value="Book">
-							
+
 							<input type="text" id="library-search-box" class="form-control input input-lg  " name="queryString" placeholder="Search by title, author, subject, keyword, ISBN, or publisher	" />
 							<span class="input-group-btn">
-								
 								<button type="submit" class="btn btn-lg    search-submit">
 									<i class="fa fa-book fa-lg"></i>
 									Search
 								</button>
+								
 							</span>
+							
 						</div>
+						
+						<div class="form-check">
+  <label class="form-check-label">
+																					<input name="subformat" id="ebook-checkbox" type="checkbox" checked="checked" value="Book::book_digital">Ebooks Only
+
+  </label>
+</div>
+
 					</form>
 					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'book-search', val); ">
 						
@@ -352,7 +361,7 @@
 				</div>
 			</div>
 			
-						<div id="videos-tab" class=" tab-pane ">
+			<div id="videos-tab" class=" tab-pane ">
 				<h4 class="search-name">Find videos</h4>
 				<div class="row">
 					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'Video-search', val); ">
@@ -362,7 +371,7 @@
 							</label>
 							<input type="hidden" name="format" value="Video">
 							
-							<input type="text" id="library-search-box" class="form-control input input-lg  " name="queryString" placeholder="Search by title, author, subject, keyword, ISBN, or publisher	" />
+							<input type="text" id="library-search-box" class="form-control input input-lg  " name="queryString" placeholder="Search by title, topic, director, or performer" />
 							<span class="input-group-btn">
 								
 								<button type="submit" class="btn btn-lg    search-submit">
