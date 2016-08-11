@@ -89,7 +89,7 @@
 	background-color: #175893;
 	color: #FFF;
 	opacity: 1;
-	transition: opacity ease .5s;
+	transition: opacity ease .1s;
 	}
 	
 	#search-tabs>li.active>a> i {
@@ -115,7 +115,7 @@
 	.advanced-search a {
 	color: #004a91;
 	font-family: "open sans", sans-serif;
-	padding: 2em;
+	
 	}
 	
 	.nav>li>a {
@@ -194,7 +194,9 @@
 	.mobile-nav-tabs {}
 	}
 	
+	.searchbox-checkbox{
 	
+	}
 	
 </style>
 
@@ -283,8 +285,13 @@
 								</button>
 							</span>
 						</div>
+										<div class="form-check pull-right ">
+							<label class="form-check-label">
+								<input name="subformat" id="ebook-checkbox" type="checkbox" class="searchbox-checkbox"  value="Jrnl::jrnl_digital">Journal Titles Only
+							</label>
+						</div>
 					</form>
-					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'article-search', val); ">
+					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'mobile-homepage', 'article-search', val); ">
 						
 						<div class="search input-group visible-xs">
 							
@@ -317,7 +324,7 @@
 								Find Book
 							</label>
 							<input type="hidden" name="format" value="Book">
-
+							
 							<input type="text" id="library-search-box" class="form-control input input-lg  " name="queryString" placeholder="Search by title, author, subject, keyword, ISBN, or publisher	" />
 							<span class="input-group-btn">
 								<button type="submit" class="btn btn-lg    search-submit">
@@ -329,15 +336,14 @@
 							
 						</div>
 						
-						<div class="form-check">
-  <label class="form-check-label">
-																					<input name="subformat" id="ebook-checkbox" type="checkbox" checked="checked" value="Book::book_digital">Ebooks Only
-
-  </label>
-</div>
-
+						<div class="form-check pull-right ">
+							<label class="form-check-label">
+								<input name="subformat" id="ebook-checkbox" type="checkbox" class="searchbox-checkbox"  value="Book::book_digital">Ebooks Only
+							</label>
+						</div>
+						
 					</form>
-					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'book-search', val); ">
+					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'mobile-homepage', 'book-search', val); ">
 						
 						<div class="search input-group visible-xs">
 							<label for="library-search-box" class="sr-only">
@@ -362,7 +368,7 @@
 			</div>
 			
 			<div id="videos-tab" class=" tab-pane ">
-				<h4 class="search-name">Find videos</h4>
+				<h4 class="search-name">Find Videos</h4>
 				<div class="row">
 					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'Video-search', val); ">
 						<div class="search input-group hidden-xs">
@@ -380,8 +386,13 @@
 								</button>
 							</span>
 						</div>
+							<div class="form-check pull-right ">
+							<label class="form-check-label">
+								<input name="subformat" id="evideo-checkbox" type="checkbox" class="searchbox-checkbox" value="Video::video_digital">Streaming Only
+							</label>
+						</div>
 					</form>
-					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'Video-search', val); ">
+					<form action="https://jwupvd.on.worldcat.org/search" target='_blank' method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'mobile-homepage', 'Video-search', val); ">
 						
 						<div class="search input-group visible-xs">
 							<label for="library-search-box" class="sr-only">
