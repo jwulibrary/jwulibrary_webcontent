@@ -930,3 +930,20 @@ h3.s-lc-app-s1h3 {
 	font-size:1.4em;
 	font-family:"open sans",sans-serif;
 	}
+
+	
+	
+	
+	
+#s-lg-guide-search-form > div > span > button{
+	background-color:#C3102F;
+	color:#FFF;
+	font-family:"open sans", sans-serif;
+	padding: .5em;
+	height:3em;
+	}
+
+	
+#s-lg-guide-search-terms{
+	height:3em;
+	}
