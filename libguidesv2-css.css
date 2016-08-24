@@ -231,7 +231,7 @@ p {
 }
 
 
-#quicklinks-box ul li a, ul li a:focus, ul li a:visited {
+#quicklinks-box ul li a, #quicklinks-box ul li a:focus, #quicklinks-box ul li a:visited {
 	/*border-bottom: 1px dotted #B0B0B0; */
 	font-family: Verdana, Arial, sans-serif !important;
 	list-style-type: none !important;
@@ -285,7 +285,7 @@ tr.hours-depart td.hours-col-loc {
 	flex-wrap: wrap;
 	display: flex;
     justify-content: center;
-	flex-direction:column;
+
 	align-items:center;
 	
 }
@@ -311,8 +311,10 @@ tr.hours-depart td.hours-col-loc {
 	font-size:1em;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 	border-radius:2px;
-}
 
+	
+
+}
 
 
 
@@ -686,12 +688,18 @@ tr.hours-depart td.hours-col-loc {
 	* https://jwu-ri.libapps.com/libguides/lookfeel.php?action=1
 */
 
+
 #jwulib-header {
 	padding-bottom: 20px;
 }
 .jwu-lib-logo {
 	padding-top: 20px;
 }
+
+
+#jwulib-new-header{
+	background-color:#0D4982	
+	}
 
 /*-----------------------------*\
 	/*-- ## Page-footer (COMPONENTS) --*\
@@ -883,10 +891,10 @@ h3.s-lc-app-s1h3 {
 	opacity:.15;
 	}
 	
-	#jwuul-header{
+/* 	#jwuul-header{
 	background: #0C4781;
 	
-	}
+	} */
 	
 	#jwu-logo{
 	background:url(JWULogo-White.svg);
@@ -947,3 +955,32 @@ h3.s-lc-app-s1h3 {
 #s-lg-guide-search-terms{
 	height:3em;
 	}
+	
+	
+
+.btn-email-submit
+{
+background-color: #C3102F;
+transition: background-color .2s ease;
+}
+
+.btn-email-submit a
+{
+color: #FFF;
+}
+
+.btn-email-submit:hover
+{
+background-color: #F0B310;
+}
+
+
+/*LibAnswers Customizations */
+/* Main page email form*/
+#s-la-askform-35566{
+	background-color: rgb(235, 235, 235);
+	
+	}
+	
+	
+
