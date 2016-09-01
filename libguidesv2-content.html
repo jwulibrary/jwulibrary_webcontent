@@ -7,8 +7,8 @@
 <!--
 	0: Development Stuff
 	0.0 Dependencies for testing
-	
-	
+
+
 	1. Homepage HTML Content
 	1.1: "Chatbox snippet"
 	1.2 QUICK LINKS
@@ -18,10 +18,10 @@
 	1.6 TABBED SEARCHBOX
 	1.7 FEATURED/GALLERY/SLIDER CONTENT
 	1.8 Alert message box
-	
+
 	2. GUIDE-SPECIFIC CONTENT
 	2.1: Reserves Lists
-	
+
 	PART 3: Look and Feel Stuff
 	3.1. Header (Look/Feel)
 	3.2 Footer (Look/Feel)
@@ -42,12 +42,15 @@
 <script type="text/javascript" src="http://pvd.library.jwu.edu/web/js1.13.11/springshare.public.min.js"></script>
 <script type="text/javascript" src="http://pvd.library.jwu.edu/web/js1.13.11/springshare.common.min.js"></script>
 <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
 
 <!--END dependencies section -->
 
 
 
-
+<div id = "tech-support-link">
+	<p>Faculty/Staff! The Library has made a number of changes to their tech. We're offerring drop-in webex sessions if you want to have any questions or want to learn how more about our digital services.</p>
+	</div>
 
 
 
@@ -62,7 +65,7 @@
 
 <div id = "chat-wrap">
 	<div class="needs-js">chat loading...</div>
-	
+
 	<!-- Place this script as near to the end of your BODY as possible. -->
 	<script type="text/javascript">
 		(function() {
@@ -74,7 +77,7 @@
 			y.parentNode.insertBefore(x, y);
 		})();
 	</script>
-	
+
 </div>
 
 
@@ -83,8 +86,8 @@
 <!--Chatbox setup snippet (FOR Libraryh3lp Admin) JUST SOURCE-->
 <!-- COMMENTED OUT
 	<img src="https://s3.amazonaws.com/libapps/customers/527/images/jwu-ask-a-librarian-button-quick-200px.png" alt="Chat now">
-	
-	
+
+
 	<img src="https://s3.amazonaws.com/libapps/customers/527/images/jwu-ask-a-librarian-button-OFFLINE-quick-200px.png" alt="Come back later" />
 -->
 
@@ -92,7 +95,7 @@
 
 <style>
 	#quicklinks-box.list-group{}
-	
+
 	#quicklinks-box ul li a, #quicklinks-box ul li a:focus, #quicklinks-box ul li a:visited{
 	font-family:"Roboto";
 	}
@@ -166,7 +169,7 @@
 		<li>
 			<a href="https://jwulibpvd.afford.com/">Pay Bills &amp; Fines</a>
 		</li>
-		
+
 		<li>
 			<a href="http://scholarsarchive.jwu.edu/">ScholarsArchive@JWU</a>
 		</li>
@@ -243,10 +246,10 @@
 
 
 <!-- 1.3 Alternate Calendar: using old google model
-	
+
 	<iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=400&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=0ueu82jdq5apcsuic55nvhk5uc%40group.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style="border-width:0" width="300" height="300" frameborder="0" scrolling="no"></iframe>
-	
-	
+
+
 	<strong><a href="https://www.google.com/calendar/embed?src=0ueu82jdq5apcsuic55nvhk5uc%40group.calendar.google.com&amp;ctz=America/New_York">View all hours</a></strong>
 -->
 <!--END 1.3 -->
@@ -255,87 +258,91 @@
 
 <!-- 1.4: Homepage Room Bookings -->
 
-<!-- <!-- 
-	
-	<div class="librarybox">
+
+
+<div class="librarybox">
 	<div class="container-fluid">
-	
-	
-	<div id="study-room-links">
-	<h3 class ='text-center'>Book a Study Room</h3>
-	
-	<div class ='row'><a class ='study-room-link blue-background'  href="http://jwu-ri.libcal.com/booking/downcity" onClick="ga('send', 'event', 'schedule', 'click', 'dcstudyroom') ;">Downcity</a>
-	</div>
-	
-	<div class ='row'><a class ='study-room-link green-background'  href="http://jwu-ri.libcal.com/booking/harborside" onClick="ga('send', 'event', 'schedule', 'click', 'hbstudyroom') ;">Harborside</a>
-	</div>
-	
-	<h3 class ='text-center'>Book an Appointment with a Writing Coach</h3>
-	
-	<div class ='row'><a class ='study-room-link purple-background'  href="http://jwu-ri.libcal.com/booking/wwc_downcity" onClick="ga('send', 'event', 'schedule', 'click', 'wcdc') ;">Downcity </a>
-	</div>
-	
-	<div class ='row'><a class ='study-room-link purple-background'  href="http://jwu-ri.libcal.com/booking/wwc_harborside" onClick="ga('send', 'event', 'schedule', 'click', 'wchb') ;">Harborside</a>
-	</div>
-	
-	
-	<h3 class ='text-center'>Book an appointment with a Librarian</h3>
-	
-	<div class ='row'><a class ='study-room-link orange-background'  href="http://jwu-ri.libcal.com/appointments/" onClick="ga('send', 'event', 'schedule', 'click', 'researchapp') ;">Research Appointment</a>
-	</div>
-	
-	
-	</div>
-	</div>
-	</div>
-	
---> -->
 
 
-	
+		<div id="study-room-links">
+			<h3 class='text-center'>Book a Study Room</h3>
+
+			<div class='row'><a class='study-room-link blue-background' href="http://jwu-ri.libcal.com/booking/downcity" onClick="ga('send', 'event', 'schedule', 'click', 'dcstudyroom') ;">Downcity</a>
+			</div>
+
+			<div class='row'><a class='study-room-link green-background' href="http://jwu-ri.libcal.com/booking/harborside" onClick="ga('send', 'event', 'schedule', 'click', 'hbstudyroom') ;">Harborside</a>
+			</div>
+
+			<h3 class='text-center'>Book an Appointment with a Writing Coach</h3>
+
+			<div class='row'><a class='study-room-link purple-background' href="http://jwu-ri.libcal.com/booking/writinglab_downcity" onClick="ga('send', 'event', 'schedule', 'click', 'wcdc') ;">Downcity </a>
+			</div>
+
+			<div class='row'><a class='study-room-link purple-background' href="http://jwu-ri.libcal.com/booking/writinglab_harborside" onClick="ga('send', 'event', 'schedule', 'click', 'wchb') ;">Harborside</a>
+			</div>
+
+
+			<h3 class='text-center'>Book an appointment with a Librarian</h3>
+
+			<div class='row'><a class='study-room-link orange-background' href="http://jwu-ri.libcal.com/appointments/" onClick="ga('send', 'event', 'schedule', 'click', 'researchapp') ;">Research Appointment</a>
+			</div>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
 <!-- 1.4.1 Homepage Room Bookings  NEW-->
 <div class="librarybox">
 	<h2>Schedule</h2>
 	<div class="container-fluid">
 		<div id="study-room-links" class="row" style="background-color:#A5C8DB">
-			<div class="col-md-4"><h3 class ='text-center'>Librarian Appointment</h3>
+			<div class="col-xs-12"><h3 class ='text-center'>Librarian Appointment</h3>
 				<div class ='row'>
-				<a class ='study-room-link'  href="http://jwu-ri.libcal.com/appointments/" onClick="ga('send', 'event', 'schedule', 'click', 'researchapp') ;">At the Library</a>
-				<a class ='study-room-link '  href="http://jwu-ri.libcal.com/appointments/" onClick="ga('send', 'event', 'schedule', 'click', 'researchapp') ;">Online</a>
-					</div>
-					
-					
-				</div>
-				<div class="col-md-4"><h3 class ='text-center'>Study Room</h3>	
-					<a class ='study-room-link'  href="http://jwu-ri.libcal.com/booking/downcity" onClick="ga('send', 'event', 'schedule', 'click', 'dcstudyroom') ;">Downcity</a>
-					<a class ='study-room-link '  href="http://jwu-ri.libcal.com/booking/harborside" onClick="ga('send', 'event', 'schedule', 'click', 'hbstudyroom') ;">Harborside</a>
-				</div>
-				<div class="col-md-4 ">
-					<h3 class ='text-center'>Writing Lab</h3>
-					<div class ='row'><a class ='study-room-link'  href="http://jwu-ri.libcal.com/booking/writinglab_downcity" onClick="ga('send', 'event', 'schedule', 'click', 'wcdc') ;">Downcity </a>
-					</div>
-					<div class ='row'><a class ='study-room-link '  href="http://jwu-ri.libcal.com/booking/writinglab_harborside" onClick="ga('send', 'event', 'schedule', 'click', 'wchb') ;">Harborside</a>
-					</div>
-					
-				</div>
-				
+<div class="row"><a class ='study-room-link'  href="http://jwu-ri.libcal.com/appointments/" onClick="ga('send', 'event', 'schedule', 'click', 'researchappf2f') ;"  style="background-color:#EFB211">At the Library</a>
+	</div>
+<div class="row"><a class ='study-room-link '  href="http://jwu-ri.libcal.com/appointments/" onClick="ga('send', 'event', 'schedule', 'click', 'researchapponl') ;" style="background-color:#EFB211">Online</a>
+	</div>				</div>
+
+
 			</div>
+			<div class="col-xs-12"><h3 class ='text-center'>Study Room</h3>
+<div class="row"><a class ='study-room-link'  href="http://jwu-ri.libcal.com/booking/downcity" onClick="ga('send', 'event', 'schedule', 'click', 'dcstudyroom') ; "style="background-color:#93A445">Downcity</a>
+	</div>
+<div class="row"><a class ='study-room-link '  href="http://jwu-ri.libcal.com/booking/harborside" onClick="ga('send', 'event', 'schedule', 'click', 'hbstudyroom') ;" style="background-color:#93A445">Harborside</a>
+	</div>			</div>
+			<div class="col-xs-12 ">
+				<h3 class ='text-center'>Writing Lab</h3>
+				<div class ='row'><a class ='study-room-link'  href="http://jwu-ri.libcal.com/booking/writinglab_downcity" onClick="ga('send', 'event', 'schedule', 'click', 'wcdc') ;" style="background-color: 	#694790">Downcity</a>
+				</div>
+				<div class ='row'><a class ='study-room-link '  href="http://jwu-ri.libcal.com/booking/writinglab_harborside" onClick="ga('send', 'event', 'schedule', 'click', 'wchb') ; " style="background-color:#694790">Harborside</a>
+				</div>
+
+			</div>
+
 		</div>
 	</div>
+</div>
 
-	
-	
-	
+
+
+
 <!-- 1.5. Ask Us -->
 <!--Libguides houses this in a wrapper: col-md-6 -->
 <!--This is the large version, which points to the FAQS -->
-<div id="ask-us-wrap-desktop" class="hidden-xs librarybox">
+<!-- <div id="ask-us-wrap-desktop" class="hidden-xs librarybox">
 	<div id="ask-pics-desktop container-fluid">
 		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
 			<div class="row">
 				<a href="http://jwu-ri.libanswers.com/a.php?qid=2887" target="_blank" title="Send a Text Message to the Library" onClick="ga('send', 'event', 'askicons', 'click', 'text') ;">
-					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917416/text.png">
-				</a>
+				<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917416/text.png">
+			</a>
 			</div>
 			<div class="row">
 				<p class="text-center">Text</p>
@@ -351,7 +358,7 @@
 				<p class="text-center"> E-mail</p>
 			</div>
 		</div>
-		
+
 		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
 			<div class="row">
 				<a href="http://jwu-ri.libanswers.com/a.php?qid=8122" target="_blank" title="Call the Library" onClick="ga('send', 'event', 'askicons', 'click', 'call') ;">
@@ -402,7 +409,7 @@
 					<a href="tel:14015981121" onClick="ga('send', 'event', 'askicons', 'click', 'call') ;"> <em>Call</em> (Downcity): 401-598-1121</a>
 				</p>
 			</div>
-			
+
 		</div>
 		<div class="col-xs-12 ask-pic-mobile">
 			<div class="row">
@@ -416,15 +423,126 @@
 					<em>Call</em> (Harborside): 401-598-1466 </a>
 				</p>
 			</div>
-			
+
 		</div>
 		<div class="col-xs-12 ask-pic-mobile">
 			<div class="row">
-				
+
 				<a href="http://jwu-ri.libanswers.com/index#s-la-box-36592" target="_blank" title="E-Mail the Library" onClick="ga('send', 'event', 'askicons', 'click', 'email') ;">
 					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917412/email.png">
 				</a>
-				
+
+			</div>
+			<div class="row">
+				<p class="text-center">
+					<em>Email</em>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+<!--- ====================  --->
+
+<!-- 1.5..1 NEW Ask Us -->
+<!--Libguides houses this in a wrapper: col-md-6 -->
+<!--This is the large version, which points to the FAQS -->
+
+<div id="ask-us-wrap-desktop" class="hidden-xs librarybox">
+	<div id="ask-pics-desktop container-fluid">
+		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
+			<div class="row">
+				<a href="http://jwu-ri.libanswers.com/a.php?qid=2887" target="_blank" title="Send a Text Message to the Library" onClick="ga('send', 'event', 'askicons', 'click', 'text') ;">
+<i class="ask-icon fa fa-mobile"></i>			</a>
+			</div>
+			<div class="row">
+				<p class="text-center">Text</p>
+			</div>
+		</div>
+		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
+			<div class="row">
+				<a href="http://jwu-ri.libanswers.com/index#s-la-box-36592" target="_blank" title="E-Mail the Library" onClick="ga('send', 'event', 'askicons', 'click', 'email') ;">
+<i class="ask-icon fa fa-envelope-o"></i>				</a>
+			</div>
+			<div class="row">
+				<p class="text-center"> E-mail</p>
+			</div>
+		</div>
+
+		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
+			<div class="row">
+				<a href="http://jwu-ri.libanswers.com/a.php?qid=8122" target="_blank" title="Call the Library" onClick="ga('send', 'event', 'askicons', 'click', 'call') ;">
+					<i class="ask-icon fa fa-phone" aria-hidden="true"></i>
+
+				</a>
+			</div>
+			<div class="row">
+				<p class="text-center">Call</p>
+			</div>
+		</div>
+		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
+			<div class="row">
+				<a href="http://jwu-ri.libanswers.com/" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'faq') ;">
+<i class=" ask-icon fa fa-question"></i>				</a>
+			</div>
+			<div class="row">
+				<p class="text-center">FAQs</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="ask-us-wrap-mobile" class="visible-xs librarybox">
+	<div id="ask-pics-mobile">
+		<div class="col-xs-12 ask-pic-mobile">
+			<div class="row">
+				<a href="sms://4014840275" onClick="ga('send', 'event', 'askicons', 'click', 'text') ;">
+					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917416/text.png">
+				</a>
+			</div>
+			<div class="row">
+				<p class="text-center">
+					<a href="sms://4014840275" onClick="ga('send', 'event', 'askicons', 'click', 'text') ;">
+					<em>Text:</em> (401) 484-0275) </a>
+				</p>
+			</div>
+		</div>
+		<div class="col-xs-12 ask-pic-mobile">
+			<div class="row">
+				<a href="tel:14015981121" target="_blank" title="Call the Library" onClick="ga('send', 'event', 'askicons', 'click', 'call') ;">
+					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917415/phone.png">
+				</a>
+			</div>
+			<div class="row">
+				<p class="text-center">
+					<a href="tel:14015981121" onClick="ga('send', 'event', 'askicons', 'click', 'call') ;"> <em>Call</em> (Downcity): 401-598-1121</a>
+				</p>
+			</div>
+
+		</div>
+		<div class="col-xs-12 ask-pic-mobile">
+			<div class="row">
+				<a href="tel:14015981466" target="_blank" title="Call the Library" onClick="ga('send', 'event', 'askicons', 'click', 'call') ;">
+					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917415/phone.png">
+				</a>
+			</div>
+			<div class="row">
+				<p class="text-center">
+					<a href="tel:14015981466" onClick="ga('send', 'event', 'askicons', 'click', 'call') ;">
+					<em>Call</em> (Harborside): 401-598-1466 </a>
+				</p>
+			</div>
+
+		</div>
+		<div class="col-xs-12 ask-pic-mobile">
+			<div class="row">
+
+				<a href="http://jwu-ri.libanswers.com/index#s-la-box-36592" target="_blank" title="E-Mail the Library" onClick="ga('send', 'event', 'askicons', 'click', 'email') ;">
+					<img class="img-responsive center-block" src="http://lgdata.s3-website-us-east-1.amazonaws.com/docs/160/917412/email.png">
+				</a>
+
 			</div>
 			<div class="row">
 				<p class="text-center">
@@ -436,11 +554,6 @@
 </div>
 
 
-<!--- ====================  --->
-
-
-
-
 
 
 
@@ -449,7 +562,7 @@
 
 <!-- 1.6 TABBED SEARCHBOX-->
 <div id="library-searchbox" class="container-fluid librarybox">
-	
+
 	<div id="tabs">
 		<ul>
 			<li>
@@ -513,10 +626,10 @@
 								<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url" />
 								<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
 								<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
-								
+
 								<input id="ebscohostsearchtext" class="tabbed-search-input" input name="ebscohostsearchtext" />
 								<input type="submit" value="Search" class="ebscohost-search-button " />
-								
+
 							</form>
 						</div>
 						<!-- EBSCOhost Custom Search Box Ends -->
@@ -531,7 +644,7 @@
 						</div>
 					</div>
 					<div class="row">
-						
+
 						<a class="small_link" href="http://pvd.library.jwu.edu/az.php" target="_blank"  onClick="ga('send', 'event', 'searchbox', 'click', 'databases');" >Databases</a>  | <a class="small_link" href="http://0-search.ebscohost.com.helin.uri.edu/login.aspx?profile=pfi"
 						target="_blank" onClick="ga('send', 'event', 'searchbox', 'click', 'journals'); ">Journal Titles</a>
 					</div>
@@ -591,8 +704,8 @@
 						</script>
 						<div id="s-lg-widget-1449595487807"></div>
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://lgapi.libapps.com/widgets.php?site_id=538&widget_type=7&widget_embed_type=1&output_format=1&search_box_type=1&placeholder_text=Enter+Search+Words&button_text=Search&widget_height=&widget_width=330&config_id=1449595487807";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","s-lg-widget-script-1449595487807");</script>
-						
-						
+
+
 					</div>
 				</div>
 				<div class="container-fluid">
@@ -612,7 +725,7 @@
 
 <script>
 	$("#tabs").tabs();
-</script>
+</script> -->
 
 <!--End 1.6 Tabbed Searchbox-->
 
@@ -661,63 +774,63 @@ http://scholarsarchive.jwu.ed/u
 <div class="librarybox">
 	<p>The Downcity and Harborside Libraries will be closed for the Winter Break from <strong> Friday, December 18, 2015 at 5:00 PM </strong> until <strong>Sunday, January 3, 2016 at 11:00 AM</strong>.<p> <p>We hope you have a safe and pleasant time, and we look forward to seeing you in 2016 --<em>The JWU Library</em></p>
 	</div>
-	
-	
-	
+
+
+
 	<!-- 1.8 Alert message box-->
 	<div class="librarybox">
 		<p><em>Update: 1-14-2016, 2:55 PM </em>. The database <strong> <a href="http://0-www.redbooks.com.helin.uri.edu/dotCMS/validateLogin?dispatch=siteLogin">Advertising Redbooks</a></strong> is experiencing issues with off-campus access. We are working to resolve this issue now, but if you need access in the meantime and are unable to travel to campus, please contact a librarian through chat, phone, or e-mail and they can access the database for you and send you information from the database.</p>
 	</div>
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	<!-- ======================================= -->
 	<!-- ======================================= -->
 	<!-- START PART 2: GUIDE-SPECIFIC CONTENT)-->
 	<!-- ======================================= -->
-	
+
 	<!--2.1: Reserves Lists -->
 	<!-- Downcity Reserves List  -->
-<!-- 	<iframe height="800px" src="https://docs.google.com/spreadsheets/d/18OuQAsSxOaQOVtWaOjRiCNkJ3TjQ5d3JebXzwBPdyoc/pubhtml?widget=true&amp;headers=false" width="100%"></iframe></p>
- -->	
+	<!-- 	<iframe height="800px" src="https://docs.google.com/spreadsheets/d/18OuQAsSxOaQOVtWaOjRiCNkJ3TjQ5d3JebXzwBPdyoc/pubhtml?widget=true&amp;headers=false" width="100%"></iframe></p>
+	-->
 	<!-- Harborside Reserves List -->
-<!-- 	<iframe height="800px" width="100%" src="https://docs.google.com/spreadsheets/d/1j9tv0361F-7jAtqxiUr2kMFyh0NO4l6igW6_MEcDHEY/pubhtml?gid=88842478&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
- -->	
-	
-	
-	
-	
-	
+	<!-- 	<iframe height="800px" width="100%" src="https://docs.google.com/spreadsheets/d/1j9tv0361F-7jAtqxiUr2kMFyh0NO4l6igW6_MEcDHEY/pubhtml?gid=88842478&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+	-->
+
+
+
+
+
 	<!--END PART 2-->
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
 	<!-- ======================================= -->
 	<!-- ======================================= -->
 	<!-- START PART 3: Look and Feel Stuff -->
-	
-	
-	
-	
+
+
+
+
 	<!-- 3.1. Header (Look/Feel)  -->
 	<div class="container" id="jwulib-header">
-		
+
 		<div class="row">
 			<div class="col-xs-6 col-md-4">
 				<a href="http://www.jwu.edu" target="_blank">
 					<img alt="JWU Official Seal" src="http://www.jwu.edu/images/logo1.png" title="JWU Logo" class="img-responsive">
 				</a>
 			</div>
-			
+
 			<div class="col-xs-6 col-md-4 col-md-offset-3">
 				<a href="http://pvd.library.jwu.edu/homepage">
 					<img class="jwu-lib-logo img-responsive" src="https://s3.amazonaws.com/libapps/accounts/1358/images/jwulib-2014-thin-headerIMG-232x73.png">
@@ -725,19 +838,19 @@ http://scholarsarchive.jwu.ed/u
 			</div>
 		</div>
 	</div>
-	
-	
-	
+
+
+
 	<!-- 3.1.1 NEW  Header (Look/Feel)  -->
 	<div class="container" id="jwulib-new-header">
-		
+
 		<div class="row">
 			<div class="col-xs-6 col-md-4">
 				<a href="http://www.jwu.edu" target="_blank">
 					<img alt="JWU Official Seal" src="http://www.jwu.edu/images/logo1.png" title="JWU Logo" class="img-responsive">
 				</a>
 			</div>
-			
+
 			<div class="col-xs-6 col-md-4 col-md-offset-3">
 				<a href="/homepage">
 					<img class="jwu-lib-logo img-responsive" src="https://s3.amazonaws.com/libapps/accounts/1358/images/jwulib-2014-thin-headerIMG-232x73.png">
@@ -745,118 +858,118 @@ http://scholarsarchive.jwu.ed/u
 			</div>
 		</div>
 	</div>
-	
-	
-	
-	
+
+
+
+
 	<!-- 3.2 Footer (Look/Feel)-->
-	
+
 	<div class="container" id="jwulib-footer">
 		<div class="row">
 			<div class="jwulib-footercol col-xs-12 col-sm-6 col-md-2">
 				<h4>About</h4>
-				
+
 				<ul>
 					<li>
 						<a href="http://jwu-ri.libcal.com/hours/">Hours</a>
 					</li>
-					
+
 					<li>
 						<a href="http://jwu-ri.libanswers.com/a.php?qid=3690">Location & Directions</a>
 					</li>
-					
+
 					<li>
 						<a href="https://jwu-ri.libanswers.com/faq/141908">Off-Campus Access</a>
 					</li>
-					
+
 					<li>
 						<a href="http://jwu-ri.libanswers.com/a.php?qid=17269">Staff Directory</a>
 					</li>
-					
+
 				</ul>
 			</div>
-			
+
 			<div class="jwulib-footercol col-xs-12 col-sm-6 col-md-2">
 				<h4>Services</h4>
-				
+
 				<ul>
-					
-					
+
+
 					<li>
 						<a href="http://pvd.library.jwu.edu/reserves">Course Reserves</a>
 					</li>
-					
-					
-					
+
+
+
 					<li>
 						<a href="http://jwu-ri.libanswers.com/a.php?qid=7831">Interlibrary Loan (ILL)</a>
 					</li>
-					
+
 					<li>
 						<a href="http://jwu-ri.libanswers.com/a.php?qid=11103">Printing</a>
 					</li>
 				</ul>
 			</div>
-			
+
 			<div class="jwulib-footercol col-xs-12 col-sm-6 col-md-2">
 				<h4>Research</h4>
-				
+
 				<ul>
 					<li>
 						<a href="http://pvd.library.jwu.edu/az.php">Databases</a>
 					</li>
-					
+
 					<li>
 						<a href="http://encore.uri.edu/iii/encore/home?lang=eng&advancedSearch=true">HELIN Catalog</a>
 					</li>
 					<li>
 						<a href="http://library.uri.edu/search*eng/X">HELIN Catalog (CLASSIC)</a>
 					</li>
-					
+
 					<li>
 						<a href="http://atoz.ebsco.com/home.asp?Id=K11681">Journals</a>
 					</li>
-					
-					
+
+
 				</ul>
 			</div>
-			
-			
-			
+
+
+
 			<div class="jwulib-footercol col-xs-12 col-sm-6 col-md-2">
 				<h4>JWU Libraries:</h4>
-				
+
 				<ul>
 					<li>
 						<a href="http://den.library.jwu.edu/">Denver</a>
 					</li>
-					
+
 					<li>
 						<a href="http://clt.library.jwu.edu/">Charlotte</a>
 					</li>
-					
+
 					<li>
 						<a href="http://nmi.library.jwu.edu/">North Miami</a>
 					</li>
-					
+
 					<li>
 						<a href="http://pvd.library.jwu.edu/">Providence</a>
 					</li>
 				</ul>
 			</div>
-			
+
 			<div class="jwulib-footercol col-xs-12 col-sm-6 col-md-2">
 				<h4>Social Media</h4>
-				
+
 				<ul>
 					<li>
 						<a href="https://www.facebook.com/JWULibrary">Facebook</a>
 					</li>
-					
+
 					<li>
 						<a href="https://twitter.com/jwulibrary">Twitter</a>
 					</li>
-					
+
 					<li>
 						<a href="https://www.youtube.com/jwulibrarypvd">YouTube</a>
 					</li>
@@ -864,30 +977,31 @@ http://scholarsarchive.jwu.ed/u
 			</div>
 		</div>
 	</div>
-	
-	
-	
+
+
+
+
 	<!-- 3.3 Custom JS/CSS Code (Look/Feel)-->
-	
+
 	<!--Temporary location of stylesheet, housed on a Github Linked server)
 	<link rel=stylesheet href="https://rawgit.com/jwulibrary/jwulibrary-libguides/lgv2-dev/libguidesv2-css.css" /> -->
-	
-	
-	
+
+
+
 	<script src="https://s3.amazonaws.com/libapps/sites/538/include/ebscohostsearch.js" type="text/javascript"></script>
 	<script>
 		$( document ).ready(function() {
-			
+
 			$("div#s-lg-guide-header-search").html("");
-			
+
 		});
 	</script>
-	
-	
-	
+
+
+
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
-	
-	
+
+
 	<style>
 		#s-lg-az-trials-div{
 		width: 86%;
@@ -897,44 +1011,44 @@ http://scholarsarchive.jwu.ed/u
 		margin-top: 27px;
 		padding: 10px;
 		}
-		
+
 		.s-lib-public-side-header{
 		color:#333;
 		}
-		
+
 	</style>
-	
-	
+
+
 	<!-- ======================================= -->
 	<!-- END  (LOOK AND FEEL): -->
 	<!-- ======================================= -->
-	
-	
-	
+
+
+
 	<!--Homepage only js hacks -->
 	<script>
 		$( document ).ready(function() {
-			
+
 			$("div#s-lg-box-7787925").attr('onmouseover','ga("send", "event", "featuredbox", "hover", "featured_image"); ');
-			
-			
+
+
 			$("div#s-lg-box-7787925").find('.item').attr('onClick','ga("send", "event", "featuredbox", "click", "featured_image"); ');
-			
-			
+
+
 			$("div#s-lg-box-7787925").find('.item').each(function ( index ) {
 				var extract = $( this ).find('h4').text();
-				
+
 				$( this ).attr('onClick','ga("send", "event", "featuredbox", "click", "' + extract + '"); ')
 			});
-			
-			
-			
-			
-			
+
+
+
+
+
 		});
 	</script>
-	
-	
+
+
 	<!--for db az page -->
 	<script>
 		function dbGaTrack(){
@@ -944,33 +1058,33 @@ http://scholarsarchive.jwu.ed/u
 			});
 		}
 	</script>
-	
+
 	<script>dbGaTrack()</script>
-	
-	
-	
+
+
+
 	<!--For LibCal scheduler-->
-	
+
 	$("#s-lc-app-slist > .radio > label:contains('Lisa')").addClass('hb-librarian')
 	$("#s-lc-app-slist > .radio > label:contains('Fred')").addClass('hb-librarian')
 	$("#s-lc-app-slist > .radio > label:contains('Kerry')").addClass('hb-librarian')
-	
+
 	$("#s-lc-app-slist > .radio > label:contains('Joe')").addClass('dc-librarian')
 	$("#s-lc-app-slist > .radio > label:contains('David')").addClass('dc-librarian')
 	$("#s-lc-app-slist > .radio > label:contains('Sarah')").addClass('dc-librarian')
 	$("#s-lc-app-slist > .radio > label:contains('Kelly')").addClass('dc-librarian')
-	
-	
+
+
 	$(".hb-lib-label").append("<span class='hb-lib-label'>Harborside</span>")
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	<style>
-		
-		
+
+
 		#s-lg-guide-search-form > div > span > button{
 		background-color:#C3102F;
 		color:#FFF;
@@ -978,42 +1092,42 @@ http://scholarsarchive.jwu.ed/u
 		padding: .5em;
 		height:3em;
 		}
-		
-		
+
+
 		#s-lg-guide-search-terms{
 		height:3em;
 		}
-		
+
 		#s-lg-guide-search-box > h4{
 		font-size:1em;
 		margin:0px;
 		}
-		
+
 	</style>
-	
-	
+
+
 	<!--GLOBAL LG JS HACKS-->
 	<script>
 		$( document ).ready(function() {
-			
+
 			$("#s-lg-guide-search-box").prepend("<h4 class='search-name'>Looking for Guides and FAQs?</h4>")
-			
+
 			$("#s-lg-guide-search-terms").prepend("<span class='search-name'>Search LibGuides and LibAnswers</span>")
-			
+
 			$("#s-lg-guide-search-form > div > span > button").html("<i class='fa fa-search fa-lg' ></i>")
-			
+
 		});
 	</script>
 
-	
-	<script>
-$(document).ready(function(){
-    $("a.study-room-link").hover(function(){
-        $(this).css("opacity",".5"); 
 
-    }, function(){
-        $(this).css("opacity","1").css("background-color","#FFF"); 
-	})
-  
-});
-</script>
+	<script>
+		$(document).ready(function(){
+			$("a.study-room-link").hover(function(){
+				$(this).css("opacity",".5");
+
+				}, function(){
+				$(this).css("opacity","1").css("background-color","#FFF");
+			})
+
+		});
+	</script>
