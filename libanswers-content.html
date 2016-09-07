@@ -4,9 +4,6 @@
   -->
 
 
-
-
-
 <!-- DEPENDENICES-->
 <!--IMPORTANT NOTE on Dependencies...
 only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! -->
@@ -17,7 +14,6 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/libapps/sites/538/include/libguidesv2-css.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
 
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
 
@@ -67,6 +63,13 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
     .jwu-la-footer-bottom {
         background: #5987c5;
     }
+
+    #topic-box-container {}
+
+    .topic-box {
+        height: 300px;
+        border: 1px solid #CCC;
+    }
 </style>
 
 
@@ -77,21 +80,17 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
 
 <style>
-#jwu-la-header{
-height:400px;
-  width:100%;
+    #jwu-la-header {
+        height: 400px;
+        width: 100%;
+    }
 
+    .jwu-la-header-logo {
+        width: 100%;
+    }
 
-}
-
-.jwu-la-header-logo{
-  width:100%;
-}
     .jwu-la-header-menu {
-
-      background-color: rgba(0, 74, 145, 0.85098);
-
-
+        background-color: rgba(0, 74, 145, 0.85098);
         width: 100%;
         height: auto;
         padding: 0 10px;
@@ -132,6 +131,9 @@ height:400px;
     }
 </style>
 
+
+
+
 <div id="jwu-la-header" style="background-image: url('https://unsplash.it/1400/400');">
     <div class="jwu-la-header-menu">
         <div class="container-fluid">
@@ -157,16 +159,29 @@ height:400px;
 
 
 
-
-<!--TODO: Work on Footer:
-  - Add final styles
-  - Get rid of dummy LINKS
-  - Update Links
+<!--TODO:
+- find some way to add interactions
+- also add placeholder image
 -->
 
-<div id="highlights-box" class="container-fluid">
-
+<div id="topic-box-container" class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 topic-box">
+        </div>
+        <div class="col-md-3 topic-box">
+        </div>
+        <div class="col-md-3 topic-box">
+        </div>
+        <div class="col-md-3 topic-box">
+        </div>
+    </div>
 </div>
+
+
+
+
+
+
 <div id="jwu-la-footer" class="container-fluid">
     <div class="jwu-la-footer-top row">
         <div class="jwu-la-footer-info col-sm-4">
