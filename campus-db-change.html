@@ -1,0 +1,86 @@
+<!--Find and replace pvdz with eir denz, cltz, nmiz -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="campus-buttons">
+
+        <button id="denz-button">
+   Denver Button
+</button>
+
+
+        <button id="pvdz-button">
+   Providence Button
+</button>
+
+
+        <button id="cltz-button">
+   Charlotte Button
+</button>
+
+
+
+        <button id="nmiz-button">
+   Florida Button
+</button>
+
+
+</div>
+
+<script src="http://lgapi.libapps.com/sa.php?site_id=538"></script>
+<script>
+    springshare_widget_config_1473709018528 = {
+        path: 'assets'
+    };
+</script>
+<div id="s-lg-widget-1473709018528"></div>
+<script>
+    ! function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+            p = /^http:/.test(d.location) ? 'http' : 'https';
+        if (!d.getElementById(id)) {
+            js = d.createElement(s);
+            js.id = id;
+            js.src = p +
+                "://lgapi.libapps.com/widgets.php?site_id=538&widget_type=2&search_terms=&search_match=2&subject_ids=&sort_by=name&list_format=1&drop_text=Select+a+Database...&output_format=1&load_type=2&enable_description=0&widget_title=A-Z+Database+List&widget_height=250&widget_width=100%25&widget_link_color=2954d1&widget_embed_type=1&num_results=0&enable_more_results=1&window_target=2&config_id=1473709018528";
+            fjs.parentNode.insertBefore(js, fjs);
+        }
+    }(document, "script", "s-lg-widget-script-1473709018528");
+</script>
+
+
+
+
+<script>
+    var url = /nmiz|denz|pvdz|cltz/;
+    $(document).ready(function() {
+        $("#denz-button").click(function() {
+            $('a').each(function() {
+                this.href = this.href.replace(url, 'denz');
+            });
+        });
+
+        $("#pvdz-button").click(function() {
+            $('a').each(function() {
+                this.href = this.href.replace(url, 'pvdz');
+            });
+        });
+
+
+        $("#cltz-button").click(function() {
+            $('a').each(function() {
+                this.href = this.href.replace(url, 'cltz');
+            });
+        });
+
+
+        $("#nmiz-button").click(function() {
+            $('a').each(function() {
+                this.href = this.href.replace(url, 'nmiz');
+            });
+        });
+    });
+</script>
