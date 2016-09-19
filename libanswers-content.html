@@ -121,6 +121,14 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
         text-decoration: none;
         color: #04A3ED;
     }
+
+
+.topic-faq-link{
+
+  font-size:.9em;
+
+}
+
 </style>
 <!--"info card" styles
 -->
@@ -370,7 +378,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1>Library Info</h1>
                             </div>
-                            <div class="[ info-card-detail ]">
+                            <div id="library-info-card-detail" class="[ info-card-detail ]">
                                 <!-- Description -->
                                 <p>What should go here?</p>
                             </div>
@@ -381,13 +389,13 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
 
                 <div class="[ col-sm-6 col-md-3 col-lg-3]">
-                    <div class="[ info-card ]">
+                    <div id="university-info-card" class="[ info-card ]">
                         <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
                         <div class="[ info-card-details ] animate">
                             <div class="[ info-card-header ]">
                                 <h1>University Info</h1>
                             </div>
-                            <div class="[ info-card-detail ]">
+                            <div id="university-info-card-detail" class="[ info-card-detail ]">
                                 <!-- Description -->
 
                                 <p>What should go here?</p>
@@ -397,21 +405,21 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                 </div>
 
 
-            <div class="[ col-sm-6 col-md-3 col-lg-3]">
-                <div class="[ info-card ]">
-                    <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-                    <div class="[ info-card-details ] animate">
-                        <div class="[ info-card-header ]">
-                            <h1>Textbooks</h1>
-                        </div>
-                        <div class="[ info-card-detail ]">
-                            <!-- Description -->
-                            <p>Course reserve link?</p>
-                            <p>word cloud?</p>
+                <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                    <div class="[ info-card ]">
+                        <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
+                        <div class="[ info-card-details ] animate">
+                            <div class="[ info-card-header ]">
+                                <h1>Textbooks</h1>
+                            </div>
+                            <div id = 'textbook-info-card-detail' class="[ info-card-detail ]">
+                                <!-- Description -->
+                                <p>Course reserve link?</p>
+                                <p>word cloud?</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </li>
 
 
@@ -424,11 +432,9 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1> Study Rooms </h1>
                             </div>
-                            <div class="[ info-card-detail ]">
+                            <div id = 'studyroom-info-card-detail' class="[ info-card-detail ]">
                                 <!-- Description -->
-                                <iframe width="200" height="150" src="https://www.youtube.com/embed/zLLjD6Zhh_c" frameborder="0" allowfullscreen></iframe>
-                                <p>Top 5 Library Resources for Online Students</p>
-                                <h4>Link to Applicable FAQs</h4>
+
                             </div>
                         </div>
                     </div>
@@ -444,7 +450,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1>Research Help</h1>
                             </div>
-                            <div class="[ info-card-detail ]">
+                            <div id="researchbasics-info-card-detail" class="[ info-card-detail ]">
                                 <!-- Description -->
                                 <p>What should go here?</p>
                             </div>
@@ -460,7 +466,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                         <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
                         <div class="[ info-card-details ] animate">
                             <div class="[ info-card-header ]">
-                                <h1>University Info</h1>
+                                <h1>TBD</h1>
                             </div>
                             <div class="[ info-card-detail ]">
                                 <!-- Description -->
@@ -478,7 +484,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                         <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
                         <div class="[ info-card-details ] animate">
                             <div class="[ info-card-header ]">
-                                <h1>Textbooks</h1>
+                                <h1>TBD2</h1>
                             </div>
                             <div class="[ info-card-detail ]">
                                 <!-- Description -->
@@ -562,12 +568,61 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
     <div class="jwu-la-footer-bottom row">
     </div>
 </div>
+
+
+<div class="api-stuff">
+</div>
+<!--Gets into from UNIVERSITY TOPIC from the API -->
+<script>
+    // Using YQL and JSONP
+
+    $(document).ready(function() {
+        topics = [
+            [
+                '29562', '#university-info-card-detail'
+            ],
+            [
+                '29560', '#library-info-card-detail'
+            ],
+            [
+                '29589', '#textbook-info-card-detail'
+            ],
+            [
+                '29592', '#studyroom-info-card-detail'
+            ],
+
+            ['29585', '#researchbasics-info-card-detail']
+        ]
+        topics.forEach(function(t) {
+            $.ajax({
+                url: "https://api2.libanswers.com/1.0/faqs?iid=4&topic_id=" + t[0] + "&sort=updated&sort_dir=desc",
+                dataType: 'jsonp',
+                success: function(dataWeGotViaJsonp) {
+                    myjson = dataWeGotViaJsonp;
+                    myjson.data.faqs.forEach(function(entry) {
+                        console.log(entry.question);
+                    });
+                    myjson.data.faqs.forEach(function(entry) {
+                        $(t[1]).append('<a class="topic-faq-link" href="' + entry.url.public + '">' + entry.question + '</br>');
+                    });
+                }
+            })
+        });
+    })
+</script>
+
+
+
+
+
+
+
 <script>
     $(document).ready(function() {
         $('.bxslider').bxSlider({
 
 
-        }
+            }
 
         );
     });
