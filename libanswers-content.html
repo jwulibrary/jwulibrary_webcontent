@@ -18,6 +18,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
 <!-- bxSlider Javascript file -->
 <script src="jquery.bxslider.min.js"></script>
+
 <!-- bxSlider CSS file -->
 <link href="jquery.bxslider.css" rel="stylesheet" />
 
@@ -122,13 +123,46 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
         color: #04A3ED;
     }
 
-
-.topic-faq-link{
-
-  font-size:.9em;
-
+    .topic-faq-link {
+        font-size: .9em;
+    }
+#la-search-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+    #custom-search-input {
+        padding: 3px;
+        border: solid 1px #E4E4E4;
+        border-radius: 6px;
+        background-color: #fff;
 
+    }
+
+    #custom-search-input input {
+        border: 0;
+        box-shadow: none;
+    }
+
+    #custom-search-input button {
+        margin: 2px 0 0 0;
+        background: none;
+        box-shadow: none;
+        border: 0;
+        color: #666666;
+        padding: 0 8px 0 10px;
+        border-left: solid 1px #ccc;
+    }
+
+    #custom-search-input button:hover {
+        border: 0;
+        box-shadow: none;
+        border-left: solid 1px #ccc;
+    }
+
+    #custom-search-input .glyphicon-search {
+        font-size: 23px;
+    }
 </style>
 <!--"info card" styles
 -->
@@ -316,7 +350,33 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
             </div>
         </div>
     </div>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-6 col-md-offset-3" >
+                <h2 class="text-center">Ask Us@ JWULibrary</h2>
+                <form method="get" role="search" name="s-la-searchform" id="s-la-searchform-1926" action="http://jwu-ri.libanswers.com/search/" aria-labelledby="s-la-content-search-query-1926">
+
+                    <div id="custom-search-input">
+
+                        <div class="input-group col-md-12">
+
+                            <input type="text" class="form-control input-lg" name="q" placeholder="Search for Answers" />
+                            <span class="input-group-btn"> <button class="btn btn-info btn-lg" type="submit"> <i class="glyphicon glyphicon-search"></i> </button></span>
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
 </div>
+
 
 <!-- info cards; maybe too flippy?
 -->
@@ -412,7 +472,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1>Textbooks</h1>
                             </div>
-                            <div id = 'textbook-info-card-detail' class="[ info-card-detail ]">
+                            <div id='textbook-info-card-detail' class="[ info-card-detail ]">
                                 <!-- Description -->
                                 <p>Course reserve link?</p>
                                 <p>word cloud?</p>
@@ -432,7 +492,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1> Study Rooms </h1>
                             </div>
-                            <div id = 'studyroom-info-card-detail' class="[ info-card-detail ]">
+                            <div id='studyroom-info-card-detail' class="[ info-card-detail ]">
                                 <!-- Description -->
 
                             </div>
@@ -599,9 +659,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                 dataType: 'jsonp',
                 success: function(dataWeGotViaJsonp) {
                     myjson = dataWeGotViaJsonp;
-                    myjson.data.faqs.forEach(function(entry) {
-                        console.log(entry.question);
-                    });
+
                     myjson.data.faqs.forEach(function(entry) {
                         $(t[1]).append('<a class="topic-faq-link" href="' + entry.url.public + '">' + entry.question + '</br>');
                     });
@@ -627,3 +685,9 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
         );
     });
 </script>
+
+
+<script>
+
+
+          </script>
