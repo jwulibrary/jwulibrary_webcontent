@@ -126,17 +126,18 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
     .topic-faq-link {
         font-size: .9em;
     }
-#la-search-wrap{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
+    #la-search-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     #custom-search-input {
         padding: 3px;
         border: solid 1px #E4E4E4;
         border-radius: 6px;
         background-color: #fff;
-
     }
 
     #custom-search-input input {
@@ -353,7 +354,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
     <div class="container-fluid">
         <div class="row">
 
-            <div class="col-md-6 col-md-offset-3" >
+            <div class="col-md-6 col-md-offset-3">
                 <h2 class="text-center">Ask Us@ JWULibrary</h2>
                 <form method="get" role="search" name="s-la-searchform" id="s-la-searchform-1926" action="http://jwu-ri.libanswers.com/search/" aria-labelledby="s-la-content-search-query-1926">
 
@@ -562,12 +563,64 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
     </div>
 </div>
 
+
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div id="contact-us-box" class='col-sm-6'>
+            <h3>Contact Us</h3>
+        </div>
+        <div id="chat-box" class='col-sm-3'>
+            <h3>Chat</h3>
+            <!-- Place this div in your web page where you want your chat widget to appear. -->
+            <div class="needs-js">chat loading...</div>
+
+            <!-- Place this script as near to the end of your BODY as possible. -->
+            <script type="text/javascript">
+              (function() {
+                var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
+                x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?10840";
+                var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
+              })();
+            </script>
+</div>
+
+        <div id="hours-box" class='col-sm-3'>
+            <h3>Hours</h3>
+
+            <div id="hours-wrap" class="container-fluid librarybox">
+                <div class="row">
+                    <div class="homepage-box" id="homepage-hours">
+                        <div id="api_hours_today_iid1433_lid0">
+                            <table class="hours-today">
+                                <tbody>
+                                    <tr class="hours-alt hours-today-row hours-library loc1898">
+                                        <td class="hours-col-loc">Downcity Library</td>
+                                        <td class="hours-col-time"><span class="s-lc-time">7:30am – 12am</span></td>
+                                    </tr>
+                                    <tr class="hours-row hours-today-row hours-library loc1899">
+                                        <td class="hours-col-loc">Harborside Library</td>
+                                        <td class="hours-col-time"><span class="s-lc-time">7:30am – 12am</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <script src="https://api3.libcal.com/api_hours_today.php?iid=1433&amp;lid=0&amp;format=js&amp;context=object">
+                        </script>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="http://jwu-ri.libcal.com/hours/">View all hours</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
 </div>
 
 
-<div id="highlights-box" class="container-fluid">
-
-</div>
 <div id="jwu-la-footer" class="container-fluid">
     <div class="jwu-la-footer-top row">
         <div class="jwu-la-footer-info col-sm-4">
@@ -630,8 +683,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 </div>
 
 
-<div class="api-stuff">
-</div>
+
 <!--Gets into from UNIVERSITY TOPIC from the API -->
 <script>
     // Using YQL and JSONP
@@ -688,6 +740,4 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
 
 <script>
-
-
-          </script>
+</script>
