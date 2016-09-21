@@ -94,6 +94,8 @@
 
 .topic-faq-link {
     font-size: .9em;
+    text-align: left;
+    margin-top:.2em;
 }
 
 #la-search-wrap {
@@ -135,8 +137,8 @@
 }
 
 #search-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4em;
     font-weight: 900;
 }
 
