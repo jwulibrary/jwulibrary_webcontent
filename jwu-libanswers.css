@@ -45,6 +45,7 @@
 #jwu-la-header {
     height: 600px;
     width: 100%;
+    position:relative;
 }
 
 .jwu-la-header-logo {
@@ -95,7 +96,7 @@
 .topic-faq-link {
     font-size: .9em;
     text-align: left;
-    margin-top:.2em;
+    margin-top: .2em;
 }
 
 #la-search-wrap {
@@ -140,6 +141,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 4em;
     font-weight: 900;
+    color: #FFF;
 }
 
 .animate {
@@ -333,4 +335,39 @@ a.linkedin:hover {
     line-height: 200px;
     font-size: 80px;
     color: white;
+}
+
+#faq-splash {
+    background: rgba(248, 179, 179, 0.73);
+    margin-top: 3em;
+    padding: 1.5em;
+}
+
+#faq-splash a {
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    margin-top: 2em;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 1em;
+}
+
+#browse-button {
+
+    background-color: rgba(255,255,255,.4);
+    padding: 1em 2em;
+    
+    color: #FFF;
+
+    position: absolute;
+  bottom: 0;
+    font-size: 1.4em;
+font-family: "open sans";
+}
+#browse-button:hover{
+
+    background-color: rgba(255,255,255,.6);
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
 }
