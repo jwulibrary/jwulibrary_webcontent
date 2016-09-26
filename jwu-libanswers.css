@@ -338,7 +338,7 @@ a.linkedin:hover {
 }
 
 #faq-splash {
-    background: rgba(248, 179, 179, 0.73);
+    background: rgba(245, 137, 50, 0.64);
     margin-top: 3em;
     padding: 1.5em;
 }
@@ -352,12 +352,18 @@ a.linkedin:hover {
     text-align: center;
     padding: 1em;
 }
+#faq-splash:hover{
+  background-color:  rgba(245, 137, 50, 0.9);
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+
+}
 
 #browse-button {
 
     background-color: rgba(255,255,255,.4);
     padding: 1em 2em;
-    
+
     color: #FFF;
 
     position: absolute;

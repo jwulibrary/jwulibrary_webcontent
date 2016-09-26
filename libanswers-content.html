@@ -402,7 +402,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                 success: function(rawJsonp) {
                     topFaqs = rawJsonp.data.faqs;
                     randFaq = topFaqs[Math.floor(Math.random() * topFaqs.length)]
-                    $('#faq-splash').append('<i class="fa fa-quote-left"></i><a href="' + randFaq.url.public + '" + target="_blank">' + randFaq.question).hide().fadeIn(1000);
+                    $('#faq-splash').append('<a href="' + randFaq.url.public + '" + target="_blank"> <i style="color:#FFF"class="fa fa-quote-left"></i>  ' + randFaq.question + '  <i style=" color:#FFF"class="fa fa-quote-right">').hide().fadeIn(1000);
 
                 }
             });
