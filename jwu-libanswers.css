@@ -178,6 +178,13 @@
     text-align: center;
 }
 
+.info-card-header h1{
+
+    padding: 0 15px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
 .info-card .info-card-details::-webkit-scrollbar {
     width: 8px;
 }
