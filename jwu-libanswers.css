@@ -94,7 +94,7 @@
 }
 
 .topic-faq-link {
-    font-size: .9em;
+    font-size: 1.2em;
     text-align: left;
     margin-top: .2em;
 }
@@ -142,6 +142,7 @@
     font-size: 4em;
     font-weight: 900;
     color: #FFF;
+    text-shadow:#000 2px 3px 3px;
 }
 
 .animate {
@@ -204,6 +205,13 @@
 
 .info-card .info-card-details::-webkit-scrollbar-thumb:hover {
     background: rgb(130, 130, 130);
+}
+
+
+.info-detail li:nth-child(odd) a{
+  background-color:rgba(226, 229, 229, 0.6);
+  width:100%;
+  padding:1em 0;
 }
 
 .info-card .info-card-details .info-card-header {
@@ -348,6 +356,7 @@ a.linkedin:hover {
     background: rgba(245, 137, 50, 0.64);
     margin-top: 3em;
     padding: 1.5em;
+      text-align: center;
 }
 
 #faq-splash a {
