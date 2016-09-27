@@ -45,7 +45,9 @@
 #jwu-la-header {
     height: 600px;
     width: 100%;
-    position:relative;
+    position: relative;
+    background-image: url('dorrance-1920_1080.jpg');
+    background-position: center;
 }
 
 .jwu-la-header-logo {
@@ -142,7 +144,7 @@
     font-size: 4em;
     font-weight: 900;
     color: #FFF;
-    text-shadow:#000 2px 3px 3px;
+    text-shadow: #000 2px 3px 3px;
 }
 
 .animate {
@@ -179,8 +181,7 @@
     text-align: center;
 }
 
-.info-card-header h1{
-
+.info-card-header h1 {
     padding: 0 15px;
     background: rgb(255, 255, 255);
     text-align: center;
@@ -207,15 +208,14 @@
     background: rgb(130, 130, 130);
 }
 
-.info-detail{
-position: relative;
-
+.info-detail {
+    position: relative;
 }
 
-.info-detail li:nth-child(odd) a{
-  background-color:rgba(226, 229, 229, 0.6);
-  width:100%;
-  padding:1em 0;
+.info-detail li:nth-child(odd) a {
+    background-color: rgba(226, 229, 229, 0.6);
+    width: 100%;
+    padding: 1em 0;
 }
 
 .info-card .info-card-details .info-card-header {
@@ -360,7 +360,7 @@ a.linkedin:hover {
     background: rgba(245, 137, 50, 0.64);
     margin-top: 3em;
     padding: 1.5em;
-      text-align: center;
+    text-align: center;
 }
 
 #faq-splash a {
@@ -372,33 +372,30 @@ a.linkedin:hover {
     text-align: center;
     padding: 1em;
 }
-#faq-splash:hover{
-  background-color:  rgba(245, 137, 50, 0.9);
-  text-decoration: underline;
-  transition: all 0.3s ease-in-out;
 
-}
-
-#browse-button {
-
-    background-color: rgba(255,255,255,.4);
-    padding: 1em 2em;
-
-    color: #FFF;
-
-    position: absolute;
-  bottom: 0;
-    font-size: 1.4em;
-font-family: "open sans";
-}
-#browse-button:hover{
-
-    background-color: rgba(255,255,255,.6);
+#faq-splash:hover {
+    background-color: rgba(245, 137, 50, 0.9);
     text-decoration: underline;
     transition: all 0.3s ease-in-out;
 }
 
-.all-faqs-link{
-margin-top:1em;
-font-size:1.5em;
+#browse-button {
+    background-color: rgba(255, 255, 255, .4);
+    padding: 1em 2em;
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.4em;
+    font-family: "open sans";
+}
+
+#browse-button:hover {
+    background-color: rgba(255, 255, 255, .6);
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+.all-faqs-link {
+    margin-top: 1em;
+    font-size: 1.5em;
 }
