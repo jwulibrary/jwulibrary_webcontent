@@ -137,8 +137,9 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1> Online Students </h1>
                             </div>
-<figure class="moon"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-  </figure>                            <div class="[ info-card-details ] animate">
+                            <figure class="moon"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/405/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
 
                                 <div class="[ info-card-detail ] info-detail">
                                     <div class="row topic-link-wrap"></div>
@@ -157,8 +158,9 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1>Library Info</h1>
                             </div>
-<figure class="1977"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-  </figure>                            <div class="[ info-card-details ] animate">
+                            <figure class="1977"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/403/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
 
                                 <div id="library-info-card-detail" class="[ info-card-detail ] info-detail">
                                     <div class="row topic-link-wrap"></div>
@@ -176,9 +178,9 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1>University Info</h1>
                             </div>
-                          <figure class="Walden">
-                              <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-                          </figure>
+                            <figure class="Walden">
+                                <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/401/?random" />
+                            </figure>
                             <div class="[ info-card-details ] animate">
 
                                 <div id="university-info-card-detail" class="[ info-card-detail ] info-detail">
@@ -197,8 +199,9 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1>Textbooks</h1>
                             </div>
-<figure class="earlybird"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-  </figure>                            <div class="[ info-card-details ] animate">
+                            <figure class="earlybird"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
 
                                 <div id='textbook-info-card-detail' class="[ info-card-detail ] info-detail">
                                     <div class="row topic-link-wrap"></div>
@@ -216,7 +219,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1> Study Rooms </h1>
                             </div>
-                            <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
+                            <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/401/?random" />
                             <div class="[ info-card-details ] animate">
 
                                 <div id='studyroom-info-card-detail' class="[ info-card-detail ] info-detail">
@@ -235,8 +238,9 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1>Research Help</h1>
                             </div>
-<figure class="aden"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-  </figure>                            <div class="[ info-card-details ] animate">
+                            <figure class="aden"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/402/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
 
                                 <div id="researchbasics-info-card-detail" class="[ info-card-detail ] info-detail">
                                     <div class="row topic-link-wrap"></div>
@@ -274,8 +278,9 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <div class="[ info-card-header ]">
                                 <h1>TBD2</h1>
                             </div>
-<figure class="toaster"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-  </figure>                            <div class="[ info-card-details ] animate">
+                            <figure class="toaster"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/403/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
 
                                 <div class="[ info-card-detail ] info-detail">
                                     <div class="row topic-link-wrap"></div>
@@ -482,7 +487,8 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                 success: function(rawJsonp) {
                     topFaqs = rawJsonp.data.faqs;
                     randFaq = topFaqs[Math.floor(Math.random() * topFaqs.length)]
-                    $('#faq-splash').append('<a href="' + randFaq.url.public + '" + target="_blank"> <i style="color:#FFF"class="fa fa-quote-left"></i>  ' + randFaq.question + '  <i style=" color:#FFF"class="fa fa-quote-right">')
+                    $('#faq-splash').append('<a href="' + randFaq.url.public + '" + target="_blank"> <i style="color:#FFF; font-size:.8em;"class="fa fa-quote-left"></i>  ' + randFaq.question +
+                            '  <i style="color:#FFF; font-size:.8em;"class="fa fa-quote-right">')
                         .hide().fadeIn(1000);
 
                 }
@@ -520,7 +526,12 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
     <script>
         $(document).ready(function() {
             $('.bxslider').bxSlider({
+                easing: 'easeOutElastic',
+                speed: 1000,
 
+                auto: true,
+                pause: 15000,
+                autoHover: true
             });
 
         });
