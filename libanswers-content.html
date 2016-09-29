@@ -1,409 +1,401 @@
+<html>
 <!--TABLE OF CONCENTS:
   - Dependencies
   - Footer
   -->
-
 <!-- DEPENDENICES-->
 <!--IMPORTANT NOTE on Dependencies...
 only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! -->
-<link rel="stylesheet" media="screen" href="http://jwu-ri.libanswers.com/css282/font-awesome/css/font-awesome.min.css" />
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" media="screen" href="http://jwu-ri.libanswers.com/css282/LibAnswers_public.css" />
+    <script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+    <script src="http://jwu-ri.libanswers.com/js282/LibAnswers_public.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/libapps/sites/538/include/libguidesv2-css.css">
 
-<link rel="stylesheet" media="screen" href="http://jwu-ri.libanswers.com/css282/LibAnswers_public.css" />
-<script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
-<script src="http://jwu-ri.libanswers.com/js282/LibAnswers_public.min.js"></script>
-<link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/libapps/sites/538/include/libguidesv2-css.css">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
-<link rel="stylesheet" href="jwu-libanswers.css">
-<link rel="stylesheet" href="remodal.css">
-<link rel="stylesheet" href="remodal-default-theme.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="jwu-libanswers.css">
+    <link rel="stylesheet" href="remodal.css">
+    <link rel="stylesheet" href="remodal-default-theme.css">
+    <script src="remodal.js"></script>
 
-<script src="remodal.js"></script>
-
-
-<!-- bxSlider Javascript file -->
-<script src="jquery.bxslider.min.js"></script>
-<!-- bxSlider CSS file -->
-<link href="jquery.bxslider.css" rel="stylesheet" />
-<!--LOCAL CSS...to be included in master CSS eventually-->
-
-
-
-<!--"info card" styles
+    <!-- bxSlider Javascript file -->
+    <script src="jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="jquery.bxslider.css" rel="stylesheet" />
+    <!--LOCAL CSS...to be included in master CSS eventually-->
+    <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
+    <script  type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <!--"info card" styles
 -->
-
-<div id="jwu-la-header" style="background-image: url('https://unsplash.it/1600/400');">
-    <div class="jwu-la-header-menu">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="#"><img class="jwu-la-header-logo" src="library-identifier-whiteandorange.svg"></a>
-            </div>
-            <div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Resources</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Services</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> FAQ</a></li>
-                </ul>
+    <div id="jwu-la-header">
+        <div class="jwu-la-header-menu">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-header col-xs-6 col-sm-4 col-lg-3">
+                        <a href="#"><img class="jwu-la-header-logo" src="library-identifier-whiteandorange.svg"></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-8 col-lg-9">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Resources</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Services</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
+        <!--SEARCHBOX-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <h2 id="search-title" class="text-center">Ask Us@ JWULibrary
+                    <span class="new-modal"> <a href="#modal">  <span class="glyphicon glyphicon-question-sign"></span> </a> </span>
 
+                    <div class="remodal" data-remodal-id="modal">
+                      <button data-remodal-action="close" class="remodal-close"></button>
+                      <h1>NEW MODAL TEST</h1>
+                  <div class="row">What this is, how to use it, etc. etc.</div>
+            <img src="https://unsplash.it/500/400/?random" />
+                    <div class="row">Stuff to include in the modal</div>
+                    <div class="row">More stuff to include in the modal</div>
+                    </div>
 
-
-
-
-
-
-
-
-    <!--SEARCHBOX-->
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h2 id="search-title" class="text-center">Ask Us@ JWULibrary
-                <span class="new-modal"> <a href="#modal">  <span class="glyphicon glyphicon-question-sign"></span> </a> </span>
-
-
-
-                <div class="remodal" data-remodal-id="modal">
-                  <button data-remodal-action="close" class="remodal-close"></button>
-                  <h1>NEW MODAL TEST</h1>
-              <div class="row">This is some stuff I want to include in the modal!</div>
-  <img src="https://unsplash.it/500/400/?random" />
-                <div class="row">Stuff to include in the modal</div>
-                <div class="row">More stuff to include in the modal</div>
-                </div>
-
-
-                </h2>
-                <form method="get" role="search" name="s-la-searchform" id="s-la-searchform-1926" action="http://jwu-ri.libanswers.com/search/" aria-labelledby="s-la-content-search-query-1926">
-                    <div id="custom-search-input">
-                        <div class="input-group col-md-12">
-                            <input type="text" class="form-control input-lg" name="q" placeholder="Search for Answers" />
-                            <span class="input-group-btn"> <button class="btn btn-info btn-lg" type="submit"> <i class="glyphicon glyphicon-search"></i> </button></span>
+                    </h2>
+                                <form method="get" role="search" name="s-la-searchform" id="s-la-searchform-1926" action="http://jwu-ri.libanswers.com/search/" aria-labelledby="s-la-content-search-query-1926">
+                                    <div id="custom-search-input">
+                                        <div class="input-group col-md-12">
+                                            <input type="text" class="form-control input-lg" name="q" placeholder="Search for Answers" />
+                                            <span class="input-group-btn"> <button class="btn btn-info btn-lg" type="submit"> <i class="glyphicon glyphicon-search"></i> </button></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
+
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="faq-splash">
+                    </div>
+                </div>
+            </div>
+
+
         </div>
+
+        <a id="browse-button" class="col-xs-4  col-xs-offset-4 text-center" href="#"> Browse FAQs </a>
+
     </div>
 
-
-
-
-
-
-
-
-
-
-</div>
-
-
-
-<div class="container">
-    <div class="row">
-        <ul class="bxslider">
-            <li>
-                <div class="[ col-sm-6 col-md-3 col-lg-3]">
-                    <div class="[ info-card ]">
-                        <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-                        <div class="[ info-card-details ] animate">
+    <div name="topic-jump" id="topic-wrap" class="container-fluid">
+        <div class="row">
+            <ul class="bxslider">
+                <li>
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
                             <div class="[ info-card-header ]">
                                 <h1> Online Students </h1>
                             </div>
-                            <div class="[ info-card-detail ]">
-                                <!-- Description -->
-                                <iframe width="200" height="150" src="https://www.youtube.com/embed/zLLjD6Zhh_c" frameborder="0" allowfullscreen></iframe>
-                                <p>Top 5 Library Resources for Online Students</p>
-                                <h4>Link to Applicable FAQs</h4>
+                            <figure class="moon"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/405/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                    <iframe width="200" height="150" src="https://www.youtube.com/embed/zLLjD6Zhh_c" frameborder="0" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="[ col-sm-6 col-md-3 col-lg-3]">
-                    <div class="[ info-card ]">
-                        <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-                        <div class="[ info-card-details ] animate">
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
                             <div class="[ info-card-header ]">
                                 <h1>Library Info</h1>
                             </div>
-                            <div id="library-info-card-detail" class="[ info-card-detail ]">
-                                <!-- Description -->
-                                <p>What should go here?</p>
+                            <figure class="1977"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/403/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div id="library-info-card-detail" class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="[ col-sm-6 col-md-3 col-lg-3]">
-                    <div id="university-info-card" class="[ info-card ]">
-                        <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-                        <div class="[ info-card-details ] animate">
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div id="university-info-card" class="[ info-card ]">
                             <div class="[ info-card-header ]">
                                 <h1>University Info</h1>
                             </div>
-                            <div id="university-info-card-detail" class="[ info-card-detail ]">
-                                <!-- Description -->
-                                <p>What should go here?</p>
+                            <figure class="Walden">
+                                <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/401/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div id="university-info-card-detail" class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="[ col-sm-6 col-md-3 col-lg-3]">
-                    <div class="[ info-card ]">
-                        <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-                        <div class="[ info-card-details ] animate">
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
                             <div class="[ info-card-header ]">
                                 <h1>Textbooks</h1>
                             </div>
-                            <div id='textbook-info-card-detail' class="[ info-card-detail ]">
-                                <!-- Description -->
-                                <p>Course reserve link?</p>
-                                <p>word cloud?</p>
+                            <figure class="earlybird"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div id='textbook-info-card-detail' class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="[ col-sm-6 col-md-3 col-lg-3]">
-                    <div class="[ info-card ]">
-                        <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-                        <div class="[ info-card-details ] animate">
+                </li>
+                <li>
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
                             <div class="[ info-card-header ]">
                                 <h1> Study Rooms </h1>
                             </div>
-                            <div id='studyroom-info-card-detail' class="[ info-card-detail ]">
-                                <!-- Description -->
+                            <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/401/?random" />
+                            <div class="[ info-card-details ] animate">
+                                <div id='studyroom-info-card-detail' class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="[ col-sm-6 col-md-3 col-lg-3]">
-                    <div class="[ info-card ]">
-                        <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-                        <div class="[ info-card-details ] animate">
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
                             <div class="[ info-card-header ]">
                                 <h1>Research Help</h1>
                             </div>
-                            <div id="researchbasics-info-card-detail" class="[ info-card-detail ]">
-                                <!-- Description -->
-                                <p>What should go here?</p>
+                            <figure class="aden"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/402/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div id="researchbasics-info-card-detail" class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-
-                <div class="[ col-sm-6 col-md-3 col-lg-3]">
-                    <div class="[ info-card ]">
-                        <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-                        <div class="[ info-card-details ] animate">
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
                             <div class="[ info-card-header ]">
                                 <h1>TBD</h1>
                             </div>
-                            <div class="[ info-card-detail ]">
-                                <!-- Description -->
-                                <p>What should go here?</p>
+                            <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="[ col-sm-6 col-md-3 col-lg-3]">
-                    <div class="[ info-card ]">
-                        <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
-                        <div class="[ info-card-details ] animate">
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
                             <div class="[ info-card-header ]">
                                 <h1>TBD2</h1>
                             </div>
-                            <div class="[ info-card-detail ]">
-                                <!-- Description -->
-                                <p>Course reserve link?</p>
-                                <p>word cloud?</p>
+                            <figure class="toaster"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/403/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="contact-us-box" class='col-sm-12 col-md-6'>
+                <h3 class="text-center">Contact Us</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="well well-sm">
+                                <form class="form-horizontal" action="" method="post">
+                                    <fieldset>
+
+                                        <!-- Name input-->
+                                        <div class="row">
+                                            <div class="form-group col-xs-6">
+                                                <label class="col-md-3 control-label" for="name">Name</label>
+                                                <div class="col-md-9">
+                                                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                                                </div>
+                                            </div>
+                                            <!-- Email input-->
+                                            <div class="form-group col-xs-6">
+                                                <label class="col-md-3 control-label" for="email">E-mail</label>
+                                                <div class="col-md-9">
+                                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Message body -->
+                                        <div class="row">
+                                            <div class="form-group col-xs-12">
+                                                <label style="text-align:left" class="col-md-3 control-label" for="message">Question</label>
+                                                <div class="col-md-9">
+                                                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                            <!-- Form actions -->
+                                            <div class="form-group col-xs-2">
+                                                <div class="col-md-12 text-right">
+                                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </li>
-        </ul>
-    </div>
-</div>
-
-<div class="container-fluid">
-    <div class="row">
-        <div id="contact-us-box" class='col-sm-6'>
-            <h3>Contact Us</h3>
-        </div>
-        <div id="chat-box" class='col-sm-3'>
-            <h3>Chat</h3>
-            <!-- Place this div in your web page where you want your chat widget to appear. -->
-            <div class="needs-js">chat loading...</div>
-            <!-- Place this script as near to the end of your BODY as possible. -->
-            <script type="text/javascript">
-                (function() {
-                    var x = document.createElement("script");
-                    x.type = "text/javascript";
-                    x.async = true;
-                    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?10840";
-                    var y = document.getElementsByTagName("script")[0];
-                    y.parentNode.insertBefore(x, y);
-                })();
-            </script>
-        </div>
-        <div id="hours-box" class='col-sm-3'>
-            <h3>Hours</h3>
-            <div id="hours-wrap" class="container-fluid librarybox">
-                <div class="row">
-                    <div class="homepage-box" id="homepage-hours">
-                        <div id="api_hours_today_iid1433_lid0">
-                            <table class="hours-today">
-                                <tbody>
-                                    <tr class="hours-alt hours-today-row hours-library loc1898">
-                                        <td class="hours-col-loc">Downcity Library</td>
-                                        <td class="hours-col-time"><span class="s-lc-time">7:30am – 12am</span></td>
-                                    </tr>
-                                    <tr class="hours-row hours-today-row hours-library loc1899">
-                                        <td class="hours-col-loc">Harborside Library</td>
-                                        <td class="hours-col-time"><span class="s-lc-time">7:30am – 12am</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+            </div>
+            <div id="chat-box" class='col-md-3 col-sm-6 col-xs-12'>
+                <h3>Chat</h3>
+                <!-- Place this div in your web page where you want your chat widget to appear. -->
+                <div class="needs-js">chat loading...</div>
+                <!-- Place this script as near to the end of your BODY as possible. -->
+                <script type="text/javascript">
+                    (function() {
+                        var x = document.createElement("script");
+                        x.type = "text/javascript";
+                        x.async = true;
+                        x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?10840";
+                        var y = document.getElementsByTagName("script")[0];
+                        y.parentNode.insertBefore(x, y);
+                    })();
+                </script>
+            </div>
+            <div id="hours-box" class='col-sm-6 col-md-3 col-xs-12'>
+                <h3>Hours</h3>
+                <div id="hours-wrap" class="container-fluid librarybox">
+                    <div class="row">
+                        <div class="homepage-box" id="homepage-hours">
+                            <div id="api_hours_today_iid1433_lid0">
+                                <table class="hours-today">
+                                    <tbody>
+                                        <tr class="hours-alt hours-today-row hours-library loc1898">
+                                            <td class="hours-col-loc">Downcity Library</td>
+                                            <td class="hours-col-time"><span class="s-lc-time">7:30am – 12am</span></td>
+                                        </tr>
+                                        <tr class="hours-row hours-today-row hours-library loc1899">
+                                            <td class="hours-col-loc">Harborside Library</td>
+                                            <td class="hours-col-time"><span class="s-lc-time">7:30am – 12am</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <script src="https://api3.libcal.com/api_hours_today.php?iid=1433&amp;lid=0&amp;format=js&amp;context=object">
+                            </script>
                         </div>
-                        <script src="https://api3.libcal.com/api_hours_today.php?iid=1433&amp;lid=0&amp;format=js&amp;context=object">
-                        </script>
+                    </div>
+                    <div class="row">
+                        <a href="http://jwu-ri.libcal.com/hours/">View all hours</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="jwu-la-footer" class="container-fluid">
+        <div class="jwu-la-footer-top row">
+            <div class="jwu-la-footer-info col-sm-4">
+                <a class="jwu-la-footer-logo" href="/">
+                    <img src="JWULogo-White.svg" alt="JWU Logo" />
+                </a>
+                <div class="jwu-la-footer-contact">
+                    <div class="jwu-la-footer-contact-group">
+                        <p>Downcity Library:</p>
+                        <p>111 Dorrance Street Providence, Rhode Island 02903</p>
+                        <p>401-598-1121</p>
+                    </div>
+                    <div class="jwu-la-footer-contact-group">
+                        <p>Harborside Library:</p>
+                        <p>321 Harborside Boulevard Providence, RI 02905</p>
+                        <p>401-598-1466</p>
+                    </div>
+                </div>
+            </div>
+            <div class="jwu-la-footer-links col-xs-12 col-sm-8">
                 <div class="row">
-                    <a href="http://jwu-ri.libcal.com/hours/">View all hours</a>
+                    <ul class="jwu-la-footer-nav col-md-3 col-sm-5 col-xs-12">
+                        <li> <a href="http://jwu-ri.libanswers.com/a.php?qid=3690">Location and Directions</a> </li>
+                        <li> <a href="https://jwu-ri.libanswers.com/faq/141908">Off-Campus Access</a> </li>
+                        <li> <a href="http://jwu-ri.libanswers.com/a.php?qid=17269">Staff Directory</a></li>
+                        <li> <a href="http://jwu-ri.libcal.com/hours/">Hours</a> </li>
+                    </ul>
+                    <ul class="jwu-la-footer-nav col-md-3 col-sm-5 col-xs-12">
+                        <li> <a href="http://jwu-ri.libanswers.com/">FAQ</a></li>
+                        <li> <a href="http://pvd.library.jwu.edu/homepage#">Chat with a Librarian</a></li>
+                        <li><a href="http://pvd.library.jwu.edu/tutorials/libraryvideos">Tutorials</a></li>
+                        <li> <a href="http://pvd.library.jwu.edu/reserves">Course Reserves</a> </li>
+                        <li> <a href="http://jwu-ri.libanswers.com/a.php?qid=7831">Interlibrary Loan (ILL)</a> </li>
+                        <li> <a href="http://pvd.library.jwu.edu/writinglab">Writing Lab</a></li>
+                    </ul>
+                    <ul class="jwu-la-footer-nav col-md-3 col-sm-5 col-xs-12">
+                        <li> <a href="http://pvd.library.jwu.edu/az.php">Databases</a> </li>
+                        <li> <a href="https://jwupvd.on.worldcat.org/advancedsearch">Catalog</a> </li>
+                        <li> <a href="https://jwupvd.on.worldcat.org/atoztitles/#journal">Journals</a> </li>
+                        <li> <a href="http://library.uri.edu/patroninfo">My Account</a></li>
+                        <li> <a href="http://jwu-ri.libcal.com/booking/downcity">Study Rooms</a></li>
+                        <li> <a href="http://jwu-ri.libcal.com/appointments/">Research Appointment</a></li>
+                    </ul>
+                    <ul class="jwu-la-footer-nav  col-md-3 col-sm-5 col-xs-12">
+                        <li> <a href="http://den.library.jwu.edu/">Denver</a> </li>
+                        <li> <a href="http://clt.library.jwu.edu/">Charlotte</a> </li>
+                        <li> <a href="http://nmi.library.jwu.edu/">North Miami</a></li>
+                        <li> <a href="http://pvd.library.jwu.edu/">Providence</a> </li>
+                    </ul>
                 </div>
             </div>
-
+        </div>
+        <div class="jwu-la-footer-bottom row">
         </div>
     </div>
-</div>
 
-<div id="jwu-la-footer" class="container-fluid">
-    <div class="jwu-la-footer-top row">
-        <div class="jwu-la-footer-info col-sm-4">
-            <a class="jwu-la-footer-logo" href="/">
-                <img src="JWULogo-White.svg" alt="JWU Logo" />
-            </a>
-            <div class="jwu-la-footer-contact">
-                <div class="jwu-la-footer-contact-group">
-                    <p>Downcity Library:</p>
-                    <p>111 Dorrance Street Providence, Rhode Island 02903</p>
-                    <p>401-598-1121</p>
-                </div>
-                <div class="jwu-la-footer-contact-group">
-                    <p>Harborside Library:</p>
-                    <p>321 Harborside Boulevard Providence, RI 02905</p>
-                    <p>401-598-1466</p>
-                </div>
-            </div>
-        </div>
-        <div class="jwu-la-footer-links col-xs-12 col-sm-8">
-            <div class="row">
-                <ul class="jwu-la-footer-nav col-md-3 col-sm-5 col-xs-12">
-                    <li> <a href="http://jwu-ri.libanswers.com/a.php?qid=3690">Location and Directions</a> </li>
-                    <li> <a href="https://jwu-ri.libanswers.com/faq/141908">Off-Campus Access</a> </li>
-                    <li> <a href="http://jwu-ri.libanswers.com/a.php?qid=17269">Staff Directory</a></li>
-                    <li> <a href="http://jwu-ri.libcal.com/hours/">Hours</a> </li>
-                </ul>
-                <ul class="jwu-la-footer-nav col-md-3 col-sm-5 col-xs-12">
-                    <li> <a href="http://jwu-ri.libanswers.com/">FAQ</a></li>
-                    <li> <a href="http://pvd.library.jwu.edu/homepage#">Chat with a Librarian</a></li>
-                    <li><a href="http://pvd.library.jwu.edu/tutorials/libraryvideos">Tutorials</a></li>
-                    <li> <a href="http://pvd.library.jwu.edu/reserves">Course Reserves</a> </li>
-                    <li> <a href="http://jwu-ri.libanswers.com/a.php?qid=7831">Interlibrary Loan (ILL)</a> </li>
-                    <li> <a href="http://pvd.library.jwu.edu/writinglab">Writing Lab</a></li>
-                </ul>
-                <ul class="jwu-la-footer-nav col-md-3 col-sm-5 col-xs-12">
-                    <li> <a href="http://pvd.library.jwu.edu/az.php">Databases</a> </li>
-                    <li> <a href="https://jwupvd.on.worldcat.org/advancedsearch">Catalog</a> </li>
-                    <li> <a href="https://jwupvd.on.worldcat.org/atoztitles/#journal">Journals</a> </li>
-                    <li> <a href="http://library.uri.edu/patroninfo">My Account</a></li>
-                    <li> <a href="http://jwu-ri.libcal.com/booking/downcity">Study Rooms</a></li>
-                    <li> <a href="http://jwu-ri.libcal.com/appointments/">Research Appointment</a></li>
-                </ul>
-                <ul class="jwu-la-footer-nav  col-md-3 col-sm-5 col-xs-12">
-                    <li> <a href="http://den.library.jwu.edu/">Denver</a> </li>
-                    <li> <a href="http://clt.library.jwu.edu/">Charlotte</a> </li>
-                    <li> <a href="http://nmi.library.jwu.edu/">North Miami</a></li>
-                    <li> <a href="http://pvd.library.jwu.edu/">Providence</a> </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="jwu-la-footer-bottom row">
-    </div>
-</div>
+    <script>
+$(document).ready(function() {
+  libanswerScrape();
+})
+    </script>
 
-
-<script>
-// Shufffle Function I grabbed from the web
-    function shuffle(array) {
-        var currentIndex = array.length,
-            temporaryValue, randomIndex;
-
-        // While there remain elements to shuffle...
-        while (0 !== currentIndex) {
-
-            // Pick a remaining element...
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex -= 1;
-
-            // And swap it with the current element.
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-        }
-
-        return array;
-    }
-// Gets info from UNIVERSITY TOPIC from the API
-    $(document).ready(function() {
-        topics = [
-            [ '29562', '#university-info-card-detail' ],
-            [ '29560', '#library-info-card-detail' ],
-            [ '29589', '#textbook-info-card-detail' ],
-            [ '29592', '#studyroom-info-card-detail' ],
-            ['29585', '#researchbasics-info-card-detail']
-        ]
-        topics.forEach(function(t) {
-            $.ajax({
-                url: "https://api2.libanswers.com/1.0/faqs?iid=4&topic_id=" + t[0] + "&sort=updated&sort_dir=desc",
-                dataType: 'jsonp',
-                success: function(rawJsonp) {
-                    faqList = shuffle(rawJsonp.data.faqs).slice(0, 7);
-                    faqList.forEach(function(entry) {
-                        $(t[1]).append('<li><a class="topic-faq-link" href="' + entry.url.public + '">' + entry.question + '</li>');
-                    });
-                }
-            })
-        });
-    })
-</script>
-
-
-
-<script>
-    $(document).ready(function() {
-        $('.bxslider').bxSlider({
-
-        });
-    });
-</script>
-
-<script>
-</script>
+</body>
+</html>
