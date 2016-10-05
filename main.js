@@ -77,14 +77,9 @@ $(document).ready(function() {
 
 function scrollToAnchor(aid) {
     var aTag = $("div[name='" + aid + "']");
-    console.log(aid);
-    console.log(aTag);
+
 
     $('html,body').animate({
         scrollTop: aTag.offset().top
     }, 'slow');
 };
-
-$("#browse-button").click(function() {
-    scrollToAnchor('topic-jump');
-});

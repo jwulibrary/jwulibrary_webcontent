@@ -298,4 +298,81 @@
   font-size: 1.5em;
 }
 
+
+.magic-button1{
+transition: all 0.5s ease;
+
+}
+
+
+.magic-button1:hover{
+
+transition: all 0.5s ease;
+opacity:.9;
+transform: rotate(37deg) scale(1.2);
+}
+
+.magic-button2{
+transition: all 0.5s ease;
+
+}
+
+
+.magic-button2:hover{
+
+transition: all 0.5s ease;
+opacity:.9;
+  transform:   perspective( 50px )  rotateY( 5deg ) rotateZ( -5deg );
+}
+
+
+.magic-button3{
+
+transition: all 0.5s ease;
+}
+
+
+.magic-button3:hover{
+
+transition: all 0.5s ease;
+opacity:.9;
+  transform: rotateY(130deg);
+}
+
+
+
+
+
+
+.magic-button4{
+transition: all 0.5s ease;
+
+}
+
+
+.magic-button4:hover{
+
+transition: all 0.5s ease;
+opacity:1;
+  transform:  scale(1.2)  ;
+  z-index:9999;
+
+}
+
+
+.magic-button5{
+transition: all 0.5s ease;
+
+}
+
+
+.magic-button5:hover{
+
+transition: all 0.5s ease;
+opacity:1;
+  transform:  scale(1.2)  ;
+  z-index:9999;
+
+}
+
 /*.bx-wrapper, .bx-viewport, .bx-wrapper img {height: 400px !important;}*/
