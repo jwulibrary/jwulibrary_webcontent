@@ -34,6 +34,10 @@ function libanswerScrape() {
 
         }
     });
+    // var whyUse = ["Get answers!", "DO STUFF"]
+    // randWhy = whyUse[Math.floor(Math.random() * whyUse.length)]
+    // $('#faq-splash').append(randWhy)
+    //     .hide().fadeIn(1000);
 
     topics = [
         ['29562', '#university-info-card-detail'],
@@ -50,7 +54,7 @@ function libanswerScrape() {
             success: function(rawJsonp) {
                 faqList = shuffle(rawJsonp.data.faqs).slice(0, 7);
                 faqList.forEach(function(entry) {
-                    $(t[1] + " .topic-link-wrap").prepend('<li><a class="topic-faq-link pull-left" href="' + entry.url.public + '">' + entry.question + '</li>');
+                    $(t[1] + " .topic-link-wrap").append('<li><a class="topic-faq-link pull-left" href="' + entry.url.public + '">' + entry.question + '</li>');
                 });
 
             }
