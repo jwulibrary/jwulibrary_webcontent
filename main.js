@@ -87,3 +87,8 @@ function scrollToAnchor(aid) {
         scrollTop: aTag.offset().top
     }, 'slow');
 };
+
+
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+});

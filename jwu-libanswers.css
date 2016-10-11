@@ -326,36 +326,32 @@ input#libanswers-search-box[type=text] {
 }
 
 #libanswers-search-box::-webkit-input-placeholder {
- text-align:center;
-
- font-size: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
     /* WebKit, Blink, Edge */
     color: #333;
     font-family: 'Open Sans', sans-serif
 }
 
 #libanswers-search-box:-moz-placeholder {
- text-align:center;
-
- font-size: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
     /* Mozilla Firefox 4 to 18 */
     color: #333;
     font-family: 'Open Sans', sans-serif opacity: 1;
 }
 
 #libanswers-search-box::-moz-placeholder {
- text-align:center;
-
- font-size: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
     /* Mozilla Firefox 19+ */
     color: #333;
     font-family: 'Open Sans', sans-serif opacity: 1;
 }
 
 #libanswers-search-box:-ms-input-placeholder {
- text-align:center;
-
- font-size: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
     /* Internet Explorer 10-11 */
     color: #333;
     font-family: 'Open Sans', sans-serif
@@ -363,6 +359,8 @@ input#libanswers-search-box[type=text] {
 
 
 /*.bx-wrapper, .bx-viewport, .bx-wrapper img {height: 400px !important;}*/
+
+
 /*
 
 body.navbar-more-show {
@@ -478,39 +476,61 @@ body.navbar-more-show {
 
 
 */
-.jwu-la-header-menu {
-    background-color: rgba(0, 74, 145, 0.85098);
+.jwu-la-header-menu1 {
+    background-color: rgba(0, 74, 145, 0.95098);
     width: 100%;
     height: auto;
     padding: 0 10px;
     margin: 0px;
     z-index: 1;
-    opacity: 0.9;
-      font-family: "Open Sans";
+    font-family: "Open Sans";
+    border: 0px;
 }
-
-
-.jwu-la-header-menu .navbar-nav>li>a:hover {
+.jwu-la-header-menu1 .navbar-nav>li>a:hover {
     background-color: #04A3ED;
 }
-.jwu-la-header-menu .navbar-nav>li>a {
+
+.jwu-la-header-menu1 .navbar-nav>li>a {
     font-family: 'Open Sans', sans-serif;
     color: white;
     padding: 10px 35px;
-      font-size:1.2em;
-         border-right: 1px dashed #FFF;
+    font-size: 1em;
+
 }
 
-.navbar-header> li > a {
 
+
+
+.jwu-la-header-menu2 {
+  background-color: rgba(0, 74, 145, 0.85098);
+
+    width: 100%;
+    height: 8em;
+    padding: 0 10px;
+    margin: 0px;
+    z-index: 1;
+
+    font-family: "Open Sans";
+}
+
+.jwu-la-header-menu2 .navbar-nav>li>a:hover {
+    background-color: #04A3ED;
+}
+
+.jwu-la-header-menu2 .navbar-nav>li>a {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 10px 35px;
+    font-size: 1.2em;
+        font-weight: bold;
+}
+
+.navbar-header>li>a {
     padding: 0px;
     margin: 0px;
     text-decoration: none;
     color: white;
-
     padding: 5px 30px;
-
-
 }
 
 .navbar-header>a:hover {
@@ -518,17 +538,27 @@ body.navbar-more-show {
     color: #04A3ED;
 }
 
-#hours-nav li{
+#hours-nav li {
+    color: #FFF;
+}
 
-  color:#FFF;
+#hours-nav>a {}
+
+#hours-nav {
+    font-family: "Open Sans";
+}
+
+.splash-title{
+
+      font-family: 'open sans',sans-serif;
+      color:#FFF;
+      font-size:7em;
+      font-weight: bold;
 
 }
 
-#hours-nav>a{
 
-
-
-}
-#hours-nav{
-  font-family: "Open Sans";
+.header2-wrap{
+  padding-left:5em;
+    padding-right:5em;
 }
