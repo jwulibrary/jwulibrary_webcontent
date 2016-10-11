@@ -40,99 +40,88 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
 
     <div id="jwu-la-header">
-        <!-- <div class="jwu-la-header-menu">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="navbar-header col-xs-6 col-sm-4 col-lg-3">
-                        <a href="#"><img class="jwu-la-header-logo" src="library-identifier-whiteandorange.svg"></a>
-                    </div>
-                    <div class="col-xs-6 col-sm-8 col-lg-9">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li id="hours-nav"><a href="#"><span class="glyphicon glyphicon-time"></span> Today's Hours</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Resources</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Services</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> FAQ</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 
-        <nav class="navbar navbar-default  jwu-la-header-menu1">
+
+        <nav class="navbar navbar-default">
+            <div class="row visible-xs  mobile-header-wrap">
+
+                    <a href="#"><img class="jwu-la-header-logo img-responsive" src="library-identifier-whiteandorange.svg"></a>
+
+            </div>
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+
+                <div class="row jwu-la-header-menu1">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".to-collapse" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-              </button>
+                              </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse to-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JWULibrary Web Pages <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Resources</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Services</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-comment"></span></span> Chat</a></li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
                 </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Resources</a></li>
-                        <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
-                      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Resources</a></li>
-                      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Services</a></li>
-                      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> FAQ</a></li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
 
 
-        <div class="jwu-la-header-menu2">
-            <div class="container-fluid">
-                <div class="row">
+
+
+                <div class="row  collapse navbar-collapse jwu-la-header-menu2 to-collapse">
                     <div class="header2-wrap">
-                      <div class="navbar-header col-xs-6 col-sm-4 col-lg-3">
+                        <div class="navbar-header col-xs-12 col-sm-4 col-lg-3">
 
-                          <a class="navbar-brand" href="#"><img class="jwu-la-header-logo" src="library-identifier-whiteandorange.svg"></a>
-                      </div>
-                      <div class="col-xs-6 col-sm-8 col-lg-9">
-                          <ul class="nav navbar-nav navbar-right">
-
-                              <li id="hours-nav"><a href="#"><span class="glyphicon glyphicon-time"></span> Today's Hours</a></li>
-
-                          </ul>
-                      </div>
+                            <a class="navbar-brand" href="#"><img class="jwu-la-header-logo" src="library-identifier-whiteandorange.svg"></a>
+                        </div>
+                        <div class="col-xs-12 col-sm-8 col-lg-9">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Research Help</a></li>
+                                <li id="hours-nav"><a href="#"><span class="glyphicon glyphicon-time"></span> Today's Hours</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
+
+                <!-- /.container-fluid -->
             </div>
-        </div>
+        </nav>
 
         <!-- <h1 class="splash-title">
   JWULIBRARY DIY

@@ -49,7 +49,8 @@
 }
 
 .jwu-la-header-logo {
-    width: 100%;
+    width: 10em;
+    height:auto;
 }
 
 .topic-faq-link {
@@ -485,6 +486,7 @@ body.navbar-more-show {
     z-index: 1;
     font-family: "Open Sans";
     border: 0px;
+
 }
 .jwu-la-header-menu1 .navbar-nav>li>a:hover {
     background-color: #04A3ED;
@@ -505,8 +507,8 @@ body.navbar-more-show {
   background-color: rgba(0, 74, 145, 0.85098);
 
     width: 100%;
-    height: 8em;
-    padding: 0 10px;
+
+    padding-bottom: 2em;
     margin: 0px;
     z-index: 1;
 
@@ -561,4 +563,28 @@ body.navbar-more-show {
 .header2-wrap{
   padding-left:5em;
     padding-right:5em;
+    padding-bottom:6em;
+}
+
+.navbar-default{background:none;}
+
+.container-fluid{
+
+  padding-left:0;
+  padding-right:0;
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border:none;
+}
+
+.mobile-header-wrap{
+
+    background-color: rgba(0, 74, 145, 0.95098);
+}
+
+.jwu-la-header-logo.img-responsive {
+    margin: 0 auto;
+
 }
