@@ -482,7 +482,7 @@ body.navbar-more-show {
     background-color: rgba(0, 74, 145, 0.95098);
     width: 100%;
     height: auto;
-    padding: 0 10px;
+
     margin: 0px;
     z-index: 1;
     font-family: "Open Sans";
@@ -600,4 +600,9 @@ body.navbar-more-show {
 .jwu-la-header-logo.img-responsive {
     margin: 0 auto;
 
+}
+.nav-page-title{
+  font-size:1.2em;
+  font-weight: bold;
+  background-color: rgba(245, 137, 50, 0.9);
 }
