@@ -101,12 +101,13 @@
     font-size: 23px;
 }
 
-#search-title {
+#search-title{
     font-family: 'Open Sans', sans-serif;
     font-size: 4em;
     font-weight: 900;
     color: #FFF;
     text-shadow: #000 2px 3px 3px;
+    margin-bottom:.5em;
 }
 
 .animate {
@@ -358,7 +359,7 @@ input#libanswers-search-box[type=text] {
     font-family: 'Open Sans', sans-serif
 }
 
-
+#libanswers-search-box-mobile {}
 /*.bx-wrapper, .bx-viewport, .bx-wrapper img {height: 400px !important;}*/
 
 
@@ -505,9 +506,7 @@ body.navbar-more-show {
 
 .jwu-la-header-menu2 {
   background-color: rgba(0, 74, 145, 0.85098);
-
     width: 100%;
-
     padding-bottom: 2em;
     margin: 0px;
     z-index: 1;
@@ -532,7 +531,7 @@ body.navbar-more-show {
     margin: 0px;
     text-decoration: none;
     color: white;
-    padding: 5px 30px;
+
 }
 
 .navbar-header>a:hover {
@@ -548,6 +547,20 @@ body.navbar-more-show {
 
 #hours-nav {
     font-family: "Open Sans";
+}
+
+#hours-nav-alt span {
+    color: #FFF;
+}
+
+#hours-nav-alt>a {}
+
+#hours-nav-alt {
+    font-family: "Open Sans";
+    color: #FFF;
+    padding:1em;
+    font-size:.9em;
+
 }
 
 .splash-title{

@@ -66,6 +66,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">JWULibrary Web Pages <span class="caret"></span></a>
+
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Action</a></li>
                                     <li><a href="#">Another action</a></li>
@@ -76,13 +77,33 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                                     <li><a href="#">One more separated link</a></li>
                                 </ul>
                             </li>
-
+    <li id="hours-nav-alt"><span class="glyphicon glyphicon-time"></span> <b>Today's Hours </b>&nbsp;&nbsp;&nbsp;</li>
                         </ul>
 
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Resources</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Services</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-comment"></span></span> Chat</a></li>
+                          <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                              </ul>
+                          </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+
+
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact <span class="caret"></span></a>
@@ -107,12 +128,23 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                     <div class="header2-wrap">
                         <div class="navbar-header col-xs-12 col-sm-4 col-lg-3">
 
-                            <a class="navbar-brand" href="#"><img class="jwu-la-header-logo" src="library-identifier-whiteandorange.svg"></a>
+                            <a class="navbar-brand hidden-xs " href="#"><img class="jwu-la-header-logo" src="library-identifier-whiteandorange.svg"></a>
                         </div>
                         <div class="col-xs-12 col-sm-8 col-lg-9">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Research Help</a></li>
+
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-user"></span>  Get Help <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
                                 <li id="hours-nav"><a href="#"><span class="glyphicon glyphicon-time"></span> Today's Hours</a></li>
+                                  <li><a href="#"><span class="glyphicon glyphicon-comment"></span></span> Ask Us Now</a></li>
                             </ul>
                         </div>
                     </div>
@@ -151,7 +183,9 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                                     <div id="custom-search-input">
                                         <div class="input-group col-md-12">
                                             <!-- <input  id="libanswers-search-box" type="text" class="form-control input-lg" name="q" placeholder="Search for Answers" /> -->
-                                            <input id="libanswers-search-box" type="text" class="form-control input-lg" name="q" placeholder="Quick Answers to Library Questions" />
+                                            <input id="libanswers-search-box" type="text" class="form-control input-lg hidden-xs" name="q" placeholder="Quick Answers to Real Questions" />
+                                            <input id="libanswers-search-box-mobile" type="text" class=" visible-xs form-control input-lg" name="q" placeholder="Quick Answers" />
+
                                             <span class="input-group-btn"> <button class="btn btn-info btn-lg magic-button1" type="submit"> <i class="glyphicon glyphicon-search"></i> </button></span>
 
                                             <span class="input-group-btn"> <a class="btn btn-lg magic-button1" onclick="randomQ()"> <i class="glyphicon glyphicon-random"></i> </a></span>
@@ -175,7 +209,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
         </div>
 
-        <a id="browse-button" class="  magic-button4 col-xs-4  col-xs-offset-4 text-center" href="#"> Browse FAQs </a>
+        <a id="browse-button" class=" hidden-xs magic-button4 col-xs-4  col-xs-offset-4 text-center" href="#"> Browse FAQs </a>
 
     </div>
 
@@ -579,6 +613,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
 
                 $("#hours-nav").append("<li class='text-center'>Downcity: " + dcTime.rendered + "</li>").append("<li class='text-center'>Harborside: " + hbTime.rendered + "</li>");
+                $("#hours-nav-alt").append("<span class='text-center'>Downcity: " + dcTime.rendered + "</span>").append("<span class='text-center'> | Harborside: " + hbTime.rendered + "</span>");
             }
 
 
