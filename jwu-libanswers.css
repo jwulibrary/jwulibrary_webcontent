@@ -106,8 +106,11 @@
     font-size: 4em;
     font-weight: 900;
     color: #FFF;
-    text-shadow: #000 2px 3px 3px;
+  text-shadow: #000 2px 3px 3px;
     margin-bottom:.5em;
+    /*background: rgba(0,74,145,.85);
+    padding: 20px 10px;*/
+
 }
 
 .animate {
@@ -229,6 +232,7 @@
     margin-top: 3em;
     padding: 1.5em;
     text-align: center;
+
 }
 
 #faq-splash a {
@@ -239,6 +243,7 @@
     font-size: 1.6em;
     text-align: center;
     padding: 1em;
+    
 }
 
 #faq-splash:hover {
@@ -522,7 +527,7 @@ body.navbar-more-show {
     font-family: 'Open Sans', sans-serif;
     color: white;
     padding: 10px 35px;
-    font-size: 1.2em;
+    font-size: 1em;
         font-weight: bold;
 }
 
@@ -564,7 +569,8 @@ body.navbar-more-show {
 }
 
 .splash-title{
-
+  background: rgba(0,74,145,.85);
+      max-width: 60%;
       font-family: 'open sans',sans-serif;
       color:#FFF;
       font-size:7em;
@@ -605,4 +611,36 @@ body.navbar-more-show {
   font-size:1.2em;
   font-weight: bold;
   background-color: rgba(245, 137, 50, 0.9);
+}
+
+.navbar-default .navbar-nav>li>a{
+
+  color:#FFF;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+color:#FFF;
+opacity:1;
+
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+  color:#FFF;
+  opacity:1;
+  background-color:rgba(231, 231, 231, 0.54);
+}
+
+
+@media (min-width: 1100px) {
+  #primary-nav{
+
+    margin-top:1.5em;
+    font-size:1.4em;
+  }
+}
+
+@media (max-width: 1100px) {
+  #primary-nav{
+
+    margin-top:1.5em;
+    font-size:1.0em;
+  }
 }
