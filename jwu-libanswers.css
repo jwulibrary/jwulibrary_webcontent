@@ -243,7 +243,7 @@
     font-size: 1.6em;
     text-align: center;
     padding: 1em;
-    
+
 }
 
 #faq-splash:hover {
@@ -310,7 +310,7 @@
 .magic-button4:hover {
     transition: all 0.5s ease;
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.4);
     z-index: 9999;
 }
 
@@ -334,7 +334,7 @@ input#libanswers-search-box[type=text] {
 
 #libanswers-search-box::-webkit-input-placeholder {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     /* WebKit, Blink, Edge */
     color: #333;
     font-family: 'Open Sans', sans-serif
@@ -558,12 +558,15 @@ body.navbar-more-show {
     color: #FFF;
 }
 
-#hours-nav-alt>a {}
+#hours-nav-alt>a {
+
+}
 
 #hours-nav-alt {
     font-family: "Open Sans";
     color: #FFF;
-    padding:1em;
+    padding:1em 2em  1em 3em;
+
     font-size:.9em;
 
 }
@@ -643,4 +646,12 @@ opacity:1;
     margin-top:1.5em;
     font-size:1.0em;
   }
+
+  #faq-splash{font-size:.9em;}
+}
+
+
+#dice-img{
+width:1em;
+
 }
