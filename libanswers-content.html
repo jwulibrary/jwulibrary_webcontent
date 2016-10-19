@@ -111,7 +111,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
                             <a class="navbar-brand hidden-xs " href="#"><img class="jwu-la-header-logo" src="library-identifier-whiteandorange.svg"></a>
                         </div>
-                        <div id = "primary-nav" class="col-xs-12  col-sm-9">
+                        <div id="primary-nav" class="col-xs-12  col-sm-9">
                             <ul class="nav navbar-nav navbar-right">
                                 <!--TODO: KELLY LINKS to edit if you feel like it :- ) -->
                                 <li class="dropdown">
@@ -175,7 +175,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6 col-md-offset-3">
-                                <h2 id="search-title" class="text-center hidden-xs">How Do I...?
+                                <!-- <h2 id="search-title" class="text-center hidden-xs">How Do I...?
                     <span class="new-modal"> <a href="#modal">  <span class="glyphicon glyphicon-question-sign magic-button3"></span> </a> </span>
 
                     <div class="remodal" data-remodal-id="modal">
@@ -187,17 +187,22 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                     <div class="row">More stuff to include in the modal</div>
                     </div>
 
-                    </h2>
+                    </h2> -->
                                 <form method="get" role="search" name="s-la-searchform" id="s-la-searchform-1926" action="http://jwu-ri.libanswers.com/search/" aria-labelledby="s-la-content-search-query-1926">
                                     <div id="custom-search-input">
                                         <div class="input-group col-md-12">
                                             <!-- <input  id="libanswers-search-box" type="text" class="form-control input-lg" name="q" placeholder="Search for Answers" /> -->
-                                            <input id="libanswers-search-box" type="text" class="form-control input-lg hidden-xs" name="q" placeholder="Quick Answers to Real Questions" />
+                                            <input id="libanswers-search-box" type="text" class="form-control input-lg hidden-xs" name="q" placeholder="Quick Answers to Real Questions (Stuck? Press the lightning bolt)" />
                                             <input id="libanswers-search-box-mobile" type="text" class=" visible-xs form-control input-lg" name="q" placeholder="Quick Answers" />
 
-                                            <span class="input-group-btn"> <button class="btn btn-info btn-lg magic-button1" type="submit"> <i class="glyphicon glyphicon-search"></i> </button></span>
+                                            <span class="input-group-btn"> <button class="btn btn-info btn-lg magic-button4" type="submit"> <i class="glyphicon glyphicon-search"></i> </button></span>
 
-                                            <span class="input-group-btn"> <a class="btn btn-lg magic-button1" onclick="randomQ()"> <i class="glyphicon glyphicon-random"></i> </a></span>
+                                            <span class="input-group-btn">
+                                               <a class="btn btn-lg magic-button4" onclick="randomQ()">
+                                              <i class="glyphicon glyphicon-flash"></i>
+
+                                               </a>
+                                               </span>
                                         </div>
                                     </div>
                                 </form>
@@ -211,6 +216,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div id="faq-splash" class="magic-button5">
+                        <h5>Sample Question</h5>
                     </div>
                 </div>
             </div>
@@ -222,7 +228,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
     </div>
 
-    <div name="topic-jump" id="topic-wrap" class="container-fluid">
+    <div name="topic-jump" id="topic-wrap" class="container-fluid hidden-xs">
         <div class="row">
             <ul class="bxslider">
                 <li>
@@ -497,12 +503,11 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
 
     <script>
-
-
         function randomQ() {
             rQ = allFaqs[Math.floor(Math.random() * allFaqs.length)];
 
             $("#libanswers-search-box").val(rQ);
+            $("#libanswers-search-box-mobile").val(rQ);
 
 
         }
