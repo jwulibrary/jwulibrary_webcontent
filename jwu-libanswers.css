@@ -226,6 +226,19 @@
 
 
 /* cell number */
+.splash-title{
+  /*background: rgba(0,74,145,.85);*/
+  background: rgba(245, 137, 50, 0.8);
+      /*max-width: 60%;*/
+      font-family: 'open sans',sans-serif;
+      color:#FFF;
+      font-size:3em;
+      font-weight: bold;
+      padding-top:.5em;
+      padding-bottom:.5em;
+
+}
+
 
 #faq-splash {
     background: rgba(245, 137, 50, 0.64);
@@ -571,16 +584,6 @@ body.navbar-more-show {
 
 }
 
-.splash-title{
-  background: rgba(0,74,145,.85);
-      max-width: 60%;
-      font-family: 'open sans',sans-serif;
-      color:#FFF;
-      font-size:7em;
-      font-weight: bold;
-
-}
-
 
 .header2-wrap{
   padding-left:5em;
@@ -654,4 +657,12 @@ opacity:1;
 #dice-img{
 width:1em;
 
+}
+
+
+
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
