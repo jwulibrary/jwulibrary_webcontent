@@ -50,7 +50,7 @@
 
 .jwu-la-header-logo {
     width: 10em;
-    height:auto;
+    height: auto;
 }
 
 .topic-faq-link {
@@ -101,16 +101,15 @@
     font-size: 23px;
 }
 
-#search-title{
+#search-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 4em;
     font-weight: 900;
     color: #FFF;
-  text-shadow: #000 2px 3px 3px;
-    margin-bottom:.5em;
+    text-shadow: #000 2px 3px 3px;
+    margin-bottom: .5em;
     /*background: rgba(0,74,145,.85);
     padding: 20px 10px;*/
-
 }
 
 .animate {
@@ -226,26 +225,24 @@
 
 
 /* cell number */
-.splash-title{
-  /*background: rgba(0,74,145,.85);*/
-  background: rgba(245, 137, 50, 0.8);
-      /*max-width: 60%;*/
-      font-family: 'open sans',sans-serif;
-      color:#FFF;
-      font-size:3em;
-      font-weight: bold;
-      padding-top:.5em;
-      padding-bottom:.5em;
 
+.splash-title {
+    /*background: rgba(0,74,145,.85);*/
+    background: rgba(245, 137, 50, 0.8);
+    /*max-width: 60%;*/
+    font-family: 'open sans', sans-serif;
+    color: #FFF;
+    font-size: 3em;
+    font-weight: bold;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
-
 
 #faq-splash {
     background: rgba(245, 137, 50, 0.64);
     margin-top: 3em;
     padding: 1.5em;
     text-align: center;
-
 }
 
 #faq-splash a {
@@ -256,7 +253,6 @@
     font-size: 1.6em;
     text-align: center;
     padding: 1em;
-
 }
 
 #faq-splash:hover {
@@ -342,7 +338,10 @@
 
 input#libanswers-search-box[type=text] {
     color: #333;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+
+
 }
 
 #libanswers-search-box::-webkit-input-placeholder {
@@ -350,7 +349,8 @@ input#libanswers-search-box[type=text] {
     font-size: 1em;
     /* WebKit, Blink, Edge */
     color: #333;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+      opacity: 1;
 }
 
 #libanswers-search-box:-moz-placeholder {
@@ -358,7 +358,8 @@ input#libanswers-search-box[type=text] {
     font-size: 1.5em;
     /* Mozilla Firefox 4 to 18 */
     color: #333;
-    font-family: 'Open Sans', sans-serif opacity: 1;
+    font-family: 'Open Sans', sans-serif;
+     opacity: 1;
 }
 
 #libanswers-search-box::-moz-placeholder {
@@ -366,7 +367,8 @@ input#libanswers-search-box[type=text] {
     font-size: 1.5em;
     /* Mozilla Firefox 19+ */
     color: #333;
-    font-family: 'Open Sans', sans-serif opacity: 1;
+    font-family: 'Open Sans', sans-serif;
+     opacity: 1;
 }
 
 #libanswers-search-box:-ms-input-placeholder {
@@ -374,10 +376,13 @@ input#libanswers-search-box[type=text] {
     font-size: 1.5em;
     /* Internet Explorer 10-11 */
     color: #333;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+    opacity: 1;
 }
 
 #libanswers-search-box-mobile {}
+
+
 /*.bx-wrapper, .bx-viewport, .bx-wrapper img {height: 400px !important;}*/
 
 
@@ -496,17 +501,17 @@ body.navbar-more-show {
 
 
 */
+
 .jwu-la-header-menu1 {
     background-color: rgba(0, 74, 145, 0.95098);
     width: 100%;
     height: auto;
-
     margin: 0px;
     z-index: 1;
     font-family: "Open Sans";
     border: 0px;
-
 }
+
 .jwu-la-header-menu1 .navbar-nav>li>a:hover {
     background-color: #04A3ED;
 }
@@ -516,19 +521,14 @@ body.navbar-more-show {
     color: white;
     padding: 10px 35px;
     font-size: 1em;
-
 }
 
-
-
-
 .jwu-la-header-menu2 {
-  background-color: rgba(0, 74, 145, 0.85098);
+    background-color: rgba(0, 74, 145, 0.85098);
     width: 100%;
     padding-bottom: 2em;
     margin: 0px;
     z-index: 1;
-
     font-family: "Open Sans";
 }
 
@@ -541,7 +541,7 @@ body.navbar-more-show {
     color: white;
     padding: 10px 35px;
     font-size: 1em;
-        font-weight: bold;
+    font-weight: bold;
 }
 
 .navbar-header>li>a {
@@ -549,7 +549,6 @@ body.navbar-more-show {
     margin: 0px;
     text-decoration: none;
     color: white;
-
 }
 
 .navbar-header>a:hover {
@@ -571,98 +570,121 @@ body.navbar-more-show {
     color: #FFF;
 }
 
-#hours-nav-alt>a {
-
-}
+#hours-nav-alt>a {}
 
 #hours-nav-alt {
     font-family: "Open Sans";
     color: #FFF;
-    padding:1em 2em  1em 3em;
-
-    font-size:.9em;
-
+    padding: 1em 2em 1em 3em;
+    font-size: .9em;
 }
 
-
-.header2-wrap{
-  padding-left:5em;
-    padding-right:5em;
-    padding-bottom:6em;
+.header2-wrap {
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-bottom: 6em;
 }
 
-.navbar-default{background:none;}
-
-.container-fluid{
-
-  padding-left:0;
-  padding-right:0;
+.navbar-default {
+    background: none;
 }
 
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form{
-  border:none;
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.mobile-header-wrap{
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
 
+.mobile-header-wrap {
     background-color: rgba(0, 74, 145, 0.95098);
 }
 
 .jwu-la-header-logo.img-responsive {
     margin: 0 auto;
-
-}
-.nav-page-title{
-  font-size:1.2em;
-  font-weight: bold;
-  background-color: rgba(245, 137, 50, 0.9);
 }
 
-.navbar-default .navbar-nav>li>a{
-
-  color:#FFF;
-}
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-color:#FFF;
-opacity:1;
-
-}
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
-  color:#FFF;
-  opacity:1;
-  background-color:rgba(231, 231, 231, 0.54);
+.nav-page-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgba(245, 137, 50, 0.9);
 }
 
+.navbar-default .navbar-nav>li>a {
+    color: #FFF;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #FFF;
+    opacity: 1;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #FFF;
+    opacity: 1;
+    background-color: rgba(231, 231, 231, 0.54);
+}
 
 @media (min-width: 1100px) {
-  #primary-nav{
-
-    margin-top:1.5em;
-    font-size:1.4em;
-  }
+    #primary-nav {
+        margin-top: 1.5em;
+        font-size: 1.4em;
+    }
 }
 
 @media (max-width: 1100px) {
-  #primary-nav{
+    #primary-nav {
+        margin-top: 1.5em;
+        font-size: 1.0em;
+    }
+    #faq-splash {
+        font-size: .9em;
+    }
+}
 
-    margin-top:1.5em;
-    font-size:1.0em;
+@media (max-width: 900px) {
+    .splash-title {
+        /*background: rgba(0,74,145,.85);*/
+        background: rgba(245, 137, 50, 0.8);
+        /*max-width: 60%;*/
+        font-family: 'open sans', sans-serif;
+        color: #FFF;
+        font-size: 2em;
+        font-weight: bold;
+        padding-top: .5em;
+        padding-bottom: .5em;
+    }
+
+
+  #searchbox-container{
+margin-top:1em;
+
   }
-
-  #faq-splash{font-size:.9em;}
 }
 
-
-#dice-img{
-width:1em;
-
+#dice-img {
+    width: 1em;
 }
 
-
-
-
-.col-centered{
+.col-centered {
     float: none;
     margin: 0 auto;
+}
+
+
+
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+#contact-us-box{
+
+      font-family: "open sans", sans-serif;
 }
