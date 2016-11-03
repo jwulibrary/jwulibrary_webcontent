@@ -22,6 +22,8 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
     <link rel="stylesheet" href="remodal.css">
     <link rel="stylesheet" href="remodal-default-theme.css">
     <script src="remodal.js"></script>
+    <link href="headsupgrid/hugrid.css" type="text/css" rel="stylesheet" />
+    <script src="headsupgrid/hugrid.js"></script>
 
     <!-- bxSlider Javascript file -->
     <script src="jquery.bxslider.min.js"></script>
@@ -179,12 +181,11 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                     <h1 class="splash-title text-center">  "How Do I?" @JWULibrary </h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-11 col-md-9 col-lg-8 col-centered">
-                                <!-- <h2 id="search-title" class="text-center hidden-xs">How Do I...?
+
+
+            <div class="row" id="searchbox">
+                <div class="col-xs-12 col-sm-11 col-md-9 col-lg-8 col-centered">
+                    <!-- <h2 id="search-title" class="text-center hidden-xs">How Do I...?
                     <span class="new-modal"> <a href="#modal">  <span class="glyphicon glyphicon-question-sign magic-button3"></span> </a> </span>
 
                     <div class="remodal" data-remodal-id="modal">
@@ -197,29 +198,28 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                     </div>
 
                     </h2> -->
-                                <form method="get" role="search" name="s-la-searchform" id="s-la-searchform-1926" action="http://jwu-ri.libanswers.com/search/" aria-labelledby="s-la-content-search-query-1926">
-                                    <div id="custom-search-input">
-                                        <div class="input-group col-md-12">
-                                            <!-- <input  id="libanswers-search-box" type="text" class="form-control input-lg" name="q" placeholder="Search for Answers" /> -->
-                                            <input id="libanswers-search-box" type="text" class="form-control input-lg hidden-xs" name="q" placeholder="Quick Answers to Real Questions (Stuck? Try the dice)" />
-                                            <input id="libanswers-search-box-mobile" type="text" class=" visible-xs form-control input-lg" name="q" placeholder="Quick Answers" />
+                    <form method="get" role="search" name="s-la-searchform" id="s-la-searchform-1926" action="http://jwu-ri.libanswers.com/search/" aria-labelledby="s-la-content-search-query-1926">
+                        <div id="custom-search-input">
+                            <div class="input-group col-md-12">
+                                <!-- <input  id="libanswers-search-box" type="text" class="form-control input-lg" name="q" placeholder="Search for Answers" /> -->
+                                <input id="libanswers-search-box" type="text" class="form-control input-lg hidden-xs" name="q" placeholder="Quick Answers to Real Questions (Stuck? Try the dice)" />
+                                <input id="libanswers-search-box-mobile" type="text" class=" visible-xs form-control input-lg" name="q" placeholder="Quick Answers" />
 
-                                            <span class="input-group-btn"> <button class="btn btn-info btn-lg magic-button4" type="submit"> <i class="glyphicon glyphicon-search"></i> </button></span>
+                                <span class="input-group-btn"> <button class="btn btn-info btn-lg magic-button4" type="submit"> <i class="glyphicon glyphicon-search"></i> </button></span>
 
-                                            <span class="input-group-btn">
+                                <span class="input-group-btn">
                                                <a class="btn btn-lg magic-button4" onclick="randomQ()">
                                             <img width="27px" src="dice2.png">
 
                                                </a>
                                                </span>
-                                        </div>
-                                    </div>
-                                </form>
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
+
+
 
 
             <!-- <div class="row">
@@ -559,6 +559,12 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
         });
     </script>
+
+
+
+
+
+
 
 </body>
 

@@ -180,3 +180,58 @@ allFaqs = ["How can I get access to EasyBib EDU?", "Do you have any resources to
     "Does the library have group study rooms? How do I reserve one?", "Can you help me with MLA citations and creating a works cited page?", "Where are the Advertising Redbooks?",
     "What's my library barcode number and where do I find it?", "How can I get a job at the library?", "Does the library have a scanner?", "What are the library's hours?"
 ]
+
+
+
+
+    definegrid = function() {
+        var browserWidth = $(window).width();
+        if (browserWidth >= 1001)
+        {
+            pageUnits = 'px';
+            colUnits = 'px';
+            pagewidth = 960;
+            columns = 6;
+            columnwidth = 140;
+            gutterwidth = 24;
+            pagetopmargin = 35;
+            rowheight = 20;
+            gridonload = 'off';
+            makehugrid();
+        }
+        if (browserWidth <= 1000)
+        {
+            pageUnits = '%';
+            colUnits = '%';
+            pagewidth = 94;
+            columns = 2;
+            columnwidth = 48;
+            gutterwidth = 4;
+            pagetopmargin = 35;
+            rowheight = 20;
+            gridonload = 'off';
+            makehugrid();
+        }
+        if (browserWidth <= 768)
+        {
+            pageUnits = '%';
+            colUnits = '%';
+            pagewidth = 96;
+            columns = 2;
+            columnwidth = 49;
+            gutterwidth = 2;
+            pagetopmargin = 35;
+            rowheight = 20;
+            gridonload = 'off';
+            makehugrid();
+        }
+    }
+    $(document).ready(function() {
+        definegrid();
+        setgridonload();
+    });
+
+    $(window).resize(function() {
+        definegrid();
+        setgridonresize();
+    });
