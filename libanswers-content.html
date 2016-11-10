@@ -428,17 +428,18 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
             <div id="chat-box" class="col-md-3 col-sm-6 col-xs-12">
                 <h3>Chat</h3>
                 <!-- Place this div in your web page where you want your chat widget to appear. -->
+
+                <!-- Place this div in your web page where you want your chat widget to appear. -->
+                <!-- Place this div in your web page where you want your chat widget to appear. -->
                 <div class="needs-js">chat loading...</div>
+
                 <!-- Place this script as near to the end of your BODY as possible. -->
                 <script type="text/javascript">
-                    (function() {
-                        var x = document.createElement("script");
-                        x.type = "text/javascript";
-                        x.async = true;
-                        x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?10840";
-                        var y = document.getElementsByTagName("script")[0];
-                        y.parentNode.insertBefore(x, y);
-                    })();
+                  (function() {
+                    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
+                    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?10840";
+                    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
+                  })();
                 </script>
             </div>
 
@@ -547,8 +548,6 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
                 dcTime = calData.locations[0];
                 hbTime = calData.locations[1];
-                console.log(dcTime.name + ": " + dcTime.rendered);
-                console.log(hbTime.name + ": " + hbTime.rendered);
 
 
                 $("#hours-nav").append("<li class='text-center'>Downcity: " + dcTime.rendered + "</li>").append("<li class='text-center'>Harborside: " + hbTime.rendered + "</li>");
@@ -569,10 +568,3 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 </body>
 
 </html>
-
-
-
-
-<!--
-background-image: url("file:///C:/Users/dmeincke/Documents/DM-PROJECTS/jwulibrary-libanswers/libanswers/wcbg1.jpg")
--->
