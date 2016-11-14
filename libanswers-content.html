@@ -596,7 +596,16 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
 
 
+<script>
+$(document).ready(function() {
+if ($('.s-srch-top-header').length > 0) {
+    $('html, body').animate({
+       scrollTop: $("#s-la-page-maincontent").offset().top
+    });
+}})
 
+
+</script>
 
 
 </body>
