@@ -45,7 +45,7 @@
 #header {
   position            : relative;
   width               : 100%;
-  height              : 600px;
+  height              : 400px;
   background-image    : url('dorrance-1920_1080.jpg');
   background-position : center;
 }
