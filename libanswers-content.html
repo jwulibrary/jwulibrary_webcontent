@@ -19,7 +19,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="jwu-libanswers.css">
     <link rel="stylesheet" href="remodal.css">
     <link rel="stylesheet" href="remodal-default-theme.css">
@@ -78,7 +78,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                                     <li><a href="http://pvd.library.jwu.edu/homepage" target="_blank">Library Home</a></li>
                                     <li><a href="http://jwu-ri.libcal.com/booking/downcity" target="_blank">Book a Study Room</a></li>
                                     <li><a href="http://pvd.library.jwu.edu/az.php" target="_blank">Databases</a></li>
-                                  <!--  <li role="separator" class="divider"></li>
+                                    <!--  <li role="separator" class="divider"></li>
                                     <li><a href="#">Separated link</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li><a href="#">One more separated link</a></li>  -->
@@ -95,7 +95,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-education"></span>  Databases <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="http://pvd.library.jwu.edu/az.php" target="_blank">All Databases</a></li>
-                                      <li role="separator" class="divider"></li>
+                                    <li role="separator" class="divider"></li>
                                     <li><a href="http://pvd.library.jwu.edu/az.php?s=19278" target="_blank">Business</a></li>
                                     <li><a href="http://pvd.library.jwu.edu/az.php?s=79408" target="_blank">Criminal Justice</a></li>
                                     <li><a href="http://pvd.library.jwu.edu/az.php?s=79132" target="_blank">General</a></li>
@@ -158,7 +158,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                                         <li><a href="https://library.uri.edu/patroninfo~S29" target="_blank">Borrow, Renew, Request</a></li>
                                         <li><a href="http://pvd.library.jwu.edu/reserves" target="_blank">Course Reserve</a></li>
                                         <li><a href="https://jwu-ri.libanswers.com/faq/141890" target="_blank">Interlibrary Loan</a></li>
-                                      <!--  <li><a href="#">Suggest a Purchase</a></li>
+                                        <!--  <li><a href="#">Suggest a Purchase</a></li>
                                        <li><a href="#">Technology Lending</a></li> -->
                                         <li role="separator" class="divider"></li>
                                         <li><a href="http://jwu-ri.libcal.com/booking/downcity" target="_blank">Study Rooms</a></li>
@@ -174,7 +174,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                                         <li><a href="https://jwu-ri.libanswers.com/faq/141919" target="_blank">Staff Directory</a></li>
                                         <li role="separator" class="divider"></li>
                                         <li><a href="http://jwu-ri.libcal.com/hours/" target="_blank">Hours</a></li>
-                                      <!--  <li><a href="#">Directories</a></li> -->
+                                        <!--  <li><a href="#">Directories</a></li> -->
                                     </ul>
                                 </li>
                             </ul>
@@ -450,11 +450,14 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
                 <!-- Place this script as near to the end of your BODY as possible. -->
                 <script type="text/javascript">
-                  (function() {
-                    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
-                    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?10840";
-                    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
-                  })();
+                    (function() {
+                        var x = document.createElement("script");
+                        x.type = "text/javascript";
+                        x.async = true;
+                        x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?10840";
+                        var y = document.getElementsByTagName("script")[0];
+                        y.parentNode.insertBefore(x, y);
+                    })();
                 </script>
             </div>
 
@@ -527,14 +530,6 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
 
 
-
-
-
-
-
-
-
-
     <script>
         $(document).ready(function() {
             libanswerScrape();
@@ -596,17 +591,25 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
 
 
-<script>
-$(document).ready(function() {
-if ($('.s-srch-top-header').length > 0 || $('.s-la-faq-answer')).length > 0) {
-    $('html, body').animate({
-       scrollTop: $("#s-la-page-maincontent").offset().top
-    });
-}})
+    <script>
+        $(document).ready(function() {
+            var check_condition = $('.s-srch-top-header').length > 0 || $('.s-la-faq-answer').length > 0
+            if (check_condition) {
+                $("#s-la-page-maincontent").prepend($("#s-la-public-header-title"));
+                $('html, body').animate({
+                    scrollTop: $("#s-la-page-maincontent").offset().top
+                });
+            }
+        })
+    </script>
 
 
-</script>
-
+    <script>
+    $(document).ready(function() {
+    $("#s-la-public-header").hide();
+    $("#s-la-page-title-bar").hide();
+    })
+    </script>
 
 </body>
 
