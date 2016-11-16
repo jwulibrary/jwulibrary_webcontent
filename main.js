@@ -44,7 +44,12 @@ function libanswerScrape() {
         ['29560', '#library-info-card-detail'],
         ['29589', '#textbook-info-card-detail'],
         ['29592', '#studyroom-info-card-detail'],
-        ['29585', '#researchbasics-info-card-detail']
+        ['29585', '#researchbasics-info-card-detail'],
+        ['29581', '#faculty-info-card-detail'],
+        ['29583', '#researchguides-info-card-detail']
+
+
+
     ]
 
     topics.forEach(function(t) {
@@ -89,8 +94,12 @@ function scrollToAnchor(aid) {
 };
 
 
+
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
+    $("#browse-button").click(function() {
+        scrollToAnchor("topic-jump");
+    });
 });
 
 

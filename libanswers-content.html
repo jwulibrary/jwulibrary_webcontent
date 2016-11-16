@@ -107,7 +107,11 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             </li>
 
 
-                            <li><a href="#"><span class="glyphicon glyphicon-comment"></span></span> Chat</a></li>
+                            <li>
+                                <!-- Place this script as near to the end of your BODY as possible. -->
+
+
+                                <a href="https://us.libraryh3lp.com/chat/jwu_prov_vr_1@chat.libraryh3lp.com?skin=27008" target="_blank"><span class="glyphicon glyphicon-comment"></span> Chat</a></li>
 
                         </ul>
                     </div>
@@ -363,7 +367,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             </div>
                             <img class="img-info-card" style="width: 100%" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/images/faculty.jpg" />
                             <div class="[ info-card-details ] animate">
-                                <div class="[ info-card-detail ] info-detail">
+                                <div id = "faculty-info-card-detail" class="[ info-card-detail ] info-detail">
                                     <div class="row topic-link-wrap"></div>
                                     <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
                                     <!-- Description -->
@@ -379,7 +383,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
                             <figure class="toaster"><img class="img-info-card" style="width: 100%" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/images/subject-guides.jpg" />
                             </figure>
                             <div class="[ info-card-details ] animate">
-                                <div class="[ info-card-detail ] info-detail">
+                                <div id = "researchguides-info-card-detail" class="[ info-card-detail ] info-detail">
                                     <div class="row topic-link-wrap"></div>
                                     <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
                                     <!-- Description -->
@@ -535,9 +539,7 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
             libanswerScrape();
         })
 
-        $("#browse-button").click(function() {
-            scrollToAnchor("topic-jump");
-        });
+
     </script>
 
 
@@ -605,10 +607,10 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 
 
     <script>
-    $(document).ready(function() {
-    $("#s-la-public-header").hide();
-    $("#s-la-page-title-bar").hide();
-    })
+        $(document).ready(function() {
+            $("#s-la-public-header").hide();
+            $("#s-la-page-title-bar").hide();
+        })
     </script>
 
 </body>
