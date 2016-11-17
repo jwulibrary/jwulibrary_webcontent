@@ -244,3 +244,11 @@ allFaqs = ["How can I get access to EasyBib EDU?", "Do you have any resources to
         definegrid();
         setgridonresize();
     });
+
+
+
+    $(document).ready(function() {
+$("#s-la-public-header").hide();
+$("#s-la-page-title-bar").hide();
+$('#s-la-bc').hide();
+})
