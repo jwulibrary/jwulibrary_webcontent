@@ -584,3 +584,15 @@ input#libanswers-search-box[type=text] {
   font-family : "open sans",
                 sans-serif;
 }
+
+
+#s-la-widget-body-5248 > div.s-la-widget-header, #s-la-askform-section-422{
+    display: none !important;
+}
+
+#s-la-widget-5248{
+    width:80%;
+    margin-left:5em;
+    font-family: "Open sans", sans-serif;
+
+}
