@@ -1,36 +1,8 @@
 <html>
-<!--TABLE OF CONCENTS:
-  - Dependencies
-  - <Footer></Footer>
-  -->
-<!-- DEPENDENICES-->
-<!--IMPORTANT NOTE on Dependencies...
-only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! -->
+
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-    <link rel="stylesheet" media="screen" href="http://jwu-ri.libanswers.com/css293/LibAnswers_public.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://jwu-ri.libanswers.com/js293/LibAnswers_public.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/libapps/sites/538/include/libguidesv2-css.css">
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/jwulibrary/libanswers/development/jwu-libanswers.css"> -->
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Audiowide|Exo+2|Open+Sans:400|Roboto:300" rel="stylesheet">
-
-
-
-
-    <!--LOCAL CSS...to be included in master CSS eventually-->
-
-
-    <!-- <script type="text/javascript" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/main.js"></script> -->
-
-
-
 
 
 </head>
@@ -43,46 +15,86 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
             <p>
                 <a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=a9h" target="_blank">Academic Search Complete</a>
             </p>
-
+            <p><a href="https://jwupvdz.idm.oclc.org/login?url=http://infotrac.galegroup.com/itweb/prov43712?db=BIC1">Gale Biography in context</a></p>
             <p><a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=a9h&AN=114463863&site=ehost-live&scope=site" target="_blank">A Protection Mechanism against Malicious HTML and JavaScript Code in Vulnerable Web Applications.</a></p>
 
             <p><a href="http://www.nytimes.com/">New York Times</a></p>
+            <p><a href="http://search.ebscohost.com.jwupvdz.idm.oclc.org/login.aspx?direct=true&db=nlebk&AN=294632&site=bsi-live">Article done differently</a>
         </div>
     </div>
 
     <!-- <p><button id="denz-button">MAKE DENZ</button></p> -->
 
 
+    <style>
+        .four-link-btn {
+        background-color: #5987C5;
+        color:#FFF;
+        padding: 3px 8px;
+        margin: 0px 4px;
+        text-decoration: none;
+        font-family:verdana;
+        font-size:.7em;
+        }
 
+        .four-link-btn:hover {
+            opacity:.9;
+        }
+
+    </style>
     <script>
-        mainContainer = document.getElementById('main_container');
+        // var matches = function(el, selector) {
+        //     return (el.matches || el.matchesSelector || el.msMatchesSelector || el.mozMatchesSelector || el.webkitMatchesSelector || el.oMatchesSelector).call(el, selector);
+        // };
+
+        //matches(el, '.my-class');
+
+        // var no_den = [];
+        // var no_nmi = [];
+        // var no_clt = [];
 
 
-        var campusRegexp = /http[s]?:\/\/jwu(nmiz|denz|pvdz|cltz)/;
+        var campusRegexp = /(nmiz|denz|pvdz|cltz)/;
         var campuses = ['pvdz', 'cltz', 'nmiz', 'denz'];
-        var els = document.querySelectorAll('a');
+        var links = document.querySelectorAll('a');
 
-        els.forEach(function(pageLink, i) {
-            if (campusRegexp.test(pageLink.href)){
+
+        links.forEach(function(pageLink, i) {
+            if (campusRegexp.test(pageLink.href)) {
                 var fourLinks = document.createElement("span");
-                fourLinks.style.backgroundColor = "#5987C5";
-                fourLinks.style.padding='5px 5px';
+
+                fourLinks.style.padding = '5px 2px';
 
                 var match = campusRegexp.exec(pageLink.href)
                 origLink = pageLink.href
-                campuses.forEach(function(campus,i){
-                    console.log(campus);
+                campuses.forEach(function(campus, i) {
+                    //Create and form links
                     newLink = document.createElement("a");
-                    space = document.createElement('span');
-                    newLink.innerHTML = campus;
+                    newLink.innerHTML = campus.replace('z', '');
+                    newLink.target = "_blank";
                     newLink.href = origLink.replace(/nmiz|denz|pvdz|cltz/, campus)
-                    newLink.style.color = "#FFF";
-                    newLink.style.padding = '5px 10px';
-                    pageLink.parentNode.appendChild(fourLinks);
-                    fourLinks.appendChild(space);
-                    fourLinks.appendChild(newLink);
+                    //Style links
+                    if (newLink.classList)
+                        newLink.classList.add('four-link-btn');
+                    else
+                        newLink.className += ' ' + 'four-link-btn';
 
+                    // newLink.style.color = "#FFF";
+                    // newLink.style.backgroundColor = "#5987C5";
+                    // newLink.style.padding = '4px 10px';
+                    // newLink.style.margin = '0px 5px';
+                    // Fix Gale regionals
+                    if (newLink.href.includes("prov43712")) {
+                        if (campus == "nmiz") {
+                            newLink.href = newLink.href.replace("prov43712", "nort5426");
+                        } else if (campus == "denz") {
+                            newLink.href = newLink.href.replace("prov43712", "denv8636");
+                        }
+                    }
+
+                    fourLinks.appendChild(newLink);
                 })
+                pageLink.parentNode.appendChild(fourLinks);
             }
         });
     </script>
