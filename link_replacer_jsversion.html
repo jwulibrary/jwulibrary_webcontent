@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <html>
+
 
 
 <head>
@@ -9,39 +11,61 @@
 
 <body>
 
+    <style type="text/css">
+        .lib-link-btns {
+            margin: 0px 5px 10px 5px;
+            padding: 2px;
+        }
+
+        .lib-link-title {
+            font-family: Verdana;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .four-link-btn {
+            background-color: #004A91;
+            color: #FFF;
+            padding: 3px 8px;
+            margin: 0px 4px;
+            text-decoration: none;
+            font-family: Verdana;
+            font-size: 11px;
+            box-shadow: 2px 2px 3px #888888;
+            -webkit-transition: box-shadow .2s, opacity .2s;
+            transition: box-shadow .2s;
+        }
+
+        .four-link-btn:hover {
+            opacity: .9;
+            box-shadow: 7px 7px 15px #888888;
+        }
+    </style>
     <div id="main_container" class="container">
         <div class="row">
             <h3> Test links</h3>
             <p>
-                <a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=a9h" target="_blank">Academic Search Complete</a>
+                <a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=a9h" target="_blank">A Database: Academic Search Complete</a>
             </p>
-            <p><a href="https://jwupvdz.idm.oclc.org/login?url=http://infotrac.galegroup.com/itweb/prov43712?db=BIC1">Gale Biography in context</a></p>
-            <p><a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=a9h&AN=114463863&site=ehost-live&scope=site" target="_blank">A Protection Mechanism against Malicious HTML and JavaScript Code in Vulnerable Web Applications.</a></p>
+            <p><a href="https://jwupvdz.idm.oclc.org/login?url=http://infotrac.galegroup.com/itweb/prov43712?db=BIC1">A Database with more complicated URL structure: Gale Biography in context</a></p>
+            <p><a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=a9h&AN=114463863&site=ehost-live&scope=site" target="_blank">Article from a database (A Protection Mechanism against Malicious HTML and JavaScript Code...)</a></p>
 
-            <p><a href="http://www.nytimes.com/">New York Times</a></p>
-            <p><a href="http://search.ebscohost.com.jwupvdz.idm.oclc.org/login.aspx?direct=true&db=nlebk&AN=294632&site=bsi-live">Article done differently</a>
+            <p><a href="http://www.nytimes.com/">Non-Library Link: New York Times</a></p>
+            <p><a href="http://search.ebscohost.com.jwupvdz.idm.oclc.org/login.aspx?direct=true&db=nlebk&AN=294632&site=bsi-live">Article Link with different URL Structure(Conducting Online Surveys)</a></p>
+            <p><a href="http://ebookcentral.proquest.com/lib/jwu">Ebook Central (ebrary)</a></p>
+            <p><a href="https://jwupvdz.idm.oclc.org/login?url=http://search.credoreference.com?institutionId=4944">Credo</a></p>
+            <p><a href='https://jwupvdz.idm.oclc.org/login?url=http://search.proquest.com/wallstreetjournal/advanced?accountid=1363'>Proquest Test (wall street journal)</a></p>
+            <p><a href='https://jwupvdz.idm.oclc.org/login?url=http://fod.infobase.com/PortalPlayLists.aspx?wid=99165'>Films on Demand Test</a></p>
+            <p><a href='https://jwupvdz.idm.oclc.org/login?url=http://fod.infobase.com/PortalPlaylists.aspx?wID=99165&xtid=40438'>Specific Film on Demand Test: (The 5 Communication Secrets that Swept Obama to the Presidency
+)</a></p>
+
+
+
         </div>
     </div>
 
     <!-- <p><button id="denz-button">MAKE DENZ</button></p> -->
 
-
-    <style>
-        .four-link-btn {
-        background-color: #5987C5;
-        color:#FFF;
-        padding: 3px 8px;
-        margin: 0px 4px;
-        text-decoration: none;
-        font-family:verdana;
-        font-size:.7em;
-        }
-
-        .four-link-btn:hover {
-            opacity:.9;
-        }
-
-    </style>
     <script>
         // var matches = function(el, selector) {
         //     return (el.matches || el.matchesSelector || el.msMatchesSelector || el.mozMatchesSelector || el.webkitMatchesSelector || el.oMatchesSelector).call(el, selector);
@@ -90,15 +114,20 @@
                         } else if (campus == "denz") {
                             newLink.href = newLink.href.replace("prov43712", "denv8636");
                         }
-                    }
 
-                    fourLinks.appendChild(newLink);
-                })
-                pageLink.parentNode.appendChild(fourLinks);
-            }
+                        fourLinks.appendChild(newLink);
+
+                    })
+                    pageLink.parentNode.appendChild(fourLinks);
+                    pageLink.removeAttribute("href");
+                }
+            });
+        };
+
+        // Function to call when page is ready
+        document.addEventListener("DOMContentLoaded", function() {
+            libraryLinkFix()
         });
     </script>
-
-
 
 </html>
