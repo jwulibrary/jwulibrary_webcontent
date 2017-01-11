@@ -8,9 +8,7 @@ function libraryLinkFix() {
         if (campusRegexp.test(pageLink.href) || pageLink.href.includes('ebookcentral')) {
             // Create link wrapper, add title
             var fourLinks = document.createElement("div");
-
             var linkTitle = document.createElement("span");
-            // linkTitle.style.backgroundColor="#CCCCCC";
             linkTitle.textContent = "Library Links: ";
             linkTitle.classList.add('lib-link-title');
             fourLinks.insertBefore(linkTitle, fourLinks.firstChild);
@@ -24,7 +22,7 @@ function libraryLinkFix() {
                 newLink = document.createElement("a");
                 newLink.innerHTML = campus.replace('z', '');
                 newLink.target = "_blank";
-
+                // make new link
                 newLink.href = origLink.replace(/nmiz|denz|pvdz|cltz/, campus)
 
                 //Style links
@@ -83,7 +81,8 @@ function libraryLinkFix() {
                     }
                 }
 
-                // Check EBSCO Dbs in other libraries, if not subscribed to add a blank box
+                // Check EBSCO Dbs in other libraries.... if not subscribed to add a blank box
+                // Check MLA EBSCO (only pvd and den get)
                 if (newLink.href.includes("ebsco")) {
                     // mzh is MLA, not in NMI or CLT
                     if (newLink.href.includes("mzh")) {
@@ -95,11 +94,12 @@ function libraryLinkFix() {
                     }
 
                     // Criminal Justice Abstracts with Full Text (EBSCO) ...i3h
+                    // Only pvd gets this
                     if (newLink.href.includes("i3h")) {
                         if (campus == "nmiz" || campus == "cltz" || campus == "denz") {
                             newLink.removeAttribute("href");
                             newLink.style.backgroundColor = "#919095";
-                            newLink.textContent += ": no access, contact a librarian";
+                            newLink.textContent += ": Request Article";
                         }
                     }
                 }
