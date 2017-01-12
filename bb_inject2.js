@@ -1,3 +1,11 @@
+// TODO:
+//- Add  ONL Button
+// - Add matches for nmi/dnv/pvd, also add tests for regional campus links
+// group links better
+// films on demand iframe replacement
+// Check if course is an ONL course
+
+
 function libraryLinkFix() {
     var campusRegexp = /(nmiz|denz|pvdz|cltz)/;
     var campuses = ['pvdz', 'cltz', 'nmiz', 'denz'];
@@ -16,10 +24,28 @@ function libraryLinkFix() {
 
             // check links to see if are library links
             var match = campusRegexp.exec(pageLink.href)
-            origLink = pageLink.href
+            var origLink = pageLink.href;
+
+            // iterate over campuses
             campuses.forEach(function(campus, i) {
+
+                // Make some function-level functions and variables
+                // Function to generate missing article message (DRY, etc)
+                function makeMissingArticleMsg() {
+                    var missingArticle = pageLink.textContent;
+                    var articleRequestMsg = "Hi, I need access to this resource for my course. Thanks! The title of the resource is here: " + missingArticle;
+                    newLink.href = "mailto:dmeincke@jwu.edu?subject=" + campus + " request for resource&body=" + articleRequestMsg;
+                    if (newLink.classList)
+                        newLink.classList.add('request-link-btn');
+                    else
+                        newLink.className += ' ' + 'request-link-btn';
+
+                    newLink.textContent += ": Request Article";
+                };
+
+
                 //Create links
-                newLink = document.createElement("a");
+                var newLink = document.createElement("a");
                 newLink.innerHTML = campus.replace('z', '');
                 newLink.target = "_blank";
                 // make new link
@@ -87,9 +113,7 @@ function libraryLinkFix() {
                     // mzh is MLA, not in NMI or CLT
                     if (newLink.href.includes("mzh")) {
                         if (campus == "nmiz" || campus == "cltz") {
-                            newLink.removeAttribute("href");
-                            newLink.style.backgroundColor = "#919095";
-                            newLink.textContent += ": no access, contact a librarian";
+                            makeMissingArticleMsg();
                         }
                     }
 
@@ -97,20 +121,28 @@ function libraryLinkFix() {
                     // Only pvd gets this
                     if (newLink.href.includes("i3h")) {
                         if (campus == "nmiz" || campus == "cltz" || campus == "denz") {
-                            newLink.removeAttribute("href");
-                            newLink.style.backgroundColor = "#919095";
-                            newLink.textContent += ": Request Article";
+                            makeMissingArticleMsg();
+
                         }
                     }
                 }
 
 
-                // Add the campus link
+                // Add the online campus link
+                if (campus == 'pvdz'){
+                    var onlLink = newLink.cloneNode(true);
+                    onlLink.textContent = 'online';
+fourLinks.appendChild(onlLink);
+
+                }
                 fourLinks.appendChild(newLink);
+
 
             })
             pageLink.parentNode.appendChild(fourLinks);
+
             pageLink.removeAttribute("href");
+
         }
     });
 };
