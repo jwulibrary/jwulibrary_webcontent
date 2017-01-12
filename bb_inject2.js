@@ -1,16 +1,13 @@
 // TODO:
-//- Add  ONL Button
 // - Add matches for nmi/dnv/pvd, also add tests for regional campus links
 // group links better
 // films on demand iframe replacement
 // Check if course is an ONL course
 
-
 function libraryLinkFix() {
     var campusRegexp = /(nmiz|denz|pvdz|cltz)/;
     var campuses = ['pvdz', 'cltz', 'nmiz', 'denz'];
     var links = document.querySelectorAll('a');
-
 
     links.forEach(function(pageLink, i) {
         if (campusRegexp.test(pageLink.href) || pageLink.href.includes('ebookcentral')) {
@@ -21,14 +18,11 @@ function libraryLinkFix() {
             linkTitle.classList.add('lib-link-title');
             fourLinks.insertBefore(linkTitle, fourLinks.firstChild);
             fourLinks.classList.add('lib-link-btns');
-
             // check links to see if are library links
             var match = campusRegexp.exec(pageLink.href)
             var origLink = pageLink.href;
-
             // iterate over campuses
             campuses.forEach(function(campus, i) {
-
                 // Make some function-level functions and variables
                 // Function to generate missing article message (DRY, etc)
                 function makeMissingArticleMsg() {
@@ -39,10 +33,8 @@ function libraryLinkFix() {
                         newLink.classList.add('request-link-btn');
                     else
                         newLink.className += ' ' + 'request-link-btn';
-
                     newLink.textContent += ": Request Article";
                 };
-
 
                 //Create links
                 var newLink = document.createElement("a");
@@ -50,7 +42,6 @@ function libraryLinkFix() {
                 newLink.target = "_blank";
                 // make new link
                 newLink.href = origLink.replace(/nmiz|denz|pvdz|cltz/, campus)
-
                 //Style links
                 if (newLink.classList)
                     newLink.classList.add('four-link-btn');
@@ -58,24 +49,73 @@ function libraryLinkFix() {
                     newLink.className += ' ' + 'four-link-btn';
 
 
+                // Generalize regex search and replace. Input order is clt, den, nmi, pvd
+                function regexSwapper(cltFrag, dnvFrag, nmiFrag, pvdFrag) {
+                    var regexp = new RegExp("(" + cltFrag + ")|(" + dnvFrag + ")|(" + nmiFrag + ")|(" + pvdFrag + ")");
+                    if (regexp.test(pageLink.href)) {
+                        var match = regexp.exec(pageLink.href)[0];
+                        if (campus == "cltz") {
+                            newLink.href = newLink.href.replace(match, cltFrag);
+                        } else if (campus == "denz") {
+                            newLink.href = newLink.href.replace(match, dnvFrag);
+                        } else if (campus == "nmiz") {
+                            newLink.href = newLink.href.replace(match, nmiFrag);
+                        } else if (campus == "pvdz") {
+                            newLink.href = newLink.href.replace(match, pvdFrag);
+                        }
+
+                    }
+                };
+
+
+
                 // Fix Gale regionals
-                if (newLink.href.includes("prov43712")) {
-                    if (campus == "nmiz") {
-                        newLink.href = newLink.href.replace("prov43712", "nort5426");
-                    } else if (campus == "denz") {
-                        newLink.href = newLink.href.replace("prov43712", "denv8636");
-                    }
+                // if (newLink.href.includes("prov43712")) {
+                //     if (campus == "nmiz") {
+                //         newLink.href = newLink.href.replace("prov43712", "nort5426");
+                //     } else if (campus == "denz") {
+                //         newLink.href = newLink.href.replace("prov43712", "denv8636");
+                //     }
+                // };
+                // Run Gale generalized regex search
+                //
+                if (newLink.href.includes("gale")) {
+                    regexSwapper('prov43712', 'denv8636',  'nort5426', 'prov43712');
                 }
-                // Fix ProQuest regionals
-                if (newLink.href.includes("accountid=1363")) {
-                    if (campus == "nmiz") {
-                        newLink.href = newLink.href.replace("1363", "187069");
-                    } else if (campus == "denz") {
-                        newLink.href = newLink.href.replace("1363", "187070");
-                    } else if (campus == "cltz") {
-                        newLink.href = newLink.href.replace("1363", "151086");
-                    }
+                // Run proquest generalized regex search
+                if (newLink.href.includes("proquest")) {
+                    regexSwapper('accountid=151086', 'accountid=187070',  'accountid=187069', 'accountid=1363');
                 }
+
+                // Fix ProQuest regionals (checks for PVD only)
+                // if (newLink.href.includes("accountid=1363")) {
+                //     if (campus == "nmiz") {
+                //         newLink.href = newLink.href.replace("1363", "187069");
+                //     } else if (campus == "denz") {
+                //         newLink.href = newLink.href.replace("1363", "187070");
+                //     } else if (campus == "cltz") {
+                //         newLink.href = newLink.href.replace("1363", "151086");
+                //     }
+                // }
+                // Fix ProQuest regionals (works on any input link, regardless of campus)
+                // var proquestRegexp = /(accountid=1363)|(accountid=187069)|(accountid=187070)|(accountid=151086)/;
+                // if (proquestRegexp.test(pageLink.href)) {
+                //     var match = proquestRegexp.exec(pageLink.href)[0];
+                //     if (campus == "nmiz") {
+                //         newLink.href = newLink.href.replace(match, "accountid=187069");
+                //     } else if (campus == "denz") {
+                //         newLink.href = newLink.href.replace(match, "accountid=187070");
+                //     } else if (campus == "cltz") {
+                //         newLink.href = newLink.href.replace(match, "accountid=151086");
+                //     } else if (campus == "pvdz") {
+                //         newLink.href = newLink.href.replace(match, "accountid=1363");
+                //     }
+                // };
+
+
+
+
+
                 // Fix ebrary
                 if (newLink.href.includes("ebookcentral.proquest.com/lib/jwu")) {
                     if (campus == "nmiz") {
@@ -87,15 +127,21 @@ function libraryLinkFix() {
                     }
                 }
                 // Fix Credo
-                if (newLink.href.includes("institutionId=4944")) {
-                    if (campus == "nmiz") {
-                        newLink.href = newLink.href.replace("4944", "8947");
-                    } else if (campus == "denz") {
-                        newLink.href = newLink.href.replace("4944", "8946");
-                    } else if (campus == "cltz") {
-                        newLink.href = newLink.href.replace("4944", "8948");
-                    }
+                // if (newLink.href.includes("institutionId=4944")) {
+                //     if (campus == "nmiz") {
+                //         newLink.href = newLink.href.replace("4944", "8947");
+                //     } else if (campus == "denz") {
+                //         newLink.href = newLink.href.replace("4944", "8946");
+                //     } else if (campus == "cltz") {
+                //         newLink.href = newLink.href.replace("4944", "8948");
+                //     }
+                // }
+                // Credo regex swap
+                if (newLink.href.includes("credo")) {
+                    regexSwapper('institutionId=8948', 'institutionId=8946',  'institutionId=8947', 'institutionId=4944');
                 }
+
+
                 // Fix Films on demand
                 if (newLink.href.includes("wid=99165")) {
                     if (campus == "nmiz") {
@@ -106,7 +152,6 @@ function libraryLinkFix() {
                         newLink.href = newLink.href.replace("99165", "239260");
                     }
                 }
-
                 // Check EBSCO Dbs in other libraries.... if not subscribed to add a blank box
                 // Check MLA EBSCO (only pvd and den get)
                 if (newLink.href.includes("ebsco")) {
@@ -116,33 +161,26 @@ function libraryLinkFix() {
                             makeMissingArticleMsg();
                         }
                     }
-
                     // Criminal Justice Abstracts with Full Text (EBSCO) ...i3h
                     // Only pvd gets this
                     if (newLink.href.includes("i3h")) {
                         if (campus == "nmiz" || campus == "cltz" || campus == "denz") {
                             makeMissingArticleMsg();
-
                         }
                     }
                 }
 
-
                 // Add the online campus link
-                if (campus == 'pvdz'){
+                if (campus == 'pvdz') {
                     var onlLink = newLink.cloneNode(true);
                     onlLink.textContent = 'online';
-fourLinks.appendChild(onlLink);
-
+                    fourLinks.appendChild(onlLink);
                 }
                 fourLinks.appendChild(newLink);
 
-
             })
             pageLink.parentNode.appendChild(fourLinks);
-
             pageLink.removeAttribute("href");
-
         }
     });
 };
@@ -154,7 +192,6 @@ function addLibLinkStyle() {
     var head = document.getElementsByTagName("head")[0];
     head.appendChild(link);
 }
-
 // // Function to call when page is ready
 // document.addEventListener("DOMContentLoaded", function() {
 // 	libraryLinkFix();
