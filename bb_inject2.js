@@ -3,6 +3,7 @@
 // group links better
 // films on demand iframe replacement
 // Check if course is an ONL course
+// Add all other dbs not subscribed to by regionals
 
 function libraryLinkFix() {
     var campusRegexp = /(nmiz|denz|pvdz|cltz)/;
@@ -12,6 +13,7 @@ function libraryLinkFix() {
     links.forEach(function(pageLink, i) {
         if (campusRegexp.test(pageLink.href) || pageLink.href.includes('ebookcentral')) {
             // Create link wrapper, add title
+            pageLink.href = pageLink.href.toLowerCase();
             var fourLinks = document.createElement("div");
             var linkTitle = document.createElement("span");
             linkTitle.textContent = "Library Links: ";
@@ -49,7 +51,7 @@ function libraryLinkFix() {
                     newLink.className += ' ' + 'four-link-btn';
 
 
-                // Generalize regex search and replace. Input order is clt, den, nmi, pvd
+                // Generalize regex search and replace for url fragments. Input order is clt, den, nmi, pvd
                 function regexSwapper(cltFrag, dnvFrag, nmiFrag, pvdFrag) {
                     var regexp = new RegExp("(" + cltFrag + ")|(" + dnvFrag + ")|(" + nmiFrag + ")|(" + pvdFrag + ")");
                     if (regexp.test(pageLink.href)) {
@@ -80,11 +82,11 @@ function libraryLinkFix() {
                 // Run Gale generalized regex search
                 //
                 if (newLink.href.includes("gale")) {
-                    regexSwapper('prov43712', 'denv8636',  'nort5426', 'prov43712');
+                    regexSwapper('prov43712', 'denv8636', 'nort5426', 'prov43712');
                 }
                 // Run proquest generalized regex search
                 if (newLink.href.includes("proquest")) {
-                    regexSwapper('accountid=151086', 'accountid=187070',  'accountid=187069', 'accountid=1363');
+                    regexSwapper('accountid=151086', 'accountid=187070', 'accountid=187069', 'accountid=1363');
                 }
 
                 // Fix ProQuest regionals (checks for PVD only)
@@ -116,15 +118,19 @@ function libraryLinkFix() {
 
 
 
-                // Fix ebrary
-                if (newLink.href.includes("ebookcentral.proquest.com/lib/jwu")) {
-                    if (campus == "nmiz") {
-                        newLink.href = newLink.href.replace("ebookcentral.proquest.com/lib/jwu", "jwunmiz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwu-northmiami");
-                    } else if (campus == "denz") {
-                        newLink.href = newLink.href.replace("ebookcentral.proquest.com/lib/jwu", "jwudenz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwu-denver");
-                    } else if (campus == "cltz") {
-                        newLink.href = newLink.href.replace("ebookcentral.proquest.com/lib/jwu", "jwucltz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwucharlotte");
-                    }
+                // Fix ebrary (OLD)
+                // if (newLink.href.includes("ebookcentral.proquest.com/lib/jwu")) {
+                //     if (campus == "nmiz") {
+                //         newLink.href = newLink.href.replace("ebookcentral.proquest.com/lib/jwu", "jwunmiz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwu-northmiami");
+                //     } else if (campus == "denz") {
+                //         newLink.href = newLink.href.replace("ebookcentral.proquest.com/lib/jwu", "jwudenz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwu-denver");
+                //     } else if (campus == "cltz") {
+                //         newLink.href = newLink.href.replace("ebookcentral.proquest.com/lib/jwu", "jwucltz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwucharlotte");
+                //     }
+                // }
+                // Fix ebrary (NEw)
+                if (newLink.href.includes("ebookcentral") | newLink.href.includes("ebrary")) {
+                    regexSwapper('jwucltz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwucharlotte', 'jwudenz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwu-denver', 'jwunmiz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwu-northmiami', 'ebookcentral.proquest.com/lib/jwu');
                 }
                 // Fix Credo
                 // if (newLink.href.includes("institutionId=4944")) {
@@ -138,20 +144,28 @@ function libraryLinkFix() {
                 // }
                 // Credo regex swap
                 if (newLink.href.includes("credo")) {
-                    regexSwapper('institutionId=8948', 'institutionId=8946',  'institutionId=8947', 'institutionId=4944');
+                    regexSwapper('institutionId=8948', 'institutionId=8946', 'institutionId=8947', 'institutionId=4944');
                 }
 
 
-                // Fix Films on demand
-                if (newLink.href.includes("wid=99165")) {
-                    if (campus == "nmiz") {
-                        newLink.href = newLink.href.replace("99165", "238548");
-                    } else if (campus == "denz") {
-                        newLink.href = newLink.href.replace("99165", "240032");
-                    } else if (campus == "cltz") {
-                        newLink.href = newLink.href.replace("99165", "239260");
-                    }
+                // // Fix Films on demand (OLD)
+                // if (newLink.href.includes("wid=99165")) {
+                //     if (campus == "nmiz") {
+                //         newLink.href = newLink.href.replace("99165", "238548");
+                //     } else if (campus == "denz") {
+                //         newLink.href = newLink.href.replace("99165", "240032");
+                //     } else if (campus == "cltz") {
+                //         newLink.href = newLink.href.replace("99165", "239260");
+                //     }
+                // }
+
+                // Fix Films on demand (NEW)
+                if (newLink.href.includes("fod.infobase")) {
+                    regexSwapper('wid=239260', 'wid=240032', 'wid=238548', 'wid=99165');
                 }
+
+
+
                 // Check EBSCO Dbs in other libraries.... if not subscribed to add a blank box
                 // Check MLA EBSCO (only pvd and den get)
                 if (newLink.href.includes("ebsco")) {
