@@ -18,6 +18,7 @@ function libraryLinkFix() {
             var linkTitle = document.createElement("span");
             linkTitle.textContent = "Library Links: ";
             linkTitle.classList.add('lib-link-title');
+
             fourLinks.insertBefore(linkTitle, fourLinks.firstChild);
             fourLinks.classList.add('lib-link-btns');
             // check links to see if are library links
@@ -40,10 +41,10 @@ function libraryLinkFix() {
 
                 //Create links
                 var newLink = document.createElement("a");
-                newLink.innerHTML = campus.replace('z', '');
+                newLink.innerHTML = campus.replace('z', '').toUpperCase();
                 newLink.target = "_blank";
                 // make new link
-                newLink.href = origLink.replace(/nmiz|denz|pvdz|cltz/, campus)
+                newLink.href = origLink.replace(/nmiz|denz|pvdz|cltz/, campus);
                 //Style links
                 if (newLink.classList)
                     newLink.classList.add('four-link-btn');
@@ -54,7 +55,8 @@ function libraryLinkFix() {
                 // Generalize regex search and replace for url fragments. Input order is clt, den, nmi, pvd
                 function regexSwapper(cltFrag, dnvFrag, nmiFrag, pvdFrag) {
                     var regexp = new RegExp("(" + cltFrag + ")|(" + dnvFrag + ")|(" + nmiFrag + ")|(" + pvdFrag + ")");
-                    if (regexp.test(pageLink.href)) {
+                    var linkSrc = pageLink.href;
+                    if (regexp.test(linkSrc)) {
                         var match = regexp.exec(pageLink.href)[0];
                         if (campus == "cltz") {
                             newLink.href = newLink.href.replace(match, cltFrag);
@@ -182,12 +184,15 @@ function libraryLinkFix() {
                             makeMissingArticleMsg();
                         }
                     }
-                }
+                };
+
+
+
 
                 // Add the online campus link
                 if (campus == 'pvdz') {
                     var onlLink = newLink.cloneNode(true);
-                    onlLink.textContent = 'online';
+                    onlLink.textContent = 'ONL';
                     fourLinks.appendChild(onlLink);
                 }
                 fourLinks.appendChild(newLink);
@@ -197,6 +202,48 @@ function libraryLinkFix() {
             pageLink.removeAttribute("href");
         }
     });
+
+
+    // Films on Demand Video Widget check and replace
+    var iframes = document.querySelectorAll('iframe');
+    iframes.forEach(function(frame, i) {
+        //fod.infobase.com/OnDemandEmbed
+        if (frame.src.includes('fod.infobase.com/OnDemandEmbed')) {
+            var vidSrc = frame.src;
+            // Get paramets from FoD widget so to make new campus-specific widgets or links
+            // Grabbed this function  from stackoverflow: http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+            function getParameterByName(name, url) {
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+            var vidToken = getParameterByName('token', vidSrc);
+            var wID = getParameterByName('wID', vidSrc);
+            console.log(vidToken, wID);
+            // Now create links to popout to external campus-specific video
+    
+            var vidLinks = document.createElement('div');
+            campuses.forEach(function(campus, i) {
+
+                var newLink = document.createElement('a');
+                newLink.textContent=' video: ' + campus;
+                vidLinks.appendChild(newLink);
+
+                console.log(newLink);
+
+
+
+            })
+            frame.parentNode.appendChild(vidLinks);
+
+        }
+
+    });
+
+
 };
 
 function addLibLinkStyle() {
