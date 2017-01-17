@@ -210,6 +210,7 @@ function libraryLinkFix() {
             })
             pageLink.parentNode.appendChild(fourLinks);
             pageLink.removeAttribute("href");
+            pageLink.style.textDecoration="none";
         }
     });
 
