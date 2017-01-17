@@ -148,9 +148,10 @@ function libraryLinkFix() {
                 if (newLink.href.includes("credo")) {
                     regexSwapper('institutionId=8948', 'institutionId=8946', 'institutionId=8947', 'institutionId=4944');
                 }
+
                 // RKMA regex swap
-                if (newLink.href.includes("www.rkma.com")) {
-                regexSwapper('jwucharlotte/library', 'jwudenver/library', 'jwunorthmiami/library', 'jwu/library');
+                if (newLink.href.includes("rkma.com")) {
+                regexSwapper('/jwucharlotte/', '/jwudenver/', '/jwunorthmiami/', '/jwu/');
                 }
 
                 // // Fix Films on demand (OLD)
