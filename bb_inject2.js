@@ -148,7 +148,10 @@ function libraryLinkFix() {
                 if (newLink.href.includes("credo")) {
                     regexSwapper('institutionId=8948', 'institutionId=8946', 'institutionId=8947', 'institutionId=4944');
                 }
-
+                // RKMA regex swap
+                if (newLink.href.includes("www.rkma.com")) {
+                regexSwapper('jwucharlotte/library', 'jwudenver/library', 'jwunorthmiami/library', 'jwu/library');
+                }
 
                 // // Fix Films on demand (OLD)
                 // if (newLink.href.includes("wid=99165")) {
@@ -222,17 +225,24 @@ function libraryLinkFix() {
             }
             var vidToken = getParameterByName('token', vidSrc);
             var wID = getParameterByName('wID', vidSrc);
-            console.log(vidToken, wID);
+            //console.log(vidToken, wID);
             // Now create links to popout to external campus-specific video
-    
+
             var vidLinks = document.createElement('div');
             campuses.forEach(function(campus, i) {
-
                 var newLink = document.createElement('a');
                 newLink.textContent=' video: ' + campus;
+                newLink.href = vidSrc;
+                newLink.target = "_blank";
+
+                if (newLink.classList)
+                    newLink.classList.add('four-link-btn');
+                else
+                    newLink.className += ' ' + 'four-link-btn';
+
                 vidLinks.appendChild(newLink);
 
-                console.log(newLink);
+
 
 
 
