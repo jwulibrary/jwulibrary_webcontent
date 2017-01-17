@@ -12,7 +12,7 @@ function libraryLinkFix() {
     links.forEach(function(pageLink, i) {
         if (campusRegexp.test(pageLink.href) || pageLink.href.includes('ebookcentral')) {
             // Create link wrapper, add title
-            pageLink.href = pageLink.href.toLowerCase();
+            //pageLink.href = pageLink.href.toLowerCase();
             var fourLinks = document.createElement("div");
             var linkTitle = document.createElement("span");
             linkTitle.textContent = "Library Links: ";
@@ -130,6 +130,7 @@ function libraryLinkFix() {
                 //     }
                 // }
                 // Fix ebrary (NEw)
+
                 if (newLink.href.includes("ebookcentral") | newLink.href.includes("ebrary")) {
                     regexSwapper('jwucltz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwucharlotte', 'jwudenz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwu-denver', 'jwunmiz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwu-northmiami', 'ebookcentral.proquest.com/lib/jwu');
                 }
