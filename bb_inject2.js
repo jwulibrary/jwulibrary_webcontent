@@ -1,5 +1,4 @@
 // TODO:
-// - Add matches for nmi/dnv/pvd, also add tests for regional campus links
 // group links better
 // films on demand iframe replacement
 // Check if course is an ONL course
@@ -168,6 +167,12 @@ function libraryLinkFix() {
                 // Fix Films on demand (NEW)
                 if (newLink.href.includes("fod.infobase")) {
                     regexSwapper('wid=239260', 'wid=240032', 'wid=238548', 'wid=99165');
+                }
+
+
+                // Fix Global Road Warrior
+                if (newLink.href.includes("globalroadwarrior")) {
+                    regexSwapper('c=jwuclt', 'c=jwuden', 'c=jwunmi', 'c=jwu');
                 }
 
 
