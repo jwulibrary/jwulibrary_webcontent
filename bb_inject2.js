@@ -4,12 +4,14 @@
 - Check if course is an ONL course
 - Add all other dbs not subscribed to by regionals (I guess)
 - add ebrary title lookup upon failure
+- try webhook for request article
 */
 
 function libraryLinkFix() {
     var campusRegexp = /(nmiz|denz|pvdz|cltz)/;
     var campuses = ['pvdz', 'cltz', 'nmiz', 'denz'];
     var links = document.querySelectorAll('a');
+
     links.forEach(function(pageLink, i) {
         if (campusRegexp.test(pageLink.href) || pageLink.href.includes('ebookcentral')) {
             // Create link wrapper, add title
@@ -48,6 +50,8 @@ function libraryLinkFix() {
                     newLink.classList.add('four-link-btn');
                 else
                     newLink.className += ' ' + 'four-link-btn';
+
+
                 // Generalize regex search and replace for url fragments. Input order is clt, den, nmi, pvd
                 function regexSwapper(cltFrag, dnvFrag, nmiFrag, pvdFrag) {
                     var regexp = new RegExp("(" + cltFrag + ")|(" + dnvFrag + ")|(" + nmiFrag + ")|(" + pvdFrag + ")");
@@ -65,6 +69,10 @@ function libraryLinkFix() {
                         }
                     }
                 };
+
+
+
+
                 if (newLink.href.includes("gale")) {
                     regexSwapper('prov43712', 'denv8636', 'nort5426', 'prov43712');
                 }
@@ -122,10 +130,17 @@ function libraryLinkFix() {
             pageLink.style.textDecoration = "none";
         }
     });
+
+
+
+
+
+
+
     // Films on Demand Video Widget check and replace
     var iframes = document.querySelectorAll('iframe');
     iframes.forEach(function(frame, i) {
-        //fod.infobase.com/OnDemandEmbed
+
         if (frame.src.includes('fod.infobase.com/OnDemandEmbed')) {
             var vidSrc = frame.src;
             // Get paramets from FoD widget so to make new campus-specific widgets or links
@@ -138,23 +153,39 @@ function libraryLinkFix() {
                 if (!results[2]) return '';
                 return decodeURIComponent(results[2].replace(/\+/g, " "));
             }
+
+
             var vidToken = getParameterByName('token', vidSrc);
             var wID = getParameterByName('wID', vidSrc);
-            //console.log(vidToken, wID);
+
+
             // Now create links to popout to external campus-specific video
             var vidLinks = document.createElement('div');
             campuses.forEach(function(campus, i) {
                 var newLink = document.createElement('a');
-                newLink.textContent = ' video: ' + campus;
+                newLink.textContent = 'Open Video: ' + campus.replace('z', '').toUpperCase();
                 newLink.href = vidSrc;
+                console.log(vidSrc);
+                newLink.href = vidSrc.replace(/nmiz|denz|pvdz|cltz/, campus);
+                fodLinkFrags = {'cltz':'wID=239260', 'denz' :'wID=240032', 'nmiz': 'wID=238548', 'pvdz':'wID=99165'};
+                newLink.href = newLink.href.replace(/wID=239260|wID=240032|wID=238548|wID=99165/, fodLinkFrags[campus]);
+                //newLink.href.replace
+                console.log(fodLinkFrags[campus]);
                 newLink.target = "_blank";
                 if (newLink.classList)
                     newLink.classList.add('four-link-btn');
                 else
                     newLink.className += ' ' + 'four-link-btn';
                 vidLinks.appendChild(newLink);
-            })
+                if (campus == 'pvdz') {
+                    var onlLink = newLink.cloneNode(true);
+                    onlLink.textContent = 'Open Video: ONL';
+                    vidLinks.appendChild(onlLink);
+                };
+            });
+
             frame.parentNode.appendChild(vidLinks);
+
         }
     });
 };
