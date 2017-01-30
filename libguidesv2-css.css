@@ -32,10 +32,10 @@ h1 {
 	color: #666;
 }
 h2 {
-	font-size: 1.5rem;
+	font-size: 1.5em;
 }
 h3 {
-	font-size: 1.25rem;
+	font-size: 1.25em;
 }
 h5 {
 	font-family: Verdana, Geneva, sans-serif;
@@ -619,7 +619,7 @@ tr.hours-depart td.hours-col-loc {
 	right: 10%;
 	left: 10%;
 	font-size:.9em !important;
-	padding: 1px 2px 1px 2px;
+	padding: 0px;
 }
 .carousel-caption h4 {
 	font-size: 2em;
@@ -627,10 +627,10 @@ tr.hours-depart td.hours-col-loc {
 	font-weight: bold;
 	font-family: Verdana, sans-serif;
 	color: #014A91;
-	border:1px solid #014A91;
-	padding:1px;
+
+	padding:0px;
 	background-color: #FFF;
-	 padding: 10px;
+
 
 }
 
@@ -638,7 +638,7 @@ tr.hours-depart td.hours-col-loc {
 	margin: 0 0 -18px 0;
 	color: #FFF;
 	font-size: 1.1em !important;
-	border: 1px solid #CCCCCC;
+
 	text-shadow: none;
 	font-family:  'open sans', sans-serif;
 	/* background-color: #014A91;*/
@@ -1175,3 +1175,26 @@ background-color: #F0B310;
 	.searchbox-checkbox{
 
 	}
+
+
+
+
+.view-all-link
+{
+    font-family: "open sans",sans-serif;
+
+	}
+
+
+#s-lg-widget-1478206202642 ul li a{
+	font-family: "open sans",sans-serif;
+	    font-size: 1.2em;
+
+	}
+
+	#s-lg-widget-1478206202642 ul li {
+		font-family: "open sans",sans-serif;
+		    font-size: 1.2em;
+					margin-top:.2em;
+
+		}

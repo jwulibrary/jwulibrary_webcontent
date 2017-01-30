@@ -123,11 +123,13 @@ function libraryLinkFix() {
                     onlLink.textContent = 'ONL';
                     fourLinks.appendChild(onlLink);
                 }
+                
                 fourLinks.appendChild(newLink);
             })
             pageLink.parentNode.appendChild(fourLinks);
             pageLink.removeAttribute("href");
             pageLink.style.textDecoration = "none";
+            pageLink.style.color = "#555";
         }
     });
 

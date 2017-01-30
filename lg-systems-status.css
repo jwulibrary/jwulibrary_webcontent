@@ -1,0 +1,30 @@
+<script src="//api2.libanswers.com/1.0/status/widgets/8"></script>
+
+<style>
+/* 
+	Individual Page components to restyle
+	
+	*/
+	
+.s-la-widget-st-dashlink{
+	}
+.s-la-widget-st-list{
+	}
+.s-la-widget-st-list li{
+	}
+	
+.s-la-widget-st-list li.s-la-productfolder-div{
+	}
+	
+.s-la-productfolder-div ol li {
+	}
+/* 
+	New page components
+	
+	*/
+	
+#button-link{
+	}
+	
+	
+</style>

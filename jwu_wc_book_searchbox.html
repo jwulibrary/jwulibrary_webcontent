@@ -1,0 +1,36 @@
+<!--JWU Book OCLC Searchbox-->
+<!--Updated 12-5-16-->
+<style type="text/css">
+	#responsive-bounding-box {
+		font-size: 11px;
+
+	}
+</style>
+<div id="responsive-bounding-box">
+	<!--header wrapper-->
+	<div class="container-fluid" id="jwuul-searchbox">
+
+
+		<!-- TAB 1 -->
+
+		<div id="books-tab">
+			<h4 class="search-name">Search for books and ebooks</h4>
+
+			<div class="row">
+				<form action="https://jwupvd.on.worldcat.org/search" method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'book-search', val); " target="_blank">
+					<div class="search input-group"><label class="sr-only" for="library-search-box">Find Book </label> <input name="format" type="hidden" value="Book" /> <input class="form-control input   " id="library-search-box" name="queryString" placeholder="Search by title, author, subject, keyword, ISBN, or publisher	"
+										type="text" /> <span class="input-group-btn"><button class="btn     search-submit" type="submit"><i class="fa fa-book fa-lg"></i> Search</button> </span></div>
+
+					<div class="form-check pull-right  "><label class="form-check-label"><input class="searchbox-checkbox" id="ebook-checkbox" name="subformat" type="checkbox" value="Book::book_digital" />Ebooks Only </label></div>
+
+				</form>
+
+			</div>
+			<div class="pull-right advanced-search"><a href="https://jwupvd.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a></div>
+
+
+		</div>
+
+
+	</div>
+</div>

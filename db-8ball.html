@@ -1,0 +1,232 @@
+<html>
+<!--
+
+Databases page, makes it more magic
+
+
+-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/libapps/sites/538/include/libguidesv2-css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
+
+    <style>
+        object {
+            width: 100%;
+        }
+
+        #magic8-button {
+            width: 4em;
+            transition: all 0.3s ease-out;
+        }
+
+        #magic8-button:hover {
+            transition: all 1s ease;
+            transform: perspective( 20px) rotateY( 15deg) rotateZ( 15deg);
+        }
+
+        #db-output {}
+
+        #db-output a:first-child {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <a onclick="randDb()" href="#"><img id="magic8-button" src="8ball.svg">
+                </a>
+                  </div>
+                <div id="db-output" class="col-xs-6">
+                </div>
+
+        </div>
+    </div>
+
+
+    <script src="http://lgapi.libapps.com/sa.php?site_id=538"></script>
+    <script>
+        springshare_widget_config_1473709018528 = {
+            path: 'assets'
+        };
+    </script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="s-lg-widget-1473709018528"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Do some stuff. Maybe make a magic 8 ball button?-->
+
+    <script>
+        ! function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+                p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = p +
+                    "://lgapi.libapps.com/widgets.php?site_id=538&widget_type=2&search_terms=&search_match=2&subject_ids=&sort_by=name&list_format=1&drop_text=Select+a+Database...&output_format=1&load_type=2&enable_description=0&widget_title=A-Z+Database+List&widget_width=100%25&widget_link_color=2954d1&widget_embed_type=1&num_results=0&enable_more_results=1&window_target=2&config_id=1473709018528";
+                fjs.parentNode.insertBefore(js, fjs);
+            }
+        }(document, "script", "s-lg-widget-script-1473709018528");
+    </script>
+
+
+    <script>
+        function randDb() {
+            //Get dbs in #s-lg-widget-1473709018528
+            var dbLis = $("#s-lg-widget-1473709018528 ul li");
+            dbLis.hide();
+            // Get a random DB
+            rDb = dbLis[Math.floor(Math.random() * dbLis.length)];
+            console.log(rDb);
+            $("#db-output").prepend($(rDb).html()).hide().show('slow');
+
+            // Perform a fuzzy match based on input?
+        }
+
+
+
+    </script>
+
+
+
+
+
+
+<script>
+var width = window.innerWidth;
+var height = window.innerHeight;
+
+// create an new instance of a pixi stage
+var stage = new PIXI.Stage(0x0, true);
+
+// create a renderer instance
+var renderer = PIXI.autoDetectRenderer(width, height);
+
+// add the renderer view element to the DOM
+document.body.appendChild(renderer.view);
+
+// smoke shader
+var uniforms = {};
+uniforms.resolution = {
+  type: '2f',
+  value: {
+    x: width,
+    y: height
+  }
+};
+uniforms.alpha = {
+  type: '1f',
+  value: 1.0
+};
+uniforms.shift = {
+  type: '1f',
+  value: 1.6
+};
+uniforms.time = {
+  type: '1f',
+  value: 0
+};
+uniforms.speed = {
+  type: '2f',
+  value: {
+    x: 0.7,
+    y: 0.4
+  }
+};
+
+var fragmentSrc = [
+  "precision mediump float;",
+  "uniform vec2      resolution;",
+  "uniform float     time;",
+  "uniform float     alpha;",
+  "uniform vec2      speed;",
+  "uniform float     shift;",
+
+  "float rand(vec2 n) {",
+    "return fract(cos(dot(n, vec2(12.9898, 4.1414))) * 43758.5453);",
+  "}",
+
+  "float noise(vec2 n) {",
+    "const vec2 d = vec2(0.0, 1.0);",
+    "vec2 b = floor(n), f = smoothstep(vec2(0.0), vec2(1.0), fract(n));",
+    "return mix(mix(rand(b), rand(b + d.yx), f.x), mix(rand(b + d.xy), rand(b + d.yy), f.x), f.y);",
+  "}",
+
+  "float fbm(vec2 n) {",
+    "float total = 0.0, amplitude = 1.0;",
+    "for (int i = 0; i < 4; i++) {",
+      "total += noise(n) * amplitude;",
+      "n += n;",
+      "amplitude *= 0.5;",
+    "}",
+    "return total;",
+  "}",
+
+  "void main() {",
+
+    "const vec3 c1 = vec3(126.0/255.0, 0.0/255.0, 97.0/255.0);",
+    "const vec3 c2 = vec3(173.0/255.0, 0.0/255.0, 161.4/255.0);",
+    "const vec3 c3 = vec3(0.2, 0.0, 0.0);",
+    "const vec3 c4 = vec3(164.0/255.0, 1.0/255.0, 214.4/255.0);",
+    "const vec3 c5 = vec3(0.1);",
+    "const vec3 c6 = vec3(0.9);",
+
+    "vec2 p = gl_FragCoord.xy * 8.0 / resolution.xx;",
+    "float q = fbm(p - time * 0.1);",
+    "vec2 r = vec2(fbm(p + q + time * speed.x - p.x - p.y), fbm(p + q - time * speed.y));",
+    "vec3 c = mix(c1, c2, fbm(p + r)) + mix(c3, c4, r.x) - mix(c5, c6, r.y);",
+    "float grad = gl_FragCoord.y / resolution.y;",
+    "gl_FragColor = vec4(c * cos(shift * gl_FragCoord.y / resolution.y), 1.0);",
+    "gl_FragColor.xyz *= 1.0-grad;",
+  "}"
+];
+
+var coolFilter = new PIXI.AbstractFilter(fragmentSrc, uniforms);
+
+var bg = PIXI.Sprite.fromImage("http://www.goodboydigital.com/pixijs/examples/25/test_BG.jpg");
+bg.width = width;
+bg.height = height;
+bg.shader = coolFilter;
+stage.addChild(bg);
+
+var logo = PIXI.Sprite.fromImage("http://www.goodboydigital.com/pixijs/examples/25/pixiJsV2.png");
+logo.x = width / 2;
+logo.y = height / 2;
+logo.anchor.set(0.5);
+logo.blendMode = PIXI.blendModes.ADD;
+stage.addChild(logo);
+
+var count = 0;
+
+function animate() {
+  count += 0.01;
+
+  coolFilter.uniforms.time.value = count;
+  coolFilter.syncUniforms();
+
+  renderer.render(stage);
+
+  requestAnimFrame(animate);
+}
+
+requestAnimFrame(animate);
+</script>
+
+</body>
+
+</html>

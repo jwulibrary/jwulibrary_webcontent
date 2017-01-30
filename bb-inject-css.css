@@ -1,28 +1,33 @@
 .lib-link-btns {
-	margin: 5px 7px 0px 7px;
-	padding: 2px;
+ margin  : 5px 7px 0px 7px;
+ padding : 2px;
 }
 
 .lib-link-title {
-	font-family: Verdana;
-	font-size: 11px;
-	font-weight: bold;
+ font-family : Verdana;
+ font-size   : 11px;
+ font-weight : bold;
 }
 
 .four-link-btn {
-	background-color: rgba(25, 93, 159, 0.68);
-	color: #FFF;
-	padding: 4px 8px;
-	margin: 0px 4px;
-	text-decoration: none !important;
-	font-family: Verdana;
-	font-size: 11px;
-	box-shadow: 2px 2px 3px #888888;
-	-webkit-transition: box-shadow .2s, opacity .2s;
-	transition: box-shadow .2s;
+ margin             : 0px 4px;
+ padding            : 4px 8px;
+ color              : #FFF;
+ background-color   : rgba(25, 93, 159, 0.68);
+ box-shadow         : 2px 2px 3px #888888;
+ text-decoration    : none !important;
+ font-family        : Verdana;
+ font-size          : 11px;
+ -webkit-transition : box-shadow .2s,
+                      opacity .2s;
+ transition         : box-shadow .2s;
 }
 
 .four-link-btn:hover {
-	opacity: .9;
-	box-shadow: 7px 7px 12px #888888;
+ opacity    : .9;
+ box-shadow : 7px 7px 12px #888888;
+}
+
+.request-link-btn {
+ background-color : rgb(145, 144, 149);
 }

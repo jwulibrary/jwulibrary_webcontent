@@ -21,12 +21,30 @@
 			<div class="form-inline">
 				<div id='link_converter' class="form-group">
 					<label for="original_link">Link to Convert:</label>
-					<input type="text" class="form-control" id="original_link">
+					<input type="text" style="width:350px !important;" class="form-control" id="original_link">
 				</div>
 				<button type="submit" onclick="makeLinks()" class="btn btn-primary">Convert!</button>
 			</div>
-			<h4>Example:</h4><em> https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=a9h</em>
-			<em>http://www.rkma.com.jwudenz.idm.oclc.org/jwudenver/b2b16/</em>
+			<em style="font-size:16px;"> Enter the library database, ebook title/chapter, or article link and click convert! </em>
+			<h4>Examples</h4>
+			<ul>
+				<li>
+					<em> https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=a9h</em>
+				</li>
+				<li>
+					<em>http://www.rkma.com.jwudenz.idm.oclc.org/jwudenver/b2b16/</em>
+				</li>
+				<li><em>https://ebookcentral.proquest.com/lib/jwu/detail.action?docID=713724</em></li>
+
+				<!--
+				<li><em>https://jwupvdz.idm.oclc.org/login?url=http://infotrac.galegroup.com/itweb/prov43712?db=BIC1
+		</em>
+				</li>
+				<li><em>https://jwupvdz.idm.oclc.org/login?url=http://search.proquest.com/wallstreetjournal/advanced?accountid=1363</em>
+				</li>
+				<li>http://ebookcentral.proquest.com/lib/jwu-northmiami-ebooks</li>
+
+			</ul> -->
 
 		</div>
 
@@ -68,6 +86,7 @@
 		for (var campus in linkDict) {
 			linkDict[campus] = linkDict[campus].replace(/nmiz|denz|pvdz|cltz/, campus);
 
+			//rkma fix
 			if (linkDict[campus].includes("rkma.com")) {
 				url_swap = {
 					'cltz': '/jwucharlotte/',
@@ -75,11 +94,52 @@
 					'nmiz': '/jwunorthmiami/',
 					'pvdz': '/jwu/'
 				};
-
 			};
-			if (url_swap){
-			var regexp = new RegExp("(" + url_swap['cltz'] + ")|(" + url_swap['denz'] + ")|(" + url_swap['nmiz'] + ")|(" + url_swap['pvdz'] + ")");
-			linkDict[campus] = linkDict[campus].replace(regexp, url_swap[campus]);}
+
+			// Gale Fix
+			if (linkDict[campus].includes("gale")) {
+				url_swap = {
+					'cltz': 'prov43712',
+					'denz': 'denv8636',
+					'nmiz': 'nort5426',
+					'pvdz': 'prov43712'
+				};
+			};
+
+			// Proquest Fix
+			if (linkDict[campus].includes("proquest")) {
+				url_swap = {
+					'cltz': 'accountid=151086',
+					'denz': 'accountid=187070',
+					'nmiz': 'accountid=187069',
+					'pvdz': 'accountid=1363'
+				};
+			};
+			//credo
+			if (linkDict[campus].includes("credo")) {
+				url_swap = {
+					'cltz': 'institutionId=8948',
+					'denz': 'institutionId=8946',
+					'nmiz': 'institutionId=8947',
+					'pvdz': 'institutionId=4944'
+				};
+			};
+			//ebrary
+			if (linkDict[campus].includes("ebookcentral")) {
+				url_swap = {
+					'cltz': 'ebookcentral.proquest.com/lib/jwucharlotte-ebooks',
+					'denz': 'ebookcentral.proquest.com/lib/jwu-denver-ebooks',
+					'nmiz': 'ebookcentral.proquest.com/lib/jwu-northmiami-ebooks',
+					'pvdz': 'ebookcentral.proquest.com/lib/jwu'
+				};
+			};
+
+
+
+			if (typeof url_swap !== 'undefined') {
+				var regexp = new RegExp("(" + url_swap['cltz'] + ")|(" + url_swap['denz'] + ")|(" + url_swap['nmiz'] + ")|(" + url_swap['pvdz'] + ")");
+				linkDict[campus] = linkDict[campus].replace(regexp, url_swap[campus]);
+			};
 
 
 
