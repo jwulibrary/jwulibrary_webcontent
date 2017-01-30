@@ -10,7 +10,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-	<title>Link Convert</title>
+	<title>Link Converter</title>
 </head>
 
 <body>
@@ -25,6 +25,9 @@
 				</div>
 				<button type="submit" onclick="makeLinks()" class="btn btn-primary">Convert!</button>
 			</div>
+			<h4>Example:</h4><em> https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=a9h</em>
+			<em>http://www.rkma.com.jwudenz.idm.oclc.org/jwudenver/b2b16/</em>
+
 		</div>
 
 
@@ -64,7 +67,23 @@
 		//
 		for (var campus in linkDict) {
 			linkDict[campus] = linkDict[campus].replace(/nmiz|denz|pvdz|cltz/, campus);
-		
+
+			if (linkDict[campus].includes("rkma.com")) {
+				url_swap = {
+					'cltz': '/jwucharlotte/',
+					'denz': '/jwudenver/',
+					'nmiz': '/jwunorthmiami/',
+					'pvdz': '/jwu/'
+				};
+
+			};
+			if (url_swap){
+			var regexp = new RegExp("(" + url_swap['cltz'] + ")|(" + url_swap['denz'] + ")|(" + url_swap['nmiz'] + ")|(" + url_swap['pvdz'] + ")");
+			linkDict[campus] = linkDict[campus].replace(regexp, url_swap[campus]);}
+
+
+
+
 
 
 		};
