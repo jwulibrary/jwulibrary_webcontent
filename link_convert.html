@@ -1,6 +1,5 @@
 <!-- Link converter. Takes any 4 campus link and creates output with links for all 4 campuses. -->
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,11 +8,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
 	<title>Link Converter</title>
 </head>
-
 <body>
+
+
+	<style type='css'>
+	#convert-button{
+		background-color: #c3102f;
+	}
+
+	</style>
 
 	<!-- INPUT FORM -->
 	<div class="container">
@@ -23,7 +28,7 @@
 					<label for="original_link">Link to Convert:</label>
 					<input type="text" style="width:350px !important;" class="form-control" id="original_link">
 				</div>
-				<button type="submit" onclick="makeLinks()" class="btn btn-primary">Convert!</button>
+				<button id='convert-button' type="submit" onclick="makeLinks(); var val = document.getElementById('original_link').value; ga('send', 'event', 'libguides',  'linkconverter', val);" class="btn btn-primary">Convert!</button>
 			</div>
 			<em style="font-size:16px;"> Enter the library database, ebook title/chapter, or article link and click convert! </em>
 			<h4>Examples</h4>
@@ -35,20 +40,17 @@
 					<em>http://www.rkma.com.jwudenz.idm.oclc.org/jwudenver/b2b16/</em>
 				</li>
 				<li><em>https://ebookcentral.proquest.com/lib/jwu/detail.action?docID=713724</em></li>
-
 				<!--
+				<li><em>https://jwupvdz.idm.oclc.org/login?url=http://fod.infobase.com/PortalPlaylists.aspx?wID=99165&xtid=40438</em></li>
+
 				<li><em>https://jwupvdz.idm.oclc.org/login?url=http://infotrac.galegroup.com/itweb/prov43712?db=BIC1
 		</em>
 				</li>
 				<li><em>https://jwupvdz.idm.oclc.org/login?url=http://search.proquest.com/wallstreetjournal/advanced?accountid=1363</em>
 				</li>
 				<li>http://ebookcentral.proquest.com/lib/jwu-northmiami-ebooks</li>
-
 			</ul> -->
-
 		</div>
-
-
 		<!-- OUTPUT FIELDS -->
 		<div id="link_output_fields">
 			<div id='cltz' class="row">
@@ -65,143 +67,132 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		// Return 4 links
+		function convertLinks(origLink) {
+			// takes any 4-campus link, outputs dict in format {'pvd_link' : 'newlinkhtml.etc'}
+			linkDict = {
+				'cltz': origLink,
+				'denz': origLink,
+				'nmiz': origLink,
+				'pvdz': origLink
+			};
+			//
+			for (var campus in linkDict) {
+				linkDict[campus] = linkDict[campus].replace(/nmiz|denz|pvdz|cltz/, campus);
+				//rkma fix
+				if (linkDict[campus].includes("rkma.com")) {
+					url_swap = {
+						'cltz': '/jwucharlotte/',
+						'denz': '/jwudenver/',
+						'nmiz': '/jwunorthmiami/',
+						'pvdz': '/jwu/'
+					};
+				};
+				// Gale Fix
+				if (linkDict[campus].includes("gale")) {
+					url_swap = {
+						'cltz': 'prov43712',
+						'denz': 'denv8636',
+						'nmiz': 'nort5426',
+						'pvdz': 'prov43712'
+					};
+				};
+				// Proquest Fix
+				if (linkDict[campus].includes("proquest")) {
+					url_swap = {
+						'cltz': 'accountid=151086',
+						'denz': 'accountid=187070',
+						'nmiz': 'accountid=187069',
+						'pvdz': 'accountid=1363'
+					};
+				};
+				//credo
+				if (linkDict[campus].includes("credo")) {
+					url_swap = {
+						'cltz': 'institutionId=8948',
+						'denz': 'institutionId=8946',
+						'nmiz': 'institutionId=8947',
+						'pvdz': 'institutionId=4944'
+					};
+				};
+				//ebrary
+				if (linkDict[campus].includes("ebookcentral")) {
+					url_swap = {
+						'cltz': 'ebookcentral.proquest.com/lib/jwucharlotte-ebooks',
+						'denz': 'ebookcentral.proquest.com/lib/jwu-denver-ebooks',
+						'nmiz': 'ebookcentral.proquest.com/lib/jwu-northmiami-ebooks',
+						'pvdz': 'ebookcentral.proquest.com/lib/jwu'
+					};
+				};
+				// Films on demand
+				if (linkDict[campus].includes("fod.infobase")) {
+					url_swap = {
+						'cltz': 'wID=239260',
+						'denz': 'wID=240032',
+						'nmiz': 'wID=238548',
+						'pvdz': 'wID=99165'
+					};
+				};
+				// Fix Global Road Warrior
+				if (linkDict[campus].includes("globalroadwarrior")) {
+					url_swap = {
+						'cltz': 'c=jwuclt',
+						'denz': 'c=jwuden',
+						'nmiz': 'c=jwunmi',
+						'pvdz': 'c=jwu'
+					};
+				};
+				if (typeof url_swap !== 'undefined') {
+					var regexp = new RegExp("(" + url_swap['cltz'] + ")|(" + url_swap['denz'] + ")|(" + url_swap['nmiz'] + ")|(" + url_swap['pvdz'] + ")");
+					linkDict[campus] = linkDict[campus].replace(regexp, url_swap[campus]);
+				};
 
+			};
+			return linkDict;
+		};
 
+		function makeLinks() {
+			// clear created links
+			outputFields = document.querySelectorAll('#link_output_fields')[0];
+			oldLinks = document.querySelectorAll('.generated_link');
+			//oldLinks.parentNode.removeChild(oldLinks);
+			oldLinks.forEach(function(oldLink, i) {
+				oldLink.parentNode.removeChild(oldLink);
+			});
+			// Get Link
+			origLinkObj = document.querySelectorAll('#original_link')[0];
+			origLink = origLinkObj.value;
+			// Send link to parser, returns four items
+			output = convertLinks(origLink);
+			// Output links in fields
+			// Dummy links
+			dummy_output = {
+				'cltz': 'http://www.rkma.com.jwucltz.idm.oclc.org/jwucharlotte/b2b16/',
+				'denz': 'http://www.rkma.com.jwudenz.idm.oclc.org/jwudenver/b2b16/',
+				'nmiz': 'http://www.rkma.com.jwunmiz.idm.oclc.org/jwunorthmiami/b2b16/',
+				'pvdz': 'http://www.rkma.com.jwupvdz.idm.oclc.org/jwu/b2b16/'
+			};
+			link_output = dummy_output;
+			// Get real link output
+			link_output = output;
+			// put links in boxes by idea in order clt,den,nmi, pvd
+			outputFields = document.querySelectorAll('#link_output_fields')[0];
+			for (var prop in link_output) {
+				// output to fields
+				outField = outputFields.querySelector('#' + prop);
+				newLink = document.createElement('a');
+				newLink.href = link_output[prop];
+				newLink.text = link_output[prop];
+				if (newLink.classList)
+					newLink.classList.add('generated_link');
+				else
+					newLink.className += ' ' + 'generated_link';
+				outField.append(newLink);
+
+			};
+		}
+	</script>
 </body>
-
-<script>
-	// Return 4 links
-
-	function convertLinks(origLink) {
-		// takes any 4-campus link, outputs dict in format {'pvd_link' : 'newlinkhtml.etc'}
-		linkDict = {
-			'cltz': origLink,
-			'denz': origLink,
-			'nmiz': origLink,
-			'pvdz': origLink
-		};
-
-
-		//
-		for (var campus in linkDict) {
-			linkDict[campus] = linkDict[campus].replace(/nmiz|denz|pvdz|cltz/, campus);
-
-			//rkma fix
-			if (linkDict[campus].includes("rkma.com")) {
-				url_swap = {
-					'cltz': '/jwucharlotte/',
-					'denz': '/jwudenver/',
-					'nmiz': '/jwunorthmiami/',
-					'pvdz': '/jwu/'
-				};
-			};
-
-			// Gale Fix
-			if (linkDict[campus].includes("gale")) {
-				url_swap = {
-					'cltz': 'prov43712',
-					'denz': 'denv8636',
-					'nmiz': 'nort5426',
-					'pvdz': 'prov43712'
-				};
-			};
-
-			// Proquest Fix
-			if (linkDict[campus].includes("proquest")) {
-				url_swap = {
-					'cltz': 'accountid=151086',
-					'denz': 'accountid=187070',
-					'nmiz': 'accountid=187069',
-					'pvdz': 'accountid=1363'
-				};
-			};
-			//credo
-			if (linkDict[campus].includes("credo")) {
-				url_swap = {
-					'cltz': 'institutionId=8948',
-					'denz': 'institutionId=8946',
-					'nmiz': 'institutionId=8947',
-					'pvdz': 'institutionId=4944'
-				};
-			};
-			//ebrary
-			if (linkDict[campus].includes("ebookcentral")) {
-				url_swap = {
-					'cltz': 'ebookcentral.proquest.com/lib/jwucharlotte-ebooks',
-					'denz': 'ebookcentral.proquest.com/lib/jwu-denver-ebooks',
-					'nmiz': 'ebookcentral.proquest.com/lib/jwu-northmiami-ebooks',
-					'pvdz': 'ebookcentral.proquest.com/lib/jwu'
-				};
-			};
-
-
-
-			if (typeof url_swap !== 'undefined') {
-				var regexp = new RegExp("(" + url_swap['cltz'] + ")|(" + url_swap['denz'] + ")|(" + url_swap['nmiz'] + ")|(" + url_swap['pvdz'] + ")");
-				linkDict[campus] = linkDict[campus].replace(regexp, url_swap[campus]);
-			};
-
-
-
-
-
-
-		};
-
-
-		return linkDict;
-	};
-
-
-
-
-
-	function makeLinks() {
-		// clear created links
-		outputFields = document.querySelectorAll('#link_output_fields')[0];
-		oldLinks = document.querySelectorAll('.generated_link');
-		//oldLinks.parentNode.removeChild(oldLinks);
-		oldLinks.forEach(function(oldLink, i) {
-			oldLink.parentNode.removeChild(oldLink);
-
-		});
-		// Get Link
-		origLinkObj = document.querySelectorAll('#original_link')[0];
-		origLink = origLinkObj.value;
-		// Send link to parser, returns four items
-		output = convertLinks(origLink);
-		// Output links in fields
-		// Dummy links
-		dummy_output = {
-			'cltz': 'http://www.rkma.com.jwucltz.idm.oclc.org/jwucharlotte/b2b16/',
-			'denz': 'http://www.rkma.com.jwudenz.idm.oclc.org/jwudenver/b2b16/',
-			'nmiz': 'http://www.rkma.com.jwunmiz.idm.oclc.org/jwunorthmiami/b2b16/',
-			'pvdz': 'http://www.rkma.com.jwupvdz.idm.oclc.org/jwu/b2b16/'
-		};
-		link_output = dummy_output;
-		// Get real link output
-		link_output = output;
-		// put links in boxes by idea in order clt,den,nmi, pvd
-		outputFields = document.querySelectorAll('#link_output_fields')[0];
-		for (var prop in link_output) {
-			// output to fields
-			outField = outputFields.querySelector('#' + prop);
-			newLink = document.createElement('a');
-			newLink.href = link_output[prop];
-			newLink.text = link_output[prop];
-			if (newLink.classList)
-				newLink.classList.add('generated_link');
-			else
-				newLink.className += ' ' + 'generated_link';
-			outField.append(newLink);
-
-
-
-
-
-		};
-
-	}
-</script>
 
 </html>
