@@ -6,13 +6,26 @@
 - add ebrary title lookup upon failure
 - try webhook for request article
 */
+if (!String.prototype.includes) {
+  String.prototype.includes = function(search, start) {
+    'use strict';
+    if (typeof start !== 'number') {
+      start = 0;
+    }
 
+    if (start + search.length > this.length) {
+      return false;
+    } else {
+      return this.indexOf(search, start) !== -1;
+    }
+  };
+}
 function libraryLinkFix() {
     var campusRegexp = /(nmiz|denz|pvdz|cltz)/;
     var campuses = ['pvdz', 'cltz', 'nmiz', 'denz'];
     var links = document.querySelectorAll('a');
+    Array.prototype.forEach.call(links, function(pageLink, i){
 
-    links.forEach(function(pageLink, i) {
         if (campusRegexp.test(pageLink.href) || pageLink.href.includes('ebookcentral')) {
             // Create link wrapper, add title
             //pageLink.href = pageLink.href.toLowerCase();
@@ -26,7 +39,7 @@ function libraryLinkFix() {
             var match = campusRegexp.exec(pageLink.href)
             var origLink = pageLink.href;
             // iterate over campuses
-            campuses.forEach(function(campus, i) {
+            Array.prototype.forEach.call(campuses, function(campus, i){
                 // Make some function-level functions and variables
                 // Function to generate missing article message (DRY, etc)
                 function makeMissingArticleMsg() {
@@ -141,7 +154,8 @@ function libraryLinkFix() {
 
     // Films on Demand Video Widget check and replace
     var iframes = document.querySelectorAll('iframe');
-    iframes.forEach(function(frame, i) {
+    Array.prototype.forEach.call(iframes, function(frame, i){
+
 
         if (frame.src.includes('fod.infobase.com/OnDemandEmbed')) {
             var vidSrc = frame.src;
@@ -163,16 +177,18 @@ function libraryLinkFix() {
 
             // Now create links to popout to external campus-specific video
             var vidLinks = document.createElement('div');
-            campuses.forEach(function(campus, i) {
+            Array.prototype.forEach.call(campuses, function(campus, i){
+
+
                 var newLink = document.createElement('a');
                 newLink.textContent = 'Open Video: ' + campus.replace('z', '').toUpperCase();
                 newLink.href = vidSrc;
-                console.log(vidSrc);
+
                 newLink.href = vidSrc.replace(/nmiz|denz|pvdz|cltz/, campus);
                 fodLinkFrags = {'cltz':'wID=239260', 'denz' :'wID=240032', 'nmiz': 'wID=238548', 'pvdz':'wID=99165'};
                 newLink.href = newLink.href.replace(/wID=239260|wID=240032|wID=238548|wID=99165/, fodLinkFrags[campus]);
                 //newLink.href.replace
-                console.log(fodLinkFrags[campus]);
+
                 newLink.target = "_blank";
                 if (newLink.classList)
                     newLink.classList.add('four-link-btn');
