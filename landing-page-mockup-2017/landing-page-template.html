@@ -28,7 +28,8 @@ only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<link href="https://fonts.googleapis.com/css?family=Audiowide|Exo+2|Open+Sans:400|Roboto:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Exo+2|Open+Sans:400,700,800|Roboto:300" rel="stylesheet">
+
     <link rel="stylesheet" href="jwulib-template.css">
 
     <!--LOCAL CSS...to be included in master CSS eventually-->
@@ -54,6 +55,7 @@ font-family: "open sans",sans-serif;
     line-height: 24px;
     font-size:1.1em;
 }
+
 #content{
     max-width:1280px;
     padding-left: 32px;
@@ -146,17 +148,25 @@ a{
 }
 
 .img-fluid.infographic{
-    max-width:300px;
-  
+    max-width:200px;
+     display: block;
+    margin: 0 auto;
 }
 .infographic-row{
     padding:1em 5em 1em 5em;
-     font-size:1em;
+     font-size:.8em;
+
 }
-p.infographic-caption{
+.infographic-row p{
     color:#22409A;
-    font-weight: bold;
-   
+    font-weight: 700;
+text-transform: uppercase;   
+  line-height: 1.3em !important;
+     text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    padding-left:0em;
+    padding-top:.7em;
 }
 </style>
 
@@ -208,24 +218,38 @@ p.infographic-caption{
         </div>
         <div class="col-xs-12 col-md-4">
 
-            <div class="row infographic-row">
+            <<!-- div class="row infographic-row">
                 <img class="img-fluid infographic" src="https://www1.jwu.edu/img/JWU-Award-Money-Mag-Best-Colleges450x300.jpg" title="JWU’s Money magazine best colleges award." alt="JWU’s Money magazine best colleges award.">
             </div>
             <div class="row infographic-row">
-                <img class="img-fluid infographic" src="https://www1.jwu.edu/img/INFO_FinAid450x300.png" title="JWU has taken proactive steps to manage student debt by increasing institutional aid" alt="Infographic: More than 92% of JWU students receive institutional scholarships and/or grants from the university">
+                <img class="img-fluid infographic" src="https://www1.jwu.edu/img/INFO_FinAid450x300.png" >
+            </div> -->
+                   <div class="row infographic-row">
+               <div class="col-xs-12">
+                    <img class="img-fluid infographic" src="hour_count.jpg" title="" alt="">
+               </div>
+          
+            <div class="col-xs-12">
+                <p class='infographic-caption'>Hours open a week (Providence Campus, during the academic year. Other campuses' hours vary.</p>
             </div>
+              </div>
             <div class="row infographic-row">
-                <img class="img-fluid infographic" src="helin.jpg" title="JWU has taken proactive steps to manage student debt by increasing institutional aid" alt="Infographic: More than 92% of JWU students receive institutional scholarships and/or grants from the university">
+               <div class="col-xs-12">
+                    <img class="img-fluid infographic" src="helin.jpg" title="" alt="">
+               </div>
+          
+            <div class="col-xs-12">
+                <p class='infographic-caption'>Students can borrow books and other materials from any library in the HELIN Consortium</p>
             </div>
+              </div>
             <div class="row infographic-row">
+              <div class="col-  xs-12">
+                    <img class="img-fluid infographic" src="lynda-logo-300x300.png">
+                        </div>
+            <div class="col-xs-12">
                 <p class='infographic-caption'>The library provides access to thousands of technology tutorials through Lynda.com</p>
             </div>
-            <div class="row infographic-row">
-                <img class="img-fluid infographic" src="lynda-logo-300x300.png" title="JWU has taken proactive steps to manage student debt by increasing institutional aid" alt="Infographic: More than 92% of JWU students receive institutional scholarships and/or grants from the university">
-            </div>
-            <div class="row infographic-row">
-                <p class='infographic-caption'>The library provides access to thousands of technology tutorials through Lynda.com</p>
-            </div>
+             </div>
         </div>
     </div>
 </div>
