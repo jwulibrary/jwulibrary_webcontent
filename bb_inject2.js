@@ -24,6 +24,21 @@ function libraryLinkFix() {
     var campusRegexp = /(nmiz|denz|pvdz|cltz)/;
     var campuses = ['pvdz', 'cltz', 'nmiz', 'denz'];
     var links = document.querySelectorAll('a');
+
+    // TODO: Strip out links that have class four-link-btn
+    
+
+
+
+
+
+
+
+
+
+
+
+
     Array.prototype.forEach.call(links, function(pageLink, i){
 
         if (campusRegexp.test(pageLink.href) || pageLink.href.includes('ebookcentral')) {
