@@ -39,7 +39,26 @@
 }
 
 .footer-bottom {
-  background : #5987c5;
+  /*background : #5987c5;*/
+  background:#4277bc;
+  padding:.5em;
+}
+
+.footer-social-link, footer-social-link:hover{
+    color:#FFF !important;
+        fill: #FFF;
+}
+
+.footer-social-link svg:hover{
+    opacity:.9;
+    stroke-width:.2;
+    stroke:rgba(0, 74, 145, 0.95098);
+    transition: all 0.5s ease-in;
+}
+
+.footer-social-link button{
+background: none;
+border:none;
 }
 
 #header {
