@@ -1,0 +1,421 @@
+<html>
+<!--TABLE OF CONCENTS:
+  - Dependencies
+  - Footer
+  -->
+<!-- DEPENDENICES-->
+<!--IMPORTANT NOTE on Dependencies...
+only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" media="screen" href="http://jwu-ri.libanswers.com/css282/LibAnswers_public.css" />
+    <script src="http://code.jquery.com/jquery-1.12.2.min.js"></script>
+    <script src="http://jwu-ri.libanswers.com/js282/LibAnswers_public.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/libapps/sites/538/include/libguidesv2-css.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="jwu-libanswers.css">
+    <link rel="stylesheet" href="remodal.css">
+    <link rel="stylesheet" href="remodal-default-theme.css">
+    <script src="remodal.js"></script>
+
+    <!-- bxSlider Javascript file -->
+    <script src="jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="jquery.bxslider.css" rel="stylesheet" />
+    <!--LOCAL CSS...to be included in master CSS eventually-->
+    <link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
+    <script  type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <!--"info card" styles
+-->
+    <div id="jwu-la-header">
+        <div class="jwu-la-header-menu">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-header col-xs-6 col-sm-4 col-lg-3">
+                        <a href="#"><img class="jwu-la-header-logo" src="library-identifier-whiteandorange.svg"></a>
+                    </div>
+                    <div class="col-xs-6 col-sm-8 col-lg-9">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Resources</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Services</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SEARCHBOX-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3">
+                                <h2 id="search-title" class="text-center">Ask Us@ JWULibrary
+                    <span class="new-modal"> <a href="#modal">  <span class="glyphicon glyphicon-question-sign"></span> </a> </span>
+                    <span id="cubify-btn"> <a href="#cubify">  <span class="glyphicon glyphicon-question-sign"></span> </a> </span>
+
+                    <div class="remodal" data-remodal-id="modal">
+                      <button data-remodal-action="close" class="remodal-close"></button>
+                      <h1>NEW MODAL TEST</h1>
+                  <div class="row">What this is, how to use it, etc. etc.</div>
+            <img src="https://unsplash.it/500/400/?random" />
+                    <div class="row">Stuff to include in the modal</div>
+                    <div class="row">More stuff to include in the modal</div>
+                    </div>
+
+                    </h2>
+                                <form method="get" role="search" name="s-la-searchform" id="s-la-searchform-1926" action="http://jwu-ri.libanswers.com/search/" aria-labelledby="s-la-content-search-query-1926">
+                                    <div id="custom-search-input">
+                                        <div class="input-group col-md-12">
+                                            <input  id="libanswers-search-box" type="text" class="form-control input-lg" name="q" placeholder="Search for Answers" />
+                                            <span class="input-group-btn"> <button class="btn btn-info btn-lg" type="submit"> <i class="glyphicon glyphicon-search"></i> </button></span>
+                                            <span class="input-group-btn"> <a class="btn btn-info btn-lg" onclick="randomQ()"> <i class="glyphicon glyphicon-random"></i> </a></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="faq-splash">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <a id="browse-button" class="col-xs-4  col-xs-offset-4 text-center" href="#"> Browse FAQs </a>
+
+    </div>
+
+    <div name="topic-jump" id="topic-wrap" class="container-fluid">
+        <div class="row">
+            <ul class="bxslider">
+                <li>
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
+                            <div class="[ info-card-header ]">
+                                <h1> Online Students </h1>
+                            </div>
+                            <figure class="moon"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/405/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                    <iframe width="200" height="150" src="https://www.youtube.com/embed/zLLjD6Zhh_c" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
+                            <div class="[ info-card-header ]">
+                                <h1>Library Info</h1>
+                            </div>
+                            <figure class="1977"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/403/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div id="library-info-card-detail" class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div id="university-info-card" class="[ info-card ]">
+                            <div class="[ info-card-header ]">
+                                <h1>University Info</h1>
+                            </div>
+                            <figure class="Walden">
+                                <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/401/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div id="university-info-card-detail" class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
+                            <div class="[ info-card-header ]">
+                                <h1>Textbooks</h1>
+                            </div>
+                            <figure class="earlybird"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div id="textbook-info-card-detail" class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
+                            <div class="[ info-card-header ]">
+                                <h1> Study Rooms </h1>
+                            </div>
+                            <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/401/?random" />
+                            <div class="[ info-card-details ] animate">
+                                <div id="studyroom-info-card-detail" class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
+                            <div class="[ info-card-header ]">
+                                <h1>Research Help</h1>
+                            </div>
+                            <figure class="aden"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/402/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div id="researchbasics-info-card-detail" class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
+                            <div class="[ info-card-header ]">
+                                <h1>TBD</h1>
+                            </div>
+                            <img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/400/?random" />
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="[ col-sm-6 col-md-3 col-lg-3]">
+                        <div class="[ info-card ]">
+                            <div class="[ info-card-header ]">
+                                <h1>TBD2</h1>
+                            </div>
+                            <figure class="toaster"><img class="img-info-card" style="width: 100%" src="https://unsplash.it/300/403/?random" />
+                            </figure>
+                            <div class="[ info-card-details ] animate">
+                                <div class="[ info-card-detail ] info-detail">
+                                    <div class="row topic-link-wrap"></div>
+                                    <div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+                                    <!-- Description -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="contact-us-box" class="col-sm-12 col-md-6">
+                <h3 class="text-center">Contact Us</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="well well-sm">
+                                <form class="form-horizontal" action="" method="post">
+                                    <fieldset>
+
+                                        <!-- Name input-->
+                                        <div class="row">
+                                            <div class="form-group col-xs-6">
+                                                <label class="col-md-3 control-label" for="name">Name</label>
+                                                <div class="col-md-9">
+                                                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                                                </div>
+                                            </div>
+                                            <!-- Email input-->
+                                            <div class="form-group col-xs-6">
+                                                <label class="col-md-3 control-label" for="email">E-mail</label>
+                                                <div class="col-md-9">
+                                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Message body -->
+                                        <div class="row">
+                                            <div class="form-group col-xs-12">
+                                                <label style="text-align:left" class="col-md-3 control-label" for="message">Question</label>
+                                                <div class="col-md-9">
+                                                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                                                </div>
+                                            </div>
+                                            <!-- Form actions -->
+                                            <div class="form-group col-xs-2">
+                                                <div class="col-md-12 text-right">
+                                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="chat-box" class="col-md-3 col-sm-6 col-xs-12">
+                <h3>Chat</h3>
+                <!-- Place this div in your web page where you want your chat widget to appear. -->
+                <div class="needs-js">chat loading...</div>
+                <!-- Place this script as near to the end of your BODY as possible. -->
+                <script type="text/javascript">
+                    (function() {
+                        var x = document.createElement("script");
+                        x.type = "text/javascript";
+                        x.async = true;
+                        x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?10840";
+                        var y = document.getElementsByTagName("script")[0];
+                        y.parentNode.insertBefore(x, y);
+                    })();
+                </script>
+            </div>
+            <div id="hours-box" class="col-sm-6 col-md-3 col-xs-12">
+                <h3>Hours</h3>
+                <div id="hours-wrap" class="container-fluid librarybox">
+                    <div class="row">
+                        <div class="homepage-box" id="homepage-hours">
+                            <div id="api_hours_today_iid1433_lid0">
+                                <table class="hours-today">
+                                    <tbody>
+                                        <tr class="hours-alt hours-today-row hours-library loc1898">
+                                            <td class="hours-col-loc">Downcity Library</td>
+                                            <td class="hours-col-time"><span class="s-lc-time">7:30am – 12am</span></td>
+                                        </tr>
+                                        <tr class="hours-row hours-today-row hours-library loc1899">
+                                            <td class="hours-col-loc">Harborside Library</td>
+                                            <td class="hours-col-time"><span class="s-lc-time">7:30am – 12am</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <script src="https://api3.libcal.com/api_hours_today.php?iid=1433&amp;lid=0&amp;format=js&amp;context=object">
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a href="http://jwu-ri.libcal.com/hours/">View all hours</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="jwu-la-footer" class="container-fluid">
+        <div class="jwu-la-footer-top row">
+            <div class="jwu-la-footer-info col-sm-4">
+                <a class="jwu-la-footer-logo" href="/">
+                    <img src="JWULogo-White.svg" alt="JWU Logo" />
+                </a>
+                <div class="jwu-la-footer-contact">
+                    <div class="jwu-la-footer-contact-group">
+                        <p>Downcity Library:</p>
+                        <p>111 Dorrance Street Providence, Rhode Island 02903</p>
+                        <p>401-598-1121</p>
+                    </div>
+                    <div class="jwu-la-footer-contact-group">
+                        <p>Harborside Library:</p>
+                        <p>321 Harborside Boulevard Providence, RI 02905</p>
+                        <p>401-598-1466</p>
+                    </div>
+                </div>
+            </div>
+            <div class="jwu-la-footer-links col-xs-12 col-sm-8">
+                <div class="row">
+                    <ul class="jwu-la-footer-nav col-md-3 col-sm-5 col-xs-12">
+                        <li> <a href="http://jwu-ri.libanswers.com/a.php?qid=3690">Location and Directions</a> </li>
+                        <li> <a href="https://jwu-ri.libanswers.com/faq/141908">Off-Campus Access</a> </li>
+                        <li> <a href="http://jwu-ri.libanswers.com/a.php?qid=17269">Staff Directory</a></li>
+                        <li> <a href="http://jwu-ri.libcal.com/hours/">Hours</a> </li>
+                    </ul>
+                    <ul class="jwu-la-footer-nav col-md-3 col-sm-5 col-xs-12">
+                        <li> <a href="http://jwu-ri.libanswers.com/">FAQ</a></li>
+                        <li> <a href="http://pvd.library.jwu.edu/homepage#">Chat with a Librarian</a></li>
+                        <li><a href="http://pvd.library.jwu.edu/tutorials/libraryvideos">Tutorials</a></li>
+                        <li> <a href="http://pvd.library.jwu.edu/reserves">Course Reserves</a> </li>
+                        <li> <a href="http://jwu-ri.libanswers.com/a.php?qid=7831">Interlibrary Loan (ILL)</a> </li>
+                        <li> <a href="http://pvd.library.jwu.edu/writinglab">Writing Lab</a></li>
+                    </ul>
+                    <ul class="jwu-la-footer-nav col-md-3 col-sm-5 col-xs-12">
+                        <li> <a href="http://pvd.library.jwu.edu/az.php">Databases</a> </li>
+                        <li> <a href="https://jwupvd.on.worldcat.org/advancedsearch">Catalog</a> </li>
+                        <li> <a href="https://jwupvd.on.worldcat.org/atoztitles/#journal">Journals</a> </li>
+                        <li> <a href="http://library.uri.edu/patroninfo">My Account</a></li>
+                        <li> <a href="http://jwu-ri.libcal.com/booking/downcity">Study Rooms</a></li>
+                        <li> <a href="http://jwu-ri.libcal.com/appointments/">Research Appointment</a></li>
+                    </ul>
+                    <ul class="jwu-la-footer-nav  col-md-3 col-sm-5 col-xs-12">
+                        <li> <a href="http://den.library.jwu.edu/">Denver</a> </li>
+                        <li> <a href="http://clt.library.jwu.edu/">Charlotte</a> </li>
+                        <li> <a href="http://nmi.library.jwu.edu/">North Miami</a></li>
+                        <li> <a href="http://pvd.library.jwu.edu/">Providence</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="jwu-la-footer-bottom row">
+        </div>
+    </div>
+
+    <script>
+$(document).ready(function() {
+  libanswerScrape();
+})
+
+$("#browse-button").click(function() {
+    scrollToAnchor("topic-jump");
+});
+    </script>
+
+
+    <script>
+allFaqs=["How can I get access to EasyBib EDU?" , "Do you have any resources to teach me new software or coding languages? What is Lynda.com?" , "What is my library barcode for?" , "What is my library barcode for?" , "What is searched in WorldCat Discovery?" , "What is searched in WorldCat Discovery?" , "How do I search a specific database through WorldCat?" , "How do I find full-text, peer-reviewed articles using WorldCat?" , "How do I search for ebooks in Worldcat?" , "How do I search for journals in Worldcat?" , "What is my professor's email address?" , "What is my professor's email address?" , "How do I use Pubmed to find full-text articles, or request an article through Inter-Library Loan (ILL)?" , "How do I schedule library orientation for faculty/staff?" , "How do I take the 2016 Library Satisfaction Survey?" , "I have a chef's table coming up and need some wooden boards engraved. Where would I go for that?" , "How do I nominate a JWU student for recognition as a good citizen of JWU Library?" , "Do you have a policy for behavior in the library?" , "How do I book an appointment with a Writing Coach at the JWU Writing Lab?" , "Can you tell me where I can find the professional vocabulary in the JWU library web site? I think they are called the ESL word lists?" , "Where do I find the link to the Threshold Achievement Test?" , "May I make an appointment with a librarian to get research help?" , "I need to use the SRDS Local Market Audience Analyst and it doesn't seem to be working." , "My professor wants me to read A Doll's House by Henrik Ibsen. Do you have that online?" , "My instructor wants me to read a book that is on AccessMedicine. How do I get to that?" , "How do I use databases for marketing research?" , "Who do I contact to put items on reserve for my class?" , "How long can I keep my items on reserve?" , "How quickly can my reserve items be processed for circulation?" , "What is the policy for requesting and borrowing library materials from Bryant University?" , "How can I access Clinical Key?" , "I need to view Ch. 8 questions for 9780077525262...do you have that?" , "What is the policy for requesting and borrowing library materials from the University of Rhode Island (URI)?" , "Does the Library have a service policy?" , "Does the library have a technology plan?" , "Can I get academic tutoring at JWU?" , "How do I view library databases being trialed for future consideration?" , "What is the Everything tab (OneSearch)?" , "I have a history paper to do. What database should I use?" , "I'm looking for info about the Master of Science in Physician Assistant Studies program and what resources are available for PA students and faculty." , "How do I write a business plan?" , "Do you have historical information about Johnson & Wales University?" , "I've completed my JWU dissertation and am preparing to publish it. What should I do now?" , "How do I connect my game console to the JWU campus network?" , "I need info about this year's Wildcat Wahoo!" , "How can I search newspapers online? I'm looking for the Boston Globe, Providence Journal, and the Wall Street Journal." , "How do I find resources and databases to use for my project in HOSP3050: Hospitality Strategic Marketing?" , "Where is the library tutorial that teaches me how to find an article in EBSCO and email myself the MLA citation?" , "How do I find a specific source in Lexis Nexis? (including American Jurisprudence and the Rhode Island State Statutes)" , "Why doesn't the library carry a copy of the textbook I need?" , "Where can I find information about graduation ceremonies?" , "I want to read the First Year Reads book.  Do you have it?" , "How do I access the baking and pastry formulas online?" , "Where do students log in to take the Project SAILS Information Literacy Assessment?" , "How can I fix my library account issues when the Library is closed over Winter Break?" , "Where did our mascot, Wildcat Willie, come from? What's the history of the JWU mascot?" , "Do you recommend any citation makers for MLA or APA works cited and references pages?" , "How do I reserve presentation or meeting space on campus?" , "May I bring my class to the library even if we aren’t there for a library instruction session?" , "Do we have access to the Chronicle of Higher Education?" , "Does the library have graphic novels or comic books?" , "I'm having trouble using the ESHA software. How do I save a recipe or an ingredient in The Food Processor?" , "Who are the buildings at Johnson & Wales named for, and why?" , "How do I find the yield or percentage yield for ingredients?" , "How do I get to the Meat Buyer's Guide?" , "How do I use Google Scholar to search for articles?" , "Do you sell school supplies at the library?" , "What is HELIN?" , "What's the Wildcat Welcome? Where do I get info about moving into my residence hall, bus schedules, campus activities, etc.?" , "How do I find industry ratios?" , "How do I find company ratios?" , "I need articles from the New York Times. How can I get them?" , "I'm an online student. How do I find my library barcode?" , "How do I find interviews?" , "What is the library's mission?" , "Does the library have Cornell Hospitality Quarterly or Cornell Hotel and Restaurant Administration Quarterly?" , "How (and when) can I instant message the library?" , "Can I borrow e-books from the JWU Library for use on my e-reader?" , "How do I find information on private companies?" , "Where can I find the Journal of the Academy of Nutrition and Dietetics (was Journal of the American Dietetics Association)?" , "Does the JWU Library have a privacy policy in place for reference questions conducted over Instant Message (IM)?" , "What is the Stillwell Prize?" , "How can I register to vote in Rhode Island?" , "What's the difference between a research article and a review article?" , "What's an annotated bibliography?" , "How much does it cost to park on the street Downcity? When are the hours for meters, and which dates are parking holidays?" , "How do I find biographies?" , "I need articles from the Wall Street Journal. How can I get them?" , "How do I get to the Opposing Viewpoints database?" , "I heard you have a Starbucks at the Downcity Library now! Is that true?" , "Where can I find food culture information?" , "How do I get to the JWU library web site?" , "Is there a commuter lounge at JWU?" , "Which databases does the Articles & Journals tab search?" , "Where can I find information on green marketing, green consumerism, companies' sustainability policies, and related topics?" , "How much money did people make in the past? What did goods and services cost?" , "What's the value of the dollar against foreign currencies?" , "Where can I find information on online social networking and its impacts, both positive and negative?" , "What does this word mean? I need a definition of a concept." , "Where can I find information about sustainability?" , "As an instructor, may I legally copy and distribute copyrighted material to my students?" , "Where do I go to sign up for internships?" , "How do I find biographies of corporate CEOs?" , "How can I post a persistent link to an article in a library database?" , "I need to use Women's Wear Daily. Do you have it at the library?" , "How do I check out a book from the library?" , "I need to use the Standard Rate & Data Service (SRDS). Do you have that?" , "How do I find the full-text of an article? I can only see the abstract." , "How do I borrow library books as an online student?" , "I'm a faculty member. How do I put things on reserve for my class?" , "Is the library on Twitter? Can I ask questions on Twitter?" , "Where can I find information on the Federal Reserve? I need current and historical discount rates, and the names of current and former Board Members." , "How can I get a parking pass to park my car on campus?" , "Where can I find out the average GPA of Johnson & Wales students?" , "Where can I find menu templates?" , "Does the library have access to JSTOR?" , "How do I set up the Gale AccessMyLibrary App on my iPhone or Android device?" , "How do I write a resume or cover letter? Is there a way to get help with this?" , "How do I use Turnitin.com?" , "I lost something at the library. Do you have it?" , "How do I find information on groups or associations?" , "I am a staff member, and I want to use request a book from another library, but my barcode is not be recognized. How can I fix this?" , "How do I find product market share information?" , "What are the library's winter break hours?" , "I need to watch a DVD called Shackleton’s Voyage of Endurance for my LEAD2001 class. Do you have it?" , "Where can a graduate student get writing help and tutoring?" , "How do I find empirical articles in the library databases?" , "How do I find primary sources? What is a primary source?" , "How many students are enrolled at JWU? What countries are they from? What ethnicities are represented?" , "How can I find Harvard Business Case Studies? And the Harvard Business Review?" , "Where can I find recipe templates?" , "How do I find travel books or guidebooks for cities or countries? I need something like Fodor's or Lonely Planet." , "What's the maximum number of credits for which you can enroll per term?" , "How do I add money to my laundry card?" , "Where is the BI room? When is my BI? My class is scheduled to be in there." , "How do I get a library card?" , "How can I find jwuLink?" , "Can I eat in the library? Do you allow food or drinks?" , "What are LibGuides? How do I get to them?" , "How do I find information about the residence halls?" , "How do I find a topic for my research paper?" , "Does the library have headphones, a charger, graphing calculator, etc, that I can borrow?" , "How can I contact a library staff member?" , "Can I use my JWU student library card in the summer even if I am not taking classes?" , "Which librarian should I contact if I'm a faculty member in a particular school or department?" , "What's LexisNexis?" , "Can I use the library if I am not a JWU student?" , "Does the library have software available for check out or download?" , "I need information about the Presidents of the United States." , "How do I find information on my research topic?" , "How do I know if a web site is a reliable or credible source? What about using Wikipedia?" , "What's a library database? Why is using it different or better than searching Google?" , "I want to do research on a company. Do you have the databases Business Source Complete or Business & Company Resource Center?" , "What is IBISWorld? Does the library have it?" , "How do I login to the library databases from off campus?" , "What are the gym hours?" , "Why doesn't my JWU ID card give me access to the Yena Center (or the Friedman Center)?" , "How do I print in the library?" , "I'm trying to learn a foreign language. Do you have CDs or language learning software?" , "I need tutoring in one of my classes. Are there tutors on campus?" , "Do you have practice exams, test taking prep books, guides to tests like the GRE, GMAT, PRAXIS, MCAT, LSAT, etc.?" , "How do I find information on graduate schools or programs?" , "What newspapers do you subscribe to?" , "Can I return my book at a JWU library if it's from another HELIN library? Can I return a book I got from Downcity at Harborside & vice versa?" , "Where can I find recipes?" , "I need help citing sources for my paper!" , "How can I learn more about financial ratios?" , "Where can I find industry profiles?" , "How do I find company profiles?" , "What's a SWOT analysis? How do I find one?" , "How can I ask a librarian for help?" , "How do I contact the Library?" , "What is InterLibrary Loan (ILL)? Who can use it? How do I submit an ILL request? Does it cost anything?" , "How do I schedule a library instruction session? I am a faculty member and would like to set up a library session for my class." , "What are CRIARL privileges?" , "Can I reserve the conference room in the library?" , "Where can I find the ScholarsArchive@JWU?" , "I heard you have something called the Scholars Archive or Scholarly Archive. What is that?" , "When is the doctor on campus? How do I contact Health Services?" , "How do I register for classes?" , "What's MRI+, how do I login, and how do I use it?" , "I need to eat on campus! What's on the menu today?" , "How do I get to the English 1020 libguides?" , "How do I contact the bookstore? What are their hours?" , "How much are overdue fines? What do I do about my library fines?" , "How do I get to ulearn?" , "Can I check out a magazine, journal, or newspaper?" , "Can I check out a reference book? What books can't be checked out?" , "Is there a book drop at the library?" , "Does the library have DVDs?" , "How long does a book request take to be delivered to the library? How do I know when my book request arrives?" , "How do I find literary criticism?" , "I need directions to the library." , "Can I ride RIPTA with my student ID?" , "How do I find the Student Handbook & Planner?" , "Where can I find course catalogs?" , "Where's the academic calendar for this year?" , "How do I format references or citations in APA style?" , "What's the Text a Librarian number?" , "Does the library have audiobooks that I can listen to or download?" , "Can I play the TAP CD in the library computers?" , "How do I know if the university is closed or classes are cancelled in bad weather?" , "Can I go to the Brown Libraries? Or request a book from Brown?" , "How many books may I take out?" , "What kind of software is on the library computers?" , "Is your menu collection online?" , "Do you have movies I can watch online?" , "How do I get to the public folders?" , "How do I get Datamonitor (now called MarketLine) reports online from the library?" , "How do I get access to Hoover's?" , "Are there computers in the library?" , "Does the library have copiers?" , "How do I find company income statements or other financial data?" , "Does the library have color printers?" , "How do I find demographics?" , "When does the add/drop period end?" , "What are the deadlines for paying for classes?" , "What is a trade magazine or trade journal?" , "What is a scholarly journal (sometimes called peer reviewed or refereed)?" , "Where is the Center for Academic Support?" , "Where can I find the bus schedule for JWU buses?" , "I am a professor trying to access the library's databases and I can't get in. Is there a problem with my library account?" , "How can I find articles in the library databases?" , "How do I login to library computers? I don't remember how to sign on or what my username and password are." , "How can I renew my Library Account? Or get an account if I don't have one?" , "Where can I find job descriptions? Or career and salary information?" , "Can non-affiliates use the JWU Library?" , "What services are available for JWU alumni?" , "I am not a JWU student.  Can I use a computer at the JWU Library?" , "What's an e-book? What e-books do you have?" , "Is there a limit on the number of books I can request?" , "Can I borrow books from the other Johnson & Wales campuses?" , "How do I access my library account?" , "How do I see what books I’ve checked out?" , "Do you have my textbook? Did my professor put my textbook or anything else on course reserve?" , "Can I check out books from any other libraries?" , "Can I borrow an ethernet cable from the library?" , "Does the library have access to the wireless network?" , "Can I print from my laptop to a printer in the library?" , "Can I print my resume on resume paper at the Library?" , "Can I borrow supplies from the library?" , "I am getting a Forbidden 403 error message when I type in my barcode. What does that mean?" , "What time do the computer labs open and close?" , "Does the Library have a fax machine?" , "Did the book I requested arrive yet?" , "How do I renew my books?" , "Where do I find price sheets?" , "How do I find my book on the shelf?" , "How long can I renew books for?" , "How long can I check out books for?" , "How do I request a book?" , "How do I find dissertations?" , "What is a NAICS code?" , "Do you have any books I can read for fun -- fiction, novels, best sellers? Can I go to the local public library?" , "How do I find books?" , "How can I find information about doing business in and traveling in another country?" , "What textbooks do I need for my classes?" , "How do I access Richard K. Miller market industry reports?" , "Does the library have group study rooms? How do I reserve one?" , "Can you help me with MLA citations and creating a works cited page?" , "Where are the Advertising Redbooks?" , "What's my library barcode number and where do I find it?" , "How can I get a job at the library?" , "Does the library have a scanner?" , "What are the library's hours?" ]
+
+function randomQ(){
+  rQ = allFaqs[Math.floor(Math.random() * allFaqs.length)];
+
+  $("#libanswers-search-box").val(rQ);
+
+
+  }
+
+    </script>
+
+</body>
+</html>
