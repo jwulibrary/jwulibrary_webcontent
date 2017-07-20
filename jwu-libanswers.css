@@ -20,6 +20,18 @@
 
 .footer-links {
 	padding: 4em 0em 0em 1em;
+		text-align: left;
+}
+
+.footer-nav h4{
+	font-family: "open sans", sans-serif;
+	text-align: left;
+	color: #FFF;
+	font-size: 1em;
+	line-height: 1.5;
+	word-wrap: break-word;
+	opacity: 1;
+	font-weight: 800;
 }
 
 .footer-nav a {
@@ -28,7 +40,7 @@
 	font-size: 1em;
 	line-height: 1.5;
 	word-wrap: break-word;
-	opacity: .7;
+	opacity: .9;
 }
 
 .footer-nav a:hover {
@@ -54,9 +66,7 @@
 }
 
 .footer-social-link svg{
-	opacity: .7;
-	stroke-width: .2;
-	transition: all 0.1s ease-out;
+
     height:50px;
     max-width:40px;
 }
@@ -65,7 +75,7 @@
 	opacity: 1;
 	stroke-width: .2;
 	stroke: rgba(0, 74, 145, 0.95098);
-	transition: all 0.5s ease-in;
+
 }
 
 .footer-social-link button {
@@ -93,11 +103,7 @@
 	font-size: 1.2em;
 }
 
-#la-search-wrap {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+
 
 #searchbox-container {
 	margin-top: 3.2em;
@@ -139,15 +145,6 @@
 	font-size: 23px;
 }
 
-#search-title {
-	margin-bottom: .5em;
-	color: #FFF;
-	text-shadow: #000 2px 3px 3px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 4em;
-	font-weight: 900;
-	/* background: rgba(0,74,145,.85); padding: 20px 10px; */
-}
 
 .animate {
 	-moz-transition: all 0.3s ease-in-out;
@@ -239,21 +236,7 @@
 	padding-bottom: 15px;
 }
 
-.info-card .info-card-details .info-card-header h1, .info-card .info-card-details .info-card-header h3 {
-	margin: 0 !important;
-	padding: 0 !important;
-	color: rgb(62, 62, 62);
-	text-transform: uppercase;
-	font-size: 22px;
-	font-weight: 900;
-}
 
-.info-card .info-card-details .info-card-header h3 {
-	margin-top: 5px;
-	color: rgb(142, 182, 52);
-	font-size: 15px;
-	font-weight: 400;
-}
 
 .img-info-card {
 	width: 100%;
@@ -273,29 +256,6 @@
 	font-size: 3em;
 	font-weight: bold;
 	/* max-width: 60%; */
-}
-
-#faq-splash {
-	margin-top: 3em;
-	padding: 1.5em;
-	background: rgba(245, 137, 50, 0.64);
-	text-align: center;
-}
-
-#faq-splash a {
-	margin-top: 2em;
-	padding: 1em;
-	color: #FFF;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.6em;
-	font-style: italic;
-}
-
-#faq-splash:hover {
-	background-color: rgba(245, 137, 50, 0.9);
-	text-decoration: underline;
-	transition: all 0.3s ease-in-out;
 }
 
 #browse-button {
@@ -319,35 +279,6 @@
 	font-size: 1.5em;
 }
 
-.magic-button1 {
-	transition: all 0.5s ease;
-}
-
-.magic-button1:hover {
-	opacity: .9;
-	transform: rotate(37deg) scale(1.2);
-	transition: all 0.5s ease;
-}
-
-.magic-button2 {
-	transition: all 0.5s ease;
-}
-
-.magic-button2:hover {
-	opacity: .9;
-	transform: perspective( 150px) rotateY( 15deg) rotateZ( -25deg);
-	transition: all 0.5s ease;
-}
-
-.magic-button3 {
-	transition: all 0.5s ease;
-}
-
-.magic-button3:hover {
-	opacity: .9;
-	transform: rotateY(130deg);
-	transition: all 0.5s ease;
-}
 
 .magic-button4 {
 	transition: all 0.5s ease;
@@ -360,16 +291,7 @@
 	transition: all 0.5s ease;
 }
 
-.magic-button5 {
-	transition: all 0.5s ease;
-}
 
-.magic-button5:hover {
-	z-index: 9999;
-	opacity: 1;
-	transform: scale(1.2);
-	transition: all 0.5s ease;
-}
 
 #libanswers-search-box {}
 
@@ -471,30 +393,25 @@ input#libanswers-search-box[type=text] {
 	text-decoration: none;
 }
 
-#hours-nav li {
-	color: #FFF;
-}
-
-#hours-nav>a {}
-
-#hours-nav {
-	font-family: "Open Sans";
-}
 
 #hours-nav-alt span {
 	color: #FFF;
+	font-size: .9em;
+
 }
 
-#hours-nav-alt>a {}
 
-#hours-nav-alt {
-	padding: 1em 2em 1em 3em;
+
+#hours-nav-alt >a  {
+	display: inline-block;
+
 	color: #FFF;
 	font-family: "Open Sans";
 	font-size: .9em;
 }
 
 .header2-wrap {
+
 	padding-right: 5em;
 	padding-bottom: 6em;
 	padding-left: 5em;
@@ -606,9 +523,6 @@ input#libanswers-search-box[type=text] {
 
 
 
-#dice-img {
-	width: 1em;
-}
 
 .col-centered {
 	float: none;
@@ -617,11 +531,6 @@ input#libanswers-search-box[type=text] {
 
 .centered-form {
 	margin-top: 60px;
-}
-
-.centered-form .panel {
-	background: rgba(255, 255, 255, 0.8);
-	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
 }
 
 #contact-us-box {
@@ -640,4 +549,20 @@ input#libanswers-search-box[type=text] {
 
 .bot-explanation {
 	font-family: "Audiowide", "Exo 2"
+}
+
+
+
+.svg-social-footer{
+	opacity: .7;
+	stroke-width: .2;
+	transition: all 0.3s ease-out;
+	width:2em;
+}
+
+.svg-social-footer:hover{
+	opacity: 1;
+	width: 2.2em;
+	transition: all .3 ease-out;
+
 }
