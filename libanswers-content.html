@@ -1,0 +1,684 @@
+<html>
+<!--TABLE OF CONCENTS:
+  - Dependencies
+  - <Footer></Footer>
+  -->
+<!-- DEPENDENICES-->
+<!--IMPORTANT NOTE on Dependencies...
+only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! -->
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" media="screen" href="http://jwu-ri.libanswers.com/css2.15.3/LibAnswers_public.css" />
+	<script src="https://v2.libanswers.com/js2.15.3/jquery.min.js"></script>
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+	<script src="http://jwu-ri.libanswers.com/js2.15.3/LibAnswers_public.min.js"></script>
+
+	<link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+
+
+	<link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/libapps/sites/538/include/libguidesv2-css.css">
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/jwulibrary/libanswers/development/jwu-libanswers.css"> -->
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Exo+2|Open+Sans:400|Roboto:300" rel="stylesheet">
+	<link rel="stylesheet" href="jwu-libanswers.css">
+	<link rel="stylesheet" href="remodal.css">
+	<link rel="stylesheet" href="remodal-default-theme.css">
+	<script src="remodal.js"></script>
+	<!--    <link href="https://cdn.rawgit.com/jwulibrary/libanswers/development/headsupgrid/hugrid.css" type="text/css" rel="stylesheet" />
+    <script src="https://cdn.rawgit.com/jwulibrary/libanswers/development/headsupgrid/hugrid.js"></script>
+ -->
+	<!-- bxSlider Javascript file -->
+	<script src="https://cdn.rawgit.com/jwulibrary/libanswers/development/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="https://cdn.rawgit.com/jwulibrary/libanswers/development/jquery.bxslider.css" rel="stylesheet" />
+	<!--LOCAL CSS...to be included in master CSS eventually-->
+	<link rel="stylesheet" href="https://cssgram-cssgram.netdna-ssl.com/cssgram.min.css">
+	<script type="text/javascript" src="main.js"></script>
+	<!-- <script type="text/javascript" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/main.js"></script> -->
+
+
+
+
+
+</head>
+
+<body>
+
+
+	<div id="header">
+
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="row visible-xs  mobile-header-wrap">
+
+					<a href="#"><img class="header-logo img-responsive" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/library-identifier-whiteandorange.svg"></a>
+
+				</div>
+
+				<!-- Brand and toggle get grouped for better mobile display -->
+
+				<div class="row header-menu1">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".to-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                              </button>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+
+								<a href="#" class="dropdown-toggle nav-page-title" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">"How Do I?" (LibAnswers)<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="http://pvd.library.jwu.edu/homepage" target="_blank">Library Home (LibGuides)</a></li>
+									<li><a href="http://jwu-ri.libcal.com/" target="_blank">Reservations and Hours (LibCal)</a></li>
+									<li><a href="http://jwu-ri.libanswers.com/" target="_blank">"How Do I?" (LibAnswers)</a></li>
+
+									<!--  <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>  -->
+								</ul>
+
+							</li>
+							<li id="hours-nav-alt"><a href="http://jwu-ri.libcal.com/hours/" target="_blank"><span class="glyphicon glyphicon-time"></span> <b>Today's Hours </b></a>&nbsp;&nbsp;&nbsp;</li>
+						</ul>
+
+						<ul class="nav navbar-nav navbar-right collapse navbar-collapse to-collapse">
+
+
+							<li class="dropdown ">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-education"></span>  Databases <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="http://pvd.library.jwu.edu/az.php" target="_blank">All Databases</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a href="http://pvd.library.jwu.edu/az.php?s=19278" target="_blank">Business</a></li>
+									<li><a href="http://pvd.library.jwu.edu/az.php?s=79408" target="_blank">Criminal Justice</a></li>
+									<li><a href="http://pvd.library.jwu.edu/az.php?s=79132" target="_blank">General</a></li>
+									<li><a href="http://pvd.library.jwu.edu/az.php?s=19279" target="_blank">Education</a></li>
+									<li><a href="http://pvd.library.jwu.edu/az.php?s=19276" target="_blank">Hospitality</a></li>
+									<li><a href="http://pvd.library.jwu.edu/az.php?s=19295" target="_blank">Marketing</a></li>
+									<li><a href="http://pvd.library.jwu.edu/az.php?s=75458" target="_blank">Psychology</a></li>
+								</ul>
+							</li>
+
+
+							<li>
+								<!-- Place this script as near to the end of your BODY as possible. -->
+
+
+								<a href="https://us.libraryh3lp.com/chat/jwu_prov_vr_1@chat.libraryh3lp.com?skin=27008" target="_blank"><span class="glyphicon glyphicon-comment"></span> Chat</a></li>
+
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+
+
+
+
+
+				<div class="row  collapse navbar-collapse header-menu2 to-collapse">
+					<div class="header2-wrap">
+						<div class="navbar-header col-xs-12  col-sm-12 col-md-2 col-lg-2">
+
+							<a class="navbar-brand hidden-xs " href="http://pvd.library.jwu.edu/homepage" target="_blank"><img class="header-logo" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/library-identifier-whiteandorange.svg"></a>
+						</div>
+						<div id="primary-nav" class="col-xs-12  col-sm-12 col-md-10 col-lg-8 ">
+							<ul class="nav navbar-nav navbar-right">
+								<!--TODO: KELLY LINKS to edit if you feel like it :- ) -->
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span> Find<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'articles') ;" href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=cms&db=mzh&db=ufh"
+											 target="_blank">Articles</a></li>
+										<li><a  onclick="ga('send', 'event', 'header', 'click', 'books') ;"href="https://jwupvd.on.worldcat.org/advancedsearch" target="_blank">Books and Media</a></li>
+										<li><a  onclick="ga('send', 'event', 'header', 'click', 'journals ') ;" href="https://jwupvd.on.worldcat.org/atoztitles/#journal" target="_blank">Journal Titles</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'databases') ;" href="http://pvd.library.jwu.edu/az.php" target="_blank">Databases</a></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'reserves') ;" href="http://pvd.library.jwu.edu/reserves" target="_blank">Course Reserves</a></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'sa') ;" href="http://scholarsarchive.jwu.edu/" target="blank">ScholarsArchive</a></li>
+
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-user"></span> Get Help <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'chat') ;" href="https://us.libraryh3lp.com/chat/jwu_prov_vr_1@chat.libraryh3lp.com?skin=21252" target="_blank">Chat</a></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'appointment') ;" href="http://jwu-ri.libcal.com/appointments/" target="_blank">Research Appointment</a></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'writing_lab') ;" href="http://pvd.library.jwu.edu/writinglab" target="_blank">Writing Lab</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'guides') ;" href="http://pvd.library.jwu.edu/libguides" target="_blank">Research Guides</a></li>
+										<li> <a onclick="ga('send', 'event', 'header', 'click', 'faq') ;" href="http://jwu-ri.libanswers.com/">"How Do I?" (LibAnswers)</a> </li>
+
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'online') ;" href="http://pvd.library.jwu.edu/online/welcome">Online Learners</a></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'tutorials') ;" href="http://pvd.library.jwu.edu/tutorials/libraryvideos" target="_blank">Tutorials</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-pencil"></span> Services <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'account') ;" href="https://jwupvd.on.worldcat.org/myaccount" target="_blank">My Account</a></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'reserves ') ;" href="http://pvd.library.jwu.edu/reserves" target="_blank">Course Reserve</a></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'ill') ;" href="https://jwu-ri.libanswers.com/faq/141890" target="_blank">Interlibrary Loan</a></li>
+										<!--  <li><a href="#">Suggest a Purchase</a></li>
+                                       <li><a href="#">Technology Lending</a></li> -->
+										<li role="separator" class="divider"></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'study_rooms') ;" href="http://jwu-ri.libcal.com/booking/downcity" target="_blank">Study Rooms</a></li>
+
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'contact') ;" href="https://jwu-ri.libanswers.com/faq/141891" target="_blank">Contact Us</a></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'directions') ;" href="https://jwu-ri.libanswers.com/faq/141870?m=p">Directions</a></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'staff') ;" href="https://jwu-ri.libanswers.com/faq/141919" target="_blank">Staff Directory</a></li>
+										<li> <a onclick="ga('send', 'event', 'header', 'click', 'studentjobs') ;" href="http://jwu-ri.libanswers.com/faq/141800">Student Employment</a> </li>
+
+										<li role="separator" class="divider"></li>
+										<li><a onclick="ga('send', 'event', 'header', 'click', 'hours') ;" href="http://jwu-ri.libcal.com/hours/" target="_blank">Hours</a></li>
+										<!--  <li><a href="#">Directories</a></li> -->
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- /.container-fluid -->
+			</div>
+		</nav>
+
+
+
+		<!--SEARCHBOX-->
+		<div id="searchbox-container" class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-centered">
+					<h1 class="splash-title text-center"> <a style="color:#FFF;" href="http://jwu-ri.libanswers.com/"> "How Do I?" @JWULibrary</a> </h1>
+				</div>
+			</div>
+
+
+			<div class="row" id="searchbox">
+				<div class="col-xs-12 col-sm-11 col-md-9 col-lg-8 col-centered">
+					<!-- <h2 id="search-title" class="text-center hidden-xs">How Do I...?
+                    <span class="new-modal"> <a href="#modal">  <span class="glyphicon glyphicon-question-sign magic-button3"></span> </a> </span>
+
+                    <div class="remodal" data-remodal-id="modal">
+                      <button data-remodal-action="close" class="remodal-close"></button>
+                      <h1>NEW MODAL TEST</h1>
+                  <div class="row">What this is, how to use it, etc. etc.</div>
+            <img src="https://unsplash.it/500/400/?random" />
+                    <div class="row">Stuff to include in the modal</div>
+                    <div class="row">More stuff to include in the modal</div>
+                    </div>
+
+                    </h2> -->
+					<form method="get" role="search" name="s-la-searchform" id="s-la-searchform-1926" action="http://jwu-ri.libanswers.com/search/" aria-labelledby="s-la-content-search-query-1926">
+						<div id="custom-search-input">
+							<div class="input-group col-md-12">
+								<!-- <input  id="libanswers-search-box" type="text" class="form-control input-lg" name="q" placeholder="Search for Answers" /> -->
+								<input id="libanswers-search-box" type="text" class="form-control input-lg hidden-xs" name="q" placeholder="Quick Answers to Real Questions (Stuck? Try the dice)" />
+								<input id="libanswers-search-box-mobile" type="text" class=" visible-xs form-control input-lg" name="q" placeholder="Quick Answers" />
+
+								<span class="input-group-btn"> <button class="btn btn-info btn-lg magic-button4" type="submit"> <i class="glyphicon glyphicon-search"></i> </button></span>
+
+								<span class="input-group-btn">
+                                               <a class="btn btn-lg magic-button4" onclick="randomQ()">
+                                            <img width="27px" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/dice2.png">
+
+                                               </a>
+                                               </span>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+
+
+
+			<!-- <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div id="faq-splash" class="magic-button5">
+                        <h5>Sample Question</h5>
+                    </div>
+                </div>
+            </div> -->
+
+
+		</div>
+
+		<a id="browse-button" class=" hidden-xs magic-button4 col-xs-4  col-xs-offset-4 text-center" href="#"> Browse by Topic </a>
+
+	</div>
+
+	<div name="topic-jump" id="topic-wrap" class="container-fluid hidden-xs">
+		<div class="row">
+			<ul class="bxslider">
+				<li>
+					<div class="[ col-sm-6 col-md-3 col-lg-3]">
+						<div class="[ info-card ]">
+							<div class="[ info-card-header ]">
+								<h1> Online Students </h1>
+							</div>
+							<figure class="moon"><img class="img-info-card" style="width: 100%" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/images/online-students.jpg" />
+							</figure>
+							<div class="[ info-card-details ] animate">
+								<div class="[ info-card-detail ] info-detail">
+									<div class="row topic-link-wrap"></div>
+									<div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+									<!-- Description -->
+									<iframe width="200" height="150" src="https://www.youtube.com/embed/zLLjD6Zhh_c" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="[ col-sm-6 col-md-3 col-lg-3]">
+						<div class="[ info-card ]">
+							<div class="[ info-card-header ]">
+								<h1>Library Info</h1>
+							</div>
+							<figure class="1977"><img class="img-info-card" style="width: 100%" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/images/library-info.jpg" />
+							</figure>
+							<div class="[ info-card-details ] animate">
+								<div id="library-info-card-detail" class="[ info-card-detail ] info-detail">
+									<div class="row topic-link-wrap"></div>
+									<div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+									<!-- Description -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="[ col-sm-6 col-md-3 col-lg-3]">
+						<div id="university-info-card" class="[ info-card ]">
+							<div class="[ info-card-header ]">
+								<h1>University Info</h1>
+							</div>
+							<figure class="Walden">
+								<img class="img-info-card" style="width: 100%" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/images/mr_gaebe.jpg" />
+							</figure>
+							<div class="[ info-card-details ] animate">
+								<div id="university-info-card-detail" class="[ info-card-detail ] info-detail">
+									<div class="row topic-link-wrap"></div>
+									<div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+									<!-- Description -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="[ col-sm-6 col-md-3 col-lg-3]">
+						<div class="[ info-card ]">
+							<div class="[ info-card-header ]">
+								<h1>Textbooks</h1>
+							</div>
+							<figure class="earlybird"><img class="img-info-card" style="width: 100%" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/images/textbooks.jpg" />
+							</figure>
+							<div class="[ info-card-details ] animate">
+								<div id="textbook-info-card-detail" class="[ info-card-detail ] info-detail">
+									<div class="row topic-link-wrap"></div>
+									<div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="[ col-sm-6 col-md-3 col-lg-3]">
+						<div class="[ info-card ]">
+							<div class="[ info-card-header ]">
+								<h1> Alumni </h1>
+							</div>
+							<img class="img-info-card" style="width: 100%" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/images/alumni.jpg" />
+							<div class="[ info-card-details ] animate">
+								<div id="studyroom-info-card-detail" class="[ info-card-detail ] info-detail">
+									<div class="row topic-link-wrap"></div>
+									<div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+									<!-- Description -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="[ col-sm-6 col-md-3 col-lg-3]">
+						<div class="[ info-card ]">
+							<div class="[ info-card-header ]">
+								<h1>Research Help</h1>
+							</div>
+							<figure class="aden"><img class="img-info-card" style="width: 100%" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/images/research.jpg" />
+							</figure>
+							<div class="[ info-card-details ] animate">
+								<div id="researchbasics-info-card-detail" class="[ info-card-detail ] info-detail">
+									<div class="row topic-link-wrap"></div>
+									<div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+									<!-- Description -->
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="[ col-sm-6 col-md-3 col-lg-3]">
+						<div class="[ info-card ]">
+							<div class="[ info-card-header ]">
+								<h1>Faculty</h1>
+							</div>
+							<img class="img-info-card" style="width: 100%" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/images/faculty.jpg" />
+							<div class="[ info-card-details ] animate">
+								<div id="faculty-info-card-detail" class="[ info-card-detail ] info-detail">
+									<div class="row topic-link-wrap"></div>
+									<div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+									<!-- Description -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="[ col-sm-6 col-md-3 col-lg-3]">
+						<div class="[ info-card ]">
+							<div class="[ info-card-header ]">
+								<h1>Subject Guides</h1>
+							</div>
+							<figure class="toaster"><img class="img-info-card" style="width: 100%" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/images/subject-guides.jpg" />
+							</figure>
+							<div class="[ info-card-details ] animate">
+								<div id="researchguides-info-card-detail" class="[ info-card-detail ] info-detail">
+									<div class="row topic-link-wrap"></div>
+									<div class="all-faqs-link row"><a href="">View all FAQs</a></div>
+									<!-- Description -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="contact-us-box" class="col-sm-12 col-md-6">
+				<h3 class="text-center">Contact Us</h3>
+				<div class="container-fluid">
+					<div class="row">
+						<script src="http://api2.libanswers.com/1.0/widgets/5248"></script>
+						<div class="col-xs-12" id="s-la-widget-5248"></div>
+						<!-- <div class="col-md-12 ">
+                            <div class="well well-sm">
+                                <form class="form-horizontal" action="" method="post">
+                                    <fieldset>
+
+
+                                        <div class="row">
+                                            <div class="form-group col-xs-6">
+                                                <label class="col-md-3 control-label" for="name">Name</label>
+                                                <div class="col-md-9">
+                                                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group col-xs-6">
+                                                <label class="col-md-3 control-label" for="email">E-mail</label>
+                                                <div class="col-md-9">
+                                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="form-group col-xs-12">
+                                                <label style="text-align:left" class="col-md-3 control-label" for="message">Question</label>
+                                                <div class="col-md-9">
+                                                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group col-xs-2">
+                                                <div class="col-md-12 text-right">
+                                                    <button type="submit" class="  magic-button2 btn btn-primary btn-lg">Submit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div> -->
+					</div>
+				</div>
+			</div>
+			<div id="chat-box" class="col-md-3 col-sm-6 col-xs-12 col-xs-offset-1">
+				<h3 style="font-size:3em; font-family:Audiowide">LibraryBot</h3>
+				<p class="bot-explanation">Article</p>
+				<p class="bot-explanation">Howdoi</p>
+				<p class="bot-explanation">Joke</p>
+				<!-- Place this div in your web page where you want your chat widget to appear. -->
+
+				<!-- Place this div in your web page where you want your chat widget to appear. -->
+				<!-- Place this div in your web page where you want your chat widget to appear. -->
+				<div class="needs-js">chat loading...</div>
+
+				<!-- Place this script as near to the end of your BODY as possible. -->
+				<script type="text/javascript">
+					(function() {
+						var x = document.createElement("script");
+						x.type = "text/javascript";
+						x.async = true;
+						x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?10840";
+						var y = document.getElementsByTagName("script")[0];
+						y.parentNode.insertBefore(x, y);
+					})();
+				</script>
+			</div>
+
+		</div>
+	</div>
+	<div id="footer" class="container-fluid">
+		<div class="footer-top row">
+			<div class="footer-info col-sm-4">
+				<a class="footer-logo" href="https://www.jwu.edu/">
+
+					<!-- <img src="https://cdn.rawgit.com/jwulibrary/libanswers/development/JWULogo-White.svg" alt="JWU Logo" /> -->
+					<img src="https://cdn.rawgit.com/jwulibrary/libanswers/2b3639e1/JWULogo-White.svg" alt="JWU Logo" />
+				</a>
+				<div class="footer-contact">
+					<div class="footer-contact-group">
+						<p>Downcity Library:</p>
+						<p>111 Dorrance Street Providence, Rhode Island 02903</p>
+						<p>401-598-1121</p>
+					</div>
+					<div class="footer-contact-group">
+						<p>Harborside Library:</p>
+						<p>321 Harborside Boulevard Providence, RI 02905</p>
+						<p>401-598-1466</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-links col-xs-12 col-sm-8">
+				<div class="row">
+					<ul class="footer-nav col-md-3 col-sm-5 col-xs-6">
+						<li> <a href="http://jwu-ri.libanswers.com/a.php?qid=3690">Location and Directions</a> </li>
+						<li> <a href="https://jwu-ri.libanswers.com/faq/141908">Off-Campus Access</a> </li>
+						<li> <a href="http://jwu-ri.libanswers.com/a.php?qid=17269">Staff Directory</a></li>
+						<li> <a href="http://jwu-ri.libcal.com/hours/">Hours</a> </li>
+						<li> <a href="http://jwu-ri.libanswers.com/faq/141800">Student Employment</a> </li>
+
+<li> <a href="https://jwulibpvd.afford.com/">Pay Bills and Fines</a> </li>
+
+					</ul>
+					<ul class="footer-nav col-md-3 col-sm-5 col-xs-6">
+						<li> <a href="http://jwu-ri.libanswers.com/">FAQ</a></li>
+						<li> <a href="http://pvd.library.jwu.edu/homepage#">Chat with a Librarian</a></li>
+						<li><a href="http://pvd.library.jwu.edu/tutorials/libraryvideos">Tutorials</a></li>
+						<li> <a href="http://pvd.library.jwu.edu/reserves">Course Reserves</a> </li>
+						<li> <a href="http://jwu-ri.libanswers.com/a.php?qid=7831">Interlibrary Loan (ILL)</a> </li>
+						<li> <a href="http://pvd.library.jwu.edu/writinglab">Writing Lab</a></li>
+					</ul>
+					<ul class="footer-nav col-md-3 col-sm-5 col-xs-6">
+						<li> <a href="http://pvd.library.jwu.edu/az.php">Databases</a> </li>
+						<li> <a href="https://jwupvd.on.worldcat.org/advancedsearch">Catalog</a> </li>
+						<li> <a href="https://jwupvd.on.worldcat.org/atoztitles/#journal">Journals</a> </li>
+						<li> <a href="https://jwupvd.on.worldcat.org/myaccount">My Account</a></li>
+						<li> <a href="http://jwu-ri.libcal.com/booking/downcity">Study Rooms</a></li>
+						<li> <a href="http://jwu-ri.libcal.com/appointments/">Research Appointment</a></li>
+					</ul>
+					<ul class="footer-nav  col-md-3 col-sm-5 col-xs-6">
+						<h4>Locations</h4>
+						<li> <a href="http://culinary.org/">Culinary Museum</a> </li>
+						<li> <a href="http://clt.library.jwu.edu/">Charlotte</a> </li>
+						<li> <a href="http://den.library.jwu.edu/">Denver</a> </li>
+
+						<li> <a href="http://nmi.library.jwu.edu/">North Miami</a></li>
+						<li> <a href="http://pvd.library.jwu.edu/">Providence</a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom row">
+
+
+			<div class="col-xs-10 col-sm-10 col-md-6 col-lg-4 col-xs-offset-1 col-sm-offset-4  col-md-offset-4  col-lg-offset-8    ">
+
+                <div class="row">
+                                    <div class="col-xs-3 col-md-2">
+                                        <a aria-label="Facebook" class="footer-social-link" href="https://www.facebook.com/JWULibrary" target="_blank">
+                            <button>
+                        <svg class='svg-social-footer' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0" fill-rule="nonzero"/></svg>
+
+                            </button>                                        </a>
+                                    </div>
+
+
+                                    <div class="col-xs-3 col-md-2"> <a aria-label="Twitter" class="footer-social-link" href="https://twitter.com/jwulibrary" target="_blank">
+                        <button>
+                        <svg class='svg-social-footer' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z" fill-rule="nonzero"/></svg>
+
+                        </button>                                    </a>
+                                    </div>
+
+                                    <div class="col-xs-3 col-md-2"> <a aria-label="Instagram" class="footer-social-link" href="https://www.instagram.com/jwupvdlibrary" target="_blank">
+                        <button>
+                            <svg class='svg-social-footer' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C5.827 0 5.555.01 4.702.048 3.85.088 3.27.222 2.76.42c-.526.204-.973.478-1.417.923-.445.444-.72.89-.923 1.417-.198.51-.333 1.09-.372 1.942C.008 5.555 0 5.827 0 8s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.204.526.478.973.923 1.417.444.445.89.72 1.417.923.51.198 1.09.333 1.942.372.853.04 1.125.048 3.298.048s2.445-.01 3.298-.048c.852-.04 1.433-.174 1.942-.372.526-.204.973-.478 1.417-.923.445-.444.72-.89.923-1.417.198-.51.333-1.09.372-1.942.04-.853.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.852-.174-1.433-.372-1.942-.204-.526-.478-.973-.923-1.417-.444-.445-.89-.72-1.417-.923-.51-.198-1.09-.333-1.942-.372C10.445.008 10.173 0 8 0zm0 1.44c2.136 0 2.39.01 3.233.048.78.036 1.203.166 1.485.276.374.145.64.318.92.598.28.28.453.546.598.92.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.01 2.39-.05 3.233c-.04.78-.17 1.203-.28 1.485-.15.374-.32.64-.6.92-.28.28-.55.453-.92.598-.28.11-.71.24-1.49.276-.85.038-1.1.047-3.24.047s-2.39-.01-3.24-.05c-.78-.04-1.21-.17-1.49-.28-.38-.15-.64-.32-.92-.6-.28-.28-.46-.55-.6-.92-.11-.28-.24-.71-.28-1.49-.03-.84-.04-1.1-.04-3.23s.01-2.39.04-3.24c.04-.78.17-1.21.28-1.49.14-.38.32-.64.6-.92.28-.28.54-.46.92-.6.28-.11.7-.24 1.48-.28.85-.03 1.1-.04 3.24-.04zm0 2.452c-2.27 0-4.108 1.84-4.108 4.108 0 2.27 1.84 4.108 4.108 4.108 2.27 0 4.108-1.84 4.108-4.108 0-2.27-1.84-4.108-4.108-4.108zm0 6.775c-1.473 0-2.667-1.194-2.667-2.667 0-1.473 1.194-2.667 2.667-2.667 1.473 0 2.667 1.194 2.667 2.667 0 1.473-1.194 2.667-2.667 2.667zm5.23-6.937c0 .53-.43.96-.96.96s-.96-.43-.96-.96.43-.96.96-.96.96.43.96.96z"/></svg>
+
+
+                        </button>                                    </a>
+                                    </div>
+
+
+                                    <div class="col-xs-3 col-md-2">
+                                        <a aria-label="YouTube" class="footer-social-link" href="https://www.youtube.com/jwulibrarypvd" target="_blank">
+                                    <button>
+                    <svg class='svg-social-footer' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 7.345c0-1.294.16-2.59.16-2.59s.156-1.1.636-1.587c.608-.637 1.408-.617 1.764-.684C3.84 2.36 8 2.324 8 2.324s3.362.004 5.6.166c.314.038.996.04 1.604.678.48.486.636 1.588.636 1.588S16 6.05 16 7.346v1.258c0 1.296-.16 2.59-.16 2.59s-.156 1.102-.636 1.588c-.608.638-1.29.64-1.604.678-2.238.162-5.6.166-5.6.166s-4.16-.037-5.44-.16c-.356-.067-1.156-.047-1.764-.684-.48-.487-.636-1.587-.636-1.587S0 9.9 0 8.605v-1.26zm6.348 2.73V5.58l4.323 2.255-4.32 2.24z"/></svg>
+
+                                    </button>
+                                                        </a>
+                                    </div>
+
+                    </div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+	 <script>
+		$(document).ready(function() {
+			libanswerScrape();
+		})
+	</script>
+
+
+	<script>
+		function randomQ() {
+			rQ = allFaqs[Math.floor(Math.random() * allFaqs.length)];
+
+			$("#libanswers-search-box").val(rQ);
+			$("#libanswers-search-box-mobile").val(rQ);
+
+
+		}
+
+
+		// $(document).ready(function() {
+		//     $('a[href="#navbar-more-show"], .navbar-more-overlay').on('click', function(event) {
+		//         event.preventDefault();
+		//         $('body').toggleClass('navbar-more-show');
+		//         if ($('body').hasClass('navbar-more-show')) {
+		//             $('a[href="#navbar-more-show"]').closest('li').addClass('active');
+		//         } else {
+		//             $('a[href="#navbar-more-show"]').closest('li').removeClass('active');
+		//         }
+		//         return false;
+		//     });
+		// });
+	</script>
+
+
+	<script>
+		//Get time, save to var, add to top clock
+		$.ajax({
+			url: "https://api3.libcal.com/api_hours_today.php?iid=1433&lid=0&format=json&jsoncallback=?%22",
+			dataType: 'jsonp',
+			success: function(rawJsonp) {
+				calData = rawJsonp;
+
+				dcTime = calData.locations[0];
+				hbTime = calData.locations[1];
+
+
+				$("#hours-nav").append("<li class='text-center'>Downcity: " + dcTime.rendered + "</li>").append("<li class='text-center'>Harborside: " + hbTime.rendered + "</li>");
+				$("#hours-nav-alt").append("<span class='text-center'>Downcity: " + dcTime.rendered + "</span>").append("<span class='text-center'> | Harborside: " + hbTime.rendered + "</span>");
+			}
+
+
+
+		});
+	</script>
+
+
+
+
+	<script>
+		$(document).ready(function() {
+			var check_condition = $('.s-srch-top-header').length > 0 || $('.s-la-faq-answer').length > 0
+			if (check_condition) {
+				$("#s-la-page-maincontent").prepend($("#s-la-public-header-title"));
+				$('html, body').animate({
+					scrollTop: $("#s-la-page-maincontent").offset().top
+				});
+			}
+		})
+	</script>
+
+
+	<script>
+		$(document).ready(function() {
+			$("#s-la-public-header").hide();
+			$("#s-la-page-title-bar").hide();
+		})
+	</script>
+
+</body>
+
+</html>
