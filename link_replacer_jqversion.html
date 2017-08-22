@@ -1,0 +1,186 @@
+<html>
+<!--TABLE OF CONCENTS:
+  - Dependencies
+  - <Footer></Footer>
+  -->
+<!-- DEPENDENICES-->
+<!--IMPORTANT NOTE on Dependencies...
+only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! -->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" media="screen" href="http://jwu-ri.libanswers.com/css293/LibAnswers_public.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://jwu-ri.libanswers.com/js293/LibAnswers_public.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://s3.amazonaws.com/libapps/sites/538/include/libguidesv2-css.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/jwulibrary/libanswers/development/jwu-libanswers.css"> -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Exo+2|Open+Sans:400|Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="jwu-libanswers.css">
+
+
+
+    <!--LOCAL CSS...to be included in master CSS eventually-->
+
+
+    <!-- <script type="text/javascript" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/main.js"></script> -->
+
+
+
+
+
+</head>
+
+<body>
+
+    <!--
+    <div class="container">
+        <h2>Library Databases by Campus</h2>
+        <style>
+            #s-lg-box-12013648 {
+                font-size: 1.2em;
+            }
+
+            .db-btn.btn {
+                background-color: #5987c5;
+                color: #FFF;
+            }
+
+            .bookmarklet.btn {
+                background-color: #93A445;
+            }
+        </style>
+        <div class="row">
+
+            <div class="col-md-3 col-xs-6">
+                <p><a class="db-btn btn" role="button" href="http://pvd.library.jwu.edu/az.php">Providence Databases</a></p>
+            </div>
+
+
+            <div class="col-md-3 col-xs-6">
+                <p><a class="db-btn btn  " role="button" href="http://clt.library.jwu.edu/az.php">Charlotte Databases</a></p>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <p><a class="db-btn btn " role="button" href="http://nmi.library.jwu.edu/az.php">North Miami Databases</a></p>
+            </div>
+
+            <div class="col-md-3 col-xs-6">
+                <p><a class="db-btn btn " role="button" href="http://den.library.jwu.edu/az.php">Denver Databases</a></p>
+            </div>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <h3> Test links</h3>
+            <p>
+                <a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=a9h" target="_blank">Academic Search Complete</a>
+            </p>
+
+            <p><a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=a9h&AN=114463863&site=ehost-live&scope=site" target="_blank">A Protection Mechanism against Malicious HTML and JavaScript Code in Vulnerable Web Applications.</a></p>
+
+            <p><a href="http://www.nytimes.com/">New York Times</a></p>
+        </div>
+    </div>
+
+    <!-- <p><button id="denz-button">MAKE DENZ</button></p> -->
+    <button onclick="$('.campus_link').toggle()">Multicampus</button>
+
+
+    <script>
+
+            $(document).ready(function() {
+
+                $('a').each(function() {
+                    var campusLink = /nmiz|denz|pvdz|cltz/;
+                    // if (this.href.includes(campusLink))
+                    if (campusLink.test(this.href)) {
+                        var fourLinks = $('<div class="new-links"></div>');
+                        var campuses = ['pvdz', 'cltz', 'nmiz', 'denz'];
+                        theLink = this;
+                        campuses.forEach(function(element) {
+                            var newLink = $("<a href=''>" + element + "</a>");
+                            newLink.href = theLink.href.replace(/nmiz|denz|pvdz|cltz/, element);
+                            $(fourLinks).append("<a class='campus_link' style='background-color:#5987C5; color:#FFF; font-size:11px; margin:3px; padding: 3px;' href='" + newLink.href + "'>" + newLink.text().slice(0,3) + " ");
+                            //
+                        });
+                        $(this).parent().append(fourLinks.html());
+
+
+
+
+
+                    }
+
+                });
+
+            })
+
+    </script>
+
+    <!--
+</body>
+<!--
+javascript:
+checks for librarylinks
+adds hidden hover menu if library link
+hover menu has all 4 campus links
+
+-->
+
+<script>
+    var url = /nmiz|denz|pvdz|cltz/;
+    $(document).ready(function() {
+        $("#denz-button").click(function() {
+            $('a').each(function() {
+                this.href = this.href.replace(/nmiz|denz|pvdz|cltz/, 'denz');
+                $(this).removeClass("nmiz-link cltz-link pvdz-link").addClass("denz-link");
+
+            });
+
+
+            $('#pLinkDetail').each(function() {
+                var oArg = new Object();
+                this.href = this.href.replace(/nmiz|denz|pvdz|cltz/, 'denz');
+                alert(this);
+                prompt("Copy to clipboard: Ctrl+C, Enter", oArg.Document);
+
+            });
+
+
+            $(this).addClass('current-button').siblings().removeClass('current-button');
+        });
+
+        $("#pvdz-button").click(function() {
+            $('a').each(function() {
+                this.href = this.href.replace(/nmiz|denz|pvdz|cltz/, 'pvdz');
+                $(this).removeClass("nmiz-link cltz-link denz-link").addClass("pvdz-link");
+            });
+            $(this).addClass('current-button').siblings().removeClass('current-button');
+        });
+
+
+        $("#cltz-button").click(function() {
+            $('a').each(function() {
+                this.href = this.href.replace(/nmiz|denz|pvdz|cltz/, 'cltz');
+                $(this).removeClass("nmiz-link denz-link pvdz-link").addClass("cltz-link");
+            });
+            $(this).addClass('current-button').siblings().removeClass('current-button');
+        });
+
+
+        $("#nmiz-button").click(function() {
+            $('a').each(function() {
+                this.href = this.href.replace(/nmiz|denz|pvdz|cltz/, 'nmiz');
+                $(this).removeClass("denz-link cltz-link pvdz-link").addClass("nmiz-link");
+            });
+            $(this).addClass('current-button').siblings().removeClass('current-button');
+        });
+    });
+</script> -->
+
+
+</html>

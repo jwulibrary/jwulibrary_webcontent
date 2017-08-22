@@ -1,0 +1,30 @@
+Find
+http://0-search.ebscohost.com.helin.uri.edu/login.aspx?direct=true&db=ufh&AN=25049000&site=ehost-live&scope=site
+Replace with 
+https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=cms&AN=25049000&site=ehost-live&scope=site
+
+
+Find:
+
+http://0-ic.galegroup.com.helin.uri.edu/ic/bic1/MagazinesDetailsPage/MagazinesDetailsWindow?failOverType=&query=&prodId=BIC1&windowstate=normal&contentModules=&display-query=&mode=view&displayGroupName=Magazines&limiter=&currPage=&disableHighlighting=false&displayGroups=&sortBy=&search_within_results=&p=BIC1&action=e&catId=&activityType=&scanId=&documentId=GALE%7CA141913821&source=Bookmark&u=prov43712&jsid=4ac6b53669f24260fd10db68528deda2
+
+Replace with:
+https://jwupvdz.idm.oclc.org/login?url=http://ic.galegroup.com/ic/bic1/MagazinesDetailsPage/MagazinesDetailsWindow?failOverType=&query=&prodId=BIC1&windowstate=normal&contentModules=&display-query=&mode=view&displayGroupName=Magazines&limiter=&currPage=&disableHighlighting=false&displayGroups=&sortBy=&search_within_results=&p=BIC1&action=e&catId=&activityType=&scanId=&documentId=GALE%7CA141913821&source=Bookmark&u=prov43712&jsid=4ac6b53669f24260fd10db68528deda2
+
+
+Find
+http://0-search.proquest.com.helin.uri.edu/wallstreetjournal/docview/822779513/134BDAA732A7D3D7499/6?accountid=1363	
+https://jwupvdz.idm.oclc.org/login?url=http://search.proquest.com.jwupvdz.idm.oclc.org/docview/822795952?accountid=1363
+
+http://0-search.proquest.com.helin.uri.edu/wallstreetjournal/docview/822779513/134BDAA732A7D3D7499/6?accountid=1363	
+https://jwupvdz.idm.oclc.org/login?url=http://search.proquest.com.jwupvdz.idm.oclc.org/docview/822795952?accountid=1363
+
+
+http://0-search.proquest.com.helin.uri.edu/wallstreetjournal/docview/
+https://jwupvdz.idm.oclc.org/login?url=http://search.proquest.com.jwupvdz.idm.oclc.org/docview/
+
+
+
+
+
+https://jwupvdz.idm.oclc.org/login?url=http://search.proquest.com.jwupvdz.idm.oclc.org/docview/822779513/134BDAA732A7D3D7499/6?accountid=1363	
