@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+    <!--
+    <style type="text/css">
+        .lib-link-btns {
+            margin: 0px 5px 10px 5px;
+            padding: 2px;
+        }
+
+        .lib-link-title {
+            font-family: Verdana;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .four-link-btn {
+            background-color: #004A91;
+            color: #FFF;
+            padding: 3px 8px;
+            margin: 0px 4px;
+            text-decoration: none;
+            font-family: Verdana;
+            font-size: 11px;
+            box-shadow: 2px 2px 3px #888888;
+            -webkit-transition: box-shadow .2s, opacity .2s;
+            transition: box-shadow .2s;
+        }
+
+        .four-link-btn:hover {
+            opacity: .9;
+            box-shadow: 7px 7px 15px #888888;
+        }
+    </style> -->
+
+
+
+    <div id="main_container" class="container">
+        <div class="row">
+            <h3> Test links</h3>
+            <p>
+                <a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=a9h" target="_blank">A Database: Academic Search Complete</a>
+            </p>
+            <p><a href="https://jwupvdz.idm.oclc.org/login?url=http://infotrac.galegroup.com/itweb/prov43712?db=BIC1">A Database with more complicated URL structure: Gale Biography in context</a></p>
+            <p><a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=a9h&AN=114463863&site=ehost-live&scope=site" target="_blank">Article from a database (A Protection Mechanism against Malicious HTML and JavaScript Code...)</a></p>
+
+            <p><a href="http://www.nytimes.com/">Non-Library Link: New York Times</a></p>
+            <p><a href="http://search.ebscohost.com.jwupvdz.idm.oclc.org/login.aspx?direct=true&db=nlebk&AN=294632&site=bsi-live">Article Link with different URL Structure(Conducting Online Surveys)</a></p>
+            <p><a href="http://ebookcentral.proquest.com/lib/jwu">Ebook Central (ebrary)</a></p>
+            <p><a href="https://ebookcentral.proquest.com/lib/jwu/detail.action?docID=4040657">Specific Ebook: (ebrary)</a></p>
+
+
+            <p><a href="https://jwupvdz.idm.oclc.org/login?url=http://search.credoreference.com?institutionId=4944">Credo</a></p>
+            <p><a href='https://jwupvdz.idm.oclc.org/login?url=http://search.proquest.com/wallstreetjournal/advanced?accountid=1363'>Proquest Test (wall street journal)</a></p>
+            <p><a href='https://jwupvdz.idm.oclc.org/login?url=http://fod.infobase.com/PortalPlayLists.aspx?wid=99165'>Films on Demand Test</a></p>
+            <p><a href='https://jwupvdz.idm.oclc.org/login?url=http://fod.infobase.com/PortalPlaylists.aspx?wID=99165&xtid=40438'>Specific Film on Demand Test: (The 5 Communication Secrets that Swept Obama to the Presidency)</a></p>
+            <p><a href='https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&profile=ehost&defaultdb=mzh'>Specific EBSCO DB not in other campus: MLA Intl</a></p>
+            <p><a href='https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=mzh&AN=2015381900&site=ehost-live&scope=site'>Specific EBSCO Article (from MLA Intl)</a></p>
+
+            <p><a href='https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&db=i3h&AN=91941613&site=ehost-live&scope=site'>Specific EBSCO Article (from Criminal Justice Abstracts)</a></p>
+
+
+
+        </div>
+    </div>
+
+    <!-- <p><button id="denz-button">MAKE DENZ</button></p> -->
+
+    <script>
+        // var matches = function(el, selector) {
+        //     return (el.matches || el.matchesSelector || el.msMatchesSelector || el.mozMatchesSelector || el.webkitMatchesSelector || el.oMatchesSelector).call(el, selector);
+        // };
+
+        //matches(el, '.my-class');
+
+        // var no_den = [];
+        // var no_nmi = [];
+        // var no_clt = [];
+
+        function libraryLinkFix() {
+            var campusRegexp = /(nmiz|denz|pvdz|cltz)/;
+            var campuses = ['pvdz', 'cltz', 'nmiz', 'denz'];
+            var links = document.querySelectorAll('a');
+
+
+            links.forEach(function(pageLink, i) {
+                if (campusRegexp.test(pageLink.href) || pageLink.href.includes('ebookcentral')) {
+                    // Create link wrapper, add title
+                    var fourLinks = document.createElement("div");
+
+                    var linkTitle = document.createElement("span");
+                    // linkTitle.style.backgroundColor="#CCCCCC";
+                    linkTitle.textContent = "Library Links";
+                    linkTitle.classList.add('lib-link-title');
+                    fourLinks.insertBefore(linkTitle, fourLinks.firstChild);
+                    fourLinks.classList.add('lib-link-btns');
+
+                    // check links to see if are library links
+                    var match = campusRegexp.exec(pageLink.href)
+                    origLink = pageLink.href
+                    campuses.forEach(function(campus, i) {
+                        //Create links
+                        newLink = document.createElement("a");
+                        newLink.innerHTML = campus.replace('z', '');
+                        newLink.target = "_blank";
+
+                        newLink.href = origLink.replace(/nmiz|denz|pvdz|cltz/, campus)
+
+                        //Style links
+                        if (newLink.classList)
+                            newLink.classList.add('four-link-btn');
+                        else
+                            newLink.className += ' ' + 'four-link-btn';
+
+
+                        // Fix Gale regionals
+                        if (newLink.href.includes("prov43712")) {
+                            if (campus == "nmiz") {
+                                newLink.href = newLink.href.replace("prov43712", "nort5426");
+                            } else if (campus == "denz") {
+                                newLink.href = newLink.href.replace("prov43712", "denv8636");
+                            }
+                        }
+                        // Fix ProQuest regionals
+                        if (newLink.href.includes("accountid=1363")) {
+                            if (campus == "nmiz") {
+                                newLink.href = newLink.href.replace("1363", "187069");
+                            } else if (campus == "denz") {
+                                newLink.href = newLink.href.replace("1363", "187070");
+                            } else if (campus == "cltz") {
+                                newLink.href = newLink.href.replace("1363", "151086");
+                            }
+                        }
+                        // Fix ebrary
+                        if (newLink.href.includes("ebookcentral.proquest.com/lib/jwu")) {
+                            if (campus == "nmiz") {
+                                newLink.href = newLink.href.replace("ebookcentral.proquest.com/lib/jwu", "jwunmiz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwu-northmiami");
+                            } else if (campus == "denz") {
+                                newLink.href = newLink.href.replace("ebookcentral.proquest.com/lib/jwu", "jwudenz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwu-denver");
+                            } else if (campus == "cltz") {
+                                newLink.href = newLink.href.replace("ebookcentral.proquest.com/lib/jwu", "jwucltz.idm.oclc.org/login?url=http://site.ebrary.com/lib/jwucharlotte");
+                            }
+                        }
+                        // Fix Credo
+                        if (newLink.href.includes("institutionId=4944")) {
+                            if (campus == "nmiz") {
+                                newLink.href = newLink.href.replace("4944", "8947");
+                            } else if (campus == "denz") {
+                                newLink.href = newLink.href.replace("4944", "8946");
+                            } else if (campus == "cltz") {
+                                newLink.href = newLink.href.replace("4944", "8948");
+                            }
+                        }
+                        // Fix Films on demand
+                        if (newLink.href.includes("wid=99165")) {
+                            if (campus == "nmiz") {
+                                newLink.href = newLink.href.replace("99165", "238548");
+                            } else if (campus == "denz") {
+                                newLink.href = newLink.href.replace("99165", "240032");
+                            } else if (campus == "cltz") {
+                                newLink.href = newLink.href.replace("99165", "239260");
+                            }
+                        }
+
+                        // Check EBSCO Dbs in other libraries, if not subscribed to add a blank box
+                        if (newLink.href.includes("ebsco")) {
+                            // mzh is MLA, not in NMI or CLT
+                            if (newLink.href.includes("mzh")) {
+                                if (campus == "nmiz" || campus == "cltz") {
+                                    newLink.removeAttribute("href");
+                                    newLink.style.backgroundColor = "#919095";
+                                    newLink.textContent += ": no access, contact a librarian";
+                                }
+                            }
+
+                            // Criminal Justice Abstracts with Full Text (EBSCO) ...i3h
+                            if (newLink.href.includes("i3h")) {
+                                if (campus == "nmiz" || campus == "cltz" || campus == "denz") {
+                                    newLink.removeAttribute("href");
+                                    newLink.style.backgroundColor = "#919095";
+                                    newLink.textContent += ": no access, contact a librarian";
+                                }
+                            }
+                        }
+
+
+
+
+
+
+
+                        // Add the campus link
+                        fourLinks.appendChild(newLink);
+
+                    })
+                    pageLink.parentNode.appendChild(fourLinks);
+                    pageLink.removeAttribute("href");
+                }
+            });
+        };
+
+        function addLibLinkStyle() {
+            var link = document.createElement("link");
+            link.setAttribute("rel", "stylesheet");
+            link.setAttribute("href", "https://s3.amazonaws.com/libapps/sites/538/include/bb-inject-css.css");
+            var head = document.getElementsByTagName("head")[0];
+            head.appendChild(link);
+        }
+
+        // Function to call when page is ready
+        document.addEventListener("DOMContentLoaded", function() {
+            libraryLinkFix();
+            addLibLinkStyle();
+        });
+    </script>
+
+</html>

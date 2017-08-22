@@ -1,0 +1,76 @@
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//s3.amazonaws.com/libapps/sites/538/include/libguidesv2-css.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7cRoboto:300" rel="stylesheet">
+
+
+<script>
+	$( document ).ready(function() {
+
+		$("input[name='lname']").attr("placeholder", "Last Initial");
+		$("div.s-lc-name").find("span.s-lc-rm-lab").text("First Name, Last Initial *");
+
+
+		<!--Find this thing: <h3 class="s-lc-app-s1h3">1. Select a staff member:</h3> -->
+		<!-- replace with “Select a library and then a Staff Member “-->
+
+
+
+	});
+</script>
+
+<script>
+		function changeLcAppointText() {
+		$("h3.s-lc-app-s1h3:contains('1. Select a staff member:')").text('1. Select a library and a librarian');
+		}
+</script>
+<!-- Call <script>changeLcAppointText()</script>  somewhere, maybe in group title-->
+<style>
+	#s-lc-rm-capacity-cont {display: none;}
+
+	.panel-title {
+	color:#FFF;
+	text-align: center;
+	font-family: 'open sans', sans-serif;
+	}
+
+	#heading180 {
+	background-color: #5987c5;
+	}
+	#heading182 {
+	background-color: #93A445;
+	}
+	#heading439{
+	background-color: #C3102F;
+	}
+
+	.checkbox label, .radio label {
+	font-family: 'open sans', sans-serif;
+	font-size:1.1em;
+	}
+
+	h3.s-lc-app-s1h3 {
+	font-family: roboto,sans-serif;
+	color: #333;
+	font-size: 1.9em;
+	padding-bottom: 9px;
+	font-weight:bold;
+	}
+
+</style>
+
+
+
+
+<!-- Find div #s-lc-app-slist , then add a box to the end with the text "Online Students - meet through Webex"-->
+
+<script>
+		function addWebexBtn() {
+		var newDiv = document.createElement('div');
+		newDiv.setAttribute("id", "Div1");
+		$("#s-lc-app-slist").append(newDiv);
+		$("#Div1").html('<a href="http://jwu-ri.libcal.com/booking/webex" target="_blank">Online Students - meet through Webex</a>');
+		$("#Div1").attr("class", "webex-btn");
+		$(document.head).append("<style> .webex-btn{ background-color: #C3102F; text-align: center; padding:.6em;} .webex-btn a {font-family: 'open sans', sans-serif; font-size:1.4em; color:#FFF; } </style>" )
+
+}
+</script>

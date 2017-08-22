@@ -1,0 +1,1264 @@
+<link rel="stylesheet" type="text/css" href="http:///cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#db-table').DataTable({
+			"pageLength": 100,
+			
+			"columnDefs": [
+            {
+                "targets": [ 0,1 ],
+                "visible": false,
+                "searchable": false
+			},
+            {
+                "targets": [ 4, 5, 6, 7 , 10, 11],
+                "visible": false
+			},
+			
+			{
+                "targets": [ 2,3 ],
+				"visible": true,
+                "searchable": true
+			},
+			{
+                "targets": [ 8],
+                "visible": true,
+                "searchable": true,
+				"render": function ( data, type, full, meta ) {
+					return '<a href="'+data+'">' + String(data)+'</a>';
+				}
+			}
+			]
+		});
+	});
+</script>
+
+<table id="db-table" class="table table-bordered table-hover table-condensed table-striped">
+	
+	<thead>
+		<tr><td>﻿ID</td>
+			<td>Type</td>
+			<td>Name</td>
+			<td>Description</td>
+			<td>Owner</td>
+			<td>Created</td>
+			<td>Mapping Count</td>
+			<td>Subjects</td>
+			<td>URL</td>
+			<td>Vendor</td>
+			<td>Types</td>
+			<td>Friendly URL</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><td>15379845</td>
+			<td>Database</td>
+			<td>ABC-CLIO EBook Collection </td>
+			<td>E-books in wide-ranging areas including the Arts, Business, Crime &amp; Justice, Education, Family Studies/Issues, Food, Health/Medicine, Law, Library &amp; Information Science, Literature, Multicultural...</td>
+			<td>Reynolds, Sue</td>
+			<td>2015-08-25</td>
+			<td>0</td>
+			<td>Education</td>
+			<td>http://0-legacy.abc-clio.com.helin.uri.edu/</td>
+			<td>ABC-CLIO</td>
+			<td>eBooks</td>
+			<td> </td>
+		</tr>
+		<tr><td>15468348</td>
+			<td>Database</td>
+			<td>Acad. of Nutrition &amp; Dietetics: Electronic Nutrition Care Process Terminology (eNCPT) Reference Manual</td>
+			<td>For Food &amp; Nutrition students and professionals. Click on the &amp;quot;LAUNCH PUBLICATION&amp;quot; link at the eNCPT site to access the content. eNCPT features updated terminology used in the nutrition...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Nutrition</td>
+			<td>https://0-ncpt.webauthor.com.helin.uri.edu/auth.cfm?actionxm=SSO&amp;sso_account_key=0D182635-4531-423B-957D-5937E709CFB3&amp;sso_account_id=95</td>
+			<td>Academy of Nutrition &amp; Dietetics</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15379847</td>
+			<td>Database</td>
+			<td>Acad. of Nutrition &amp; Dietetics: Evidence Analysis Library (EAL)</td>
+			<td>Research on nutrition, nutrients, and foods used to promote health throughout the human life cycle (infants to seniors), including evidence-based nutrition guidelines to treat diseases and...</td>
+			<td>Reynolds, Sue</td>
+			<td>2015-08-25</td>
+			<td>0</td>
+			<td>Nutrition, Health/Medicine</td>
+			<td>http://0-www.andevidencelibrary.com.helin.uri.edu/sso.cfm?key=2e4bfdb8-35c8-423b-868a-89c33fbdd285&amp;u=JWU-JWUUSER</td>
+			<td>Academy of Nutrition &amp; Dietetics</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15379848</td>
+			<td>Database</td>
+			<td>Acad. of Nutrition &amp; Dietetics: Nutrition Care Manual (NCM)</td>
+			<td>Evidence-based nutrition care information for diseases &amp; conditions, complete with meal plans, electronic calculators, and client/patient education handouts. See also the &amp;quot;Resources&amp;quot; tab...</td>
+			<td>Reynolds, Sue</td>
+			<td>2015-08-25</td>
+			<td>0</td>
+			<td>Nutrition, Health/Medicine</td>
+			<td>http://0-www.nutritioncaremanual.org.helin.uri.edu/sso.cfm?c=johnsonw</td>
+			<td>Academy of Nutrition &amp; Dietetics</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15379849</td>
+			<td>Database</td>
+			<td>Acad. of Nutrition &amp; Dietetics: Pediatric Nutrition Care Manual (PNCM) </td>
+			<td>Children/patient information handouts (with Spanish translations), meal plan handouts, and nutrition care for diseases &amp; conditions including behavioral health. Also includes online calculators....</td>
+			<td>Meincke, David</td>
+			<td>2015-08-25</td>
+			<td>0</td>
+			<td>Nutrition, Health/Medicine</td>
+			<td>http://0-www.nutritioncaremanual.org.helin.uri.edu/sso.cfm?c=johnsonw2</td>
+			<td>Academy of Nutrition &amp; Dietetics</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15379850</td>
+			<td>Database</td>
+			<td>Acad. of Nutrition &amp; Dietetics: Sports Nutrition Care Manual (SNCM)</td>
+			<td>Nutrition information is provided by Board Certified Specialists in Sports Dietetics (CSSDs). Includes patient information and meal plan handouts, nutrition care for diseases &amp; conditions, and online...</td>
+			<td>Reynolds, Sue</td>
+			<td>2015-08-25</td>
+			<td>0</td>
+			<td>SEE, Nutrition, Health/Medicine</td>
+			<td>http://0-www.nutritioncaremanual.org.helin.uri.edu/sso.cfm?c=johnsonw3</td>
+			<td>Academy of Nutrition &amp; Dietetics</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15379851</td>
+			<td>Database</td>
+			<td>Academic Search Complete (EBSCO) </td>
+			<td>Many full-text articles from over 8,600 journal titles covering topics in such areas as Animal &amp; Veterinary Science, Area Studies (country info.), Arts, Biology, Chemistry, Education, Engineering,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-25</td>
+			<td>0</td>
+			<td>Hospitality, Business, Education, English, Culinary Arts, Social Sciences, CLP, Science, Fashion &amp; Retailing, Law, Leadership, Food Service Management, Management, Marketing &amp; Advertising, SEE, Nutrition, Literature, Current Events, Biographical Information</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=a9h</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15379852</td>
+			<td>Database</td>
+			<td>AccessMedicine (McGraw-Hill) </td>
+			<td>For the healthcare student or professional, key medical resources at the point-of-care. FIRST-TIME USERS: You must create a &amp;quot;My Access&amp;quot; personal account from either on or off campus in...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-25</td>
+			<td>0</td>
+			<td>Science, Health/Medicine</td>
+			<td>http://0-accessmedicine.mhmedical.com.helin.uri.edu/</td>
+			<td>McGraw-Hill Education</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15379853</td>
+			<td>Database</td>
+			<td>ACLS Humanities E-Books (Amer. Council of Learned Societies)</td>
+			<td>E-books covering many fields including Area Studies, Art, Comparative World History, Folklore and Literature, Law, Medicine, Performing Arts, Philosophy, Religion, Science, Sociology, Technology, and...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-25</td>
+			<td>0</td>
+			<td>English</td>
+			<td>http://0-www.humanitiesebook.org.helin.uri.edu/</td>
+			<td>ACLS (American Council of Learned Societies)</td>
+			<td>eBooks</td>
+			<td> </td>
+		</tr>
+		<tr><td>15379854</td>
+			<td>Database</td>
+			<td>ACM Digital Library (Assoc. for Computing Machinery)</td>
+			<td>For computing &amp; information technology students and professionals. IMPORTANT: Accept or click through the security certificate warnings if they appear and proceed to the ACM website! Different...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-25</td>
+			<td>1</td>
+			<td>Technology</td>
+			<td>http://0-dl.acm.org.helin.uri.edu/</td>
+			<td>ACM (Assoc. of Computing Machinery)</td>
+			<td>eBooks</td>
+			<td> </td>
+		</tr>
+		<tr><td>15379855</td>
+			<td>Database</td>
+			<td>Advertising Redbooks.com </td>
+			<td>Which ad agencies do companies use, and how much do they spend annually on advertising? This directory lists public and private U.S. and international companies who spend at least $200,000 annually...</td>
+			<td>Reynolds, Sue</td>
+			<td>2015-08-25</td>
+			<td>0</td>
+			<td>Marketing &amp; Advertising</td>
+			<td>http://0-www.redbooks.com.helin.uri.edu/dotCMS/validateLogin?dispatch=siteLogin</td>
+			<td>Red Books LLC</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15379856</td>
+			<td>Database</td>
+			<td>America: History and Life with Full Text (EBSCO)</td>
+			<td>Covers the history and culture of the United States and Canada, from prehistory to the present. Indexing of selective journals from 1955 to present with full-text coverage of many journals and books.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-25</td>
+			<td>0</td>
+			<td>Social Sciences, Political Science</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=31h</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15379857</td>
+			<td>Database</td>
+			<td>ARTstor Digital Library </td>
+			<td>ENTER HERE to access 1.8 million images from the world&#39;s leading museums, libraries, artists, and photo archives. FIRST-TIME USERS: Set up your own FREE account to use the Tools and other features...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-25</td>
+			<td>2</td>
+			<td>Graphic Design, Fashion &amp; Retailing, Marketing &amp; Advertising</td>
+			<td>http://0-library.artstor.org.helin.uri.edu/library/#1</td>
+			<td>ARTstor</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15446909</td>
+			<td>Database</td>
+			<td>Berg Fashion Library (Oxford Univ. Press)</td>
+			<td>International in scope, thousands of images plus key fashion reference sources including Encyclopedia of World Dress and Fashion, A-Z of Fashion, Dictionary of Fashion History, &amp; nearly 60 fashion...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Fashion &amp; Retailing</td>
+			<td>http://0-www.bergfashionlibrary.com.helin.uri.edu/</td>
+			<td>Oxford University Press</td>
+			<td>Images</td>
+			<td> </td>
+		</tr>
+		<tr><td>15446910</td>
+			<td>Database</td>
+			<td>Biography In Context (Gale)</td>
+			<td>Biographies of people worldwide in many fields throughout history: artists, authors, business leaders, chefs, government leaders &amp; politicians, historical figures, popular entertainers, scientists,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Fashion &amp; Retailing, Current Events, Political Science, Biographical Information</td>
+			<td>http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=BIC1</td>
+			<td>Gale</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15446911</td>
+			<td>Database</td>
+			<td>Biological Science Collection (ProQuest)</td>
+			<td>Selected full text from over 6,000 journal titles, conference proceedings, technical reports, books and patents. Subject areas include research in Animal Behavior, Bacteriology, Biotechnology,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td> </td>
+			<td>http://0-search.proquest.com.helin.uri.edu/biologicalscience?accountid=1363</td>
+			<td>ProQuest</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15446912</td>
+			<td>Database</td>
+			<td>Boston Globe (ProQuest)</td>
+			<td>A New England regional newspaper. Selective, full-text daily coverage from 1980 - Present of news articles and opinion editorials written or edited by the Globe&#39;s staff. This is text-based only;...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td> </td>
+			<td>http://0-search.proquest.com.helin.uri.edu/bostonglobe/advanced?accountid=1363</td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468365</td>
+			<td>Database</td>
+			<td>Business Collection (Gale)</td>
+			<td>The new Business Collection contains content from 4 former databases:  Business &amp; Company Profiles, Business Index, European Business Index, and General BusinessFile.  Selective full-text articles...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Business, Company Information</td>
+			<td>http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=ITBC</td>
+			<td>Gale</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15446913</td>
+			<td>Database</td>
+			<td>Business Education in Video (Alex. St. Press)</td>
+			<td>Streaming video clips ranging from 2-10 min. feature executive interviews, corporate training, and case studies for both small to large business firms globally. Coverage includes Cross-Cultural...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Business, Management, Marketing &amp; Advertising</td>
+			<td>http://0-search.alexanderstreet.com.helin.uri.edu/busv</td>
+			<td>Alexander St. Press</td>
+			<td>Streaming Videos</td>
+			<td> </td>
+		</tr>
+		<tr><td>15446914</td>
+			<td>Database</td>
+			<td>Business Insights: Global (Gale)</td>
+			<td>Comprehensive business content including case studies, company profiles &amp; industry research reports, country economic reports, market research reports, SWOT analyses, and video interviews with...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Business, Marketing &amp; Advertising, Company Information, Financials</td>
+			<td>http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=BIG</td>
+			<td>Gale</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15446915</td>
+			<td>Database</td>
+			<td>Business Plans Handbooks (Gale)  </td>
+			<td>Are you planning to start a small business? This is a collection of actual business plans submitted by entrepreneurs in North America (company names and addresses have been changed). Each volume also...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Business</td>
+			<td>http://0-go.galegroup.com.helin.uri.edu/ps/i.do?id=0PHU&amp;v=2.1&amp;u=prov43712&amp;it=aboutSeries&amp;p=GVRL&amp;sw=w</td>
+			<td>Gale</td>
+			<td>eBooks</td>
+			<td> </td>
+		</tr>
+		<tr><td>15446916</td>
+			<td>Database</td>
+			<td>Business Source Complete (EBSCO)</td>
+			<td>Company profiles, SWOT analyses (Strengths, Weaknesses, Opportunities, Threats) where available, industry profiles, stocks &amp; investment info., management-related articles, Harvard Business Review...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>1</td>
+			<td>Business, Fashion &amp; Retailing, Management, Marketing &amp; Advertising, Company Information, Financials, Country Profiles and Information</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=bsi&amp;defaultdb=bth</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15466628</td>
+			<td>Database</td>
+			<td>Chronicle of Higher Education  </td>
+			<td>Updated daily the number #1 source for the latest news, information, and job postings in the field of education. See reports about the academic workplace, admissions, diversity, information...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Education</td>
+			<td>http://0-chronicle.com.helin.uri.edu/</td>
+			<td>Chronicle of Higher Education</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15466630</td>
+			<td>Database</td>
+			<td>ClinicalKey (Elsevier): OFF-Campus Access</td>
+			<td>OFF-Campus ACCESS URL: For the healthcare student or professional. Access medical and surgical content including First Consult, top journals, best-selling medical and surgical books, drug monographs,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Nutrition, Health/Medicine</td>
+			<td>https://0-www.clinicalkey.com.helin.uri.edu/</td>
+			<td>Elsevier</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15466629</td>
+			<td>Database</td>
+			<td>ClinicalKey (Elsevier): ON-Campus Access</td>
+			<td>ON-Campus access: For the healthcare student or professional. Access medical and surgical content including First Consult, top journals, best-selling medical and surgical books, drug monographs,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Nutrition, Health/Medicine</td>
+			<td>https://www.clinicalkey.com/</td>
+			<td>Elsevier</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15466631</td>
+			<td>Database</td>
+			<td>Communication &amp; Mass Media Complete (EBSCO)</td>
+			<td>In-depth coverage of communication and mass media in the fields of Arts &amp; Entertainment, Business, Communication, Education, General Interest, Health &amp; Medicine, History, Literture &amp; Writing,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Education</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ufh</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15466632</td>
+			<td>Database</td>
+			<td>CREDO Reference</td>
+			<td>Over 500 reference books online including biographies, dictionaries, encyclopedias, and quotations in many subject areas: Art, Business, Food &amp; Beverage, General Reference, Geography, History,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Education, Social Sciences, Science, Fashion &amp; Retailing, Management, Travel &amp; Tourism, Biographical Information</td>
+			<td>http://0-search.credoreference.com.helin.uri.edu/</td>
+			<td>CREDO</td>
+			<td>eBooks</td>
+			<td> </td>
+		</tr>
+		<tr><td>15466634</td>
+			<td>Database</td>
+			<td>Criminal Justice &amp; Public Safety in Video (Alex. St. Press)</td>
+			<td>Streaming videos feature interviews about actual field experiences, controversies about the justice system, and training videos for how to respond to potentially dangerous situations. You can also...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Law, Criminal Justice</td>
+			<td>http://0-search.alexanderstreet.com.helin.uri.edu/lawv</td>
+			<td>Alexander St. Press</td>
+			<td>Streaming Videos</td>
+			<td> </td>
+		</tr>
+		<tr><td>15466633</td>
+			<td>Database</td>
+			<td>Criminal Justice (ProQuest)</td>
+			<td>Journal articles cover addiction, corrections administration, criminal justice, criminal law, criminology, drug enforcement, family law, industrial security, law enforcement, and rehabilitation.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Law, Criminal Justice</td>
+			<td>http://0-search.proquest.com.helin.uri.edu/criminaljusticeperiodicals/advanced?accountid=1363</td>
+			<td>ProQuest</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15466635</td>
+			<td>Database</td>
+			<td>Criminal Justice Abstracts with Full Text (EBSCO)</td>
+			<td>Selective full text for more than 200 magazines, journals, and e-books covering all areas related to criminology and criminal justice including criminal law &amp; procedure, corrections &amp; prisons, police...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Law, Criminal Justice</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=i3h</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15466636</td>
+			<td>Database</td>
+			<td>Criminal Justice Collection (CREDO)</td>
+			<td>Criminal Justice e-book titles range in coverage from Forensics and Policing, to Juvenile Corrections and Organized Crime. NOTE: These criminal Justice titles are also available in our CREDO...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Law, Criminal Justice</td>
+			<td>http://0-search.credoreference.com.helin.uri.edu/content/browse/book?collection=sccrju</td>
+			<td>CREDO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15466637</td>
+			<td>Database</td>
+			<td>Culinary Arts (Gale)</td>
+			<td>Many full-text articles from major cooking and nutrition magazines, plus recipes, restaurant reviews, and industry trends &amp; news.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Culinary Arts, Food Service Management</td>
+			<td>http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=PPCA</td>
+			<td>Gale</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15466638</td>
+			<td>Database</td>
+			<td>Directory of Open Access Journals (DOAJ)</td>
+			<td>All full-text scholarly and scientific journals covering wide-ranging subjects.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td> </td>
+			<td>http://www.doaj.org/</td>
+			<td>Lund University Libraries, Sweden</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15466639</td>
+			<td>Database</td>
+			<td>Dissertations &amp; Theses Database: Humanities &amp; Social Sciences Coll. (ProQuest)</td>
+			<td>Over 1 million full-text dissertations published internationally since 1997 can be downloaded in PDF format including 24-page previews of dissertations and theses, where available. You can also check...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Education, Leadership</td>
+			<td>http://0-search.proquest.com.helin.uri.edu/advanced?accountid=1363&amp;selectids=1006882,10000115,1006522</td>
+			<td>ProQuest</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15701572</td>
+			<td>Database</td>
+			<td>EasyBib (Imagine Easy)</td>
+			<td>Cite your print and online research sources in such popular formats as APA, MLA, Chicago, and other styles.  BROWSERS:  Use Chrome or Firefox.  REGISTRATION URL: To create a free account through JWU...</td>
+			<td>Reynolds, Sue</td>
+			<td>2015-09-07</td>
+			<td>0</td>
+			<td>English, Copyright, Citation Manuals</td>
+			<td>https://0-www-secure.easybib.com.helin.uri.edu/</td>
+			<td>Imagine Easy</td>
+			<td>Citation Software</td>
+			<td> </td>
+		</tr>
+		<tr><td>15468355</td>
+			<td>Database</td>
+			<td>eBook Academic Collection (EBSCO)</td>
+			<td>Ebooks on general reference and subject-specific disciplines including biographies, business &amp; economics, computer science, education, engineering &amp; technology, health &amp; medicine, history, law,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>1</td>
+			<td> </td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=e000xna</td>
+			<td>EBSCO</td>
+			<td>eBooks</td>
+			<td> </td>
+		</tr>
+		<tr><td>15468356</td>
+			<td>Database</td>
+			<td>ebrary Academic Complete (ProQuest)</td>
+			<td>Over 70,000 ebooks including Area Studies (country info.), Business &amp; Economics, Computers &amp; IT, Education, Humanities, Language, Law, Literature, Life Sciences, Nursing &amp; Allied Health, Philosophy,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>1</td>
+			<td> </td>
+			<td>http://0-site.ebrary.com.helin.uri.edu/lib/jwu</td>
+			<td>ProQuest</td>
+			<td>eBooks</td>
+			<td> </td>
+		</tr>
+		<tr><td>15468357</td>
+			<td>Database</td>
+			<td>Education Research Complete (EBSCO)</td>
+			<td>Many full-text articles from 1,400 journal titles and the full text of nearly 550 e-books and conference papers. Coverage includes Administration, Curriculum Instruction, Early Childhood to Higher...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Education</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ehh</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468358</td>
+			<td>Database</td>
+			<td>EJS (Electronic Journals Service) (EBSCO)</td>
+			<td>Scholarly journals in the fields of Criminology, Education, Food Science, Gaming, Hospitality, Nutrition, Technology, Travel &amp; Tourism. </td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Hospitality, Law</td>
+			<td>http://0-ejournals.ebsco.com.helin.uri.edu/</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468359</td>
+			<td>Database</td>
+			<td>Emerald Management 120: OFF-Campus Access</td>
+			<td>OFF-Campus access:  Management-related articles in various fields including Accounting, Education, Food Science, Hospitality &amp; Tourism, Library Services &amp; Information Management, Marketing,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Business, Education, Management</td>
+			<td>http://0-www.emeraldinsight.com.helin.uri.edu/</td>
+			<td>Emerald Group Publishing</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>20865169</td>
+			<td>Database</td>
+			<td>Emerald Management 120: ON-Campus Access:</td>
+			<td>ON-Campus access:  Management-related articles in various fields including Accounting, Education, Food Science, Hospitality &amp; Tourism, Library Services &amp; Information Management, Marketing, Nutrition,...</td>
+			<td>Reynolds, Sue</td>
+			<td>2016-04-13</td>
+			<td>0</td>
+			<td> </td>
+			<td>http://www.emeraldinsight.com</td>
+			<td>Emerald Group Publishing</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468360</td>
+			<td>Database</td>
+			<td>Europa World Plus (Taylor &amp; Francis)</td>
+			<td>Country and regional information world-wide! Economic, political, geographic information, and statistical data with directories of contact information and international organizations. Updates of the...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Travel &amp; Tourism, Country Profiles and Information</td>
+			<td>http://0-www.europaworld.com.helin.uri.edu/</td>
+			<td>Taylor &amp; Francis</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468361</td>
+			<td>Database</td>
+			<td>Films on Demand Complete (Infobase)</td>
+			<td>Over 15,000 streaming videos 24/7. Many areas of interest including business &amp; economics, careers &amp; job searching, computers &amp; technology, criminal justice, culinary arts &amp; nutrition, digital media,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>2</td>
+			<td>Education, Biographical Information</td>
+			<td>http://0-fod.infobase.com.helin.uri.edu/PortalPlayLists.aspx?wid=99165</td>
+			<td>Infobase</td>
+			<td>Streaming Videos</td>
+			<td> </td>
+		</tr>
+		<tr><td>15468362</td>
+			<td>Database</td>
+			<td>First Research (Mergent)</td>
+			<td>17 kinds of FINANCIAL RATIOS for more than 380+ in-depth industry profiles and 900 smaller industry segments. Find an overview of business challenges, trends, industry opportunities. See also...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Business, Industry Information</td>
+			<td>http://0-www.mergentonline.com.helin.uri.edu/FirstResearch</td>
+			<td>Mergent</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468363</td>
+			<td>Database</td>
+			<td>Food Science Source (EBSCO)</td>
+			<td>Many full-text articles from magazines and trade journals covering the food industry: Food Safety, Food &amp; Beverage Science, Food Service, Processing, Packaging, Shipping, Culinary Innovation, and...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Culinary Arts, Nutrition</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=fsr</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468364</td>
+			<td>Database</td>
+			<td>Funk &amp; Wagnall&#39;s New World Encyclopedia (EBSCO)</td>
+			<td>Many subjects are covered including country information, brief biographies of both historical and contemporary figures, plus photos, diagrams, and charts.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td> </td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=funk&amp;defaultdb=funk</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468366</td>
+			<td>Database</td>
+			<td>Global Road Warrior</td>
+			<td>Information on 175 countries &amp; their cultures! Country geo stats &amp; facts, money &amp; banking, business culture with advice for businesswomen, travel documents, points of interest, plus photos and maps.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Travel &amp; Tourism, Country Profiles and Information</td>
+			<td>http://0-www.globalroadwarrior.com.helin.uri.edu/directclient_index2.asp?c=jwu</td>
+			<td>World Trade Press</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468367</td>
+			<td>Database</td>
+			<td>Going Global&#39;s Country Career Guides</td>
+			<td>Updated international job/internship postings in 35 countries! Country-specific: Work permit/visa regulations, resume writing guidelines, interviewing advice, cultural &amp; business etiquette, cost of...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Career Management</td>
+			<td>http://0-online.goinglobal.com.helin.uri.edu/</td>
+			<td>Going Global</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468368</td>
+			<td>Database</td>
+			<td>Going Global&#39;s USA/Canada City Career Guides</td>
+			<td>Updated job postings for the 40 largest cities in the U.S. and Canada. City-specific industry/employment trends, top companies, cost of living expenses, job fairs, and more. Find companies in...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>1</td>
+			<td>Career Management</td>
+			<td>http://0-online.usacareerguides.com.helin.uri.edu/</td>
+			<td>Going Global</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468369</td>
+			<td>Database</td>
+			<td>GreenFILE (EBSCO)</td>
+			<td>Full-text articles from these three journals (BMC Ecology; Environmental Health Perspectives; and Environmental Health: A Global Access Science Source). Indexing only to journals in JWU’s other...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Science</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=8gh</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468370</td>
+			<td>Database</td>
+			<td>GREENR (Global Reference on the Environment, Energy, and Natural Resources) (Gale)</td>
+			<td>Many full-text articles plus streaming videos on important aspects of environmental issues: economic, political, legal, and the human impact on the environment.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Science, Political Science</td>
+			<td>http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=GRNR</td>
+			<td>Gale</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468371</td>
+			<td>Database</td>
+			<td>Health &amp; Wellness Resource Center (Gale)</td>
+			<td>Complete content from medical encyclopedias, consumer health pamphlets, and other reference sources plus many full-text articles from medical, nursing, and allied health journals.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Science, Nutrition, Health/Medicine</td>
+			<td>http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=HWRC-1</td>
+			<td>Gale</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468372</td>
+			<td>Database</td>
+			<td>Health Reference Center Academic (Gale)</td>
+			<td>Many full-text articles on such topics as addictions, diseases, fitness, nutrition, occupational health &amp; safety, prescription drugs, public health, and more. This is a subset of the larger database...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Science, Nutrition, Health/Medicine</td>
+			<td>http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=HRCA</td>
+			<td>Gale</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468373</td>
+			<td>Database</td>
+			<td>History Reference Center (EBSCO)</td>
+			<td>Selective full-text articles plus photos, maps, videos, biographies of historical figures, and U.S. and world history timelines.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Social Sciences</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=khh</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>20866000</td>
+			<td>Database</td>
+			<td>Hoover&#39;s Company and Industry Reports</td>
+			<td>Use this resource to find: Company Info (financials, debt, sales, competitors, etc.), Marketing/business strategies, Newly launched brands</td>
+			<td>Eshleman, Joe</td>
+			<td>2016-04-13</td>
+			<td>0</td>
+			<td>Company Information, Financials</td>
+			<td>http://0-www.lexisnexis.com.helin.uri.edu/hottopics/lnacademic/?verb=sr&amp;csi=3746</td>
+			<td>LexisNexis</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468374</td>
+			<td>Database</td>
+			<td>Hospitality &amp; Tourism Complete (EBSCO)</td>
+			<td>Many full-text articles covering Baking &amp; Culinary Arts, Business Travel, Event Management, Food &amp; Beverage, Gaming &amp; Casinos, Hospitality Law, Hotel Management, Leisure Studies, Market Trends,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>3</td>
+			<td>Hospitality, Culinary Arts, Travel &amp; Tourism</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=hjh</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468375</td>
+			<td>Database</td>
+			<td>Hospitality, Tourism and Leisure Collection (Gale)</td>
+			<td>Selective full-text articles from over 500 journals covering various aspects of the hospitality industry such as cruise lines, hotels &amp; motels, resorts, restaurants &amp; menu planning, travel &amp; tourism,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>2</td>
+			<td>Hospitality, Culinary Arts, SEE, Travel &amp; Tourism</td>
+			<td>http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=PPTH</td>
+			<td>Gale</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468376</td>
+			<td>Database</td>
+			<td>IBISWorld</td>
+			<td>Industry research for over 700 U.S. industries plus hard-to-find U.S. &amp;quot;specialized industries,&amp;quot; including 60 industries in Australia, China, and the UK. Go to &amp;quot;Key Statistics&amp;quot; to...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Hospitality, Business, Marketing &amp; Advertising, Industry Information</td>
+			<td>http://0-www.ibisworld.com.helin.uri.edu/</td>
+			<td>IBISWorld</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468377</td>
+			<td>Database</td>
+			<td>JSTOR Arts and Sciences IV Collection</td>
+			<td>Full-text articles from back issues of scholarly journals in the fields of Business, Education, and Law, including several titles in Administration, Psychology, and Public Policy.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Education, English, Social Sciences, Literature</td>
+			<td>http://0-www.jstor.org.helin.uri.edu/</td>
+			<td>JSTOR</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15468378</td>
+			<td>Database</td>
+			<td>LexisNexis Academic</td>
+			<td>Full-text access to international newspapers, SEC filings (annual reports), legal information (federal and state laws), company profiles, and brief biographies of people around the world.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>Business, English, Law, Company Information, Newspapers, Current Events, Criminal Justice, Financials</td>
+			<td>http://0-www.lexisnexis.com.helin.uri.edu/hottopics/lnacademic</td>
+			<td>LexisNexis</td>
+			<td>Newspapers</td>
+			<td> </td>
+		</tr>
+		<tr><td>15468379</td>
+			<td>Database</td>
+			<td>Literature Resource Center (Gale)</td>
+			<td>American and international authors from all time periods with authors&#39; biographies, literary criticism, overviews of literary works and plot summaries. Explore the &amp;quot;Literary-Historical...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-27</td>
+			<td>0</td>
+			<td>English, Literature</td>
+			<td>http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=LitRC-16</td>
+			<td>Gale</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480668</td>
+			<td>Database</td>
+			<td>MarketResearch.com Academic</td>
+			<td>Industry reports include demographics, market trends, forecasts, analysis of major brands, new products, and consumer trends &amp; buyer behavior in such fields as Food &amp; Beverage, Food Service &amp;...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Business, Culinary Arts, Marketing &amp; Advertising, Industry Information</td>
+			<td>http://0-academic.marketresearch.com.helin.uri.edu/</td>
+			<td>MarketResearch.com</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480669</td>
+			<td>Database</td>
+			<td>MAS Ultra - School Edition (EBSCO)</td>
+			<td>Biographies, book reviews, articles from general interest magazines, (World Almanac, CIA World Fact Book, encyclopedias) plus photos, maps and flags.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td> </td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=ulh</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480670</td>
+			<td>Database</td>
+			<td>MEF Digital (Media Education Foundation) (Kanopy)</td>
+			<td>Streaming educational videos from MEF (Media Education Foundation). You can use the BROWSE SUBJECTS button for faster searching from a drop-down list. Examples include The ARTS (Design, Fashion,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>1</td>
+			<td>Education</td>
+			<td>http://0-jwu.kanopystreaming.com.helin.uri.edu/</td>
+			<td>Kanopy Distribution</td>
+			<td>Streaming Videos</td>
+			<td> </td>
+		</tr>
+		<tr><td>15480671</td>
+			<td>Database</td>
+			<td>Military &amp; Government Collection (EBSCO)</td>
+			<td>Current news articles about law enforcement and all branches of the military.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Political Science</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=mth</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480672</td>
+			<td>Database</td>
+			<td>Mometrix Test Preparation Manuals</td>
+			<td>Study guides &amp; practice tests primarily for students in Counseling Psychology, Finance, Nutrition, and Physician Assistant programs.  NOTE: JWU&#39;s subscribed Study Guides are organized under these...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Business, Education, Social Sciences, Nutrition, Psychology</td>
+			<td>http://0-www.mometrix.com.helin.uri.edu/elibrary</td>
+			<td>Mometrix</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480673</td>
+			<td>Database</td>
+			<td>Morningstar</td>
+			<td>Financial information on thousands of stocks traded on the major exchanges, plus mutual funds and ETFs (exchange-traded funds). Streaming videos feature how-to investment advice (see Articles &amp;...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Business, Marketing &amp; Advertising, Company Information, Financials</td>
+			<td>http://0-library.morningstar.com.helin.uri.edu/</td>
+			<td>Morningstar</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480674</td>
+			<td>Database</td>
+			<td>MRI+ Reporter (GfK)</td>
+			<td>Market research studies contain consumer demographics which describe the &amp;quot;readers, viewers, or listeners&amp;quot; of various media such as magazines, TV, radio, and websites.  IMPORTANT: FORMER &amp;...</td>
+			<td>Reynolds, Sue</td>
+			<td>2015-08-28</td>
+			<td>1</td>
+			<td>Business, Marketing &amp; Advertising</td>
+			<td>https://www.gfkmrismartsystem.com</td>
+			<td>GfK Mediamark Research</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480675</td>
+			<td>Database</td>
+			<td>Natural Medicines (Therapeutic Res. Ctr.)</td>
+			<td>For healthcare students, professionals, and nutritionists. Access current medical and alternative therapies including nutrition, diets &amp; dietary supplements, functional foods, and exercises for...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Nutrition, Health/Medicine</td>
+			<td>https://0-naturalmedicines.therapeuticresearch.com.helin.uri.edu/</td>
+			<td>Therapeutic Research Ctr.</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480676</td>
+			<td>Database</td>
+			<td>Opposing Viewpoints In Context (Gale)</td>
+			<td>Support your point of view on a controversial issue with facts and statistics from primary and government documents, photos, and magazine &amp; newspaper articles which have already argued your case.</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>English, Current Events</td>
+			<td>http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=OVIC</td>
+			<td>Gale</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480677</td>
+			<td>Database</td>
+			<td>PolicyMap (The Reinvestment Fund)</td>
+			<td>A large geo-stats database features an interactive, online mapping tool across the U.S.!  Helpful for community development, business planning, market research, site selection &amp; impact studies, grant...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Education, Social Sciences, Criminal Justice</td>
+			<td>http://0-jwu.policymap.com.helin.uri.edu/maps</td>
+			<td>The Reinvestment Fund (TRF)</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480678</td>
+			<td>Database</td>
+			<td>PrivCo</td>
+			<td>Information on thousands of major private companies within the United States and selective countries such as Canada, United Kingdom, and Italy. Private company data includes financials (several years...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Business, Marketing &amp; Advertising, Company Information</td>
+			<td>http://0-www.privco.com.helin.uri.edu/</td>
+			<td>PrivCo</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480679</td>
+			<td>Database</td>
+			<td>Providence Journal</td>
+			<td>This is the daily Providence Journal newspaper with real-time updates.  Click on the &amp;quot;eEdition&amp;quot; tab then the &amp;quot;Back Issues” tab to select the complete digitized version of the most...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Newspapers, Current Events</td>
+			<td>http://0-www.providencejournal.com.helin.uri.edu</td>
+			<td>Providence Journal</td>
+			<td>Newspapers</td>
+			<td> </td>
+		</tr>
+		<tr><td>15480680</td>
+			<td>Database</td>
+			<td>PsycARTICLES (EBSCO)</td>
+			<td>Many full-text articles from nearly 80 journals published by the American Psychological Association (APA) and allied organizations dating back as early as 1894 (over 100 years of coverage). All areas...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Education, Leadership, Psychology, Criminal Justice</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=pdh</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480681</td>
+			<td>Database</td>
+			<td>PsycBOOKS (EBSCO)</td>
+			<td>Scholarly and professional research ebooks published by the American Psychological Association (APA) and other acclaimed publishers in the field of psychology. Explore the popular multi-volume APA...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Psychology</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=pzh</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480682</td>
+			<td>Database</td>
+			<td>PsychiatryOnline with DSM Manual 5 (APA/APP)</td>
+			<td>Diagnostic &amp; Statistical Manual of Mental Disorders-5th Edition is one of several diagnostic tools from the publishers APA (American Psychiatric Assoc.) and APP (American Psychiatric Publishing)....</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Psychology</td>
+			<td>http://0-www.psychiatryonline.org.helin.uri.edu/</td>
+			<td>APA/APP (Amer. Psychological Assoc.) / (Amer. Psychiatric Publishing)</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480683</td>
+			<td>Database</td>
+			<td>R. K. Miller Marketing Research Handbooks</td>
+			<td>E-books in such fields as Casinos &amp; Gaming, Consumer Behavior &amp; Marketing, Entertainment/Media &amp; Advertising, Healthcare Business, Leisure, Restaurant/Food &amp; Beverage, Retailing, Sports Marketing,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Business, Culinary Arts, Marketing &amp; Advertising, Industry Information, Travel &amp; Tourism</td>
+			<td>http://0-www.rkma.com.helin.uri.edu/jwu/library</td>
+			<td>Richard K. Miller &amp; Assoc.</td>
+			<td>eBooks</td>
+			<td> </td>
+		</tr>
+		<tr><td>15480684</td>
+			<td>Database</td>
+			<td>ReferenceUSA (Infogroup)</td>
+			<td>Useful for market research, entrepreneurs, job seekers, and finding healthcare professionals. IMPORTANT: After selecting one of the &amp;quot;Available Databases&amp;quot; listed on the ReferenceUSA website,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Career Management, Company Information</td>
+			<td>http://0-www.referenceusa.com.helin.uri.edu/</td>
+			<td>Infogroup</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480685</td>
+			<td>Database</td>
+			<td>Regional Business News (EBSCO)</td>
+			<td>Selective, full-text articles from business journals, newspapers, and newswires within the U.S. </td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Newspapers</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=bwh</td>
+			<td>EBSCO</td>
+			<td>Newspapers</td>
+			<td> </td>
+		</tr>
+		<tr><td>15480686</td>
+			<td>Database</td>
+			<td>SAGE Journals Online</td>
+			<td>Full-text journal articles are ONLY AVAILABLE FROM 1999-TO THE CURRENT YEAR in such fields as Administration &amp; Leadership, Business/Management, Clothing &amp; Textiles, Criminal Justice, Cultures,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>1</td>
+			<td>Education, Leadership</td>
+			<td>http://0-online.sagepub.com.helin.uri.edu/search/</td>
+			<td>SAGE</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480687</td>
+			<td>Database</td>
+			<td>SBRnet (Sports Business Research Network)</td>
+			<td>Sports marketing research statistics on consumer expenditures, attendance at sporting events, TV viewership and Internet usage. Plus, directories with contact information for professional sports...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>1</td>
+			<td> </td>
+			<td>http://0-www.sbrnet.com.helin.uri.edu/</td>
+			<td>SBRnet (Sport Business Research Network)</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480688</td>
+			<td>Database</td>
+			<td>ScholarsArchive@JWU</td>
+			<td>Repository for journal articles, working papers, dissertations &amp; theses, and other creative works published by Johnson &amp; Wales University faculty, students, and staff, plus special collections such...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Education</td>
+			<td>http://scholarsarchive.jwu.edu/</td>
+			<td>Bepress</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15790691</td>
+			<td>Database</td>
+			<td>Science (AAAS)</td>
+			<td>A leading journal of original scientific research around the world from the organization American Assoc. for the Advancement of Science.  Subjects cover the Life Sciences and Physical Sciences, plus...</td>
+			<td>Reynolds, Sue</td>
+			<td>2015-09-10</td>
+			<td>0</td>
+			<td>Science</td>
+			<td>http://0-www.sciencemag.org.helin.uri.edu/magazine</td>
+			<td>AAAS (Amer. Assoc. for the Advancement of Science)</td>
+			<td>Journals</td>
+			<td> </td>
+		</tr>
+		<tr><td>15480689</td>
+			<td>Database</td>
+			<td>Science In Context (Gale)</td>
+			<td>Many full-text articles from national and global newspapers, magazines, and scholarly journals. Over 200 experiments and projects are covered.  Interactive with thousands of images, videos, and audio...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Science</td>
+			<td>http://0-infotrac.galegroup.com.helin.uri.edu/itweb/prov43712?db=SCIC</td>
+			<td>Gale</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480690</td>
+			<td>Database</td>
+			<td>ScienceDirect Journals (Elsevier)</td>
+			<td>Full-text access to 8 JWU-subscribed e-journals: Business Horizons, Contemporary Educational Psychology, Food Microbiology, International Journal of Hospitality Management, Journal of Economics &amp;...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Science, Equine Studies</td>
+			<td>http://0-www.sciencedirect.com.helin.uri.edu/</td>
+			<td>Elsevier</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15701556</td>
+			<td>Database</td>
+			<td>Scientific American (Nature Publishing Group)</td>
+			<td>Stay current with the latest discoveries in science &amp; technological innovation, which can influence human affairs and shape our future.  Leading scientists, inventors and engineers from diverse...</td>
+			<td>Reynolds, Sue</td>
+			<td>2015-09-07</td>
+			<td>0</td>
+			<td>Science</td>
+			<td>http://0-www.nature.com.helin.uri.edu/scientificamerican</td>
+			<td>Nature Publishing Group</td>
+			<td>Journals</td>
+			<td> </td>
+		</tr>
+		<tr><td>15480691</td>
+			<td>Database</td>
+			<td>SPORTDiscus with Full Text (EBSCO)</td>
+			<td>Many full-text articles from sports and sports medicine journals plus books and book chapters. </td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>1</td>
+			<td>Hospitality, Health/Medicine</td>
+			<td>http://0-search.ebscohost.com.helin.uri.edu/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=s3h</td>
+			<td>EBSCO</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480692</td>
+			<td>Database</td>
+			<td>Standard Rate &amp; Data Service (SRDS)</td>
+			<td>Advertising costs and consumer lifestyles: What would it cost to advertise your business or service in magazines, newspapers, radio, television, outdoor billboards, or websites? Find ad rates,...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>1</td>
+			<td>Business, Marketing &amp; Advertising</td>
+			<td>http://0-next.srds.com.helin.uri.edu/</td>
+			<td>Kantar Media</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480693</td>
+			<td>Database</td>
+			<td>Statista</td>
+			<td>Statistics, market studies &amp; reports for over 600 international industries, 37 countries, and 60,000 wide-ranging topics! Enter your own search terms or browse data reports listed under these links:...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Education, Social Sciences, Company Information</td>
+			<td>http://0-www.statista.com.helin.uri.edu/</td>
+			<td>Statista, Inc.</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480694</td>
+			<td>Database</td>
+			<td>VentureLine</td>
+			<td>30 different types of company &amp; industry financial ratios have been calculated for you. Compare a U.S. company (either publicly traded on the stock exchange or a private company) against another...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Business, Company Information, Stocks &amp; Bonds</td>
+			<td>http://0-www.ventureline.com.helin.uri.edu/</td>
+			<td>VentureLine</td>
+			<td> </td>
+			<td> </td>
+		</tr>
+		<tr><td>15480695</td>
+			<td>Database</td>
+			<td>Wall Street Journal; Eastern Edition (ProQuest)</td>
+			<td>Selective, full-text newspaper articles from 1984 to the present are available from the world&#39;s leading financial newspaper. Content covers companies, stock prices, people, and products. Images are...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Business, Company Information, Industry Information, Newspapers</td>
+			<td>http://0-search.proquest.com.helin.uri.edu/wallstreetjournal/advanced?accountid=1363</td>
+			<td>ProQuest</td>
+			<td>Newspapers</td>
+			<td> </td>
+		</tr>
+		<tr><td>15480696</td>
+			<td>Database</td>
+			<td>WGSN (World Global Style Network) (formerly, Stylesight)</td>
+			<td>IMPORTANT: CLICK THROUGH ANY SECURITY CERTIFICATE WARNINGS &amp; ACCEPT RISKS, DISPLAYED BY YOUR BROWSER, in order to access WGSN.   Fashion trend forecasting and analysis around the world!  Vast image...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>1</td>
+			<td>Fashion &amp; Retailing</td>
+			<td>https://0-www.wgsn.com.helin.uri.edu/home/</td>
+			<td>WGSN (World Global Style Network)</td>
+			<td>Images</td>
+			<td> </td>
+		</tr>
+		<tr><td>15480697</td>
+			<td>Database</td>
+			<td>Women&#39;s Wear Daily (WWD)</td>
+			<td>CURRENT 12 months of articles and images: Key trends &amp; news worldwide in women&#39;s and men&#39;s fashion, beauty, footwear, merchandising and the retail industries are updated daily! Photos of runway...</td>
+			<td>Meincke, David</td>
+			<td>2015-08-28</td>
+			<td>0</td>
+			<td>Fashion &amp; Retailing, Newspapers</td>
+			<td>http://0-wwd.com.helin.uri.edu/</td>
+			<td>Penske Business Media/Fairchild Pub.</td>
+			<td>Newspapers</td>
+			<td> </td>
+		</tr>
+	</tbody></table>		
