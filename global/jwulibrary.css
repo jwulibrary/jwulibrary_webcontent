@@ -385,7 +385,7 @@ input#libanswers-search-box[type=text] {
 .header-menu2 .navbar-nav>li>a {
 
     padding: 0.6em 0.8em;
-	color: white;
+	color: #FFFFFF !important;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	font-weight: bold;
@@ -433,7 +433,7 @@ input#libanswers-search-box[type=text] {
 }
 
 .navbar-nav .open .dropdown-menu{
-
+ color:#777;
 }
 
 .navbar-default {
@@ -464,11 +464,11 @@ input#libanswers-search-box[type=text] {
 }
 
 .navbar-default .navbar-nav>li>a {
-	color: #FFF;
+		color: #FFF !important;
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-	color: #FFF;
+	color: #FFF !important;
 	opacity: 1;
 }
 
@@ -503,7 +503,7 @@ input#libanswers-search-box[type=text] {
 
 
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
-		color: #333;
+		color: #CCC !important;
 		opacity: 1;
 		background-color: #FFF;
 		display: block;
