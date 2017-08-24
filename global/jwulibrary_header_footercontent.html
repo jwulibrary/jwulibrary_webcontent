@@ -1,121 +1,37 @@
 <html>
-<!--TABLE OF CONCENTS:
-  - Dependencies
-  - <Footer></Footer>
-  -->
-<!-- DEPENDENICES-->
-<!--IMPORTANT NOTE on Dependencies...
-only for local testing..DO NOT INCLUDE in LibAnswers Live...they will break it! -->
-
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
 	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
-
 	<link rel="stylesheet" type="text/css" href="jwulibrary.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Audiowide|Exo+2|Open+Sans:400|Roboto:300" rel="stylesheet">
 
-
-
 	<script type="text/javascript" src="main.js"></script>
 	<!-- <script type="text/javascript" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/main.js"></script> -->
-
-
-
-
-
 </head>
 
+<body onload="loadHeader(); loadFooter(); loadSearchbox()">
+	<div id="header">Loading...</div>
+	<script id="header-content" type="x-tmpl-mustache">
+		{{{headercontent}}}
+	</script>
 
 
-	<body onload="loadHeader(); loadFooter()">
+	<div id="searchbox">Loading...</div>
+	<script id="searchbox-content" type="x-tmpl-mustache">
+		{{{searchboxcontent}}}
+	</script>
 
-			<div id="header">Loading...</div>
-			<script id="header-content" type="x-tmpl-mustache">
-				{{{headercontent}}}
-			</script>
-
-
-
-
-
-
-
-
-
-
-			<!--SEARCHBOX-->
+	<div id="footer">Loading...</div>
+	<script id="footer-content" type="x-tmpl-mustache">
+		{{{footercontent}}}
+	</script>
 
 
 
-
-
-
-
-
-
-
-
-					<div id="footer">Loading...</div>
-					<script id="footer-content" type="x-tmpl-mustache">
-						{{{footercontent}}}
-					</script>
-
-
-
-
-
-
-
-
-		<script>
-			//Get time, save to var, add to top clock
-			$.ajax({
-				url: "https://api3.libcal.com/api_hours_today.php?iid=1433&lid=0&format=json&jsoncallback=?%22",
-				dataType: 'jsonp',
-				success: function(rawJsonp) {
-					calData = rawJsonp;
-
-					dcTime = calData.locations[0];
-					hbTime = calData.locations[1];
-
-
-					$("#hours-nav").append("<li class='text-center'>Downcity: " + dcTime.rendered + "</li>").append("<li class='text-center'>Harborside: " + hbTime.rendered + "</li>");
-					$("#hours-nav-alt").append("<span class='text-center'>Downcity: " + dcTime.rendered + "</span>").append("<span class='text-center'> | Harborside: " + hbTime.rendered + "</span>");
-				}
-
-
-
-			});
-		</script>
-
-
-
-
-		<script>
-			$(document).ready(function() {
-				var check_condition = $('.s-srch-top-header').length > 0 || $('.s-la-faq-answer').length > 0
-				if (check_condition) {
-					$("#s-la-page-maincontent").prepend($("#s-la-public-header-title"));
-					$('html, body').animate({
-						scrollTop: $("#s-la-page-maincontent").offset().top
-					});
-				}
-			})
-		</script>
-
-
-		<script>
-			$(document).ready(function() {
-				$("#s-la-public-header").hide();
-				$("#s-la-page-title-bar").hide();
-			})
-		</script>
-
-	</body>
-
+</body>
 </html>

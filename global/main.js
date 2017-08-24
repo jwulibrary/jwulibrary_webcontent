@@ -103,6 +103,17 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 allFaqs = ["How can I get access to EasyBib EDU?", "Do you have any resources to teach me new software or coding languages? What is Lynda.com?", "What is my library barcode for?", "What is my library barcode for?",
     "What is searched in WorldCat Discovery?", "What is searched in WorldCat Discovery?", "How do I search a specific database through WorldCat?", "How do I find full-text, peer-reviewed articles using WorldCat?",
     "How do I search for ebooks in Worldcat?", "How do I search for journals in Worldcat?", "What is my professor's email address?", "What is my professor's email address?",
@@ -302,5 +313,331 @@ function loadFooter() {
   Mustache.parse(template);   // optional, speeds up future uses
   var rendered = Mustache.render(template, footer);
   $('#footer').html(rendered);
+
+}
+
+
+
+
+
+
+
+function loadSearchbox(){
+    var template  = $('#searchbox-content').html();
+    var searchbox = {
+        searchboxcontent:
+        `<div id="responsive-bounding-box">
+
+        	<div id="jwuul-searchbox" class="container-fluid">
+        		<h1 id="searchbox-title">Worldcat Search
+        					<a class = "homepage-tooltip" href="http://jwu-ri.libanswers.com/search/?t=0&adv=1&topics=worldcat#s-srch-results-container" target="_blank" data-toggle="tooltip"  data-placement="top" title="Tips and Tutorials for WorldCat Discovery">
+        					<i style ="font-size: 1.2em; padding: .3em;" class="fa fa-question-circle" aria-hidden="true"></i>
+        						</a> </h1>
+        		<script>
+        			$('.homepage-tooltip').tooltip();
+        		</script>
+
+
+        		<ul id="search-tabs" class="nav nav-tabs nav-justified">
+        			<li class="active"><a href="#everything-tab" data-toggle="tab"><i class="fa fa-search"></i> <span>Everything</span></a></li>
+        			<li><a href="#articles-tab" data-toggle="tab"><i class="fa fa-newspaper-o"></i> <span>Articles</span></a></li>
+        			<li><a href="#books-tab" data-toggle="tab"><!-- <span class=Bookshicon glyphicon-book"></span> --><i class="fa fa-book"></i> <span>Books</span></a></li>
+        			<li><a href="#videos-tab" data-toggle="tab"><!-- <span class=Bookshicon glyphicon-book"></span> --><i class="fa fa-film"></i> <span>Videos</span></a></li>
+
+        		</ul>
+
+        		<div class="tab-content">
+        			<!-- TAB 1 -->
+        			<div id="everything-tab" class="searchbox-tab-pane tab-pane active">
+        				<h4 class="search-name">Books, Articles, Ebooks, Journals, Videos</h4>
+        				<div class="row">
+        					<form action="https://jwupvd.on.worldcat.org/search" id="worldcat-search-form" class="for-un-blanking" target="_blank" method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage',  'everything-search', val); ">
+        						<div class="search input-group hidden-xs">
+        							<label for="library-search-box" class="sr-only">
+        										Find books, Articles, Media, and More
+        									</label>
+        							<input type="hidden" name="format" value="all" />
+        							<input type="text" id="library-search-box" class="form-control input " name="queryString" placeholder="Type Search Words Here" />
+        							<span class="input-group-btn">
+
+        										<button type="submit" class=" btn    search-submit">
+        											<i class="fa fa-search fa-lg " aria-hidden="true"></i>
+        											Search
+        										</button>
+        									</span>
+        						</div>
+        					</form>
+        					<form action="https://jwupvd.on.worldcat.org/search" id="worldcat-search-form" class="for-un-blanking" target="_blank" method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage',  'everything-search', val); ">
+
+        						<div class="search input-group visible-xs">
+        							<label for="library-search-box" class="sr-only">
+        										Books, Articles, Ebooks, Journals, Videos
+        									</label>
+        							<input type="hidden" name="format" value="all" />
+        							<input type="text" id="library-search-box" class="form-control input " name="queryString" placeholder="Enter title, author, keyword, ISBN, etc. of the article, journal, book, movie, etc." />
+        							<span class="input-group-btn">
+
+        										<button type="submit" class=" btn    search-submit">
+        											<i class="fa fa-search fa-lg " aria-hidden="true"></i>
+        											Search
+        										</button>
+        									</span>
+        						</div>
+        				</div>
+        				</form>
+
+        				<div class="row">
+        					<div class="pull-right advanced-search"><a href="https://jwupvd.on.worldcat.org/advancedsearch" class="for-un-blanking" target="_blank">Advanced Search</a></div>
+        				</div>
+        			</div>
+        			<!-- TAB 2 -->
+        			<!-- <div id="articles-tab" class=" searchbox-tab-pane tab-pane ">
+        				<h4 class="search-name">Find articles <small style="margin-left:1em; padding:.1em;" class = "bg-info text-muted"><a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=a9h&db=bth">Or search EBSCO articles only</a></small></h4>
+        				<div class="row">
+        					<form action="https://jwupvd.on.worldcat.org/search" target="_blank" method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'article-search', val); ">
+
+        						<div class="search input-group hidden-xs">
+
+        							<label for="library-search-box" class="sr-only">
+        										Find articles
+        									</label>
+        							<input type="hidden" name="format" value="Artchap" />
+        							<input type="text" id="library-search-box" class="form-control input " name="queryString" placeholder="Enter the article title, journal name, author, subject terms, or keywords" />
+        							<span class="input-group-btn">
+        										<button type="submit" class="btn     search-submit">
+        											<i class="fa fa-newspaper-o fa-lg"></i>
+        											Search
+        										</button>
+        									</span>
+        						</div>
+        						<div class="form-check pull-right  hidden-xs">
+        							<label class="form-check-label">
+        										<input name="subformat" id="ebook-checkbox" type="checkbox" class="searchbox-checkbox"  value="Jrnl::jrnl_digital">Journal Titles Only
+        									</label>
+        						</div>
+        					</form>
+        					<form action="https://jwupvd.on.worldcat.org/search" target="_blank" method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'mobile-homepage', 'article-search', val); ">
+
+        						<div class="search input-group visible-xs">
+
+        							<label for="library-search-box" class="sr-only">
+        										Find Articles
+        									</label>
+        							<input type="hidden" name="format" value="Artchap" />
+        							<input type="text" id="library-search-box" class="form-control input " name="queryString" placeholder="Enter the article title, journal name, author, subject terms, or keywords" />
+        							<span class="input-group-btn">
+        										<button type="submit" class="btn     search-submit">
+        											<i class="fa fa-newspaper-o fa-lg"></i>
+        											Search
+        										</button>
+        									</span>
+
+        						</div>
+        					</form>
+
+        				</div>
+        				<div class="row">
+        					<div class="pull-right advanced-search"><a href="https://jwupvd.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a></div>
+        				</div>
+        			</div> -->
+
+
+
+
+
+
+
+        			<script src="https://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
+
+
+
+
+        			<div id="articles-tab" class=" searchbox-tab-pane tab-pane ">
+        				<h4 class="search-name">Find articles using EBSCO
+        					 <small style="margin-left:1em; font-size:.6em;" class = " text-muted"><a id="search-switcher" href="#articles-tab">try the article search in WorldCat (BETA)</a></small>
+        				</h4>
+        				<div id='ebsco-row' class="row">
+        					<form onsubmit="return ebscoHostSearchGo(this); var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'article-search', val);" class="for-un-blanking" target="_blank" method="post">
+        						<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="0" />
+        						<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=cms&db=mzh&db=ufh"
+        						/>
+        						<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url" />
+        						<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
+        						<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+        						<div class="search input-group hidden-xs">
+
+        							<label for="library-search-box" class="sr-only">
+        										Find articles
+        									</label>
+        							<input type="text" id="ebscohostsearchtext" class="form-control input " name="ebscohostkeywords" placeholder="Enter the article title, journal name, author, subject terms, or keywords" />
+        							<span class="input-group-btn">
+        										<button type="submit" class="btn     search-submit">
+        											<i class="fa fa-newspaper-o fa-lg"></i>
+        											Search
+        										</button>
+        									</span>
+        						</div>
+        						<div class="form-check pull-right  hidden-xs">
+        							<!-- <label class="form-check-label">
+        										<input name="subformat" id="ebook-checkbox" type="checkbox" class="searchbox-checkbox"  value="Jrnl::jrnl_digital">Journal Titles Only
+        									</label> -->
+        						</div>
+        					</form>
+        					<form onsubmit="return ebscoHostSearchGo(this);" target="_blank" class="for-un-blanking" method="post">
+        						<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="0" />
+        						<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=cms&db=mzh&db=ufh"
+        						/>
+        						<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url" />
+        						<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
+        						<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+
+        						<div class="search input-group visible-xs">
+
+        							<label for="library-search-box" class="sr-only">
+        										Find Articles
+        									</label>
+        							<input type="text" id="ebscohostsearchtext" class="form-control input " name="ebscohostkeywords" placeholder="Enter the article title, journal name, author, subject terms, or keywords" />
+        							<span class="input-group-btn">
+        										<button type="submit" class="btn     search-submit">
+        											<i class="fa fa-newspaper-o fa-lg"></i>
+        											Search
+        										</button>
+        									</span>
+
+        						</div>
+        					</form>
+
+
+
+        				</div>
+
+
+
+        				<div class="row">
+        					<div class="pull-right advanced-search"><a href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=cms&db=mzh&db=ufh"
+        										class="for-un-blanking" target="_blank">Advanced Search</a></div>
+        				</div>
+        			</div>
+
+
+
+
+
+
+
+
+
+
+        			<div id="books-tab" class=" searchbox-tab-pane tab-pane ">
+        				<h4 class="search-name">Find books</h4>
+        				<div class="row">
+        					<form action="https://jwupvd.on.worldcat.org/search" class="for-un-blanking" target="_blank" method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'book-search', val); ">
+        						<div class="search input-group hidden-xs">
+        							<label for="library-search-box" class="sr-only">
+        										Find Book
+        									</label>
+        							<input type="hidden" name="format" value="Book">
+
+        							<input type="text" id="library-search-box" class="form-control input   " name="queryString" placeholder="Search by title, author, subject, keyword, ISBN, or publisher	" />
+        							<span class="input-group-btn">
+        										<button type="submit" class="btn     search-submit">
+        											<i class="fa fa-book fa-lg"></i>
+        											Search
+        										</button>
+
+        									</span>
+
+        						</div>
+
+        						<div class="form-check pull-right hidden-xs ">
+        							<label class="form-check-label">
+        										<input name="subformat" id="ebook-checkbox" type="checkbox" class="searchbox-checkbox"  value="Book::book_digital">Ebooks Only
+        									</label>
+        						</div>
+
+        					</form>
+        					<form action="https://jwupvd.on.worldcat.org/search" class="for-un-blanking" target="_blank" method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'mobile-homepage', 'book-search', val); ">
+
+        						<div class="search input-group visible-xs">
+        							<label for="library-search-box" class="sr-only">
+        										Find Book
+        									</label>
+        							<input type="hidden" name="format" value="Book">
+
+        							<input type="text" id="library-search-box" class="form-control input   " name="queryString" placeholder="Search by title, author, subject, keyword, ISBN, or publisher	" />
+        							<span class="input-group-btn">
+
+        										<button type="submit" class="btn     search-submit">
+        											<i class="fa fa-book fa-lg"></i>
+        											Search
+        										</button>
+        									</span>
+        						</div>
+        					</form>
+        				</div>
+        				<div class="row">
+        					<div class="pull-right advanced-search"><a href="https://jwupvd.on.worldcat.org/advancedsearch" class="for-un-blanking" target="_blank">Advanced Search</a></div>
+        				</div>
+        			</div>
+
+        			<div id="videos-tab" class=" searchbox-tab-pane tab-pane ">
+        				<h4 class="search-name">Find videos</h4>
+        				<div class="row">
+        					<form action="https://jwupvd.on.worldcat.org/search" class="for-un-blanking" target="_blank" method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'homepage', 'Video-search', val); ">
+        						<div class="search input-group hidden-xs">
+        							<label for="library-search-box" class="sr-only">
+        										Find Video
+        									</label>
+        							<input type="hidden" name="format" value="Video">
+
+        							<input type="text" id="library-search-box" class="form-control input   " name="queryString" placeholder="Search by title, topic, director, or performer" />
+        							<span class="input-group-btn">
+
+        										<button type="submit" class="btn     search-submit">
+        											<i class="fa fa-film fa-lg"></i>
+        											Search
+        										</button>
+        									</span>
+        						</div>
+        						<div class="form-check pull-right hidden-xs ">
+        							<label class="form-check-label">
+        										<input name="subformat" id="evideo-checkbox" type="checkbox" class="searchbox-checkbox" value="Video::video_digital">Streaming Only
+        									</label>
+        						</div>
+        					</form>
+        					<form action="https://jwupvd.on.worldcat.org/search" class="for-un-blanking" target="_blank" method="get" onsubmit="var val = document.getElementById('library-search-box').value; ga('send', 'event', 'mobile-homepage', 'Video-search', val); ">
+
+        						<div class="search input-group visible-xs">
+        							<label for="library-search-box" class="sr-only">
+        										Find Video
+        									</label>
+        							<input type="hidden" name="format" value="Video">
+
+        							<input type="text" id="library-search-box" class="form-control input   " name="queryString" placeholder="Search by title, author, subject, keyword, ISBN, or publisher	" />
+        							<span class="input-group-btn">
+
+        										<button type="submit" class="btn     search-submit">
+        											<i class="fa fa-film fa-lg"></i>
+        											Search
+        										</button>
+        									</span>
+        						</div>
+        					</form>
+        				</div>
+        				<div class="row">
+        					<div class="pull-right advanced-search"><a class="for-un-blanking" href="https://jwupvd.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a></div>
+        				</div>
+        			</div>
+        		</div>
+
+        	</div>
+        </div>
+`
+    };
+
+    Mustache.parse(template);   // optional, speeds up future uses
+    var rendered = Mustache.render(template, searchbox);
+    $('#searchbox').html(rendered);
+
 
 }
