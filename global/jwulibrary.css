@@ -1806,5 +1806,35 @@ input#libanswers-search-box[type=text] {
 .svg-social-footer:hover {
 	opacity: 1;
 	width: 2.2em;
-	transition: all .3 ease-out;
+	transition: all 0.3s ease-out;
+}
+
+
+.img-center{
+
+margin:0 auto;
+}
+
+
+.svg-ask-icons{
+
+	 width:60px;
+	 height:60px;
+	 opacity: .6;
+	 fill:#23527c;
+	 	transition: all 0.3s ease-out;
+
+
+
+}
+
+
+.svg-ask-icons:hover {
+	opacity: 1;
+	stroke-width: .2;
+	fill:#337ab7;
+	transition: all 0.3s ease-out;
+
+
+
 }
