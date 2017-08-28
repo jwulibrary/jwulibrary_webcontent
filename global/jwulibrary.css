@@ -197,27 +197,6 @@ p {
 }
 
 
-/* ASK PICS STUFF*/
-
-#ask-us-wrap-desktop {}
-
-#ask-pics-desktop {}
-
-.ask-pic img {
-	width: 75px;
-}
-
-.ask-pic p {
-	font-size: 1.4rem;
-}
-
-#ask-us-wrap-mobile {}
-
-#ask-pics-mobile {}
-
-.ask-pic-mobile p {
-	font-size: 1.2rem;
-}
 
 
 /* Quicklinks stuff */
@@ -1816,24 +1795,55 @@ margin:0 auto;
 }
 
 
+
+
+/* ASK PICS STUFF*/
+
+#ask-us-wrap-desktop {}
+#ask-pics-desktop {}
+
+
+
+.ask-pic p {
+	font-size: 1.4rem;
+	margin-left:0.6em;
+	text-decoration: none;
+}
+.ask-pic a:hover {
+
+
+	text-decoration: none;
+}
+
+#ask-us-wrap-mobile {}
+
+#ask-pics-mobile {}
+
+.ask-pic-mobile p {
+	font-size: 1.2rem;
+}
+
 .svg-ask-icons{
 
 	 width:60px;
 	 height:60px;
-	 opacity: .6;
+	 opacity:.7;
 	 fill:#23527c;
 	 	transition: all 0.3s ease-out;
+		width:4.4em;
+		height:4.4em;
 
 
 
 }
 
 
-.svg-ask-icons:hover {
+.svg-ask-icons:hover{
 	opacity: 1;
 	stroke-width: .2;
 	fill:#337ab7;
 	transition: all 0.3s ease-out;
+
 
 
 

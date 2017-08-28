@@ -335,50 +335,53 @@ function loadContact() {
 	var contact = {
 
 		contactcontent: `
-            <div id="ask-us-wrap-desktop" class="librarybox">
+
+
+		<div id="ask-us-wrap-desktop" class="librarybox">
 			<div class="row">
-            	<div id="ask-pics-desktop container-fluid">
-            		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
-            			<div class="row">
-            				<a href="http://jwu-ri.libanswers.com/a.php?qid=2887" target="_blank" title="Send a Text Message to the Library" onClick="ga('send', 'event', 'askicons', 'click', 'text') ;">
-            					<i class="ask-icon fa fa-mobile"></i> </a>
-            			</div>
-            			<div class="row">
-            				<p class="text-center">Text</p>
-            			</div>
-            		</div>
-            		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
-            			<div class="row">
-            				<a class='img-center' href="http://jwu-ri.libanswers.com/index#s-la-box-36592" target="_blank" title="E-Mail the Library" onClick="ga('send', 'event', 'askicons', 'click', 'email') ;">
-							<svg class='svg-ask-icons' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"  xml:space="preserve">
-<path d="M448,64H64C28.656,64,0,92.656,0,128v256c0,35.344,28.656,64,64,64h384c35.344,0,64-28.656,64-64V128  C512,92.656,483.344,64,448,64z M342.656,234.781l135.469-116.094c0.938,3,1.875,6,1.875,9.313v256c0,2.219-0.844,4.188-1.281,6.281  L342.656,234.781z M448,96c2.125,0,4,0.813,6,1.219L256,266.938L58,97.219C60,96.813,61.875,96,64,96H448z M33.266,390.25  C32.828,388.156,32,386.219,32,384V128c0-3.313,0.953-6.313,1.891-9.313L169.313,234.75L33.266,390.25z M64,416  c-3.234,0-6.172-0.938-9.125-1.844l138.75-158.563l51.969,44.531C248.578,302.719,252.297,304,256,304s7.422-1.281,10.406-3.875  l51.969-44.531l138.75,158.563C454.188,415.063,451.25,416,448,416H64z"/>
-</svg>
-<p>E-mail</p>
-								 </a>
-            			</div>
+				<div id="ask-pics-desktop container-fluid">
+					<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
+						<div class="row">
+							<a class='img-center' href="http://jwu-ri.libanswers.com/a.php?qid=2887" target="_blank" title="Send a Text Message to the Library" onClick="ga('send', 'event', 'askicons', 'click', 'text') ;">
+		<svg class='svg-ask-icons' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"  stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
 
-            		</div>
 
-            		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
-            			<div class="row">
-            				<a href="http://jwu-ri.libanswers.com/a.php?qid=8122" target="_blank" title="Call the Library" onClick="ga('send', 'event', 'askicons', 'click', 'call') ;">
-            					<i class="ask-icon fa fa-phone" aria-hidden="true"></i>
-	<p>Call</p>
-            				</a>
-            			</div>
+						<p>Text</p>
+							 </a>
+						</div>
+					</div>
+					<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
+						<div class="row">
+							<a class='img-center' href="http://jwu-ri.libanswers.com/index#s-la-box-36592" target="_blank" title="E-Mail the Library" onClick="ga('send', 'event', 'askicons', 'click', 'email') ;">
+						<svg class='svg-ask-icons' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512"  xml:space="preserve">
+		<path d="M448,64H64C28.656,64,0,92.656,0,128v256c0,35.344,28.656,64,64,64h384c35.344,0,64-28.656,64-64V128  C512,92.656,483.344,64,448,64z M342.656,234.781l135.469-116.094c0.938,3,1.875,6,1.875,9.313v256c0,2.219-0.844,4.188-1.281,6.281  L342.656,234.781z M448,96c2.125,0,4,0.813,6,1.219L256,266.938L58,97.219C60,96.813,61.875,96,64,96H448z M33.266,390.25  C32.828,388.156,32,386.219,32,384V128c0-3.313,0.953-6.313,1.891-9.313L169.313,234.75L33.266,390.25z M64,416  c-3.234,0-6.172-0.938-9.125-1.844l138.75-158.563l51.969,44.531C248.578,302.719,252.297,304,256,304s7.422-1.281,10.406-3.875  l51.969-44.531l138.75,158.563C454.188,415.063,451.25,416,448,416H64z"/>
+		</svg>
+		<p>E-mail</p>
+							 </a>
+						</div>
 
-            		</div>
-            		<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
-            			<div class="row">
-            				<a href="http://jwu-ri.libanswers.com/" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'faq') ;">
-            					<i class=" ask-icon fa fa-question"></i>
-									<p>FAQs</p></a>
-            			</div>
+					</div>
 
-            		</div>
-            	</div>
+					<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
+						<div class="row">
+							<a class='img-center' href="http://jwu-ri.libanswers.com/a.php?qid=8122" target="_blank" title="Call the Library" onClick="ga('send', 'event', 'askicons', 'click', 'call') ;">
+						<svg  class='svg-ask-icons'  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+		<p>&nbspCall</p>
+						</a>
+						</div>
+
+					</div>
+					<div class="ask-pic col-xs-12 col-sm-6 col-md-3">
+						<div class="row">
+							<a href="http://jwu-ri.libanswers.com/" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'faq') ;">
+<svg class='svg-ask-icons'	 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="1792"><path d="M1088 1256v240q0 16-12 28t-28 12h-240q-16 0-28-12t-12-28v-240q0-16 12-28t28-12h240q16 0 28 12t12 28zm316-600q0 54-15.5 101t-35 76.5-55 59.5-57.5 43.5-61 35.5q-41 23-68.5 65t-27.5 67q0 17-12 32.5t-28 15.5h-240q-15 0-25.5-18.5t-10.5-37.5v-45q0-83 65-156.5t143-108.5q59-27 84-56t25-76q0-42-46.5-74t-107.5-32q-65 0-108 29-35 25-107 115-13 16-31 16-12 0-25-8l-164-125q-13-10-15.5-25t5.5-28q160-266 464-266 80 0 161 31t146 83 106 127.5 41 158.5z"/></svg>
+<p>&nbspFAQs</p></a>
+						</div>
+
+					</div>
 				</div>
-            </div>
+			</div>
+		</div>
 
 
 
