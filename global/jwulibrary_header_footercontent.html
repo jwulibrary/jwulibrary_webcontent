@@ -5,6 +5,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.26.0/polyfill.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
 	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
 	<link rel="stylesheet" type="text/css" href="jwulibrary.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +17,7 @@
 	<!-- <script type="text/javascript" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/main.js"></script> -->
 </head>
 
-<body onload="loadHeader(); loadFooter(); loadSearchbox(); loadContact() ">
+ <body onload="loadHeader(); loadFooter(); loadSearchbox(); loadContact();"> <!--loadRoomBooking(); loadChatbox()"> -->
 	<div id="header">Loading...</div>
 	<script id="header-content" type="x-tmpl-mustache">
 		{{{headercontent}}}
@@ -34,13 +35,49 @@
 		{{{contactcontent}}}
 	</script>
 
+<!--
+ <div id="roombooking">Loading...</div>
+	<script id="roombooking-content" type="x-tmpl-mustache">
+		{{{roombookingcontent}}}
+	</script>
+
+
+	<div id="chatbox">Loading...</div>
+	<script id="chatbox-content" type="x-tmpl-mustache">
+		{{{chatboxcontent}}}
+	</script>
+
+	<div id="featurebox">
+	</div>
+	<script>
+	$.get("http://lgapi-us.libapps.com/widgets.php?site_id=538&widget_type=8&output_format=1&widget_embed_type=2&guide_id=373447&box_id=7787925&map_id=9181224&content_only=0&config_id=1504108164217", function(data) {$( '#featurebox' ).html(data);});
+	</script> -->
+
+
+
+
+
 	<div id="footer">Loading...</div>
 	<script id="footer-content" type="x-tmpl-mustache">
 		{{{footercontent}}}
 	</script>
 
-
-
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
