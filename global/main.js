@@ -445,36 +445,31 @@ function loadRoomBooking() {
 	var roombooking = {
 		roombookingcontent: `
 			<div class="librarybox">
-				<div class="container-fluid"  id="study-room-links">
+				<div  id="study-room-links">
 
 
-						<h3 class='text-center'>Book a Study Room</h3>
-
-						<div class='row'>
-						<a class='study-room-link blue-background' href="http://jwu-ri.libcal.com/booking/downcity" onClick="ga('send', 'event', 'schedule', 'click', 'dcstudyroom') ;">Downcity</a>
-						</div>
-
-						<div class='row'>
-						<a class='study-room-link green-background' href="http://jwu-ri.libcal.com/booking/harborside" onClick="ga('send', 'event', 'schedule', 'click', 'hbstudyroom') ;">Harborside</a>
-						</div>
-
-						<h3 class='text-center'>Book an Appointment with a Writing Coach</h3>
-
-						<div class='row'>
-						<a class='study-room-link purple-background' href="http://jwu-ri.libcal.com/booking/writinglab_downcity" onClick="ga('send', 'event', 'schedule', 'click', 'wcdc') ;">Downcity </a>
-						</div>
-
-						<div class='row'>
-						<a class='study-room-link purple-background' href="http://jwu-ri.libcal.com/booking/writinglab_harborside" onClick="ga('send', 'event', 'schedule', 'click', 'wchb') ;">Harborside</a>
-						</div>
 
 
-						<h3 class='text-center'>Book an appointment with a Librarian</h3>
 
-						<div class='row'>
-						<a class='study-room-link orange-background' href="http://jwu-ri.libcal.com/appointments/" onClick="ga('send', 'event', 'schedule', 'click', 'researchapp') ;">Research Appointment</a>
-						</div>
+						<a class='study-room-link ' href="http://jwu-ri.libcal.com/booking/downcity" onClick="ga('send', 'event', 'schedule', 'click', 'dcstudyroom') ;">Downcity</a>
 
+
+
+						<a class='study-room-link ' href="http://jwu-ri.libcal.com/booking/harborside" onClick="ga('send', 'event', 'schedule', 'click', 'hbstudyroom') ;">Harborside</a>
+
+
+					
+
+
+						<a class='study-room-link ' href="http://jwu-ri.libcal.com/booking/writinglab_downcity" onClick="ga('send', 'event', 'schedule', 'click', 'wcdc') ;">Downcity </a>
+
+
+						<a class='study-room-link ' href="http://jwu-ri.libcal.com/booking/writinglab_harborside" onClick="ga('send', 'event', 'schedule', 'click', 'wchb') ;">Harborside</a>
+
+
+
+
+						<a class='study-room-link ' href="http://jwu-ri.libcal.com/appointments/" onClick="ga('send', 'event', 'schedule', 'click', 'researchapp') ;">Research Appointment</a>
 
 
 
@@ -534,45 +529,8 @@ function loadContact() {
 
 				<div id="ask-pics-desktop container-fluid">
 					<div class="row">
-					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-1">
-						<div class="row">
-							<a class='img-center' href="http://jwu-ri.libanswers.com/a.php?qid=2887" target="_blank" title="Send a Text Message to the Library" onClick="ga('send', 'event', 'askicons', 'click', 'text') ;">
-		<svg class='svg-ask-icons' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
 
-
-						<p>Text</p>
-							 </a>
-						</div>
-					</div>
-					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-1">
-						<div class="row">
-							<a class='img-center' href="http://jwu-ri.libanswers.com/index#s-la-box-36592" target="_blank" title="E-Mail the Library" onClick="ga('send', 'event', 'askicons', 'click', 'email') ;">
-							<svg xmlns="http://www.w3.org/2000/svg" class="svg-ask-icons" viewBox="0 0 512 512"><path d="M448 64H64C28.7 64 0 92.7 0 128v256c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V128C512 92.7 483.3 64 448 64zM342.7 234.8l135.5-116.1c0.9 3 1.9 6 1.9 9.3v256c0 2.2-0.8 4.2-1.3 6.3L342.7 234.8zM448 96c2.1 0 4 0.8 6 1.2L256 266.9 58 97.2C60 96.8 61.9 96 64 96H448zM33.3 390.3C32.8 388.2 32 386.2 32 384V128c0-3.3 1-6.3 1.9-9.3L169.3 234.8 33.3 390.3zM64 416c-3.2 0-6.2-0.9-9.1-1.8l138.8-158.6 52 44.5C248.6 302.7 252.3 304 256 304s7.4-1.3 10.4-3.9l52-44.5 138.8 158.6C454.2 415.1 451.3 416 448 417H64z"/></svg>
-
-		<p>E-mail</p>
-							 </a>
-						</div>
-
-					</div>
-
-					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-1">
-						<div class="row">
-							<a class='img-center' href="http://jwu-ri.libanswers.com/a.php?qid=8122" target="_blank" title="Call the Library" onClick="ga('send', 'event', 'askicons', 'click', 'call') ;">
-						<svg  class='svg-ask-icons'  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-		<p>&nbspCall</p>
-						</a>
-						</div>
-
-					</div>
-					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-1">
-						<div class="row">
-							<a href="http://jwu-ri.libanswers.com/" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'faq') ;">
-<svg class='svg-ask-icons'	 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M1088 1256v240q0 16-12 28t-28 12h-240q-16 0-28-12t-12-28v-240q0-16 12-28t28-12h240q16 0 28 12t12 28zm316-600q0 54-15.5 101t-35 76.5-55 59.5-57.5 43.5-61 35.5q-41 23-68.5 65t-27.5 67q0 17-12 32.5t-28 15.5h-240q-15 0-25.5-18.5t-10.5-37.5v-45q0-83 65-156.5t143-108.5q59-27 84-56t25-76q0-42-46.5-74t-107.5-32q-65 0-108 29-35 25-107 115-13 16-31 16-12 0-25-8l-164-125q-13-10-15.5-25t5.5-28q160-266 464-266 80 0 161 31t146 83 106 127.5 41 158.5z"/></svg>
-<p>&quot;How Do I?&quot;</p></a>
-						</div>
-
-					</div>
-					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-1">
+					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-2">
 						<div class="row">
 							<a href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
 							<svg xmlns="http://www.w3.org/2000/svg" class="svg-ask-icons" viewBox="2 -12 55 55" xmlns:xlink="http://www.w3.org/1999/xlink" version="1">
@@ -586,6 +544,57 @@ function loadContact() {
 						</div>
 
 					</div>
+
+
+					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="row">
+							<a href= "http://pvd.library.jwu.edu/reserves" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+		<svg class='svg-ask-icons' xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-book"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+							<p>Textbooks</p></a>
+						</div>
+
+					</div>
+
+
+					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="row">
+							<a class='img-center' href="http://jwu-ri.libanswers.com/a.php?qid=2887" target="_blank" title="Send a Text Message to the Library" onClick="ga('send', 'event', 'askicons', 'click', 'text') ;">
+		<svg class='svg-ask-icons' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+
+
+						<p>Text</p>
+							 </a>
+						</div>
+					</div>
+					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="row">
+							<a class='img-center' href="http://jwu-ri.libanswers.com/index#s-la-box-36592" target="_blank" title="E-Mail the Library" onClick="ga('send', 'event', 'askicons', 'click', 'email') ;">
+							<svg xmlns="http://www.w3.org/2000/svg" class="svg-ask-icons" viewBox="0 0 512 512"><path d="M448 64H64C28.7 64 0 92.7 0 128v256c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V128C512 92.7 483.3 64 448 64zM342.7 234.8l135.5-116.1c0.9 3 1.9 6 1.9 9.3v256c0 2.2-0.8 4.2-1.3 6.3L342.7 234.8zM448 96c2.1 0 4 0.8 6 1.2L256 266.9 58 97.2C60 96.8 61.9 96 64 96H448zM33.3 390.3C32.8 388.2 32 386.2 32 384V128c0-3.3 1-6.3 1.9-9.3L169.3 234.8 33.3 390.3zM64 416c-3.2 0-6.2-0.9-9.1-1.8l138.8-158.6 52 44.5C248.6 302.7 252.3 304 256 304s7.4-1.3 10.4-3.9l52-44.5 138.8 158.6C454.2 415.1 451.3 416 448 417H64z"/></svg>
+
+		<p>E-mail</p>
+							 </a>
+						</div>
+
+					</div>
+
+					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="row">
+							<a class='img-center' href="http://jwu-ri.libanswers.com/a.php?qid=8122" target="_blank" title="Call the Library" onClick="ga('send', 'event', 'askicons', 'click', 'call') ;">
+						<svg  class='svg-ask-icons'  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+		<p>&nbspCall</p>
+						</a>
+						</div>
+
+					</div>
+					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="row">
+							<a href="http://jwu-ri.libanswers.com/" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'faq') ;">
+<svg class='svg-ask-icons'	 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M1088 1256v240q0 16-12 28t-28 12h-240q-16 0-28-12t-12-28v-240q0-16 12-28t28-12h240q16 0 28 12t12 28zm316-600q0 54-15.5 101t-35 76.5-55 59.5-57.5 43.5-61 35.5q-41 23-68.5 65t-27.5 67q0 17-12 32.5t-28 15.5h-240q-15 0-25.5-18.5t-10.5-37.5v-45q0-83 65-156.5t143-108.5q59-27 84-56t25-76q0-42-46.5-74t-107.5-32q-65 0-108 29-35 25-107 115-13 16-31 16-12 0-25-8l-164-125q-13-10-15.5-25t5.5-28q160-266 464-266 80 0 161 31t146 83 106 127.5 41 158.5z"/></svg>
+<p>&quot;How Do I?&quot;</p></a>
+						</div>
+
+					</div>
+
 
 				</div>
 			</div>

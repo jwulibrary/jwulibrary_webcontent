@@ -17,30 +17,38 @@
 	<!-- <script type="text/javascript" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/main.js"></script> -->
 </head>
 
- <body onload="loadHeader(); loadFooter(); loadSearchbox(); loadContact();"> <!--loadRoomBooking(); loadChatbox()"> -->
-	<div id="header">Loading...</div>
+ <body onload="loadHeader(); loadFooter(); loadSearchbox(); loadContact();loadRoomBooking();"> <!-- loadChatbox()"> -->
+
+	<div id="header" >Loading...</div>
 	<script id="header-content" type="x-tmpl-mustache">
 		{{{headercontent}}}
 	</script>
+<div class="container-fluid">
 
-
-	<div id="searchbox">Loading...</div>
+	<div id="searchbox" class='row'>Loading...</div>
 	<script id="searchbox-content" type="x-tmpl-mustache">
 		{{{searchboxcontent}}}
 	</script>
 
 
-	<div id="contact">Loading...</div>
+	<div id="contact" class='row'>Loading...</div>
 	<script id="contact-content" type="x-tmpl-mustache">
 		{{{contactcontent}}}
 	</script>
 
-<!--
- <div id="roombooking">Loading...</div>
-	<script id="roombooking-content" type="x-tmpl-mustache">
-		{{{roombookingcontent}}}
-	</script>
+<div class="row">
+<div class="container-fluid">
 
+			 <div id="roombooking" class='col-md-12 col-md-6 col-lg-4'>Loading...</div>
+			<script id="roombooking-content" type="x-tmpl-mustache">
+				{{{roombookingcontent}}}
+			</script>
+</div>
+</div>
+</div>
+
+
+<!--
 
 	<div id="chatbox">Loading...</div>
 	<script id="chatbox-content" type="x-tmpl-mustache">

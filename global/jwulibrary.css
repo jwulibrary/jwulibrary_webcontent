@@ -242,7 +242,7 @@ tr.hours-depart td.hours-col-loc {
 /* Room booking stuff */
 
 #study-room-links {
-
+background: #FFF;
 }
 
 #study-room-links h3 {
@@ -905,9 +905,6 @@ button.btn.search-submit {
 	padding: .5em;
 }
 
-.tab-content {
-	padding: .3em;
-}
 
 button.search-submit:active {
 	opacity: .15;
@@ -1063,11 +1060,18 @@ ul.footer-nav {
 }
 
 
+.tab-content {
+	padding: .3em;
+	border:1px solid #CCC;
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.82);
+
+}
+
+
 #searchbox {
-	background: rgba(255, 255, 255, 0.62);
-	border-radius: 10px;
-	margin-left:auto;
-	margin-right:auto;
+
+	margin:  35px auto 0;
 	width:80vw;
 	/*height:300px;*/
 }
@@ -1558,23 +1562,29 @@ a.dropdown-toggle:hover {
 	/*background: rgba(37, 100, 160, 0.31);*/
 	padding: 4em;
 	border-radius: 27px;
+
 }
 
-#ask-pics-desktop {}
+
+#ask-pics-desktop {
+	margin-left:auto;
+	margin-right:auto;
+	width:75vw;
+}
 
 .ask-pic{
-margin:0 5vh 0 5vh;
+
 }
 .ask-pic p {
-	font-size: 1.4em;
+	font-size: 1.25em;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 900;
 	font-family: Roboto;
 	color: #FFF;
-	background-color: rgba(23, 88, 147, 0.59);
+	background-color: rgba(115, 115, 120, 0.65);
 	width: 100px;
 	text-align: center;
-	border-radius: 9px;
+	border-radius: 0px 0px 9px 9px;
 }
 
 .ask-pic p:hover {
@@ -1602,18 +1612,18 @@ margin:0 5vh 0 5vh;
 	width: 100px;
 	stroke: #FFF;
 	background: rgba(255, 255, 255, 0.59);
-	border-radius: 6px;
-	padding: 3px;
+	border-radius: 6px 6px 0px 0px;
+	padding: 4px;
 	transition: all 0.3s ease-out;
-	margin: 0 0 0 3px;
+	margin: 0 0 0 0px;
 }
 
 .svg-ask-icons:hover {
 	opacity: 1;
 	stroke-width: 1;
-	padding: 1px;
+	padding: 3px;
 	fill: #337ab7;
-	border-radius: 32px;
+	border-radius: 15px 15px  0px 0px;
 	transition: all 0.3s ease-out;
 }
 
@@ -1622,7 +1632,9 @@ margin:0 5vh 0 5vh;
 	padding-right: 0px !important;
 }
 
-
+#library-search-box.form-control, #ebscohostsearchtext.form-control{
+	height:39px;
+}
 
 
 
