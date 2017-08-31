@@ -1558,18 +1558,14 @@ a.dropdown-toggle:hover {
 
 /* ASK PICS STUFF*/
 
-#ask-us-wrap-desktop {
-	/*background: rgba(37, 100, 160, 0.31);*/
-	padding: 4em;
-	border-radius: 27px;
 
-}
 
 
 #ask-pics-desktop {
-	margin-left:auto;
-	margin-right:auto;
-	width:75vw;
+
+	background: rgba(244, 255, 255, 0.31);
+	padding: 4em;
+	border-radius: 0;
 }
 
 .ask-pic{
@@ -1615,7 +1611,7 @@ a.dropdown-toggle:hover {
 	border-radius: 6px 6px 0px 0px;
 	padding: 4px;
 	transition: all 0.3s ease-out;
-	margin: 0 0 0 0px;
+
 }
 
 .svg-ask-icons:hover {
@@ -1695,4 +1691,26 @@ a.dropdown-toggle:hover {
 			background: rgba(255, 255, 255, 0.89);
 
 		}
+}
+
+
+
+
+#ask-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap:10px;
+
+}
+
+#ask-grid .ask-pic{
+	margin:0 auto;
+	width:90%;
+}
+
+#booking-box{
+	grid-column-end:span 2;
+	background-color: #FFF;
+	width:80%;
+	margin:0 auto;
 }

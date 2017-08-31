@@ -458,7 +458,7 @@ function loadRoomBooking() {
 						<a class='study-room-link ' href="http://jwu-ri.libcal.com/booking/harborside" onClick="ga('send', 'event', 'schedule', 'click', 'hbstudyroom') ;">Harborside</a>
 
 
-					
+
 
 
 						<a class='study-room-link ' href="http://jwu-ri.libcal.com/booking/writinglab_downcity" onClick="ga('send', 'event', 'schedule', 'click', 'wcdc') ;">Downcity </a>
@@ -525,21 +525,15 @@ function loadContact() {
 		contactcontent: `
 
 
-		<div id="ask-us-wrap-desktop" class="librarybox">
 
-				<div id="ask-pics-desktop container-fluid">
+
+				<div id="ask-pics-desktop" class= "librarybox container-fluid">
 					<div class="row">
 
 					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-2">
 						<div class="row">
 							<a href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
-							<svg xmlns="http://www.w3.org/2000/svg" class="svg-ask-icons" viewBox="2 -12 55 55" xmlns:xlink="http://www.w3.org/1999/xlink" version="1">
-
-							  <path  d="M528 989.8v5.6c5.68.65 10.8 3.13 14.76 6.82 3.97-3.7 9.08-6.17 14.75-6.8v-5.6H528z" transform="translate(-512.857 -978.72)"/>
-							  <path  d="M2441.34 1882.7l26-.7c.67 0 1.22.55 1.22 1.22l.7 27.4c0 .68-.54 1.23-1.22 1.23l-27.4-.7c-.68 0-1.22-.55-1.22-1.23l.7-26c0-.67.55-1.2 1.22-1.2z" transform="scale(1.377 .32) rotate(45 3493.97 -1973.796)"/>
-							  <path  d="M31.07 9.18l-.36.32 7.9 4.23-.02 7c0 1.27-.98 1.08-.98 2.27v7.08c0 2 2.84 2 2.84 0V23c0-1.1-.96-1.07-.95-2.27V13.5l-8.4-4.3z"/>
-							  <path  d="M32.58 8.95a2.6 1.1 0 1 1-5.2 0 2.6 1.1 0 1 1 5.2 0z" transform="translate(.03 -.152)"/>
-							</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
 							<p>Databases</p></a>
 						</div>
 
@@ -596,10 +590,72 @@ function loadContact() {
 					</div>
 
 
-				</div>
-			</div>
-		</div>
+					<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-2">
+						<div class="row">
+							<a href="http://jwu-ri.libanswers.com/" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'faq') ;">
+<svg class='svg-ask-icons'	xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/><polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/></svg>
+<p>Study Rooms</p></a>
+						</div>
 
+					</div>
+
+
+
+										<div class="ask-pic col-xs-6 col-sm-4 col-md-3 col-lg-2">
+											<div class="row">
+												<a href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+												<svg xmlns="http://www.w3.org/2000/svg" class="svg-ask-icons" viewBox="2 -12 55 55" xmlns:xlink="http://www.w3.org/1999/xlink" version="1">
+
+												  <path  d="M528 989.8v5.6c5.68.65 10.8 3.13 14.76 6.82 3.97-3.7 9.08-6.17 14.75-6.8v-5.6H528z" transform="translate(-512.857 -978.72)"/>
+												  <path  d="M2441.34 1882.7l26-.7c.67 0 1.22.55 1.22 1.22l.7 27.4c0 .68-.54 1.23-1.22 1.23l-27.4-.7c-.68 0-1.22-.55-1.22-1.23l.7-26c0-.67.55-1.2 1.22-1.2z" transform="scale(1.377 .32) rotate(45 3493.97 -1973.796)"/>
+												  <path  d="M31.07 9.18l-.36.32 7.9 4.23-.02 7c0 1.27-.98 1.08-.98 2.27v7.08c0 2 2.84 2 2.84 0V23c0-1.1-.96-1.07-.95-2.27V13.5l-8.4-4.3z"/>
+												  <path  d="M32.58 8.95a2.6 1.1 0 1 1-5.2 0 2.6 1.1 0 1 1 5.2 0z" transform="translate(.03 -.152)"/>
+												</svg>
+												<p>For Faculty</p></a>
+											</div>
+
+										</div>
+				</div>
+
+
+
+
+
+
+<div id ="ask-grid">
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+<div id='booking-box'>
+</div>
+
+</div>
 
 
             `
