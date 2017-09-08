@@ -262,101 +262,105 @@ function loadHeader() {
 		headercontent: `
 		<nav class="navbar navbar-default container-fluid">
 
-				<div class="row visible-xs  mobile-header-wrap"> <a href="#"><img class="header-logo img-responsive" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/library-identifier-whiteandorange.svg"></a> </div>
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="row header-menu1">
-					<div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".to-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>				</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="">
-						<ul class="nav navbar-nav">
-							<li class="dropdown"> <a href="#" class="dropdown-toggle nav-page-title" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">"How Do I?" (LibAnswers)<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="http://pvd.library.jwu.edu/homepage" target="_blank">Library Home (LibGuides)</a></li>
-									<li><a href="http://jwu-ri.libcal.com/" target="_blank">Reservations and Hours (LibCal)</a></li>
-									<li><a href="http://jwu-ri.libanswers.com/" target="_blank">"How Do I?" (LibAnswers)</a></li>
-									<!--  <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> <li role="separator" class="divider"></li> <li><a href="#">One more separated link</a></li>  -->
-								</ul>
-							</li>
-							<li id="hours-nav-alt"><a href="http://jwu-ri.libcal.com/hours/" target="_blank"><span class="glyphicon glyphicon-time"></span> <b>Today's Hours </b></a>&nbsp;&nbsp;&nbsp;</li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right collapse navbar-collapse to-collapse">
-							<li class="dropdown "> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-education"></span>  Databases <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="http://pvd.library.jwu.edu/az.php" target="_blank">All Databases</a></li>
-									<li role="separator" class="divider"></li>
-									<li><a href="http://pvd.library.jwu.edu/az.php?s=19278" target="_blank">Business</a></li>
-									<li><a href="http://pvd.library.jwu.edu/az.php?s=79408" target="_blank">Criminal Justice</a></li>
-									<li><a href="http://pvd.library.jwu.edu/az.php?s=79132" target="_blank">General</a></li>
-									<li><a href="http://pvd.library.jwu.edu/az.php?s=19279" target="_blank">Education</a></li>
-									<li><a href="http://pvd.library.jwu.edu/az.php?s=19276" target="_blank">Hospitality</a></li>
-									<li><a href="http://pvd.library.jwu.edu/az.php?s=19295" target="_blank">Marketing</a></li>
-									<li><a href="http://pvd.library.jwu.edu/az.php?s=75458" target="_blank">Psychology</a></li>
-								</ul>
-							</li>
-							<li>
-								<!-- Place this script as near to the end of your BODY as possible. --><a href="https://us.libraryh3lp.com/chat/jwu_prov_vr_1@chat.libraryh3lp.com?skin=27008" target="_blank"><span class="glyphicon glyphicon-comment"></span> Chat</a></li>
-						</ul>
-					</div>
-					<!-- /.navbar-collapse -->
-				</div>
-				<div class="row  collapse navbar-collapse header-menu2 to-collapse">
-					<div class="header2-wrap">
-						<div class="navbar-header col-xs-12 col-sm-12 col-md-2 col-lg-2"> <a class="navbar-brand hidden-xs " href="http://pvd.library.jwu.edu/homepage" target="_blank"><img class="header-logo" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/library-identifier-whiteandorange.svg"></a> </div>
-						<div
-						 id="primary-nav" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 ">
-							<ul class="nav navbar-nav navbar-right">
-								<!--TODO: KELLY LINKS to edit if you feel like it :- ) -->
-								<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span> Find<span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'articles') ;" href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=cms&db=mzh&db=ufh" target="_blank">Articles</a></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'books') ;" href="https://jwupvd.on.worldcat.org/advancedsearch" target="_blank">Books and Media</a></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'journals ') ;" href="https://jwupvd.on.worldcat.org/atoztitles/#journal" target="_blank">Journal Titles</a></li>
-										<li role="separator" class="divider"></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'databases') ;" href="http://pvd.library.jwu.edu/az.php" target="_blank">Databases</a></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'reserves') ;" href="http://pvd.library.jwu.edu/reserves" target="_blank">Course Reserves</a></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'sa') ;" href="http://scholarsarchive.jwu.edu/" target="blank">ScholarsArchive</a></li>
-									</ul>
-								</li>
-								<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-user"></span> Get Help <span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'chat') ;" href="https://us.libraryh3lp.com/chat/jwu_prov_vr_1@chat.libraryh3lp.com?skin=21252" target="_blank">Chat</a></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'appointment') ;" href="http://jwu-ri.libcal.com/appointments/" target="_blank">Research Appointment</a></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'writing_lab') ;" href="http://pvd.library.jwu.edu/writinglab" target="_blank">Writing Lab</a></li>
-										<li role="separator" class="divider"></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'guides') ;" href="http://pvd.library.jwu.edu/libguides" target="_blank">Research Guides</a></li>
-										<li> <a onclick="ga('send', 'event', 'header', 'click', 'faq') ;" href="http://jwu-ri.libanswers.com/">"How Do I?" (LibAnswers)</a> </li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'online') ;" href="http://pvd.library.jwu.edu/online/welcome">Online Learners</a></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'tutorials') ;" href="http://pvd.library.jwu.edu/tutorials/libraryvideos" target="_blank">Tutorials</a></li>
-									</ul>
-								</li>
-								<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-pencil"></span> Services <span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'account') ;" href="https://jwupvd.on.worldcat.org/myaccount" target="_blank">My Account</a></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'reserves ') ;" href="http://pvd.library.jwu.edu/reserves" target="_blank">Course Reserve</a></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'ill') ;" href="https://jwu-ri.libanswers.com/faq/141890" target="_blank">Interlibrary Loan</a></li>
-										<!-- <li><a href="#">Suggest a Purchase</a></li> <li><a href="#">Technology Lending</a></li> -->
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'study_rooms') ;" href="http://jwu-ri.libcal.com/booking/downcity" target="_blank">Study Rooms</a></li>
-										<li role="separator" class="divider"></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'instruction_request') ;" href="http://pvd.library.jwu.edu/il/request" target="_blank">Schedule Instruction (for Faculty)</a></li>
-									</ul>
-								</li>
-								<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'contact') ;" href="https://jwu-ri.libanswers.com/faq/141891" target="_blank">Contact Us</a></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'directions') ;" href="https://jwu-ri.libanswers.com/faq/141870?m=p">Directions</a></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'staff') ;" href="https://jwu-ri.libanswers.com/faq/141919" target="_blank">Staff Directory</a></li>
-										<li> <a onclick="ga('send', 'event', 'header', 'click', 'studentjobs') ;" href="http://jwu-ri.libanswers.com/faq/141800">Student Employment</a> </li>
-										<li role="separator" class="divider"></li>
-										<li><a onclick="ga('send', 'event', 'header', 'click', 'hours') ;" href="http://jwu-ri.libcal.com/hours/" target="_blank">Hours</a></li>
-										<!--  <li><a href="#">Directories</a></li> -->
-									</ul>
-								</li>
+			<div class="row visible-xs  mobile-header-wrap"> <a href="#"><img class="header-logo img-responsive" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/library-identifier-whiteandorange.svg"></a> </div>
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="row header-menu1">
+				<div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".to-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+
+					<ul class="nav navbar-nav col-xs-12 col-sm-12 col-md-8">
+						<li class="dropdown col-md-4 col-sm-4"> <a href="#" class="dropdown-toggle nav-page-title" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">"How Do I?" (LibAnswers)<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://pvd.library.jwu.edu/homepage" target="_blank">Library Home (LibGuides)</a></li>
+								<li><a href="http://jwu-ri.libcal.com/" target="_blank">Reservations and Hours (LibCal)</a></li>
+								<li><a href="http://jwu-ri.libanswers.com/" target="_blank">"How Do I?" (LibAnswers)</a></li>
+								<!--  <li role="separator" class="divider"></li> <li><a href="#">Separated link</a></li> <li role="separator" class="divider"></li> <li><a href="#">One more separated link</a></li>  -->
 							</ul>
+						</li>
+						<li id="hours-nav-alt" class='col-md-8 col-sm-8  col-xs-12'>
+							<a class='col-md-3 col-sm-4' href="http://jwu-ri.libcal.com/hours/" target="_blank"><span class="glyphicon glyphicon-time"></span> <b>Today's Hours </b></a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right collapse navbar-collapse to-collapse col-md-4 col-sm-12 col-xs-12">
+						<li class="dropdown "> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-education"></span>  Databases <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://pvd.library.jwu.edu/az.php" target="_blank">All Databases</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="http://pvd.library.jwu.edu/az.php?s=19278" target="_blank">Business</a></li>
+								<li><a href="http://pvd.library.jwu.edu/az.php?s=79408" target="_blank">Criminal Justice</a></li>
+								<li><a href="http://pvd.library.jwu.edu/az.php?s=79132" target="_blank">General</a></li>
+								<li><a href="http://pvd.library.jwu.edu/az.php?s=19279" target="_blank">Education</a></li>
+								<li><a href="http://pvd.library.jwu.edu/az.php?s=19276" target="_blank">Hospitality</a></li>
+								<li><a href="http://pvd.library.jwu.edu/az.php?s=19295" target="_blank">Marketing</a></li>
+								<li><a href="http://pvd.library.jwu.edu/az.php?s=75458" target="_blank">Psychology</a></li>
+							</ul>
+						</li>
+						<li>
+							<!-- Place this script as near to the end of your BODY as possible. --><a href="https://us.libraryh3lp.com/chat/jwu_prov_vr_1@chat.libraryh3lp.com?skin=27008" target="_blank"><span class="glyphicon glyphicon-comment"></span> Chat</a></li>
+					</ul>
+
+				<!-- /.navbar-collapse -->
+			</div>
+			<div class="row  collapse navbar-collapse header-menu2 to-collapse">
+				<div class="header2-wrap">
+					<div class="navbar-header col-xs-12 col-sm-12 col-md-2 col-lg-2"> <a class="navbar-brand hidden-xs " href="http://pvd.library.jwu.edu/homepage" target="_blank"><img class="header-logo" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/library-identifier-whiteandorange.svg"></a> </div>
+					<div id="primary-nav" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 ">
+						<ul class="nav navbar-nav navbar-right">
+							<!--TODO: KELLY LINKS to edit if you feel like it :- ) -->
+							<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span> Find<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'articles') ;" href="https://jwupvdz.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=ehost-live&scope=site&type=1&db=a9h&db=31h&db=b5h&db=pdh&db=ehh&db=bth&db=i3h&db=eoah&db=eric&db=ffh&db=funk&db=8gh&db=khh&db=hjh&db=lxh&db=ulh&db=f5h&db=cmedm&db=mih&db=mth&db=prh&db=bwh&db=s3h&db=tth&db=fsr&db=cja&db=nlebk&db=e000xna&db=hev&db=lfh&db=pzh&db=trh&db=cms&db=mzh&db=ufh"
+										 target="_blank">Articles</a></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'books') ;" href="https://jwupvd.on.worldcat.org/advancedsearch" target="_blank">Books and Media</a></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'journals ') ;" href="https://jwupvd.on.worldcat.org/atoztitles/#journal" target="_blank">Journal Titles</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'databases') ;" href="http://pvd.library.jwu.edu/az.php" target="_blank">Databases</a></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'reserves') ;" href="http://pvd.library.jwu.edu/reserves" target="_blank">Course Reserves</a></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'sa') ;" href="http://scholarsarchive.jwu.edu/" target="blank">ScholarsArchive</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-user"></span> Get Help <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'chat') ;" href="https://us.libraryh3lp.com/chat/jwu_prov_vr_1@chat.libraryh3lp.com?skin=21252" target="_blank">Chat</a></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'appointment') ;" href="http://jwu-ri.libcal.com/appointments/" target="_blank">Research Appointment</a></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'writing_lab') ;" href="http://pvd.library.jwu.edu/writinglab" target="_blank">Writing Lab</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'guides') ;" href="http://pvd.library.jwu.edu/libguides" target="_blank">Research Guides</a></li>
+									<li> <a onclick="ga('send', 'event', 'header', 'click', 'faq') ;" href="http://jwu-ri.libanswers.com/">"How Do I?" (LibAnswers)</a> </li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'online') ;" href="http://pvd.library.jwu.edu/online/welcome">Online Learners</a></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'tutorials') ;" href="http://pvd.library.jwu.edu/tutorials/libraryvideos" target="_blank">Tutorials</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-pencil"></span> Services <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'account') ;" href="https://jwupvd.on.worldcat.org/myaccount" target="_blank">My Account</a></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'reserves ') ;" href="http://pvd.library.jwu.edu/reserves" target="_blank">Course Reserve</a></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'ill') ;" href="https://jwu-ri.libanswers.com/faq/141890" target="_blank">Interlibrary Loan</a></li>
+									<!-- <li><a href="#">Suggest a Purchase</a></li> <li><a href="#">Technology Lending</a></li> -->
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'study_rooms') ;" href="http://jwu-ri.libcal.com/booking/downcity" target="_blank">Study Rooms</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'instruction_request') ;" href="http://pvd.library.jwu.edu/il/request" target="_blank">Schedule Instruction (for Faculty)</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'contact') ;" href="https://jwu-ri.libanswers.com/faq/141891" target="_blank">Contact Us</a></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'directions') ;" href="https://jwu-ri.libanswers.com/faq/141870?m=p">Directions</a></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'staff') ;" href="https://jwu-ri.libanswers.com/faq/141919" target="_blank">Staff Directory</a></li>
+									<li> <a onclick="ga('send', 'event', 'header', 'click', 'studentjobs') ;" href="http://jwu-ri.libanswers.com/faq/141800">Student Employment</a> </li>
+									<li role="separator" class="divider"></li>
+									<li><a onclick="ga('send', 'event', 'header', 'click', 'hours') ;" href="http://jwu-ri.libcal.com/hours/" target="_blank">Hours</a></li>
+									<!--  <li><a href="#">Directories</a></li> -->
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 
 		</nav>
+
+
 
 		`
 
@@ -378,9 +382,12 @@ function loadHeader() {
 			hbTime = calData.locations[1];
 
 
-			$("#hours-nav").append("<li class='text-center'>Downcity: " + dcTime.rendered + "</li>").append("<li class='text-center'>Harborside: " + hbTime.rendered + "</li>");
-			$("#hours-nav-alt").append("<span class='text-center'>Downcity: " + dcTime.rendered + "</span>").append("<span class='text-center'> | Harborside: " + hbTime.rendered + "</span>");
+			$("#hours-nav-alt").append("<div class='col-xs-12 col-md-4 col-sm-3 '>Downcity: " + dcTime.rendered + "</div>").append("<div class='hidden-xs col-sm-1 col-md-1'>|</div> <div class=' col-sm-3 col-xs-12 col-md-4'> Harborside: " + hbTime.rendered + "</div>");
+
+			$("#hours-nav-grid").append("<div class=''>Downcity: " + dcTime.rendered + "</div>").append("<div class=''>|</div> <div class=''> Harborside: " + hbTime.rendered + "</div>");
+
 		}
+
 
 
 
@@ -514,9 +521,47 @@ function loadChatbox() {
 	var rendered = Mustache.render(template, chatbox);
 	$('#chatbox').html(rendered);
 
-}
+};
+
+ask_grid_stuff = `
 
 
+<div id ="ask-grid">
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
+	<p>Databases</p></a>
+<div id='booking-box'>
+</div>
+
+</div>
+
+`;
 
 function loadContact() {
 	var template = $('#contact-content').html();
@@ -622,43 +667,8 @@ function loadContact() {
 
 
 
-<div id ="ask-grid">
-
-	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
-	<p>Databases</p></a>
-
-
-	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
-	<p>Databases</p></a>
-
-
-	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
-	<p>Databases</p></a>
-
-	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
-	<p>Databases</p></a>
-
-	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
-	<p>Databases</p></a>
-
-	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
-	<p>Databases</p></a>
-	<a class='ask-pic' href= "http://pvd.library.jwu.edu/az.php" target="_blank" title="FAQ" onClick="ga('send', 'event', 'askicons', 'click', 'databases') ;">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"  class="feather feather-package svg-ask-icons"><path d="M12.89 1.45l8 4A2 2 0 0 1 22 7.24v9.53a2 2 0 0 1-1.11 1.79l-8 4a2 2 0 0 1-1.79 0l-8-4a2 2 0 0 1-1.1-1.8V7.24a2 2 0 0 1 1.11-1.79l8-4a2 2 0 0 1 1.78 0z"/><polyline points="2.32 6.16 12 11 21.68 6.16"/><line x1="12" y1="22.76" x2="12" y2="11"/><line x1="7" y1="3.5" x2="17" y2="8.5"/></svg>
-	<p>Databases</p></a>
-<div id='booking-box'>
-</div>
-
-</div>
-
-
             `
+			//  + ask_grid_stuff
 	};
 
 
