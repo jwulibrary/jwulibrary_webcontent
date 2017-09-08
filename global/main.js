@@ -269,7 +269,7 @@ function loadHeader() {
 				<!-- Collect the nav links, forms, and other content for toggling -->
 
 					<ul class="nav navbar-nav col-xs-12 col-sm-12 col-md-8">
-						<li class="dropdown col-md-4 col-sm-4"> <a href="#" class="dropdown-toggle nav-page-title" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">"How Do I?" (LibAnswers)<span class="caret"></span></a>
+						<li id='title-dropdown' class="dropdown col-md-4 col-sm-4"> <a href="#" class="dropdown-toggle nav-page-title" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Library Home (LibGuides)<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="http://pvd.library.jwu.edu/homepage" target="_blank">Library Home (LibGuides)</a></li>
 								<li><a href="http://jwu-ri.libcal.com/" target="_blank">Reservations and Hours (LibCal)</a></li>
@@ -303,8 +303,8 @@ function loadHeader() {
 			</div>
 			<div class="row  collapse navbar-collapse header-menu2 to-collapse">
 				<div class="header2-wrap">
-					<div class="navbar-header col-xs-12 col-sm-12 col-md-2 col-lg-2"> <a class="navbar-brand hidden-xs " href="http://pvd.library.jwu.edu/homepage" target="_blank"><img class="header-logo" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/library-identifier-whiteandorange.svg"></a> </div>
-					<div id="primary-nav" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 ">
+					<div class="navbar-header col-xs-12 col-sm-2 col-md-2 col-lg-2"> <a class="navbar-brand hidden-xs " href="http://pvd.library.jwu.edu/homepage" target="_blank"><img class="header-logo" src="https://cdn.rawgit.com/jwulibrary/libanswers/development/library-identifier-whiteandorange.svg"></a> </div>
+					<div id="primary-nav" class="col-xs-12 col-sm-10 col-md-10 col-lg-8 ">
 						<ul class="nav navbar-nav navbar-right">
 							<!--TODO: KELLY LINKS to edit if you feel like it :- ) -->
 							<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span> Find<span class="caret"></span></a>
