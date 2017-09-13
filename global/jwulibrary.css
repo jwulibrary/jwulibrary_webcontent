@@ -1056,9 +1056,9 @@ ul.footer-nav {
 }
 
 .tab-content {
-	padding: .3em;
-	border: 1px solid #CCC;
-	border-radius: 5px;
+	padding: 1em;
+
+
 	background: rgba(255, 255, 255, 0.82);
 }
 
@@ -1372,7 +1372,8 @@ input#libanswers-search-box[type=text] {
 }
 
 #hours-nav-alt>div {
-	padding: 15px 0;
+	padding: 11px 0;
+	text-align: center;
 }
 
 .header2-wrap {
@@ -1579,7 +1580,7 @@ li.dropdown.col-md-4.col-sm-4.open>ul>li>a:hover {
 
 #ask-pics-desktop {
 	background: rgba(244, 255, 255, 0.31);
-	padding: 4em;
+	padding: 2em;
 	border-radius: 0;
 }
 
@@ -1591,10 +1592,10 @@ li.dropdown.col-md-4.col-sm-4.open>ul>li>a:hover {
 	font-weight: 900;
 	font-family: Roboto;
 	color: #FFF;
-	background-color: rgba(92, 92, 110, 0.79);
+	background-color: rgba(92, 92, 110, 0.59);
 	width: 100px;
 	text-align: center;
-	border-radius: 0px 0px 9px 9px;
+	border-radius: 0px 0px 5px 5px;
 }
 
 .ask-pic p:hover {
@@ -1871,4 +1872,50 @@ li.dropdown.col-md-4.col-sm-4.open>ul>li>a:hover {
 .dark-green-background:hover{
 	opacity:.8;
 	color: white;
+}
+
+
+a[href^=tel] {
+text-decoration:inherit;
+color: inherit;
+}
+
+
+#s-lg-db-label-text{
+	color:#FFF;
+}
+
+
+#hours-wrap{
+	padding:0 0 0 1.2em;
+}
+
+
+#header > nav > div.row.header-menu1 > ul.nav.navbar-nav.navbar-right.navbar-collapse.to-collapse.col-md-4.col-sm-12.col-xs-12.collapse.in{
+	margin-left:1em;
+}
+
+
+#s-lg-guide-tabs-title-bar{
+	border-top:none;
+
+}
+
+
+
+#search-tabs > li> a:hover, #search-tabs > li> a > span:hover{
+	color:#FFF;
+}
+
+.homepage-tooltip, #search-switcher{
+	display:none;
+}
+
+body{
+	padding:0;
+}
+
+
+#hours-nav-alt > a{
+	text-align: center;
 }
