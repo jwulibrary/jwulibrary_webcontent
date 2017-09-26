@@ -1,0 +1,88 @@
+@media (max-width: 600px) {
+	#msg{
+		font-size:2em;
+
+	}
+}
+
+#recv, #msg {
+font-family: "open sans",sans-serif;
+	font-size:1em;
+}
+
+
+#recv{
+	bottom:26%;
+}
+#recv div {
+	background-color: rgba(230, 230, 230, 0.73);
+	padding: 4px 0;
+}
+
+#header h1 {
+	font-family: "open sans",sans-serif;
+	font-weight: 900;
+	font-size:1.4em !important;
+}
+
+#send {
+	height: 20%;
+	bottom: 2em;
+	margin-right: 4px
+}
+
+
+#msg{
+	width:100%;
+
+}
+#buttons {
+	bottom: 5.3em
+}
+
+#status {
+	margin-bottom: -6px;
+	font-size: 1em;
+}
+
+#layout {
+	bottom: 30%;
+	top:38px;
+}
+
+#layout #recv {
+	border: 0;
+	background-image: url('https://s3.amazonaws.com/libapps/accounts/1358/images/wcbg3.png');
+}
+
+#buttons a span.sprite {
+	background-image: url("https://d1aaqh87bn7fin.cloudfront.net/dark_sprite_2014022001.png");
+	background-repeat: no-repeat;
+	display: inline;
+	float: left;
+	margin-right: 4px
+}
+
+#sounds span.sprite {
+	background-position: 0 0;
+	width: 10px;
+	height: 14px
+}
+
+#mail span.sprite {
+	background-position: -27px 0;
+	width: 17px;
+	height: 14px
+}
+
+#file span.sprite {
+	background-position: -45px 0;
+	width: 15px;
+	height: 14px
+}
+
+#popout span.sprite {
+	background-position: -60px 0;
+	width: 17px;
+	height: 14px
+}
