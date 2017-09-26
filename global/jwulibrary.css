@@ -168,7 +168,8 @@ tr.hours-depart td.hours-col-loc {
 
 #study-room-links {
 	background: #fff;
-	text-align: center
+	text-align: center;
+	font-family:'open sans';
 }
 
 #s-lg-box-7707035 {
@@ -1223,7 +1224,9 @@ li.dropdown.col-md-4.col-sm-4.open>ul>li>a:hover {
 .svg-ask-icons, .svg-ask-icons:hover {
 	opacity: 1;
 	stroke-width: 1;
-	transition: all .3s ease-out
+	transition: all .3s ease-out;
+
+	stroke: #23527c;
 }
 
 .svg-social-footer:hover {
@@ -1261,7 +1264,7 @@ li.dropdown.col-md-4.col-sm-4.open>ul>li>a:hover {
 .svg-ask-icons {
 	fill: #23527c;
 	width: 100px;
-	stroke: #fff;
+	stroke: #23527c;
 	background: rgba(255, 255, 255, .59);
 	border-radius: 6px 6px 0 0;
 	padding: 4px
@@ -1330,7 +1333,7 @@ li.dropdown.col-md-4.col-sm-4.open>ul>li>a:hover {
 		fill: #23527c;
 		stroke-width: 1;
 		transition: all .3s ease-out;
-		stroke: #fff;
+		stroke: #23527c;
 		background: rgba(255, 255, 255, .89)
 	}
 	#hours-nav-alt {
@@ -1463,4 +1466,21 @@ a[href^=tel] {
 
 #s-lg-guide-tabs-title-bar {
 	border-top: none
+}
+
+
+#primary-nav > ul > li.dropdown.open > ul > li > a{
+	font-size:1.2em;
+}
+
+#primary-nav > ul > li  > a{
+	font-size:1.2em;
+}
+
+#primary-nav > ul > li.dropdown.open > a {
+	font-size:1.2em;
+}
+
+#header > nav > div.row.header-menu1 > ul.nav.navbar-nav.navbar-right.collapse.navbar-collapse.to-collapse.col-md-4.col-sm-12.col-xs-12 > li.dropdown > ul > li >a {
+	font-size: 1.2em;
 }
