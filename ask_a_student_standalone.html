@@ -1,0 +1,444 @@
+<html>
+
+<head>
+	<!-- Head Content -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ask a Student</title>
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Open+Sans:300,400,600,700,800|Roboto:300,400,700,900|Jura:300,400,500,600|Press+Start+2P" rel="stylesheet">
+	<style>
+		.offline-message {
+			font-family: "Roboto";
+			max-width: 220px;
+			padding: 10px;
+			font-size: 14px;
+		}
+
+		.ask-button {
+			padding: 16px;
+			display: flex;
+			align-items: center;
+			width: 220px;
+			min-height: 58px;
+			justify-content: center;
+			transition: all 0.2s ease-in;
+			border: 0;
+			border-radius: 5px;
+		}
+
+		.ask-button p {
+			margin: 5px 5px 0 0;
+			padding: 0;
+		}
+
+		a:focus,
+		a:hover {
+			text-decoration: none;
+		}
+
+		.ask-button:hover {
+			opacity: .9;
+			transform: translateY(-2px);
+			transition: all 0.2s ease-out;
+		}
+
+		.ask-button svg {
+			width: 40px;
+			transition: all 0.2s ease-in;
+		}
+
+		.ask-button:hover svg {
+			transform: scale(1.1);
+			transition: all 0.2s ease-out;
+		}
+
+		#ask-librarian-button {
+			background-image: linear-gradient(to left, #0049a1 0%, #4facfe 100%);
+			fill-opacity: .9;
+		}
+
+		#ask-librarian-button p {
+			font-family: 'Roboto', sans-serif;
+			font-size: 19px;
+			font-weight: bold;
+			color: #F3F3F3;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+		}
+
+		.ask-button svg rect {
+			transition: all 0.2s ease-out;
+			/* fill: #f34a1d; */
+			opacity: .1;
+		}
+
+		.ask-button:hover svg rect {
+			transition: all 0.2s ease-out;
+			/* fill: #f34a1d; */
+			opacity: 1;
+		}
+
+		#ask-student-button {
+			/* background-image: linear-gradient(to top, #FBDC89 0%, #f65b2e 33%, #ffd1f5 100%); */
+			background-image: linear-gradient(to top, #FBDC89 0%, #f69c36 33%, #ffd1f5 100%);
+			fill: #361b00;
+			fill-opacity: .9;
+		}
+
+		#ask-student-button svg {
+			width: 25px;
+			margin-left: 10px;
+			transition: all 0.2s ease-in;
+			fill: #0049a1;
+			stroke: #FFF;
+			stroke-width: 0;
+		}
+
+		#ask-student-button svg .to_hide {
+			opacity: 1;
+			transition: all .5s ease-out;
+		}
+
+		#ask-student-button:hover svg .to_hide {
+			opacity: 0;
+			transition: all 0.1s ease-out;
+		}
+
+		#ask-student-button svg .to_unhide {
+			opacity: 0;
+			transition: all 0.4s ease-out;
+		}
+
+		#ask-student-button:hover svg .to_unhide {
+			opacity: 1;
+			transition: all 0.5s ease-out;
+			fill: #FFF;
+			stroke: #000;
+		}
+
+		#ask-student-button p {
+			font-family: 'Bangers', sans-serif;
+			font-size: 23px;
+			letter-spacing: 1.2px;
+			color: #FFF;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+		}
+
+		#ask-bot-button {
+			/* font-family: 'Jura', sans-serif; */
+			background-image: linear-gradient(to left, #5c5c6e 0%, #a59d9d 70%, #f2f3f5 100%);
+			border: 2px solid #cdcacb;
+			fill-opacity: .9;
+		}
+
+		#ask-bot-button p {
+			font-family: 'Press Start 2P';
+			color: #FFF;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+			font-size: 11px;
+			transform: scaleY(1.6);
+		}
+
+		.ask-button:hover svg circle {
+			transition: all 0.2s ease-out;
+			fill: #f34a1d;
+		}
+
+		.style1 {
+			display: inherit
+		}
+
+		.style2,
+		.style3,
+		.style4 {
+			display: none;
+		}
+
+		.visible {
+			display: inherit;
+		}
+
+		.hidden {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+
+
+
+	<!--
+		<button id='ask-librarian-button' class='ask-button'>
+			<p>
+				 Ask a Librarian
+			 </p>
+		<?xml version="1.0" encoding="utf-8"?>
+		<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+	<!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+						<style type="text/css">
+							.st0{fill:#FFFDFD;}
+						</style>
+						<g>
+							<ellipse cx="50" cy="9.6" rx="8.3" ry="9.6"/>
+							<path d="M61.1,22.4H38.9c-6.9,0-9.7,6.4-9.7,11.2v11.2V48h6.9v-3.2v-9.6h2.8v9.6V48h22.2v-3.2v-9.6h2.8v9.6V48h6.9v-3.2V33.6
+								C70.8,28.8,68.1,22.4,61.1,22.4z"/>
+							<rect x="33.9" y="63.7" class="st0" width="31.7" height="24.5"/>
+							<path d="M94.5,51.2H5.6H0v8h5.6v40h88.9v-40h5.6v-8C100.1,51.2,94.5,51.2,94.5,51.2z M64.6,84.1c-3.5,0.2-10.5,1-14.6,4.1
+								c-4.1-3.1-11-3.9-14.6-4.1V64.9c4.6,0.3,10.9,1.5,13.1,4c0.8,0.9,2.1,0.9,2.9,0c2.2-2.6,8.5-3.7,13.1-4L64.6,84.1L64.6,84.1z"/>
+						</g>
+						</svg>
+			</button> -->
+
+
+
+
+	<!-- <button id='ask-student-button' class='ask-button'>
+							<p>	Ask a student</p>
+							<svg xmlns="http://www.w3.org/2000/svg" class='style1 visible' viewBox="0 0 20 20">
+							  <path d="M10 15l-4 4v-4H2a2 2 0 0 1-2-2V3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-8zM5 7v2h2V7H5zm4 0v2h2V7H9zm4 0v2h2V7h-2z"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" style2 hidden feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="style3 hidden feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+
+			<svg xmlns="http://www.w3.org/2000/svg" class='style4' x="0px" y="0px" viewBox="0 0 110 110" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+	<g>
+		<path d="M31.3,75.5c1.2,0,20.5.7,12.7,4C39.3,81.5,28.8,75.6,31.3,75.5Z" transform="translate(-0.74 0.5)"/>
+		<path
+			d="M75.5,26.7C67.3,3.2,29.1,5,13.7,18.6-2.2,32.6-2.4,60.1,7.3,77.8,19.5,100,46.2,106.7,65,87.5,78.8,73.3,82,45,75.5,26.7Zm-.8,26.9c-.4,18.5-14.4,37.2-33.3,39.8C19.7,96.3,7.1,73.3,5.9,54.7c-1.6-23.9,11-44.6,36.9-43.5C68.9,12.3,75.2,31.4,74.7,53.6Z"
+			transform="translate(-0.74 0.5)"/>
+		<path d="M21.8,41.8c-.7-8.6,9.8-9.7,6.5-.7C26.8,45.2,20.5,49.2,21.8,41.8Z" transform="translate(-0.74 0.5)"/>
+		<path d="M56.9,42.6c.7,6.7-7.4,10.7-6.7,2C50.6,37.8,58.5,36.7,56.9,42.6Z" transform="translate(-0.74 0.5)"/>
+	</g>
+	<g class="to_hide">
+		<path class="cls-1" d="M74.08,10.27c-3.5-9.1,19.8-16.2,16.6,1.6-.5,2.7-7.5,15.7-9.4,13.8C76.48,21,94.08,7.77,85,4.57,80.88,3.17,75.18,13.47,74.08,10.27Zm9.2,19.1C81.88,41.67,80.68,27.07,83.28,29.37Z" transform="translate(-0.74 -0.38)"/>
+		<path class="cls-1" d="M88.88,21.17c-1-5.4,12.9-7.7,9.1,4.3-.3,1-5.5,6.6-5.8,6.5-2.8-.7,5.6-9.5,4.4-11.8C94.48,16.27,89.38,23.77,88.88,21.17ZM92.28,34c-.1.2,1,1.4.2,2.3C90.08,38.87,89.78,30.47,92.28,34Z" transform="translate(-0.74 -0.38)"/>
+	</g>
+	<g class="to_unhide">
+		<path class="b" d="M84,10.32a8,8,0,0,0-8,8,8.13,8.13,0,0,0,1.06,4,21.16,21.16,0,0,1,2.79,7.41c.27,1.61.64,2,1.85,2H86.3c1.22,0,1.59-.37,1.85-2A21,21,0,0,1,91,22.26a8.23,8.23,0,0,0,1.06-4A8,8,0,0,0,84,10.32Z" transform="translate(-0.74 0.5)"/>
+		<path class="b" d="M86.89,32.23H81.2a.42.42,0,0,0-.42.42v.29a.42.42,0,0,0,.42.42h5.69a.42.42,0,0,0,.43-.42v-.29A.42.42,0,0,0,86.89,32.23Z" transform="translate(-0.74 0.5)"/>
+		<path class="b" d="M86.89,33.93H81.2a.42.42,0,0,0-.42.43v.28a.42.42,0,0,0,.42.43h5.69a.43.43,0,0,0,.43-.43v-.28A.43.43,0,0,0,86.89,33.93Z" transform="translate(-0.74 0.5)"/>
+		<path class="b" d="M86.89,35.64H81.2a.42.42,0,0,0-.42.42v.29a.42.42,0,0,0,.42.43h5.69a.43.43,0,0,0,.43-.43v-.29A.42.42,0,0,0,86.89,35.64Z" transform="translate(-0.74 0.5)"/>
+		<path class="b" d="M81.91,37.35h4.27c0,.85-1.14,1.42-2.14,1.42S81.91,38.2,81.91,37.35Z" transform="translate(-0.74 0.5)"/>
+		<path class="b" d="M93.19,4.72a1.14,1.14,0,0,0-2-1.15C90.84,4.24,88.07,9,88.07,9l2,1.14,3.15-5.46Z" transform="translate(-0.74 0.5)"/>
+		<path class="b" d="M97.63,9.17h0l-5.29,3.05,1.14,2,5.3-3.06A1.13,1.13,0,0,0,97.63,9.17Z" transform="translate(-0.74 0.5)"/>
+		<path class="b" d="M85.23,2V8.05H83V2A1.14,1.14,0,0,1,85.23,2Z" transform="translate(-0.74 0.5)"/>
+		<path class="b" d="M74.94,4.72a1.14,1.14,0,0,1,2-1.15C77.29,4.24,80.06,9,80.06,9l-2,1.14L74.94,4.72Z" transform="translate(-0.74 0.5)"/>
+		<path class="b" d="M70.51,9.17h0l5.29,3.05-1.14,2-5.3-3.06A1.14,1.14,0,0,1,70.51,9.17Z" transform="translate(-0.74 0.5)"/>
+	</g>
+</svg>
+			</button> -->
+
+
+
+
+
+
+
+
+				<div id="online1" data-myjid="jwu_prov_student@chat.libraryh3lp.com" style="display: none;">
+					<a href="#" onclick="window.open('https://libraryh3lp.com/chat/jwu_prov_student@chat.libraryh3lp.com?skin=28309', 'AskStudent', 'resizable=1,width=375,height=400,titlebar=no,toolbar=no,menubar=no'); return false;">
+								<button id='ask-student-button' class='ask-button'>
+													<p>	Ask a student</p>
+													<svg xmlns="http://www.w3.org/2000/svg" class='style1 visible' viewBox="0 0 20 20">
+													  <path d="M10 15l-4 4v-4H2a2 2 0 0 1-2-2V3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-8zM5 7v2h2V7H5zm4 0v2h2V7H9zm4 0v2h2V7h-2z"/>
+													</svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" style2 hidden feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="style3 hidden feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+
+									<svg xmlns="http://www.w3.org/2000/svg" class='style4' x="0px" y="0px" viewBox="0 0 110 110" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+							<g>
+								<path d="M31.3,75.5c1.2,0,20.5.7,12.7,4C39.3,81.5,28.8,75.6,31.3,75.5Z" transform="translate(-0.74 0.5)"/>
+								<path
+									d="M75.5,26.7C67.3,3.2,29.1,5,13.7,18.6-2.2,32.6-2.4,60.1,7.3,77.8,19.5,100,46.2,106.7,65,87.5,78.8,73.3,82,45,75.5,26.7Zm-.8,26.9c-.4,18.5-14.4,37.2-33.3,39.8C19.7,96.3,7.1,73.3,5.9,54.7c-1.6-23.9,11-44.6,36.9-43.5C68.9,12.3,75.2,31.4,74.7,53.6Z"
+									transform="translate(-0.74 0.5)"/>
+								<path d="M21.8,41.8c-.7-8.6,9.8-9.7,6.5-.7C26.8,45.2,20.5,49.2,21.8,41.8Z" transform="translate(-0.74 0.5)"/>
+								<path d="M56.9,42.6c.7,6.7-7.4,10.7-6.7,2C50.6,37.8,58.5,36.7,56.9,42.6Z" transform="translate(-0.74 0.5)"/>
+							</g>
+							<g class="to_hide">
+								<path class="cls-1" d="M74.08,10.27c-3.5-9.1,19.8-16.2,16.6,1.6-.5,2.7-7.5,15.7-9.4,13.8C76.48,21,94.08,7.77,85,4.57,80.88,3.17,75.18,13.47,74.08,10.27Zm9.2,19.1C81.88,41.67,80.68,27.07,83.28,29.37Z" transform="translate(-0.74 -0.38)"/>
+								<path class="cls-1" d="M88.88,21.17c-1-5.4,12.9-7.7,9.1,4.3-.3,1-5.5,6.6-5.8,6.5-2.8-.7,5.6-9.5,4.4-11.8C94.48,16.27,89.38,23.77,88.88,21.17ZM92.28,34c-.1.2,1,1.4.2,2.3C90.08,38.87,89.78,30.47,92.28,34Z" transform="translate(-0.74 -0.38)"/>
+							</g>
+							<g class="to_unhide">
+								<path class="b" d="M84,10.32a8,8,0,0,0-8,8,8.13,8.13,0,0,0,1.06,4,21.16,21.16,0,0,1,2.79,7.41c.27,1.61.64,2,1.85,2H86.3c1.22,0,1.59-.37,1.85-2A21,21,0,0,1,91,22.26a8.23,8.23,0,0,0,1.06-4A8,8,0,0,0,84,10.32Z" transform="translate(-0.74 0.5)"/>
+								<path class="b" d="M86.89,32.23H81.2a.42.42,0,0,0-.42.42v.29a.42.42,0,0,0,.42.42h5.69a.42.42,0,0,0,.43-.42v-.29A.42.42,0,0,0,86.89,32.23Z" transform="translate(-0.74 0.5)"/>
+								<path class="b" d="M86.89,33.93H81.2a.42.42,0,0,0-.42.43v.28a.42.42,0,0,0,.42.43h5.69a.43.43,0,0,0,.43-.43v-.28A.43.43,0,0,0,86.89,33.93Z" transform="translate(-0.74 0.5)"/>
+								<path class="b" d="M86.89,35.64H81.2a.42.42,0,0,0-.42.42v.29a.42.42,0,0,0,.42.43h5.69a.43.43,0,0,0,.43-.43v-.29A.42.42,0,0,0,86.89,35.64Z" transform="translate(-0.74 0.5)"/>
+								<path class="b" d="M81.91,37.35h4.27c0,.85-1.14,1.42-2.14,1.42S81.91,38.2,81.91,37.35Z" transform="translate(-0.74 0.5)"/>
+								<path class="b" d="M93.19,4.72a1.14,1.14,0,0,0-2-1.15C90.84,4.24,88.07,9,88.07,9l2,1.14,3.15-5.46Z" transform="translate(-0.74 0.5)"/>
+								<path class="b" d="M97.63,9.17h0l-5.29,3.05,1.14,2,5.3-3.06A1.13,1.13,0,0,0,97.63,9.17Z" transform="translate(-0.74 0.5)"/>
+								<path class="b" d="M85.23,2V8.05H83V2A1.14,1.14,0,0,1,85.23,2Z" transform="translate(-0.74 0.5)"/>
+								<path class="b" d="M74.94,4.72a1.14,1.14,0,0,1,2-1.15C77.29,4.24,80.06,9,80.06,9l-2,1.14L74.94,4.72Z" transform="translate(-0.74 0.5)"/>
+								<path class="b" d="M70.51,9.17h0l5.29,3.05-1.14,2-5.3-3.06A1.14,1.14,0,0,1,70.51,9.17Z" transform="translate(-0.74 0.5)"/>
+							</g>
+						</svg>
+									</button>
+								</a>
+				</div>
+				<div id="offline1">
+					<p class='offline-message'>
+						Ask a Student is currently offline. To learn more about this service, check out this FAQ
+					</p>
+				</div>
+
+
+
+		<div id="online2" data-myjid="jwu_prov_vr_1@chat.libraryh3lp.com" style="display: none;">
+			<a href="#" onclick="window.open('https://libraryh3lp.com/chat/jwu_prov_vr_1@chat.libraryh3lp.com?skin=27948', 'jwu_prov_vr_1', 'resizable=1,width=375,height=400,titlebar=no,toolbar=no,menubar=no'); return false;">
+
+			<button id='ask-librarian-button' class='ask-button'>
+				<p>
+					 Ask a Librarian
+				 </p>
+			<?xml version="1.0" encoding="utf-8"?>
+			<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+							<style type="text/css">
+								.st0{fill:#FFFDFD;}
+							</style>
+							<g>
+								<ellipse cx="50" cy="9.6" rx="8.3" ry="9.6"/>
+								<path d="M61.1,22.4H38.9c-6.9,0-9.7,6.4-9.7,11.2v11.2V48h6.9v-3.2v-9.6h2.8v9.6V48h22.2v-3.2v-9.6h2.8v9.6V48h6.9v-3.2V33.6
+									C70.8,28.8,68.1,22.4,61.1,22.4z"/>
+								<rect x="33.9" y="63.7" class="st0" width="31.7" height="24.5"/>
+								<path d="M94.5,51.2H5.6H0v8h5.6v40h88.9v-40h5.6v-8C100.1,51.2,94.5,51.2,94.5,51.2z M64.6,84.1c-3.5,0.2-10.5,1-14.6,4.1
+									c-4.1-3.1-11-3.9-14.6-4.1V64.9c4.6,0.3,10.9,1.5,13.1,4c0.8,0.9,2.1,0.9,2.9,0c2.2-2.6,8.5-3.7,13.1-4L64.6,84.1L64.6,84.1z"/>
+							</g>
+							</svg>
+				</button>
+			</a>
+		</div>
+		<div id="offline2">
+			<p class='offline-message'>
+				Ask a Librarian is currently offline. To learn more about this service, check out this FAQ.
+			</p>
+		</div>
+
+
+
+
+
+
+
+		<!-- LIBBOT. Uses code from here: https://docs.libraryh3lp.com/html-code-samples -->
+
+			<div class="needs-js">Chat requires JavaScript.</div>
+
+			<div class="libraryh3lp" jid=jwu_prov_student@chat.libraryh3lp.com" style="display: none;">
+			  <a href="#"
+			   onclick="window.open('https://libraryh3lp.com/chat/jwu_prov_student@chat.libraryh3lp.com?skin=28309',
+			   'chat', 'resizable=1,width=320,height=350'); return false;">
+				 <button id='ask-bot-button' class='ask-button'>
+		  						<p>	Ask the LibBot</p>
+		  				<?xml version="1.0" encoding="utf-8"?>
+		  				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		  					 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+		  				<style type="text/css">
+		  					.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+		  				</style>
+		  				<g>
+		  					<g>
+		  						<path d="M96.4,42.3h-5V26.1c-0.1-2-1.7-3.5-3.6-3.7H53.6V0h-7.2v22.4H12.2c-1.9,0.1-3.5,1.7-3.6,3.7v16.2h-5c-2,0-3.6,1.6-3.6,3.7
+		  							v24.1c0,2.1,1.6,3.7,3.6,3.7h5v22.6c0.1,2,1.7,3.5,3.6,3.7h75.7c1.9-0.1,3.5-1.7,3.6-3.7V73.8h5c2,0,3.6-1.6,3.6-3.7V46
+		  							C100,43.9,98.4,42.3,96.4,42.3z M23.4,51c0-5.9,4.7-10.6,10.4-10.6S44.2,45.1,44.2,51s-4.7,10.6-10.4,10.6S23.4,56.8,23.4,51z
+		  							 M65.8,82.8H34.2v-7.3h31.5v7.3H65.8z M76.6,51c0,5.9-4.7,10.6-10.4,10.6c-5.8,0-10.5-4.8-10.6-10.6c0-6,4.7-10.7,10.4-10.9
+		  							c5.7-0.1,10.5,4.8,10.6,10.6C76.6,50.8,76.6,50.8,76.6,51z"/>
+		  					</g>
+		  				</g>
+		  				<circle class="st0" cx="33.8" cy="50.8" r="10.4"/>
+		  				<circle class="st0" cx="66.1" cy="50.8" r="10.4"/>
+		  				</svg>
+		  				</button>
+			  </a>
+			</div>
+
+			<div class="libraryh3lp" style="display: none;">
+		<p class='offline-message'	The LibBot is offline!</p>
+			</div>
+
+
+
+<!--End student-->
+
+
+
+<!-- LIBBOT. Uses code from here: https://docs.libraryh3lp.com/html-code-samples -->
+
+	<div class="needs-js">Chat requires JavaScript.</div>
+
+	<div class="libraryh3lp" jid="lib_bot_test@chat.libraryh3lp.com" style="display: none;">
+	  <a href="#"
+	   onclick="window.open('https://libraryh3lp.com/chat/lib_bot_test@chat.libraryh3lp.com?skin=26821',
+	   'chat', 'resizable=1,width=320,height=350'); return false;">
+		 <button id='ask-bot-button' class='ask-button'>
+  						<p>	Ask the LibBot</p>
+  				<?xml version="1.0" encoding="utf-8"?>
+  				<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+  				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  					 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+  				<style type="text/css">
+  					.st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+  				</style>
+  				<g>
+  					<g>
+  						<path d="M96.4,42.3h-5V26.1c-0.1-2-1.7-3.5-3.6-3.7H53.6V0h-7.2v22.4H12.2c-1.9,0.1-3.5,1.7-3.6,3.7v16.2h-5c-2,0-3.6,1.6-3.6,3.7
+  							v24.1c0,2.1,1.6,3.7,3.6,3.7h5v22.6c0.1,2,1.7,3.5,3.6,3.7h75.7c1.9-0.1,3.5-1.7,3.6-3.7V73.8h5c2,0,3.6-1.6,3.6-3.7V46
+  							C100,43.9,98.4,42.3,96.4,42.3z M23.4,51c0-5.9,4.7-10.6,10.4-10.6S44.2,45.1,44.2,51s-4.7,10.6-10.4,10.6S23.4,56.8,23.4,51z
+  							 M65.8,82.8H34.2v-7.3h31.5v7.3H65.8z M76.6,51c0,5.9-4.7,10.6-10.4,10.6c-5.8,0-10.5-4.8-10.6-10.6c0-6,4.7-10.7,10.4-10.9
+  							c5.7-0.1,10.5,4.8,10.6,10.6C76.6,50.8,76.6,50.8,76.6,51z"/>
+  					</g>
+  				</g>
+  				<circle class="st0" cx="33.8" cy="50.8" r="10.4"/>
+  				<circle class="st0" cx="66.1" cy="50.8" r="10.4"/>
+  				</svg>
+  				</button>
+	  </a>
+	</div>
+
+	<div class="libraryh3lp" style="display: none;">
+<p class='offline-message'	The LibBot is offline!</p>
+	</div>
+
+
+
+				<!-- Robot script. Or all of theem? sPlace this script as near to the end of your BODY as possible. -->
+				<script
+				 type="text/javascript">
+				  (function() {
+				    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
+				    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?multi,poll";
+				    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
+				  })();
+				</script>
+
+<!--end robot section-->
+
+
+
+</body>
+
+<script type="text/javascript">
+chat_boxes = ['1', '2']
+for (var i = 0; i < chat_boxes.length; i++)
+{
+	function show_presence() {
+		for (var i = 0; i < jabber_resources.length; ++i) {
+			var resource = jabber_resources[i];
+			if (resource.show === 'available' || resource.show === 'chat') {
+				document.getElementById('online' + chat_boxes[i]).style.display = '';
+				document.getElementById('offline' + chat_boxes[i]).style.display = 'none';
+			}
+		}
+	}
+
+	function check_presence() {
+		var attr = document.getElementById('online'+chat_boxes[i]).getAttribute('data-myjid');
+		var jid = attr.split('@');
+		var url = ['https://libraryh3lp.com/presence/jid', jid[0], jid[1], 'js'].join('/');
+		document.write('<script type="text/javascript" src="' + url + '?cb=show_presence"><\/script>');
+	}
+	check_presence();
+}
+</script>
+
+
+</html>
