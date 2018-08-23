@@ -1,3 +1,6 @@
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+
 
 
 <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js">
@@ -5,19 +8,35 @@
 <link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 
+
 .signup-button{
-	padding:10px;
-	background-color:blue;
+	border:1px solid #CCC;
+	background: #2193b0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-right: 5%;
+	margin-left:5%;
+font-size:16px;
+	padding:10px 20px;
+
 	color:#FFF;
+	/* width:90%; */
 }
 .signup-button:hover{
 
-	background-color:yellow;
+
+	background: #659999;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 	color:#FFF;
 }
 .signup-button:active{
 
-	background-color:green;
+	background: -moz-linear-gradient(top,  hsl(194, 100%, 50%) 0%, hsl(208, 100%, 50%) 100%);
+  background: -webkit-linear-gradient(top,  hsl(194, 100%, 50%) 0%,hsl(208, 100%, 50%) 100%);
+  background: linear-gradient(to bottom,  hsl(194, 100%, 50%) 0%,hsl(208, 100%, 50%) 100%);
 	color:#FFF;
 }
 
@@ -45,6 +64,10 @@ td ul {
 	table.dataTable thead {
 		font-size: 1.27em;
 		font-family: 'Roboto';
+	}
+
+	.title-class{
+	font-weight:bold;
 	}
 </style>
 <table id="stats-table">
@@ -77,6 +100,7 @@ td ul {
 		});
 
 		$('#stats-table').DataTable({
+			    'responsive': true,
 				"paging": false,
 				'pageLength': 25,
 				"order": [
@@ -86,7 +110,8 @@ td ul {
 				"aaData": entries,
 				'columns': [{
 					"title": "Workshop Title",
-					"width": "10%"
+					"width": "10%",
+					className: "title-class"
 
 								},
 				{
@@ -126,8 +151,10 @@ td ul {
 						// console.log('type',type);
 						// console.log('row',row);
 						// console.log('meta',meta)
-						console.log('row6', 	row[6])
-						return '<button class="signup-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfuEN6we2vkl5pFmwvkkEBIOwA9r8JKFjzt8F7OfJG3HTdZog/viewform?usp=pp_url&entry.1476181601=' + String(row[0]) + '" target="_blank">Sign up!</button>';
+						// console.log('row6', 	row[6])
+						// return '<button class="signup-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfuEN6we2vkl5pFmwvkkEBIOwA9r8JKFjzt8F7OfJG3HTdZog/viewform?usp=pp_url&entry.1476181601=' + String(row[0]) + '" target="_blank">Sign up!</button>';
+						return '<a class="signup-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfuEN6we2vkl5pFmwvkkEBIOwA9r8JKFjzt8F7OfJG3HTdZog/viewform?usp=pp_url&entry.1476181601=' + String(row[0]) + '" target="_blank">Sign up!</a>';
+
 					}
 				}
 			]
