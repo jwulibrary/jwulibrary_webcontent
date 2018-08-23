@@ -1,0 +1,137 @@
+
+
+<script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js">
+</script>
+<link href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+.signup-button{
+	padding:10px;
+	background-color:blue;
+	color:#FFF;
+}
+.signup-button:hover{
+
+	background-color:yellow;
+	color:#FFF;
+}
+.signup-button:active{
+
+	background-color:green;
+	color:#FFF;
+}
+
+td ul {
+	padding-left:10px;
+}
+
+	table.dataTable tbody tr.even {
+		background-color: #efefef;
+	}
+
+	table#stats-table {
+		width: 100%
+	}
+
+	table.dataTable tbody tr {
+		font-family: 'open sans', sans-serif;
+		font-size: 1.1em;
+	}
+
+	table.dataTable tbody tr td {
+		padding: .9em;
+	}
+
+	table.dataTable thead {
+		font-size: 1.27em;
+		font-family: 'Roboto';
+	}
+</style>
+<table id="stats-table">
+</table>
+<script>
+	$(function() {
+
+
+		var old_almost_url = 'https://docs.google.com/spreadsheets/d/10tvMn5VMu1mR-0TMtfc0E25-pt-2fuD1rU4YaPXuT-w/edit#gid=1351858525'
+		var old_url = 'https://spreadsheets.google.com/feeds/list/10tvMn5VMu1mR-0TMtfc0E25-pt-2fuD1rU4YaPXuT-w/1/public/values?alt=json';
+		var new_almost_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRlvZOGoIOCL3M2IeeZocoIc91j2nf9H6wMTmKWNIANA2B3lLCcyhsbtg84rbriNZh0r6YRJdOwpJFF/pubhtml?gid=1351858525&single=true'
+
+		var url = 'https://spreadsheets.google.com/feeds/list/1TA1xOg4rSbuS0pwlCGLYmuMwW_MytapREPNJO5bIGy8/1/public/values?alt=json';
+		$.ajax({
+			url: url,
+			type: "GET",
+			dataType: "json",
+			crossDomain: true,
+
+			async: false,
+			success: function(data) {
+				entries = [];
+
+				data = $.map(data.feed.entry, function(el, i) {
+					// console.log(el)
+					entries.push([el.gsx$topic.$t, el.gsx$coursenumber.$t, el.gsx$tbd2.$t, el.gsx$tbd3.$t, el.gsx$recommendedfor.$t, el.gsx$location.$t, el.gsx$prepopemailformlink.$t])
+				});
+
+			}
+		});
+
+		$('#stats-table').DataTable({
+				"paging": false,
+				'pageLength': 25,
+				"order": [
+					[3, 'asc'],
+					[0, 'asc']
+				],
+				"aaData": entries,
+				'columns': [{
+					"title": "Workshop Title",
+					"width": "10%"
+
+								},
+				{
+					"title": "Topics Addressed",
+						"width": "25%"
+				},
+				{
+					"title": "Prerequisites",
+							"width": "25%"
+				},
+				{
+					"title": "Recommended for",
+							"width": "10%"
+				},
+				{
+					"title": "Time Required",
+							"width": "10%"
+				},
+				{
+					"title": "Location",
+						"width": "10%"
+				},
+				{
+					"title": "Sign up",
+						"width": "10%"
+				}],
+			"columnDefs": [{
+					"targets": [3],
+					"visible": true,
+					"searchable": true
+				},
+				{
+					"targets": [6],
+					"data": 'download_link',
+					"render": function(data, type, row, meta) {
+						// console.log('data',data);
+						// console.log('type',type);
+						// console.log('row',row);
+						// console.log('meta',meta)
+						console.log('row6', 	row[6])
+						return '<button class="signup-button" href="https://docs.google.com/forms/d/e/1FAIpQLSfuEN6we2vkl5pFmwvkkEBIOwA9r8JKFjzt8F7OfJG3HTdZog/viewform?usp=pp_url&entry.1476181601=' + String(row[0]) + '" target="_blank">Sign up!</button>';
+					}
+				}
+			]
+
+		});
+	});
+</script>
