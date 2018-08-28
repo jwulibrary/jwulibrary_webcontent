@@ -11,26 +11,45 @@
 
 
 .signup-button{
-	border:1px solid #CCC;
-	background: #2193b0;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	/* border:1px solid #CCC;
+	background: #2193b0;
+	background: -webkit-linear-gradient(to bottom, #6dd5ed, #2193b0);
+	background: linear-gradient(to bottom, #6dd5ed, #2193b0);
   margin-right: 5%;
 	margin-left:5%;
 font-size:14px;
 	padding:10px;
-
+	text-decoration:none;
 	color:#FFF;
-width:90%;
-}
-.signup-button:hover{
+width:90%; */
+color: #fff;
+text-decoration:none;
+ padding: .625rem 5px;
 
+ margin:0 10%;
+ border-radius: 5px;
+ font-size: 12px;
+ font-weight: 500;
+ border: none;
+ text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+ text-transform: uppercase;
+ cursor: pointer;
+background: -moz-linear-gradient(top,  hsl(194, 100%, 50%) 0%, hsl(208, 100%, 50%) 100%);
+ background: -webkit-linear-gradient(top,  hsl(194, 100%, 50%) 0%,hsl(208, 100%, 50%) 100%);
+ background: linear-gradient(to bottom,  hsl(194, 100%, 50%) 0%,hsl(208, 100%, 50%) 100%);
+
+}
+
+.signup-button:hover{
+	transform: translateY(-2px);
+	  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+	  filter: brightness(130%);
 
 	background: #659999;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to bottom, #f4791f, #659999);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to bottom, #f4791f, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
+	text-decoration:none;
 	color:#FFF;
 }
 .signup-button:active{
@@ -121,7 +140,7 @@ td ul {
 				},
 				{
 					"title": "Prerequisites",
-							"width": "25%"
+							"width": "20%"
 				},
 				{
 					"title": "Recommended for",
@@ -137,7 +156,7 @@ td ul {
 				},
 				{
 					"title": "Sign up",
-						"width": "10%"
+						"width": "15%"
 				}],
 			"columnDefs": [{
 					"targets": [3],
