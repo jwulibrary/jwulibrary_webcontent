@@ -450,3 +450,78 @@ var oclcRow = '<div>'
 
 	rTerm()
 </script>
+
+
+<!-- EBSCOhost Custom Search Box Begins -->
+<script src="https://support.ebscohost.com/eit/scripts/ebscohostsearch.js" type="text/javascript"></script>
+<style type="text/css">
+	    .ebscohostCustomSearchBox {font-family:Helvetica,Verdana,Arial,sans-serif;width:375px;}
+		.ebscohostCustomSearchBox #databaseblock {width:98%;}
+		.ebscohostCustomSearchBox .choose-db-list{ list-style-type:none;padding:0;margin:10px 0 0 0;font-size:9pt; width:100%;}
+		.ebscohostCustomSearchBox .choose-db-check{ width:20px;float:left;padding-left:5px;padding-top:5px; }
+		.ebscohostCustomSearchBox .choose-db-detail{ margin-left:30px;border-left:solid 1px #E7E7E7;padding:5px 11px 7px 11px;line-height:1.4em; }
+		.ebscohostCustomSearchBox .summary { background-color:#1D5DA7;color:#FFFFFF;border:solid 1px #1D5DA7; }
+		.ebscohostCustomSearchBox .two, .ebscohostCustomSearchBox .one, .ebscohostCustomSearchBox .selected {border:solid 1px #E7E7E7; border-top:0;}
+		.ebscohostCustomSearchBox #disciplineBlock { width:auto; }
+		.ebscohostCustomSearchBox .limiter { float:left;margin:0;padding:0;width:50%; }
+
+		.ebscohostCustomSearchBox #ebscohostsearchtext { width: 144px; }
+		.ebscohostCustomSearchBox #ebscohostsearchtext.edspub { width: 245px; }
+		.ebscohostCustomSearchBox .ebscohostCustomSearchBox .ebscohost-search-button.edspub {
+			border: 1px solid #156619;
+			padding: 5px 10px !important;
+			border-radius: 3px;
+			color: #fff;
+			font-weight: bold;
+			background-color: #156619;
+		}
+		.ebscohostCustomSearchBox .ebscohost-title.edspub {
+			color: #1c7020;
+			font-weight: bold;
+		}
+
+	</style>
+	<form class="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post" style="overflow:hidden;">
+		<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1" />
+		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://jwupvdz.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?direct=true&scope=site&type=1&site=ehost-live&db=a9h&lang=en&ssl=Y" />
+		<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="url" />
+		<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+" />
+		<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="" />
+
+		<div style="background-image:url('https://support.ebsco.com/images/logos/ebscohost.gif'); background-repeat:no-repeat; height:66px; width:375px; font-size:9pt; color:#353535;">
+			<div style="padding-top:5px;padding-left:150px;">
+				<span class="ebscohost-title " style="font-weight:bold;">Research databases</span>
+
+				<div>
+					<input id="ebscohostsearchtext" class="" name="ebscohostsearchtext" type="text" size="23"  style="font-size:9pt;padding-left:5px;margin-left:0px;" />
+					<input type="submit" value="Search" class="ebscohost-search-button " style="font-size:9pt;padding-left:5px;" />
+
+				</div>
+			</div>
+		</div>
+
+		<div id="limiterblock" style="margin-left:-px; overflow: auto; ">
+			<div id="limitertitle" style="font-weight:bold;padding-top:25px;padding-bottom:5px;">Limit Your Results</div>
+
+			<div class="limiter" >
+				<input type="checkbox" id="chkFullText" name="chkFullText"  />
+				<label for="chkFullText">Full Text</label>
+			</div>
+
+			<div class="limiter" style="display:none;">
+				<input type="checkbox" id="chkReferencesAvailable" name="chkReferencesAvailable"  />
+				<label for="chkReferencesAvailable">References Available</label>
+			</div>
+
+			<div class="limiter" >
+				<input type="checkbox" id="chkPeerReviewed" name="chkPeerReviewed"  />
+				<label for="chkPeerReviewed">Peer Reviewed</label>
+			</div>
+
+		</div>
+
+
+
+
+	</form>
+	<!-- EBSCOhost Custom Search Box Ends -->
